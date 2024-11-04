@@ -2,6 +2,9 @@ __pycache__
 .DS_Store
 *.py[cod]
 *$py.class
+separation_env/
+separated/
+test_env/
 
 # Distribution / packaging
 .Python
@@ -72,5 +75,6 @@ Scripts/
 
 *.code-workspace
 
-results/
 wandb/
+test_env/bin/accelerate-launch
+checkpoints/
