@@ -35,3 +35,4 @@ pyaudio
 wxpython==4.2.2
 matplotlib
 musdb
+museval
