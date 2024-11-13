@@ -24,7 +24,8 @@ transformers~=4.35.0
 torchmetrics==0.11.4
 #spafe==0.3.2
 spafe
-protobuf==3.20.3
+#protobuf==3.20.3
+protobuf
 torch_audiomentations
 asteroid==0.7.0
 auraloss
@@ -32,12 +33,14 @@ torchseg
 bitsandbytes
 wandb
 accelerate
-huggingface-hub>=0.23.0
+#huggingface-hub>=0.23.0
+huggingface-hub
 prodigyopt
 torch_log_wmse
 loralib
 pyaudio
-wxpython==4.2.2
 matplotlib
+# wxpython==4.2.2
+wxpython
 musdb
 museval
