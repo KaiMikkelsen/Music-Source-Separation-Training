@@ -45,3 +45,5 @@ matplotlib
 wxpython
 musdb
 museval
+tensorboard
+optuna-dashboard
