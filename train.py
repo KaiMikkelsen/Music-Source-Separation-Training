@@ -218,6 +218,7 @@ def get_optimizer(config: ConfigDict, model: torch.nn.Module) -> torch.optim.Opt
     print(model)
 
     if name_optimizer == 'adam':
+        #print(model.parameters())
         optimizer = Adam(model.parameters(), lr=config.training.lr, **optim_params)
     elif name_optimizer == 'adamw':
         optimizer = AdamW(model.parameters(), lr=config.training.lr, **optim_params)
