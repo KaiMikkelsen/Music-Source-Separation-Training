@@ -1,0 +1,7 @@
+Running training script for model: bs_roformer
+Traceback (most recent call last):
+  File "/project/6002780/kaim/Music-Source-Separation-Training/train.py", line 23, in <module>
+    from utils import get_model_from_config
+  File "/project/6002780/kaim/Music-Source-Separation-Training/utils.py", line 11, in <module>
+    import matplotlib.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
