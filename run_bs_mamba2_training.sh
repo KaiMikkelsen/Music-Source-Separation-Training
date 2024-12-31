@@ -2,7 +2,7 @@
 #SBATCH --gres=gpu:v100l:1       # Request GPU "generic resources"
 #SBATCH --cpus-per-task=6        # Adjust based on your cluster's CPU/GPU ratio
 #SBATCH --mem=125G               # Adjust memory as needed
-#SBATCH --time=7-00:00           # DD-HH:MM:SS
+#SBATCH --time=0-00:30:00           # DD-HH:MM:SS
 #SBATCH --account=def-ichiro
 #SBATCH --output=slurm_logs/slurm-%j.out  # Use Job ID for unique output files
 
@@ -38,5 +38,4 @@ python train.py \
   --valid_path "../data/MUSDB18HQ/validation" \
   --num_workers 4 \
   --start_check_point "" \
-  --device_ids 0 \
-  --wandb_key 689bb384f0f7e0a9dbe275c4ba6458d13265990d
+  --device_ids 0 
