@@ -582,27 +582,57 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
         args: Command-line arguments containing configuration paths, hyperparameters, and other settings.
 
     Returns:
-        None
+        Best metric achieved during training.
     """
 
     args = parse_args(args)
     # === OPTUNA HYPERPARAMETER SUGGESTIONS ===
 
     args.seed = trial.suggest_int("seed", 0, 1000)
-    args.device_ids = [trial.suggest_int("device_id", 0, torch.cuda.device_count() - 1)]
+    device_count = torch.cuda.device_count()
+    if device_count == 0:
+        args.device_ids = [0]  # Use CPU if no GPUs are available
+    else:
+        args.device_ids = [trial.suggest_int("device_id", 0, device_count - 1)]
 
+    # Loss configuration
     args.use_multistft_loss = trial.suggest_categorical("use_multistft_loss", [True, False])
     args.use_mse_loss = trial.suggest_categorical("use_mse_loss", [True, False])
     args.use_l1_loss = trial.suggest_categorical("use_l1_loss", [True, False])
-    args.train_lora = trial.suggest_categorical("train_lora", [True, False])
+    #args.train_lora = trial.suggest_categorical("train_lora", [True, False])
 
+    # Training hyperparameters
     batch_size = trial.suggest_categorical("batch_size", [8, 16, 32, 64])
     gradient_accumulation_steps = trial.suggest_int("grad_accum_steps", 1, 4)
-
+    args.lr = trial.suggest_loguniform("lr", 1e-6, 1e-3)
     optimizer_name = trial.suggest_categorical("optimizer", ["adam", "adamw", "sgd", "rmsprop"])
+    args.ema_momentum = trial.suggest_uniform("ema_momentum", 0.9, 0.999)
 
+    # Learning rate scheduler
     patience = trial.suggest_int("patience", 3, 10)
     reduce_factor = trial.suggest_uniform("reduce_factor", 0.1, 0.5)
+
+    # Augmentations
+    args.loudness_min = trial.suggest_uniform("loudness_min", 0.1, 1.0)
+    args.loudness_max = trial.suggest_uniform("loudness_max", 1.0, 2.0)
+    args.mixup_probs = trial.suggest_categorical("mixup_probs", [(0.1, 0.01), (0.2, 0.02), (0.3, 0.03)])
+    args.mp3_compression_bitrate_min = trial.suggest_int("mp3_bitrate_min", 32, 64)
+    args.mp3_compression_bitrate_max = trial.suggest_int("mp3_bitrate_max", 128, 320)
+
+    # Model configuration
+    args.channels = trial.suggest_categorical("channels", [32, 48, 64, 128])
+    args.depth = trial.suggest_int("depth", 3, 6)
+    args.t_layers = trial.suggest_int("t_layers", 2, 8)
+    args.t_hidden_scale = trial.suggest_uniform("t_hidden_scale", 2.0, 8.0)
+    args.t_heads = trial.suggest_int("t_heads", 4, 16)
+    args.kernel_size = trial.suggest_int("kernel_size", 3, 9)
+    args.stride = trial.suggest_int("stride", 2, 5)
+
+    # Regularization
+    args.t_weight_decay = trial.suggest_loguniform("weight_decay", 1e-6, 1e-2)
+    args.dropout = trial.suggest_uniform("dropout", 0.0, 0.5)
+    args.norm_groups = trial.suggest_int("norm_groups", 1, 8)
+
     # === END OPTUNA HYPERPARAMETER SUGGESTIONS ===
 
     initialize_environment(args.seed, args.results_path)
@@ -665,6 +695,8 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
         if trial.should_prune():
             raise optuna.TrialPruned()
 
+    return best_metric
+
 
 #if __name__ == "__main__":
 #    train_model(None)
@@ -677,9 +709,10 @@ if __name__ == "__main__":
        sampler=TPESampler(),  # TPE sampler for efficient search
     )
 
-    train_model(None)
+    #train_model(None)
     # Run the optimization
-    #study.optimize(lambda trial: objective(trial, args), n_trials=100)  # Adjst n_trials as needed
+    #study.optimize(objective, n_trials=100)  # Adjust n_trials as needed
+    study.optimize(lambda trial: objective(trial, None), n_trials=100)
 
     # Print the best result
     print("Best trial:")
