@@ -28,7 +28,7 @@ source separation_env/bin/activate
 
 echo "Running training script for model: $MODEL_TYPE"
 
-python train.py \
+python train_optuna.py \
   --model_type "$MODEL_TYPE" \
   --config_path "$CONFIG_PATH" \
   --results_path "$CHECKPOINTS_PATH" \
@@ -38,4 +38,4 @@ python train.py \
   --start_check_point "" \
   --device_ids 0 \
   --metrics sdr l1_freq si_sdr neg_log_wmse aura_stft aura_mrstft bleedless fullness \
-  --wandb_key 689bb384f0f7e0a9dbe275c4ba6458d13265990d
+  #--wandb_key 689bb384f0f7e0a9dbe275c4ba6458d13265990d
