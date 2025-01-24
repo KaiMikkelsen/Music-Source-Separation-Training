@@ -306,26 +306,38 @@ class MSSDataset(torch.utils.data.Dataset):
 
     def load_aligned_data(self):
         track_path, track_length = random.choice(self.metadata)
-        res = []
-        for i in self.instruments:
-            attempts = 10
-            while attempts:
+        attempts = 10
+        while attempts:
+            if track_length >= self.chunk_size:
+                common_offset = np.random.randint(track_length - self.chunk_size + 1)
+            else:
+                common_offset = None
+            res = []
+            silent_chunks = 0
+            for i in self.instruments:
                 for extension in self.file_types:
                     path_to_audio_file = track_path + '/{}.{}'.format(i, extension)
                     if os.path.isfile(path_to_audio_file):
                         try:
-                            source = load_chunk(path_to_audio_file, track_length, self.chunk_size)
+                            source = load_chunk(path_to_audio_file, track_length, self.chunk_size, offset=common_offset)
                         except Exception as e:
                             # Sometimes error during FLAC reading, catch it and use zero stem
                             print('Error: {} Path: {}'.format(e, path_to_audio_file))
                             source = np.zeros((2, self.chunk_size), dtype=np.float32)
                         break
-                if np.abs(source).mean() >= self.min_mean_abs:  # remove quiet chunks
-                    break
-                attempts -= 1
-                if attempts <= 0:
-                    print('Attempts max!', track_path)
-            res.append(source)
+                res.append(source)
+                if np.abs(source).mean() < self.min_mean_abs:  # remove quiet chunks
+                    silent_chunks += 1
+            if silent_chunks == 0:
+                break
+
+            attempts -= 1
+            if attempts <= 0:
+                print('Attempts max!', track_path)
+            if common_offset is None:
+                # If track is too small break immediately
+                break
+
         res = np.stack(res, axis=0)
         if self.aug:
             for i, instr in enumerate(self.instruments):
