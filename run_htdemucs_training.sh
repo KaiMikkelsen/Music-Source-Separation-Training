@@ -46,12 +46,11 @@ fi
 if [ ! -d "$UNZIPPED_DATA_PATH" ]; then
     echo "Extracting data in scratch using jar..."
     
-    # Ensure JAVA_HOME is set to Java 1 version (or adapt to your cluster's environment)
-    export JAVA_HOME=/path/to/java1
-    export PATH=$JAVA_HOME/bin:$PATH
-    
-    # Use `jar` command to extract the zip
-    jar xvf "$SCRATCH_DATA_PATH" -C "$SLURM_TMPDIR"
+  # Select Java version (this will automatically select Java 21.0.1)
+  echo "1" | module load java/21.0.1
+
+  # Unzip the .zip file using 'jar'
+  jar xvf moisesdb.zip
 fi
 
 # Copy the training script to scratch if it's not already there
