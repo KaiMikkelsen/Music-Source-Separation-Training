@@ -19,9 +19,9 @@ CHECKPOINTS_PATH="checkpoints/${MODEL_TYPE}_${CURRENT_DATE}"
 SLURM_LOGS_PATH="slurm_logs/${MODEL_TYPE}_${CURRENT_DATE}"
 
 # Define data paths
-PROJECT_DATA_PATH="/home/kaim/projects/def-ichiro/kaim/data/moisesdb.zip"
-SCRATCH_DATA_PATH="$SLURM_TMPDIR/moisesdb.zip"
-UNZIPPED_DATA_PATH="$SLURM_TMPDIR/moisesdb"
+PROJECT_DATA_PATH="/home/kaim/projects/def-ichiro/kaim/data/MUSDB18HQ.zip"
+SCRATCH_DATA_PATH="$SLURM_TMPDIR/MUSDB18HQ.zip"
+UNZIPPED_DATA_PATH="$SLURM_TMPDIR/MUSDB18HQ"
 
 # Define training script path
 TRAIN_SCRIPT_PATH="/home/kaim/projects/def-ichiro/kaim/train_optuna.py"
@@ -44,8 +44,14 @@ fi
 
 # Unzip the data if it is not already unzipped
 if [ ! -d "$UNZIPPED_DATA_PATH" ]; then
-    echo "Unzipping data in scratch..."
-    unzip "$SCRATCH_DATA_PATH" -d "$SLURM_TMPDIR"
+    echo "Extracting data in scratch using jar..."
+    
+    # Ensure JAVA_HOME is set to Java 1 version (or adapt to your cluster's environment)
+    export JAVA_HOME=/path/to/java1
+    export PATH=$JAVA_HOME/bin:$PATH
+    
+    # Use `jar` command to extract the zip
+    jar xvf "$SCRATCH_DATA_PATH" -C "$SLURM_TMPDIR"
 fi
 
 # Copy the training script to scratch if it's not already there
