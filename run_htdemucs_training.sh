@@ -19,9 +19,9 @@ CHECKPOINTS_PATH="checkpoints/${MODEL_TYPE}_${CURRENT_DATE}"
 SLURM_LOGS_PATH="slurm_logs/${MODEL_TYPE}_${CURRENT_DATE}"
 
 # Define data paths
-PROJECT_DATA_PATH="/home/kaim/projects/def-ichiro/kaim/data/MUSDB18HQ.zip"
-SCRATCH_DATA_PATH="$SLURM_TMPDIR/MUSDB18HQ.zip"
-UNZIPPED_DATA_PATH="$SLURM_TMPDIR/MUSDB18HQ"
+PROJECT_DATA_PATH="/home/kaim/projects/def-ichiro/kaim/data/moisesdb.zip"
+SCRATCH_DATA_PATH="$SLURM_TMPDIR/moisesdb.zip"
+UNZIPPED_DATA_PATH="$SLURM_TMPDIR/moisesdb"
 
 # Define training script path
 TRAIN_SCRIPT_PATH="/home/kaim/projects/def-ichiro/kaim/train_optuna.py"
