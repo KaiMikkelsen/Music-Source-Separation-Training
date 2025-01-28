@@ -29,15 +29,29 @@ mkdir -p "$SLURM_LOGS_PATH"
 exec > >(tee -a "$SLURM_LOGS_PATH/slurm-${SLURM_JOB_ID}.out") 2>&1
 
 # Move and unzip dataset to scratch directory
-if [ -f "$DATASET_ZIP" ]; then
-    echo "Moving $DATASET_ZIP to $SCRATCH_DIR for faster access"
-    cp "$DATASET_ZIP" "$SCRATCH_DIR"
-    echo "Unzipping dataset in $SCRATCH_DIR"
-    unzip -q "$SCRATCH_DIR/$(basename "$DATASET_ZIP")" -d "$SCRATCH_DIR"
-else
-    echo "Error: Dataset zip file $DATASET_ZIP not found."
-    exit 1
+echo "Moving $DATASET_ZIP to $SCRATCH_DIR for faster access"
+cp "$DATASET_ZIP" "$SCRATCH_DIR"
+
+DATASET_ZIP_BASENAME=$(basename "$DATASET_ZIP")
+SCRATCH_ZIP="$SCRATCH_DIR/$DATASET_ZIP_BASENAME"
+
+echo "Unzipping dataset in $SCRATCH_DIR"
+if ! unzip -q "$SCRATCH_ZIP" -d "$SCRATCH_DIR"; then
+    echo "Initial unzip failed. Attempting to repair the zip file."
+    zip -FF "$SCRATCH_ZIP" --out "$SCRATCH_DIR/repaired.zip"
+    if [ $? -eq 0 ]; then
+        echo "Repair successful. Unzipping repaired file."
+        if ! unzip -q "$SCRATCH_DIR/repaired.zip" -d "$SCRATCH_DIR"; then
+            echo "Failed to unzip repaired file. Please check the dataset file."
+            exit 1
+        fi
+    else
+        echo "Repair failed. The dataset zip file may be severely corrupted."
+        exit 1
+    fi
 fi
+
+echo "Dataset successfully unzipped."
 
 DATA_PATH="$SCRATCH_DIR/$DATASET_NAME"
 
