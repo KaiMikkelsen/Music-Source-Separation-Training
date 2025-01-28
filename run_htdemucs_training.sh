@@ -21,6 +21,7 @@ module load java/21.0.1
 PROJECT_DIR="$HOME/projects/def-ichiro/kaim"
 SCRATCH_DIR="/scratch/kaim"
 DATA_ZIP="moisesdb.zip"
+MODEL_TYPE="htdemucs"
 
 # Create unique job ID-based directories
 JOB_ID=${SLURM_JOB_ID:-$(date +%s)}
