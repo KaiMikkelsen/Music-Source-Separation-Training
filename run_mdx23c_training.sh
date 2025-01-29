@@ -37,6 +37,7 @@ SCRATCH_ZIP="$SCRATCH_DIR/$DATASET_ZIP_BASENAME"
 
 echo "Unzipping dataset in $SCRATCH_DIR/$DATASET_NAME"
 mkdir -p "$SCRATCH_DIR/$DATASET_NAME"
+echo "created directory $SCRATCH_DIR/$DATASET_NAME"
 
 if ! unzip -q "$SCRATCH_ZIP" -d "$SCRATCH_DIR/$DATASET_NAME"; then
     echo "Initial unzip failed. Attempting to repair the zip file."
