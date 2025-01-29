@@ -35,13 +35,15 @@ cp "$DATASET_ZIP" "$SCRATCH_DIR"
 DATASET_ZIP_BASENAME=$(basename "$DATASET_ZIP")
 SCRATCH_ZIP="$SCRATCH_DIR/$DATASET_ZIP_BASENAME"
 
-echo "Unzipping dataset in $SCRATCH_DIR"
-if ! unzip -q "$SCRATCH_ZIP" -d "$SCRATCH_DIR"; then
+echo "Unzipping dataset in $SCRATCH_DIR/$DATASET_NAME"
+mkdir -p "$SCRATCH_DIR/$DATASET_NAME"
+
+if ! unzip -q "$SCRATCH_ZIP" -d "$SCRATCH_DIR/$DATASET_NAME"; then
     echo "Initial unzip failed. Attempting to repair the zip file."
     zip -FF "$SCRATCH_ZIP" --out "$SCRATCH_DIR/repaired.zip"
     if [ $? -eq 0 ]; then
         echo "Repair successful. Unzipping repaired file."
-        if ! unzip -q "$SCRATCH_DIR/repaired.zip" -d "$SCRATCH_DIR"; then
+        if ! unzip -q "$SCRATCH_DIR/repaired.zip" -d "$SCRATCH_DIR/$DATASET_NAME"; then
             echo "Failed to unzip repaired file. Please check the dataset file."
             exit 1
         fi
