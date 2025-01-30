@@ -56,7 +56,28 @@ fi
 
 echo "Dataset successfully unzipped."
 
-DATA_PATH="$SCRATCH_DIR/$DATASET_NAME"
+case "$DATASET_NAME" in
+    "MOISESDB")
+        DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/moisesdb/moisesdb_v0.1"
+        ;;
+    "MUSDB18")
+        DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/musdb18"
+        ;;
+    "SDXDB12_Bleeding")
+        DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/sdxdb12_bleeding"
+        ;;
+    "SDXDB23_LabelNoise")
+        DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/sdxdb23_labelnoise"
+        ;;
+    *)
+        echo "Unknown dataset: $DATASET_NAME"
+        exit 1
+        ;;
+esac
+
+echo "Dataset path set to: $DATA_PATH"
+
+
 
 # Activate the environment
 source separation_env/bin/activate
