@@ -31,6 +31,7 @@ exec > >(tee -a "$SLURM_LOGS_PATH/slurm-${SLURM_JOB_ID}.out") 2>&1
 
 # Activate the environment
 source separation_env/bin/activate
+DATA_PATH="../data/$DATASET_NAME"
 
 echo "Running training script for model: $MODEL_TYPE with dataset at $DATA_PATH"
 
