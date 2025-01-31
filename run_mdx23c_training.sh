@@ -12,7 +12,7 @@ export XLA_FLAGS=--xla_gpu_cuda_data_dir=$CUDA_HOME
 CURRENT_DATE=$(date +"%Y-%m-%d_%H-%M-%S")
 SCRATCH_DIR=$SLURM_TMPDIR
 
-RUNNING_ON_MAC=False
+RUNNING_ON_MAC=True
 
 # Variables
 MODEL_TYPE="mdx23c"
@@ -38,9 +38,10 @@ cp "$DATASET_ZIP" "$SCRATCH_DIR"
 DATASET_ZIP_BASENAME=$(basename "$DATASET_ZIP")
 SCRATCH_ZIP="$SCRATCH_DIR/$DATASET_ZIP_BASENAME"
 
-echo "Unzipping dataset in $SCRATCH_DIR/$DATASET_NAME"
+
 mkdir -p "$SCRATCH_DIR/$DATASET_NAME"
 echo "created directory $SCRATCH_DIR/$DATASET_NAME"
+echo "Unzipping dataset in $SCRATCH_DIR/$DATASET_NAME"
 
 if ! unzip -q "$SCRATCH_ZIP" -d "$SCRATCH_DIR/$DATASET_NAME"; then
     echo "Initial unzip failed. Attempting to repair the zip file."
@@ -59,26 +60,19 @@ fi
 
 echo "Dataset successfully unzipped."
 
-case "$DATASET_NAME" in
-    "MOISESDB")
-        DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/moisesdb/moisesdb_v0.1"
-        ;;
-    "MUSDB18")
-        DATA_PATH="$SCRATCH_DIR/$DATASET_NAME"
-        ;;
-    "SDXDB12_Bleeding")
-        DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/sdxdb12_bleeding"
-        ;;
-    "SDXDB23_LabelNoise")
-        DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/sdxdb23_labelnoise"
-        ;;
-    *)
-        echo "Unknown dataset: $DATASET_NAME"
-        exit 1
-        ;;
-esac
-
+if [ "$DATASET_NAME" = "MOISESDB" ]; then
+    DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/moisesdb/moisesdb_v0.1"
+elif [ "$DATASET_NAME" = "MUSDB18" ]; then
+    DATA_PATH="$SCRATCH_DIR/$DATASET_NAME"
+elif [ "$DATASET_NAME" = "SDXDB12_Bleeding" ]; then
+    DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/sdxdb12_bleeding"
+elif [ "$DATASET_NAME" = "SDXDB23_LabelNoise" ]; then
+    DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/sdxdb23_labelnoise"
+else
+    echo "Unknown dataset: $DATASET_NAME"
+    exit 1
 fi
+
 echo "Dataset path set to: $DATA_PATH"
 
 
