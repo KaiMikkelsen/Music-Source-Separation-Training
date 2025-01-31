@@ -136,6 +136,8 @@ def wandb_init(args: argparse.Namespace, config: Dict, device_ids: List[int], ba
         batch_size: Batch size for training.
     """
 
+    print(f"Initializing wandb: {args}")
+
     if args.wandb_key is None or args.wandb_key.strip() == '':
         wandb.init(mode='disabled')
     else:
