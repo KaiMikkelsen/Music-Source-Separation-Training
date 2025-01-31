@@ -30,7 +30,7 @@ exec > >(tee -a "$SLURM_LOGS_PATH/slurm-${SLURM_JOB_ID}.out") 2>&1
 # Activate the environment
 source separation_env/bin/activate
 
-RUNNING_ON_MAC=True
+RUNNING_ON_MAC=False
 if [ "$RUNNING_ON_MAC" = False ]; then
 
     # Move and unzip dataset to scratch directory
