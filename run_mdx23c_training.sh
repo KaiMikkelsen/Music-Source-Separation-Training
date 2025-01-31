@@ -12,6 +12,7 @@ export XLA_FLAGS=--xla_gpu_cuda_data_dir=$CUDA_HOME
 CURRENT_DATE=$(date +"%Y-%m-%d_%H-%M-%S")
 SCRATCH_DIR=$SLURM_TMPDIR
 
+RUNNING_ON_MAC=False
 
 # Variables
 MODEL_TYPE="mdx23c"
@@ -27,6 +28,8 @@ mkdir -p "$SLURM_LOGS_PATH"
 
 # Redirect SLURM output dynamically
 exec > >(tee -a "$SLURM_LOGS_PATH/slurm-${SLURM_JOB_ID}.out") 2>&1
+
+if [ "$RUNNING_ON_MAC" = True ]; then
 
 # Move and unzip dataset to scratch directory
 echo "Moving $DATASET_ZIP to $SCRATCH_DIR for faster access"
@@ -75,6 +78,7 @@ case "$DATASET_NAME" in
         ;;
 esac
 
+fi
 echo "Dataset path set to: $DATA_PATH"
 
 
@@ -94,7 +98,7 @@ python train_optuna.py \
   --start_check_point "" \
   --device_ids 0 \
   --wandb_key 689bb384f0f7e0a9dbe275c4ba6458d13265990d \
-  --wandb_name "$MODEL_TYPE_$DATASET_NAME_$CURRENT_DATE"
+  --wandb_name "${MODEL_TYPE}_${DATASET_NAME}_${CURRENT_DATE}"
 
 # # Cleanup scratch directory
 # echo "Cleaning up $SCRATCH_DIR"
