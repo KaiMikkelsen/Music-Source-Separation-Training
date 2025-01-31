@@ -66,7 +66,6 @@ def parse_args(dict_args: Union[Dict, None]) -> argparse.Namespace:
                                  'fullness'], help='Metric which will be used for scheduler.')
     parser.add_argument("--train_lora", action='store_true', help="Train with LoRA")
     parser.add_argument("--lora_checkpoint", type=str, default='', help="Initial checkpoint to LoRA weights")
-    parser.add_argument("--wandb_name", type=str, default='', help='wandb name')
 
     if dict_args is not None:
         args = parser.parse_args([])
@@ -127,6 +126,10 @@ def wandb_init(args: argparse.Namespace, config: Dict, device_ids: List[int], ba
         device_ids: List of GPU device IDs used for training.
         batch_size: Batch size for training.
     """
+    import datetime
+
+    current_date = datetime.datetime.now().strftime("%Y-%m-%d")
+    run_name = f"{args.model_type}_{args.data_path}_{current_date}"
 
     if args.wandb_key is None or args.wandb_key.strip() == '':
         wandb.init(mode='disabled')
@@ -134,7 +137,7 @@ def wandb_init(args: argparse.Namespace, config: Dict, device_ids: List[int], ba
         wandb.login(key=args.wandb_key)
         wandb.init(project='msst', 
                    config={'config': config, 'args': args, 'device_ids': device_ids, 'batch_size': batch_size },
-                   name=args.wandb_name)
+                   name=run_name)
 
 
 def prepare_data(config: Dict, args: argparse.Namespace, batch_size: int) -> DataLoader:
@@ -485,6 +488,7 @@ def train_model(args: argparse.Namespace) -> None:
     device_ids = args.device_ids
     batch_size = config.training.batch_size * len(device_ids)
 
+    print("training model")
     wandb_init(args, config, device_ids, batch_size)
 
     train_loader = prepare_data(config, args, batch_size)
