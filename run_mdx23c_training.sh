@@ -12,12 +12,10 @@ export XLA_FLAGS=--xla_gpu_cuda_data_dir=$CUDA_HOME
 CURRENT_DATE=$(date +"%Y-%m-%d_%H-%M-%S")
 SCRATCH_DIR=$SLURM_TMPDIR
 
-
-
 # Variables
 MODEL_TYPE="mdx23c"
 CONFIG_PATH="configs/config_musdb18_mdx23c.yaml"
-DATASET_NAME="MUSDB18HQ"
+DATASET_NAME="MOISESDB"
 DATASET_ZIP="../data/$DATASET_NAME.zip" # Specify the dataset ZIP name
 SLURM_LOGS_PATH="slurm_logs/${MODEL_TYPE}_${CURRENT_DATE}"
 CHECKPOINTS_PATH="checkpoints/${MODEL_TYPE}_${CURRENT_DATE}"
@@ -28,6 +26,9 @@ mkdir -p "$SLURM_LOGS_PATH"
 
 # Redirect SLURM output dynamically
 exec > >(tee -a "$SLURM_LOGS_PATH/slurm-${SLURM_JOB_ID}.out") 2>&1
+
+# Activate the environment
+source separation_env/bin/activate
 
 RUNNING_ON_MAC=True
 if [ "$RUNNING_ON_MAC" = False ]; then
@@ -49,29 +50,29 @@ if [ "$RUNNING_ON_MAC" = False ]; then
 
     echo "Dataset successfully unzipped."
 
-fi
+    if [ "$DATASET_NAME" = "MOISESDB" ]; then
+        DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/moisesdb/moisesdb_v0.1"
+    elif [ "$DATASET_NAME" = "MUSDB18HQ" ]; then
+        DATA_PATH="$SCRATCH_DIR/$DATASET_NAME"
+    elif [ "$DATASET_NAME" = "SDXDB23_Bleeding" ]; then
+        DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/sdxdb12_bleeding"
+    elif [ "$DATASET_NAME" = "SDXDB23_LabelNoise" ]; then
+        DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/sdxdb23_labelnoise"
+    else
+        echo "Unknown dataset: $DATASET_NAME"
+        exit 1
+    fi
 
-if [ "$DATASET_NAME" = "MOISESDB" ]; then
-    DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/moisesdb/moisesdb_v0.1"
-elif [ "$DATASET_NAME" = "MUSDB18HQ" ]; then
-    DATA_PATH="$SCRATCH_DIR/$DATASET_NAME"
-elif [ "$DATASET_NAME" = "SDXDB23_Bleeding" ]; then
-    DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/sdxdb12_bleeding"
-elif [ "$DATASET_NAME" = "SDXDB23_LabelNoise" ]; then
-    DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/sdxdb23_labelnoise"
 else
-    echo "Unknown dataset: $DATASET_NAME"
-    exit 1
+    DATA_PATH="../data/$DATASET_NAME"
+    echo "Running on Mac. Skipping dataset unzipping."
 fi
 
 echo "Dataset path set to: $DATA_PATH"
 
-# Activate the environment
-source separation_env/bin/activate
-
 echo "Running training script for model: $MODEL_TYPE with dataset at $DATA_PATH"
 
-python train_optuna.py \
+python train.py \
     --model_type "$MODEL_TYPE" \
     --config_path "$CONFIG_PATH" \
     --results_path "$CHECKPOINTS_PATH" \
@@ -81,8 +82,4 @@ python train_optuna.py \
     --num_workers 4 \
     --start_check_point "" \
     --device_ids 0 \
-    --wandb_key 689bb384f0f7e0a9dbe275c4ba6458d13265990d \
-
-# # Cleanup scratch directory
-# echo "Cleaning up $SCRATCH_DIR"
-# rm -rf "$SCRATCH_DIR"
+    --wandb_key 689bb384f0f7e0a9dbe275c4ba6458d13265990d
