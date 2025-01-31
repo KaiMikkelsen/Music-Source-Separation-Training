@@ -73,7 +73,8 @@ python train_optuna.py \
   --num_workers 4 \
   --start_check_point "" \
   --device_ids 0 \
-  --wandb_key 689bb384f0f7e0a9dbe275c4ba6458d13265990d
+  --wandb_key 689bb384f0f7e0a9dbe275c4ba6458d13265990d \
+  --wandb_name "$MODEL_TYPE_$DATASET_NAME_$CURRENT_DATE"
 
 # # Cleanup scratch directory
 # echo "Cleaning up $SCRATCH_DIR"
