@@ -12,7 +12,7 @@ export XLA_FLAGS=--xla_gpu_cuda_data_dir=$CUDA_HOME
 CURRENT_DATE=$(date +"%Y-%m-%d_%H-%M-%S")
 SCRATCH_DIR=$SLURM_TMPDIR
 
-RUNNING_ON_MAC=True
+
 
 # Variables
 MODEL_TYPE="mdx23c"
@@ -29,6 +29,7 @@ mkdir -p "$SLURM_LOGS_PATH"
 # Redirect SLURM output dynamically
 exec > >(tee -a "$SLURM_LOGS_PATH/slurm-${SLURM_JOB_ID}.out") 2>&1
 
+RUNNING_ON_MAC=True
 if [ "$RUNNING_ON_MAC" = False ]; then
 
     # Move and unzip dataset to scratch directory
@@ -44,18 +45,6 @@ if [ "$RUNNING_ON_MAC" = False ]; then
 
     if ! unzip -q "$SCRATCH_ZIP" -d "$SCRATCH_DIR/$DATASET_NAME"; then
         echo "zip failed"
-        # echo "Initial unzip failed. Attempting to repair the zip file."
-        # zip -FF "$SCRATCH_ZIP" --out "$SCRATCH_DIR/repaired.zip"
-        # if [ $? -eq 0 ]; then
-        #     echo "Repair successful. Unzipping repaired file."
-        #     if ! unzip -q "$SCRATCH_DIR/repaired.zip" -d "$SCRATCH_DIR/$DATASET_NAME"; then
-        #         echo "Failed to unzip repaired file. Please check the dataset file."
-        #         exit 1
-        #     fi
-        # else
-        #     echo "Repair failed. The dataset zip file may be severely corrupted."
-        #     exit 1
-        # fi
     fi
 
     echo "Dataset successfully unzipped."
@@ -93,7 +82,6 @@ python train_optuna.py \
     --start_check_point "" \
     --device_ids 0 \
     --wandb_key 689bb384f0f7e0a9dbe275c4ba6458d13265990d \
-    --wandb_name "${MODEL_TYPE}_${DATASET_NAME}_${CURRENT_DATE}"
 
 # # Cleanup scratch directory
 # echo "Cleaning up $SCRATCH_DIR"
