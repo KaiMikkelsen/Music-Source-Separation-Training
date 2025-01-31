@@ -2,7 +2,7 @@
 #SBATCH --gres=gpu:v100l:1       # Request GPU "generic resources"
 #SBATCH --cpus-per-task=6        # Adjust based on your cluster's CPU/GPU ratio
 #SBATCH --mem=125G               # Adjust memory as needed
-#SBATCH --time=3-00:00           # DD-HH:MM:SS
+#SBATCH --time=0-00:120:00           # DD-HH:MM:SS
 #SBATCH --account=def-ichiro
 
 
