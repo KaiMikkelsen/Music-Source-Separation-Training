@@ -31,7 +31,43 @@ exec > >(tee -a "$SLURM_LOGS_PATH/slurm-${SLURM_JOB_ID}.out") 2>&1
 
 # Activate the environment
 source separation_env/bin/activate
-DATA_PATH="../data/$DATASET_NAME"
+
+RUNNING_ON_MAC=False
+if [ "$RUNNING_ON_MAC" = False ]; then
+
+    # Move and unzip dataset to scratch directory
+    echo "Moving $DATASET_ZIP to $SCRATCH_DIR for faster access"
+    cp "$DATASET_ZIP" "$SCRATCH_DIR"
+
+    DATASET_ZIP_BASENAME=$(basename "$DATASET_ZIP")
+    SCRATCH_ZIP="$SCRATCH_DIR/$DATASET_ZIP_BASENAME"
+
+    mkdir -p "$SCRATCH_DIR/$DATASET_NAME"
+    echo "created directory $SCRATCH_DIR/$DATASET_NAME"
+    echo "Unzipping dataset in $SCRATCH_DIR/$DATASET_NAME"
+
+    if ! unzip -q "$SCRATCH_ZIP" -d "$SCRATCH_DIR/$DATASET_NAME"; then
+        echo "zip failed"
+    fi
+
+    echo "Dataset successfully unzipped."
+
+fi
+
+if [ "$DATASET_NAME" = "MOISESDB" ]; then
+    DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/moisesdb/moisesdb_v0.1"
+elif [ "$DATASET_NAME" = "MUSDB18HQ" ]; then
+    DATA_PATH="$SCRATCH_DIR/$DATASET_NAME"
+elif [ "$DATASET_NAME" = "SDXDB23_Bleeding" ]; then
+    DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/sdxdb12_bleeding"
+elif [ "$DATASET_NAME" = "SDXDB23_LabelNoise" ]; then
+    DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/sdxdb23_labelnoise"
+else
+    echo "Unknown dataset: $DATASET_NAME"
+    exit 1
+fi
+
+echo "Dataset path set to: $DATA_PATH"
 
 echo "Running training script for model: $MODEL_TYPE with dataset at $DATA_PATH"
 
