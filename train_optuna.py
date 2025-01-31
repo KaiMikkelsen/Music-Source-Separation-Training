@@ -133,7 +133,7 @@ def wandb_init(args: argparse.Namespace, config: Dict, device_ids: List[int], ba
         device_ids: List of GPU device IDs used for training.
         batch_size: Batch size for training.
     """
-
+    import datetime
     current_date = datetime.datetime.now().strftime("%Y-%m-%d")
     run_name = f"{args.model_type}_{args.data_path}_{current_date}"
 
