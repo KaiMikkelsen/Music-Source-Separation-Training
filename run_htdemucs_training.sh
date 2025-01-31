@@ -16,7 +16,7 @@ SCRATCH_DIR=$SLURM_TMPDIR
 # Variables
 MODEL_TYPE="htdemucs"
 CONFIG_PATH="configs/config_musdb18_htdemucs.yaml"
-DATASET_NAME="MOISESDB"
+DATASET_NAME="MUSDB18HQ"
 DATASET_ZIP="../data/$DATASET_NAME.zip"  # Specify the dataset ZIP name
 SLURM_LOGS_PATH="slurm_logs/${MODEL_TYPE}_${CURRENT_DATE}"
 CHECKPOINTS_PATH="checkpoints/${MODEL_TYPE}_${CURRENT_DATE}"
@@ -28,57 +28,10 @@ mkdir -p "$SLURM_LOGS_PATH"
 # Redirect SLURM output dynamically
 exec > >(tee -a "$SLURM_LOGS_PATH/slurm-${SLURM_JOB_ID}.out") 2>&1
 
-# Move and unzip dataset to scratch directory
-echo "Moving $DATASET_ZIP to $SCRATCH_DIR for faster access"
-cp "$DATASET_ZIP" "$SCRATCH_DIR"
-
-DATASET_ZIP_BASENAME=$(basename "$DATASET_ZIP")
-SCRATCH_ZIP="$SCRATCH_DIR/$DATASET_ZIP_BASENAME"
-
-echo "Unzipping dataset in $SCRATCH_DIR/$DATASET_NAME"
-mkdir -p "$SCRATCH_DIR/$DATASET_NAME"
-echo "created directory $SCRATCH_DIR/$DATASET_NAME"
-
-if ! unzip -q "$SCRATCH_ZIP" -d "$SCRATCH_DIR/$DATASET_NAME"; then
-    echo "Initial unzip failed. Attempting to repair the zip file."
-    zip -FF "$SCRATCH_ZIP" --out "$SCRATCH_DIR/repaired.zip"
-    if [ $? -eq 0 ]; then
-        echo "Repair successful. Unzipping repaired file."
-        if ! unzip -q "$SCRATCH_DIR/repaired.zip" -d "$SCRATCH_DIR/$DATASET_NAME"; then
-            echo "Failed to unzip repaired file. Please check the dataset file."
-            exit 1
-        fi
-    else
-        echo "Repair failed. The dataset zip file may be severely corrupted."
-        exit 1
-    fi
-fi
-
-echo "Dataset successfully unzipped."
-
-case "$DATASET_NAME" in
-    "MOISESDB")
-        DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/moisesdb/moisesdb_v0.1"
-        ;;
-    "MUSDB18")
-        DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/musdb18"
-        ;;
-    "SDXDB12_Bleeding")
-        DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/sdxdb12_bleeding"
-        ;;
-    "SDXDB23_LabelNoise")
-        DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/sdxdb23_labelnoise"
-        ;;
-    *)
-        echo "Unknown dataset: $DATASET_NAME"
-        exit 1
-        ;;
-esac
-
-echo "Dataset path set to: $DATA_PATH"
 
 
 
+DATA_PATH="../data/$DATASET_NAME"
 # Activate the environment
 source separation_env/bin/activate
 
