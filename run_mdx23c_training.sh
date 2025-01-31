@@ -29,7 +29,7 @@ mkdir -p "$SLURM_LOGS_PATH"
 # Redirect SLURM output dynamically
 exec > >(tee -a "$SLURM_LOGS_PATH/slurm-${SLURM_JOB_ID}.out") 2>&1
 
-if [ "$RUNNING_ON_MAC" = True ]; then
+if [ "$RUNNING_ON_MAC" = False ]; then
 
 # Move and unzip dataset to scratch directory
 echo "Moving $DATASET_ZIP to $SCRATCH_DIR for faster access"
