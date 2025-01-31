@@ -73,6 +73,8 @@ def parse_args(dict_args: Union[Dict, None]) -> argparse.Namespace:
                                  'fullness'], help='Metric which will be used for scheduler.')
     parser.add_argument("--train_lora", action='store_true', help="Train with LoRA")
     parser.add_argument("--lora_checkpoint", type=str, default='', help="Initial checkpoint to LoRA weights")
+    parser.add_argument("--wandb_name", type=str, default='', help='wandb name')
+
 
     if dict_args is not None:
         args = parser.parse_args([])
@@ -138,7 +140,9 @@ def wandb_init(args: argparse.Namespace, config: Dict, device_ids: List[int], ba
         wandb.init(mode='disabled')
     else:
         wandb.login(key=args.wandb_key)
-        wandb.init(project='msst', config={'config': config, 'args': args, 'device_ids': device_ids, 'batch_size': batch_size })
+        wandb.init(project='msst', 
+                   config={'config': config, 'args': args, 'device_ids': device_ids, 'batch_size': batch_size },
+                   name=args.wandb_name)
 
 
 def prepare_data(config: Dict, args: argparse.Namespace, batch_size: int) -> DataLoader:
