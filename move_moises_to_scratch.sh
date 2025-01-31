@@ -7,7 +7,7 @@
 
 
 cd ../data
-DATASET_NAME="MUSDB18HQ"
+DATASET_NAME="MOISESDB"
 DATASET_ZIP="$DATASET_NAME.zip" # Specify the dataset ZIP name
 SCRATCH_DIR="/home/kaim/scratch"
 
