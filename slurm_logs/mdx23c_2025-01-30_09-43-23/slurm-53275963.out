@@ -1,0 +1,20 @@
+Moving ../data/MUSDB18HQ.zip to /localscratch/kaim.53275963.0 for faster access
+cp: cannot stat '../data/MUSDB18HQ.zip': No such file or directory
+Unzipping dataset in /localscratch/kaim.53275963.0/MUSDB18HQ
+created directory /localscratch/kaim.53275963.0/MUSDB18HQ
+unzip:  cannot find or open /localscratch/kaim.53275963.0/MUSDB18HQ.zip, /localscratch/kaim.53275963.0/MUSDB18HQ.zip.zip or /localscratch/kaim.53275963.0/MUSDB18HQ.zip.ZIP.
+Initial unzip failed. Attempting to repair the zip file.
+Fix archive (-FF) - salvage what can
+	zip warning: could not open input archive: /localscratch/kaim.53275963.0/MUSDB18HQ.zip
+Scanning for entries...
+
+
+Could not find:
+  /localscratch/kaim.53275963.0/MUSDB18HQ.z01
+
+Hit c      (change path to where this split file is)
+    s      (skip this split)
+    q      (abort archive - quit)
+    e      (end this archive - no more splits)
+    z      (look for .zip split - the last split)
+ or ENTER  (try reading this split again): 

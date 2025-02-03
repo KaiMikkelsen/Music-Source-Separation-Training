@@ -1,0 +1,12 @@
+Dataset path set to: 
+Running training script for model: mdx23c with dataset at 
+[I 2025-01-31 09:09:16,653] A new study created in memory with name: no-name-71d10c3f-dfab-4250-a94e-556a56ef8af0
+wandb: Using wandb-core as the SDK backend. Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: kaimikkelsen (kaimikkelsen-mcgill-university). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/kaim/.netrc
+wandb: Tracking run with wandb version 0.18.0
+wandb: Run data is saved locally in /project/6002780/kaim/Music-Source-Separation-Training/wandb/run-20250131_090919-zihrrlv0
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run mdx23c_MUSDB18HQ_2025-01-31_09-06-52
+wandb: ⭐️ View project at https://wandb.ai/kaimikkelsen-mcgill-university/msst
+wandb: 🚀 View run at https://wandb.ai/kaimikkelsen-mcgill-university/msst/runs/zihrrlv0

@@ -1,0 +1,22 @@
+Moving ../data/MOISESDB.zip to /localscratch/kaim.53301470.0 for faster access
+Unzipping dataset in /localscratch/kaim.53301470.0/MOISESDB
+created directory /localscratch/kaim.53301470.0/MOISESDB
+Dataset successfully unzipped.
+Running training script for model: htdemucs with dataset at /localscratch/kaim.53301470.0/MOISESDB
+wandb: Using wandb-core as the SDK backend. Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: kaimikkelsen (kaimikkelsen-mcgill-university). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/kaim/.netrc
+wandb: Tracking run with wandb version 0.18.0
+wandb: Run data is saved locally in /project/6002780/kaim/Music-Source-Separation-Training/wandb/run-20250130_144116-a33ebiyh
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run scarlet-terrain-43
+wandb: ⭐️ View project at https://wandb.ai/kaimikkelsen-mcgill-university/msst
+wandb: 🚀 View run at https://wandb.ai/kaimikkelsen-mcgill-university/msst/runs/a33ebiyh
+Use augmentation for training
+Dataset type: 1 Processes to use: 32 
+Collecting metadata for ['/localscratch/kaim.53301470.0/MOISESDB/train']
+Warning: no tracks found in folder '/localscratch/kaim.53301470.0/MOISESDB/train'. Please check it!
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+No tracks found for training. Check paths you provided!
+[1;34mwandb[0m: 🚀 View run [33mscarlet-terrain-43[0m at: [34mhttps://wandb.ai/kaimikkelsen-mcgill-university/msst/runs/a33ebiyh[0m
+[1;34mwandb[0m: Find logs at: [1;35m../../../../../../project/6002780/kaim/Music-Source-Separation-Training/wandb/run-20250130_144116-a33ebiyh/logs[0m

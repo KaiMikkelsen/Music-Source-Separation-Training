@@ -1,0 +1,13 @@
+Moving data zip to scratch...
+Unzipping data in scratch...
+Archive:  /localscratch/kaim.52850536.0/moisesdb.zip
+  End-of-central-directory signature not found.  Either this file is not
+  a zipfile, or it constitutes one disk of a multi-part archive.  In the
+  latter case the central directory and zipfile comment will be found on
+  the last disk(s) of this archive.
+unzip:  cannot find zipfile directory in one of /localscratch/kaim.52850536.0/moisesdb.zip or
+        /localscratch/kaim.52850536.0/moisesdb.zip.zip, and cannot find /localscratch/kaim.52850536.0/moisesdb.zip.ZIP, period.
+Copying training script to scratch...
+cp: cannot stat '/home/kaim/projects/def-ichiro/kaim/train_optuna.py': No such file or directory
+Running training script for model: htdemucs
+python: can't open file '/localscratch/kaim.52850536.0/train_optuna.py': [Errno 2] No such file or directory

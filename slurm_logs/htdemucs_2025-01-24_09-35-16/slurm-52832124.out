@@ -1,0 +1,16 @@
+Running training script for model: htdemucs
+[I 2025-01-24 09:38:33,551] A new study created in memory with name: no-name-66c80fe7-6760-4d70-b47b-36fb52296f79
+wandb: Using wandb-core as the SDK backend. Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: kaimikkelsen (kaimikkelsen-mcgill-university). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/kaim/.netrc
+wandb: Tracking run with wandb version 0.18.0
+wandb: Run data is saved locally in /project/6002780/kaim/Music-Source-Separation-Training/wandb/run-20250124_093846-d10kvpkr
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run mild-star-29
+wandb: ⭐️ View project at https://wandb.ai/kaimikkelsen-mcgill-university/msst
+wandb: 🚀 View run at https://wandb.ai/kaimikkelsen-mcgill-university/msst/runs/d10kvpkr
+Optuna study started
+Use augmentation for training
+Dataset type: 1 Processes to use: 32 
+Collecting metadata for ['../data/MUSDB18HQ/train']
+  0%|          | 0/86 [00:00<?, ?it/s]  1%|          | 1/86 [01:11<1:40:55, 71.24s/it]  2%|▏         | 2/86 [02:09<1:29:00, 63.58s/it] 10%|█         | 9/86 [02:54<18:54, 14.73s/it]   17%|█▋        | 15/86 [02:55<08:38,  7.30s/it] 19%|█▊        | 16/86 [02:59<08:03,  6.90s/it] 22%|██▏       | 19/86 [03:20<07:43,  6.91s/it] 23%|██▎       | 20/86 [03:47<10:37,  9.67s/it] 27%|██▋       | 23/86 [04:04<08:37,  8.21s/it] 71%|███████   | 61/86 [04:14<00:32,  1.30s/it] 73%|███████▎  | 63/86 [04:19<00:31,  1.38s/it]

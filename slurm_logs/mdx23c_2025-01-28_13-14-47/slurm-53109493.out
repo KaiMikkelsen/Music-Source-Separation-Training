@@ -1,0 +1,4 @@
+Moving ../data/MUSDB18HQ.zip to /localscratch/kaim.53109493.0 for faster access
+Unzipping dataset in /localscratch/kaim.53109493.0
+file #1:  bad zipfile offset (local header sig):  0
+Running training script for model: mdx23c with dataset at /localscratch/kaim.53109493.0/MUSDB18HQ
