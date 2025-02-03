@@ -45,7 +45,7 @@ if [ "$RUNNING_ON_MAC" = False ]; then
     # echo "Unzipping dataset in $SCRATCH_DIR/$DATASET_NAME"
 
     echo "unzipping $SCRATCH_DIR/$DATASET_NAME.zip"
-    unzip "$SCRATCH_DIR/$DATASET_NAME.zip" -d "$SCRATCH_ZIP"
+    unzip "$SCRATCH_DIR/$DATASET_NAME.zip" -d "$SCRATCH_DIR"
 
 
     # if ! unzip -q "$SCRATCH_ZIP" -d "$SCRATCH_DIR/$DATASET_NAME"; then
