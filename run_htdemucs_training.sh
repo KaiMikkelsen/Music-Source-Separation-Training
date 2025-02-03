@@ -40,11 +40,11 @@ if [ "$RUNNING_ON_MAC" = False ]; then
     DATASET_ZIP_BASENAME=$(basename "$DATASET_ZIP")
     SCRATCH_ZIP="$SCRATCH_DIR/$DATASET_ZIP_BASENAME"
 
-    mkdir -p "$SCRATCH_DIR/$DATASET_NAME"
-    echo "created directory $SCRATCH_DIR/$DATASET_NAME"
-    echo "Unzipping dataset in $SCRATCH_DIR/$DATASET_NAME"
+    # mkdir -p "$SCRATCH_DIR/$DATASET_NAME"
+    # echo "created directory $SCRATCH_DIR/$DATASET_NAME"
+    echo "Unzipping dataset in $SCRATCH_DIR"
 
-    if ! unzip -q "$SCRATCH_ZIP" -d "$SCRATCH_DIR/$DATASET_NAME"; then
+    if ! unzip -q "$SCRATCH_ZIP"; then
         echo "zip failed"
     fi
 
