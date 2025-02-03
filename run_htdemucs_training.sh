@@ -33,24 +33,25 @@ source separation_env/bin/activate
 RUNNING_ON_MAC=False
 if [ "$RUNNING_ON_MAC" = False ]; then
 
-        # Check if dataset already exists in the scratch directory
+    # Move and unzip dataset to scratch directory
+    echo "Moving $DATASET_ZIP to $SCRATCH_DIR for faster access"
+    cp "$DATASET_ZIP" "$SCRATCH_DIR"
+
     DATASET_ZIP_BASENAME=$(basename "$DATASET_ZIP")
     SCRATCH_ZIP="$SCRATCH_DIR/$DATASET_ZIP_BASENAME"
 
-    if [ ! -f "$SCRATCH_ZIP" ]; then
-        # If the dataset zip is not already in SCRATCH_DIR, move it
-        echo "Moving $DATASET_ZIP to $SCRATCH_DIR for faster access"
-        cp "$DATASET_ZIP" "$SCRATCH_DIR"
-    else
-        echo "$DATASET_ZIP_BASENAME already exists in $SCRATCH_DIR. Skipping copy."
-    fi
+    # mkdir -p "$SCRATCH_DIR/$DATASET_NAME"
+    # echo "created directory $SCRATCH_DIR/$DATASET_NAME"
+    # echo "Unzipping dataset in $SCRATCH_DIR/$DATASET_NAME"
 
-    # Unzip the dataset if not already unzipped
-    if ! unzip -q "$SCRATCH_ZIP"; then
-        echo "zip failed"
-    else
-        echo "Dataset successfully unzipped."
-    fi
+    echo "Unzipping dataset in $SCRATCH_DIR"
+    unzip "$SCRATCH_ZIP"
+
+    # if ! unzip -q "$SCRATCH_ZIP" -d "$SCRATCH_DIR/$DATASET_NAME"; then
+    #     echo "zip failed"
+    # fi
+
+    echo "Dataset successfully unzipped."
 
     if [ "$DATASET_NAME" = "MOISESDB" ]; then
         DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/moisesdb/moisesdb_v0.1"
