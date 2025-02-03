@@ -1,0 +1,4 @@
+Moving ../data/MUSDB18HQ.zip to /scratch/kaim/53109493 for faster access
+Unzipping dataset in /scratch/kaim/53109493
+unzip:  cannot find or open /scratch/kaim/53109493/MUSDB18HQ.zip, /scratch/kaim/53109493/MUSDB18HQ.zip.zip or /scratch/kaim/53109493/MUSDB18HQ.zip.ZIP.
+Running training script for model: mdx23c with dataset at /scratch/kaim/53109493/MUSDB18HQ

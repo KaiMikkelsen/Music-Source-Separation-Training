@@ -1,0 +1,11 @@
+Moving ../data/MUSDB18HQ.zip to  for faster access
+cp: cannot create regular file '': No such file or directory
+Unzipping dataset in /MUSDB18HQ
+mkdir: cannot create directory ‘/MUSDB18HQ’: Permission denied
+created directory /MUSDB18HQ
+unzip:  cannot find or open /MUSDB18HQ.zip, /MUSDB18HQ.zip.zip or /MUSDB18HQ.zip.ZIP.
+Initial unzip failed. Attempting to repair the zip file.
+Fix archive (-FF) - salvage what can
+zip I/O error: Permission denied
+zip error: Temporary file failure (/zitjeJ4R)
+Repair failed. The dataset zip file may be severely corrupted.

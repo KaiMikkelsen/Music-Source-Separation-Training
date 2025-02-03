@@ -1,0 +1,35 @@
+Running training script for model: htdemucs with dataset at ../data/MUSDB18HQ
+[I 2025-01-31 11:37:14,966] A new study created in memory with name: no-name-2ac6649c-3d4d-44b6-87ff-7958eae61b4b
+[W 2025-01-31 11:37:29,326] Trial 0 failed with parameters: {'seed': 484, 'device_id': 0, 'use_multistft_loss': True, 'use_mse_loss': True, 'use_l1_loss': False, 'batch_size': 16, 'grad_accum_steps': 1, 'lr': 0.0002854267678579289, 'optimizer': 'rmsprop', 'ema_momentum': 0.9178944658105074, 'patience': 10, 'reduce_factor': 0.46350505199647263, 'loudness_min': 0.4433158088568335, 'loudness_max': 1.9482872752354257, 'mixup_probs': (0.1, 0.01), 'mp3_bitrate_min': 49, 'mp3_bitrate_max': 251, 'channels': 48, 'depth': 4, 't_layers': 8, 't_hidden_scale': 4.623027980337672, 't_heads': 12, 'kernel_size': 8, 'stride': 5, 'weight_decay': 5.86383134304394e-06, 'dropout': 0.4726872852847225, 'norm_groups': 4} because of the following error: NameError("name 'datetime' is not defined").
+Traceback (most recent call last):
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/train_optuna.py", line 722, in <lambda>
+    study.optimize(lambda trial: objective(trial, None), n_trials=100)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/train_optuna.py", line 651, in objective
+    wandb_init(args, config, device_ids, batch_size)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/train_optuna.py", line 137, in wandb_init
+    current_date = datetime.datetime.now().strftime("%Y-%m-%d")
+NameError: name 'datetime' is not defined
+[W 2025-01-31 11:37:29,327] Trial 0 failed with value None.
+Optuna study started
+Traceback (most recent call last):
+  File "/project/6002780/kaim/Music-Source-Separation-Training/train_optuna.py", line 722, in <module>
+    study.optimize(lambda trial: objective(trial, None), n_trials=100)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/train_optuna.py", line 722, in <lambda>
+    study.optimize(lambda trial: objective(trial, None), n_trials=100)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/train_optuna.py", line 651, in objective
+    wandb_init(args, config, device_ids, batch_size)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/train_optuna.py", line 137, in wandb_init
+    current_date = datetime.datetime.now().strftime("%Y-%m-%d")
+NameError: name 'datetime' is not defined
