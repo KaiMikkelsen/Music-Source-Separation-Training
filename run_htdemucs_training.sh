@@ -30,7 +30,7 @@ exec > >(tee -a "$SLURM_LOGS_PATH/slurm-${SLURM_JOB_ID}.out") 2>&1
 # Activate the environment
 source separation_env/bin/activate
 
-RUNNING_ON_MAC=False
+RUNNING_ON_MAC=True
 if [ "$RUNNING_ON_MAC" = False ]; then
 
     # Move and unzip dataset to scratch directory
@@ -73,6 +73,7 @@ else
 fi
 
 echo "Dataset path set to: $DATA_PATH"
+
 
 echo "Running training script for model: $MODEL_TYPE with dataset at $DATA_PATH"
 
