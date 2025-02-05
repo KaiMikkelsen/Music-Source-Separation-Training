@@ -145,7 +145,8 @@ def wandb_init(args: argparse.Namespace, config: Dict, device_ids: List[int], ba
         wandb.login(key=args.wandb_key)
         wandb.init(project='msst', 
                    config={'config': config, 'args': args, 'device_ids': device_ids, 'batch_size': batch_size },
-                   name=run_name)
+                   name=run_name,
+                   group="Optuna")
 
 
 def prepare_data(config: Dict, args: argparse.Namespace, batch_size: int) -> DataLoader:
