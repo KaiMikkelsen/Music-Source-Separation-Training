@@ -1,0 +1,18 @@
+Running training script for model: htdemucs with dataset at ../data/MUSDBHQ18
+wandb: Using wandb-core as the SDK backend. Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: kaimikkelsen (kaimikkelsen-mcgill-university). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /Users/kaimikkelsen/.netrc
+wandb: Tracking run with wandb version 0.18.5
+wandb: Run data is saved locally in /Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/wandb/run-20250131_131454-bdr8pq4k
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run 2025-01-31_13-14-48
+wandb: ⭐️ View project at https://wandb.ai/kaimikkelsen-mcgill-university/msst
+wandb: 🚀 View run at https://wandb.ai/kaimikkelsen-mcgill-university/msst/runs/bdr8pq4k
+Use augmentation for training
+Dataset type: 1 Processes to use: 8 
+Collecting metadata for ['../data/MUSDBHQ18/train']
+Warning: no tracks found in folder '../data/MUSDBHQ18/train'. Please check it!
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+No tracks found for training. Check paths you provided!
+[1;34mwandb[0m: 🚀 View run [33m2025-01-31_13-14-48[0m at: [34mhttps://wandb.ai/kaimikkelsen-mcgill-university/msst/runs/bdr8pq4k[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20250131_131454-bdr8pq4k/logs[0m

@@ -1,0 +1,21 @@
+Dataset path set to: 
+Running training script for model: mdx23c with dataset at 
+[I 2025-01-31 10:09:32,585] A new study created in memory with name: no-name-b9e4d435-c3b1-4bbf-9a5c-07dfaf914f5e
+wandb: Using wandb-core as the SDK backend. Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: kaimikkelsen (kaimikkelsen-mcgill-university). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /Users/kaimikkelsen/.netrc
+wandb: Tracking run with wandb version 0.18.5
+wandb: Run data is saved locally in /Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/wandb/run-20250131_100933-9qiez0b4
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run 2025-01-31_10-09-27
+wandb: ⭐️ View project at https://wandb.ai/kaimikkelsen-mcgill-university/msst
+wandb: 🚀 View run at https://wandb.ai/kaimikkelsen-mcgill-university/msst/runs/9qiez0b4
+Optuna study started
+Use augmentation for training
+Dataset type: 1 Processes to use: 8 
+Collecting metadata for ['/train']
+Warning: no tracks found in folder '/train'. Please check it!
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+No tracks found for training. Check paths you provided!
+[1;34mwandb[0m: 🚀 View run [33m2025-01-31_10-09-27[0m at: [34mhttps://wandb.ai/kaimikkelsen-mcgill-university/msst/runs/9qiez0b4[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20250131_100933-9qiez0b4/logs[0m

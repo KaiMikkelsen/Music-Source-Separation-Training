@@ -1,0 +1,524 @@
+Running on Mac. Skipping dataset unzipping.
+Dataset path set to: ../data/MUSDB18HQ
+Running training script for model: htdemucs with dataset at ../data/MUSDB18HQ
+[I 2025-01-31 15:48:50,003] A new study created in memory with name: no-name-fa6db0cf-7d98-4b76-8371-9379e3b13bab
+wandb: Using wandb-core as the SDK backend. Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: kaimikkelsen (kaimikkelsen-mcgill-university). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /Users/kaimikkelsen/.netrc
+wandb: Tracking run with wandb version 0.18.5
+wandb: Run data is saved locally in /Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/wandb/run-20250131_154850-ytsfrmth
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run htdemucs_['../data/MUSDB18HQ/train']_2025-01-31
+wandb: ⭐️ View project at https://wandb.ai/kaimikkelsen-mcgill-university/msst
+wandb: 🚀 View run at https://wandb.ai/kaimikkelsen-mcgill-university/msst/runs/ytsfrmth
+Optuna study started
+Initializing wandb: Namespace(model_type='htdemucs', config_path='configs/config_musdb18_htdemucs.yaml', start_check_point='', results_path='checkpoints/htdemucs_2025-01-31_15-48-45', data_path=['../data/MUSDB18HQ/train'], dataset_type=1, valid_path=['../data/MUSDB18HQ/validation'], num_workers=4, pin_memory=False, seed=767, device_ids=[0], use_multistft_loss=True, use_mse_loss=True, use_l1_loss=True, wandb_key='689bb384f0f7e0a9dbe275c4ba6458d13265990d', pre_valid=False, metrics=['sdr', 'l1_freq', 'si_sdr', 'neg_log_wmse', 'aura_stft', 'aura_mrstft', 'bleedless', 'fullness'], metric_for_scheduler='sdr', train_lora=False, lora_checkpoint='', lr=1.9333639202301926e-06, ema_momentum=0.9003749461440728, loudness_min=0.8882148633969743, loudness_max=1.6929229407902695, mixup_probs=(0.1, 0.01), mp3_compression_bitrate_min=48, mp3_compression_bitrate_max=268, channels=32, depth=6, t_layers=8, t_hidden_scale=2.272044228229317, t_heads=10, kernel_size=6, stride=3, t_weight_decay=2.4435351545889132e-05, dropout=0.04848921072775214, norm_groups=2)
+Use augmentation for training
+Dataset type: 1 Processes to use: 8 
+Collecting metadata for ['../data/MUSDB18HQ/train']
+  0%|          | 0/80 [00:00<?, ?it/s]  1%|▏         | 1/80 [00:06<09:05,  6.91s/it] 10%|█         | 8/80 [00:07<00:46,  1.56it/s] 30%|███       | 24/80 [00:07<00:09,  6.01it/s] 55%|█████▌    | 44/80 [00:07<00:02, 13.43it/s] 84%|████████▍ | 67/80 [00:07<00:00, 24.65it/s]100%|██████████| 80/80 [00:07<00:00, 10.83it/s]
+Found tracks in dataset: 80
+CUDA is not available. Running on CPU.
+Loss options: {}
+Instruments: ['drums', 'bass', 'other', 'vocals']
+Metrics for training: ['sdr', 'l1_freq', 'si_sdr', 'neg_log_wmse', 'aura_stft', 'aura_mrstft', 'bleedless', 'fullness']. Metric for scheduler: sdr
+Patience: 2 Reduce factor: 0.95
+Batch size: 2 Grad accum steps: 1 Effective batch size: 2
+Dataset type: 1
+Optimizer: adam
+Train for: 5 epochs
+Train epoch: 0 Learning rate: 9e-05
+  0%|          | 0/1000 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 125, in _main
+    exitcode = _main(fd, parent_sentinel)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    prepare(preparation_data)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 269, in run_path
+    main_content = runpy.run_path(main_path,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 269, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 96, in _run_module_code
+    return _run_module_code(code, init_globals, run_name,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 96, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train_optuna.py", line 10, in <module>
+    import wandb
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/__init__.py", line 21, in <module>
+    _run_code(code, mod_globals, init_globals,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train_optuna.py", line 10, in <module>
+    import wandb
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/__init__.py", line 21, in <module>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 125, in _main
+Traceback (most recent call last):
+    prepare(preparation_data)
+  File "<string>", line 1, in <module>
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 236, in prepare
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    exitcode = _main(fd, parent_sentinel)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 125, in _main
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    prepare(preparation_data)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    exitcode = _main(fd, parent_sentinel)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 125, in _main
+    main_content = runpy.run_path(main_path,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 269, in run_path
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    prepare(preparation_data)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 236, in prepare
+    return _run_module_code(code, init_globals, run_name,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 96, in _run_module_code
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    _run_code(code, mod_globals, init_globals,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+    main_content = runpy.run_path(main_path,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 269, in run_path
+    exec(code, run_globals)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train_optuna.py", line 10, in <module>
+    main_content = runpy.run_path(main_path,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 269, in run_path
+    exitcode = _main(fd, parent_sentinel)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 125, in _main
+    return _run_module_code(code, init_globals, run_name,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 96, in _run_module_code
+    from wandb import sdk as wandb_sdk
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/__init__.py", line 25, in <module>
+    prepare(preparation_data)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 236, in prepare
+    return _run_module_code(code, init_globals, run_name,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 96, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+    from wandb import sdk as wandb_sdk
+    exec(code, run_globals)
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train_optuna.py", line 10, in <module>
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/__init__.py", line 25, in <module>
+    import wandb
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/__init__.py", line 21, in <module>
+    import wandb
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/__init__.py", line 21, in <module>
+    main_content = runpy.run_path(main_path,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 269, in run_path
+    from wandb import sdk as wandb_sdk
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/__init__.py", line 25, in <module>
+    from wandb import sdk as wandb_sdk
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/__init__.py", line 25, in <module>
+    return _run_module_code(code, init_globals, run_name,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 96, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+    main_content = runpy.run_path(main_path,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 269, in run_path
+    exec(code, run_globals)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train_optuna.py", line 10, in <module>
+    _run_code(code, mod_globals, init_globals,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+    import wandb
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/__init__.py", line 21, in <module>
+    from wandb import sdk as wandb_sdk
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/__init__.py", line 25, in <module>
+    from .artifacts.artifact import Artifact
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/artifacts/artifact.py", line 37, in <module>
+    from .artifacts.artifact import Artifact
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/artifacts/artifact.py", line 37, in <module>
+    return _run_module_code(code, init_globals, run_name,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 96, in _run_module_code
+    from .artifacts.artifact import Artifact
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/artifacts/artifact.py", line 37, in <module>
+    from .artifacts.artifact import Artifact
+    _run_code(code, mod_globals, init_globals,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/artifacts/artifact.py", line 37, in <module>
+    exec(code, run_globals)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train_optuna.py", line 10, in <module>
+    from .artifacts.artifact import Artifact
+    exec(code, run_globals)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train_optuna.py", line 10, in <module>
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/artifacts/artifact.py", line 37, in <module>
+    from wandb.apis.normalize import normalize_exceptions
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/apis/__init__.py", line 43, in <module>
+    from wandb.apis.normalize import normalize_exceptions
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/apis/__init__.py", line 43, in <module>
+    from wandb.apis.normalize import normalize_exceptions
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/apis/__init__.py", line 43, in <module>
+    import wandb
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/__init__.py", line 21, in <module>
+    from wandb.apis.normalize import normalize_exceptions
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/apis/__init__.py", line 43, in <module>
+    from wandb import sdk as wandb_sdk
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/__init__.py", line 25, in <module>
+    from wandb.apis.normalize import normalize_exceptions
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/apis/__init__.py", line 43, in <module>
+    from .internal import Api as InternalApi  # noqa
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/apis/internal.py", line 3, in <module>
+    from .internal import Api as InternalApi  # noqa
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/apis/internal.py", line 3, in <module>
+    from .artifacts.artifact import Artifact
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/artifacts/artifact.py", line 37, in <module>
+    import wandb
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/__init__.py", line 21, in <module>
+    from wandb.apis.normalize import normalize_exceptions
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/apis/__init__.py", line 43, in <module>
+    from .internal import Api as InternalApi  # noqa
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/apis/internal.py", line 3, in <module>
+    from wandb import sdk as wandb_sdk
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/__init__.py", line 25, in <module>
+    from .internal import Api as InternalApi  # noqa
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/apis/internal.py", line 3, in <module>
+    from .artifacts.artifact import Artifact
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/artifacts/artifact.py", line 37, in <module>
+    from wandb.apis.normalize import normalize_exceptions
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/apis/__init__.py", line 43, in <module>
+    from .internal import Api as InternalApi  # noqa
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/apis/internal.py", line 3, in <module>
+    from .internal import Api as InternalApi  # noqa
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/apis/internal.py", line 3, in <module>
+    from .internal import Api as InternalApi  # noqa
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/apis/internal.py", line 3, in <module>
+    from wandb.sdk.internal.internal_api import Api as InternalApi
+    from wandb.sdk.internal.internal_api import Api as InternalApi
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 56, in <module>
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 56, in <module>
+    from wandb.sdk.internal.internal_api import Api as InternalApi
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 56, in <module>
+    from wandb.sdk.internal.internal_api import Api as InternalApi
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 54, in <module>
+    from wandb.sdk.internal.internal_api import Api as InternalApi
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 56, in <module>
+    from wandb.sdk.internal.internal_api import Api as InternalApi
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 56, in <module>
+    from wandb.sdk.internal.internal_api import Api as InternalApi
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 56, in <module>
+    from ..lib.gitlib import GitRepo
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/lib/gitlib.py", line 10, in <module>
+    from ..lib import credentials, retry
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 17, in <module>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from ..lib.gitlib import GitRepo
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/lib/gitlib.py", line 10, in <module>
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    from ..lib.gitlib import GitRepo
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/lib/gitlib.py", line 10, in <module>
+    from ..lib.gitlib import GitRepo
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/lib/gitlib.py", line 10, in <module>
+    from ..lib.gitlib import GitRepo
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/lib/gitlib.py", line 10, in <module>
+    from git import (  # type: ignore
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/__init__.py", line 296, in <module>
+    from ..lib.gitlib import GitRepo
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/lib/gitlib.py", line 10, in <module>
+    from git import (  # type: ignore
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/__init__.py", line 296, in <module>
+    from git import (  # type: ignore
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/__init__.py", line 98, in <module>
+    from git import (  # type: ignore
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/__init__.py", line 296, in <module>
+    from gitdb.util import to_hex_sha
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/gitdb/__init__.py", line 37, in <module>
+    from git import (  # type: ignore
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/__init__.py", line 296, in <module>
+    refresh()
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/__init__.py", line 287, in refresh
+    refresh()
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/__init__.py", line 289, in refresh
+    exitcode = _main(fd, parent_sentinel)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 125, in _main
+    from git import (  # type: ignore
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/__init__.py", line 296, in <module>
+    from gitdb.db import *
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/gitdb/db/__init__.py", line 8, in <module>
+    prepare(preparation_data)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 236, in prepare
+    if not Git.refresh(path=path):
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/cmd.py", line 559, in refresh
+    refresh()
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/__init__.py", line 289, in refresh
+    from gitdb.db.mem import *
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+    if not FetchInfo.refresh():  # noqa: F405
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/remote.py", line 344, in refresh
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 674, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 577, in module_from_spec
+    main_content = runpy.run_path(main_path,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 269, in run_path
+  File "<frozen importlib._bootstrap>", line 549, in _init_module_attrs
+KeyboardInterrupt
+    return _run_module_code(code, init_globals, run_name,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 96, in _run_module_code
+    if not FetchInfo.refresh():  # noqa: F405
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/remote.py", line 344, in refresh
+    _run_code(code, mod_globals, init_globals,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+    refresh()
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/__init__.py", line 287, in refresh
+    from .mailbox import ContextCancelledError
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/lib/mailbox.py", line 10, in <module>
+    refresh()
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/__init__.py", line 289, in refresh
+    if not Git.refresh(path=path):
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/cmd.py", line 559, in refresh
+    exec(code, run_globals)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train_optuna.py", line 10, in <module>
+    if not FetchInfo.refresh():  # noqa: F405
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/remote.py", line 344, in refresh
+    import wandb
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/__init__.py", line 21, in <module>
+    from wandb import sdk as wandb_sdk
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/__init__.py", line 25, in <module>
+    if Git().version_info[:2] >= (2, 10):
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/cmd.py", line 975, in __getattribute__
+    from wandb.proto import wandb_internal_pb2 as pb
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/proto/wandb_internal_pb2.py", line 6, in <module>
+    from .artifacts.artifact import Artifact
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/artifacts/artifact.py", line 37, in <module>
+    cls().version()
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/cmd.py", line 986, in <lambda>
+    from wandb.proto.v3.wandb_internal_pb2 import *
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/proto/v3/wandb_internal_pb2.py", line 803, in <module>
+    from wandb.apis.normalize import normalize_exceptions
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/apis/__init__.py", line 43, in <module>
+    return super().__getattribute__(name)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/cmd.py", line 1023, in version_info
+    from .internal import Api as InternalApi  # noqa
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/apis/internal.py", line 3, in <module>
+    from wandb.sdk.internal.internal_api import Api as InternalApi
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 56, in <module>
+    from ..lib.gitlib import GitRepo
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/lib/gitlib.py", line 10, in <module>
+    from git import (  # type: ignore
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/__init__.py", line 296, in <module>
+    return lambda *args, **kwargs: self._call_process(name, *args, **kwargs)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/cmd.py", line 1598, in _call_process
+    if Git().version_info[:2] >= (2, 10):
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/cmd.py", line 975, in __getattribute__
+    return self.execute(call, **exec_kwargs)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/cmd.py", line 1343, in execute
+    if Git().version_info[:2] >= (2, 10):
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/cmd.py", line 975, in __getattribute__
+    return super().__getattribute__(name)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/cmd.py", line 1023, in version_info
+    return super().__getattribute__(name)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/cmd.py", line 1023, in version_info
+    cls().version()
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/cmd.py", line 986, in <lambda>
+    process_version = self._call_process("version")
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/cmd.py", line 1598, in _call_process
+    refresh()
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/__init__.py", line 287, in refresh
+    if not Git.refresh(path=path):
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/cmd.py", line 559, in refresh
+    return self.execute(call, **exec_kwargs)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/cmd.py", line 1343, in execute
+    cls().version()
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/cmd.py", line 986, in <lambda>
+    return lambda *args, **kwargs: self._call_process(name, *args, **kwargs)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/cmd.py", line 1598, in _call_process
+    stdout_value, stderr_value = communicate()
+  0%|          | 0/1000 [00:01<?, ?it/s]  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 1149, in communicate
+
+    stdout_value, stderr_value = communicate()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 1149, in communicate
+    process_version = self._call_process("version")
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/cmd.py", line 1598, in _call_process
+    process_version = self._call_process("version")
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/cmd.py", line 1598, in _call_process
+    return self.execute(call, **exec_kwargs)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/cmd.py", line 1343, in execute
+    return self.execute(call, **exec_kwargs)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/cmd.py", line 1262, in execute
+    return self.execute(call, **exec_kwargs)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/cmd.py", line 1262, in execute
+    stdout, stderr = self._communicate(input, endtime, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 2000, in _communicate
+    return lambda *args, **kwargs: self._call_process(name, *args, **kwargs)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/cmd.py", line 1598, in _call_process
+    stdout, stderr = self._communicate(input, endtime, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 2000, in _communicate
+    stdout_value, stderr_value = communicate()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 1149, in communicate
+    ready = selector.select(timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/selectors.py", line 416, in select
+    SyncRequest = _reflection.GeneratedProtocolMessageType('SyncRequest', (_message.Message,), {
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/google/protobuf/internal/python_message.py", line 150, in __new__
+    proc = safer_popen(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 966, in __init__
+    stdout, stderr = self._communicate(input, endtime, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 2000, in _communicate
+    return self.execute(call, **exec_kwargs)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/git/cmd.py", line 1262, in execute
+    _AddClassAttributesForNestedExtensions(descriptor, dictionary)
+KeyboardInterrupt
+    proc = safer_popen(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 966, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 1798, in _execute_child
+    ready = selector.select(timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/selectors.py", line 416, in select
+    proc = safer_popen(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 966, in __init__
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+    part = os.read(errpipe_read, 50000)
+KeyboardInterrupt
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 1775, in _execute_child
+    self.pid = _posixsubprocess.fork_exec(
+KeyboardInterrupt
+    ready = selector.select(timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 1798, in _execute_child
+    part = os.read(errpipe_read, 50000)
+KeyboardInterrupt
+[W 2025-01-31 15:49:01,998] Trial 0 failed with parameters: {'seed': 767, 'use_multistft_loss': True, 'use_mse_loss': True, 'use_l1_loss': True, 'batch_size': 32, 'grad_accum_steps': 4, 'lr': 1.9333639202301926e-06, 'optimizer': 'adamw', 'ema_momentum': 0.9003749461440728, 'patience': 5, 'reduce_factor': 0.48639105948234956, 'loudness_min': 0.8882148633969743, 'loudness_max': 1.6929229407902695, 'mixup_probs': (0.1, 0.01), 'mp3_bitrate_min': 48, 'mp3_bitrate_max': 268, 'channels': 32, 'depth': 6, 't_layers': 8, 't_hidden_scale': 2.272044228229317, 't_heads': 10, 'kernel_size': 6, 'stride': 3, 'weight_decay': 2.4435351545889132e-05, 'dropout': 0.04848921072775214, 'norm_groups': 2} because of the following error: KeyboardInterrupt().
+Traceback (most recent call last):
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train_optuna.py", line 722, in <lambda>
+    study.optimize(lambda trial: objective(trial, None), n_trials=100)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train_optuna.py", line 697, in objective
+    train_one_epoch(model, config, args, optimizer, device, device_ids, epoch,
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train_optuna.py", line 401, in train_one_epoch
+    for i, (batch, mixes) in enumerate(pbar):
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1448, in _next_data
+    idx, data = self._get_data()
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1412, in _get_data
+    success, data = self._try_get_data()
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1243, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/queues.py", line 113, in get
+    if not self._poll(timeout):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/connection.py", line 262, in poll
+    return self._poll(timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/connection.py", line 429, in _poll
+    r = wait([self], timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/connection.py", line 936, in wait
+    ready = selector.select(timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+[W 2025-01-31 15:49:02,017] Trial 0 failed with value None.
+Traceback (most recent call last):
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train_optuna.py", line 722, in <module>
+    study.optimize(lambda trial: objective(trial, None), n_trials=100)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train_optuna.py", line 722, in <lambda>
+    study.optimize(lambda trial: objective(trial, None), n_trials=100)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train_optuna.py", line 697, in objective
+    train_one_epoch(model, config, args, optimizer, device, device_ids, epoch,
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train_optuna.py", line 401, in train_one_epoch
+    for i, (batch, mixes) in enumerate(pbar):
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1448, in _next_data
+    idx, data = self._get_data()
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1412, in _get_data
+    success, data = self._try_get_data()
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1243, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/queues.py", line 113, in get
+    if not self._poll(timeout):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/connection.py", line 262, in poll
+    return self._poll(timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/connection.py", line 429, in _poll
+    r = wait([self], timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/connection.py", line 936, in wait
+    ready = selector.select(timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+Exception ignored in atexit callback:
+Traceback (most recent call last):
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/lib/service_connection.py", line 93, in teardown_atexit
+    conn.teardown(hooks.exit_code)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/lib/service_connection.py", line 216, in teardown
+    return self._proc.join()
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/service/service.py", line 241, in join
+    ret = self._internal_proc.wait()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 1204, in wait
+    return self._wait(timeout=timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 1938, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 1896, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/utils/data/_utils/signal_handling.py", line 73, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 52863) is killed by signal: Interrupt: 2. 
+Exception ignored in atexit callback: <function _exit_function at 0x108795750>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/popen_fork.py", line 43, in wait
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/utils/data/_utils/signal_handling.py", line 73, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 52868) is killed by signal: Terminated: 15. 

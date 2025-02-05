@@ -1,0 +1,11 @@
+Moving ../data/MUSDB18HQ.zip to  for faster access
+cp: ../data/MUSDB18HQ.zip: No such file or directory
+Unzipping dataset in /MUSDB18HQ
+mkdir: /MUSDB18HQ: Read-only file system
+created directory /MUSDB18HQ
+unzip:  cannot find or open /MUSDB18HQ.zip, /MUSDB18HQ.zip.zip or /MUSDB18HQ.zip.ZIP.
+Initial unzip failed. Attempting to repair the zip file.
+Fix archive (-FF) - salvage what can
+zip I/O error: Read-only file system
+zip error: Temporary file failure (/zijhthqH)
+Repair failed. The dataset zip file may be severely corrupted.

@@ -1,0 +1,46 @@
+Moving ../data/MOISESDB.zip to  for faster access
+cp: ../data/MOISESDB.zip: No such file or directory
+Dataset successfully unzipped.
+Dataset path set to: /MOISESDB/moisesdb/moisesdb_v0.1
+Running training script for model: htdemucs with dataset at /MOISESDB/moisesdb/moisesdb_v0.1
+wandb: Using wandb-core as the SDK backend. Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: kaimikkelsen (kaimikkelsen-mcgill-university). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /Users/kaimikkelsen/.netrc
+wandb: Tracking run with wandb version 0.18.5
+wandb: Run data is saved locally in /Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/wandb/run-20250130_164935-q9fwkw1m
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run dazzling-water-41
+wandb: ⭐️ View project at https://wandb.ai/kaimikkelsen-mcgill-university/msst
+wandb: 🚀 View run at https://wandb.ai/kaimikkelsen-mcgill-university/msst/runs/q9fwkw1m
+Traceback (most recent call last):
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train.py", line 572, in <module>
+    train_model(None)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train.py", line 519, in train_model
+    wandb_init(args, config, device_ids, batch_size)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train.py", line 138, in wandb_init
+    wandb.init(project='msst', config={'config': config, 'args': args, 'device_ids': device_ids, 'batch_size': batch_size })
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1256, in init
+    return wi.init()
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 910, in init
+    run._on_start()
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2503, in _on_start
+    self._backend.interface.publish_python_packages(working_set())
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 301, in publish_python_packages
+    for pkg in working_set:
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/util.py", line 1900, in working_set
+    yield InstalledDistribution(key=d.metadata["Name"], version=d.version)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/metadata/__init__.py", line 597, in version
+    return self.metadata['Version']
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/metadata/__init__.py", line 575, in metadata
+    self.read_text('METADATA')
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/metadata/__init__.py", line 889, in read_text
+    return self._path.joinpath(filename).read_text(encoding='utf-8')
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/pathlib.py", line 1132, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/pathlib.py", line 1117, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/codecs.py", line 309, in __init__
+    def __init__(self, errors='strict'):
+KeyboardInterrupt
+[1;34mwandb[0m: 🚀 View run [33mdazzling-water-41[0m at: [34mhttps://wandb.ai/kaimikkelsen-mcgill-university/msst/runs/q9fwkw1m[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20250130_164935-q9fwkw1m/logs[0m

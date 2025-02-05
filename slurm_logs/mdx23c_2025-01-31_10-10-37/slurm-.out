@@ -1,0 +1,22 @@
+Dataset path set to: 
+Running training script for model: mdx23c with dataset at 
+[I 2025-01-31 10:10:40,890] A new study created in memory with name: no-name-e5a689f5-4fe0-4133-9f3a-5c61b2dd6a68
+wandb: Using wandb-core as the SDK backend. Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: kaimikkelsen (kaimikkelsen-mcgill-university). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /Users/kaimikkelsen/.netrc
+wandb: Tracking run with wandb version 0.18.5
+wandb: Run data is saved locally in /Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/wandb/run-20250131_101042-d7vebrdy
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run 2025-01-31_10-10-37
+wandb: ⭐️ View project at https://wandb.ai/kaimikkelsen-mcgill-university/msst
+wandb: 🚀 View run at https://wandb.ai/kaimikkelsen-mcgill-university/msst/runs/d7vebrdy
+Optuna study started
+args list :  Namespace(model_type='mdx23c', config_path='configs/config_musdb18_mdx23c.yaml', start_check_point='', results_path='checkpoints/mdx23c_2025-01-31_10-10-37', data_path=['/train'], dataset_type=1, valid_path=['/validation'], num_workers=4, pin_memory=False, seed=586, device_ids=[0], use_multistft_loss=False, use_mse_loss=False, use_l1_loss=False, wandb_key='689bb384f0f7e0a9dbe275c4ba6458d13265990d', pre_valid=False, metrics=['sdr', 'l1_freq', 'si_sdr', 'neg_log_wmse', 'aura_stft', 'aura_mrstft', 'bleedless', 'fullness'], metric_for_scheduler='sdr', train_lora=False, lora_checkpoint='', wandb_name='2025-01-31_10-10-37', lr=7.716199120354003e-06, ema_momentum=0.9965250417507481, loudness_min=0.6280820144067879, loudness_max=1.9160317006837144, mixup_probs=(0.2, 0.02), mp3_compression_bitrate_min=44, mp3_compression_bitrate_max=282, channels=48, depth=6, t_layers=4, t_hidden_scale=6.62676307743791, t_heads=9, kernel_size=8, stride=5, t_weight_decay=2.5799991897620024e-05, dropout=0.13029425072599632, norm_groups=7)
+Use augmentation for training
+Dataset type: 1 Processes to use: 8 
+Collecting metadata for ['/train']
+Warning: no tracks found in folder '/train'. Please check it!
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+No tracks found for training. Check paths you provided!
+[1;34mwandb[0m: 🚀 View run [33m2025-01-31_10-10-37[0m at: [34mhttps://wandb.ai/kaimikkelsen-mcgill-university/msst/runs/d7vebrdy[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20250131_101042-d7vebrdy/logs[0m

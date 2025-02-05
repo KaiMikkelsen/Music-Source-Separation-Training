@@ -1,0 +1,33 @@
+Running on Mac. Skipping dataset unzipping.
+Dataset path set to: ../data/MUSDB18HQ
+Running training script for model: htdemucs with dataset at ../data/MUSDB18HQ
+[I 2025-02-05 10:25:22,029] A new study created in memory with name: no-name-a0b83f99-2731-454b-a479-e8ae1cdf6f99
+[W 2025-02-05 10:25:22,341] Trial 0 failed with parameters: {'seed': 7, 'use_multistft_loss': True, 'use_mse_loss': False, 'use_l1_loss': True, 'batch_size': 64, 'grad_accum_steps': 1, 'lr': 2.5476817787817836e-05, 'optimizer': 'rmsprop', 'ema_momentum': 0.9178515452503616, 'patience': 3, 'reduce_factor': 0.3789297496228313, 'loudness_min': 0.41993967727414294, 'loudness_max': 1.5039577820384127, 'mixup_probs': (0.2, 0.02), 'mp3_bitrate_min': 40, 'mp3_bitrate_max': 237, 'channels': 48, 'depth': 4, 't_layers': 2, 't_hidden_scale': 2.708407570491074, 't_heads': 9, 'kernel_size': 3, 'stride': 4, 'weight_decay': 2.9649556301948893e-06, 'dropout': 0.0432448734280001, 'norm_groups': 6} because of the following error: TypeError("wandb_init() got an unexpected keyword argument 'group'").
+Traceback (most recent call last):
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train_optuna.py", line 722, in <lambda>
+    study.optimize(lambda trial: objective(trial, None), n_trials=100)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train_optuna.py", line 651, in objective
+    wandb_init(args, config, device_ids, batch_size, group="Optuna")
+TypeError: wandb_init() got an unexpected keyword argument 'group'
+[W 2025-02-05 10:25:22,342] Trial 0 failed with value None.
+Optuna study started
+Traceback (most recent call last):
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train_optuna.py", line 722, in <module>
+    study.optimize(lambda trial: objective(trial, None), n_trials=100)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train_optuna.py", line 722, in <lambda>
+    study.optimize(lambda trial: objective(trial, None), n_trials=100)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train_optuna.py", line 651, in objective
+    wandb_init(args, config, device_ids, batch_size, group="Optuna")
+TypeError: wandb_init() got an unexpected keyword argument 'group'
