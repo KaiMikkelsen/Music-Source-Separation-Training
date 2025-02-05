@@ -1,0 +1,444 @@
+Dataset path set to: /MUSDB18HQ
+Running training script for model: mdx23c with dataset at ../data/MUSDB18HQ
+wandb: Using wandb-core as the SDK backend. Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: kaimikkelsen (kaimikkelsen-mcgill-university). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /Users/kaimikkelsen/.netrc
+wandb: Tracking run with wandb version 0.18.5
+wandb: Run data is saved locally in /Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/wandb/run-20250131_135435-m6xfusb0
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run mdx23c_['../data/MUSDB18HQ/train']_2025-01-31
+wandb: ⭐️ View project at https://wandb.ai/kaimikkelsen-mcgill-university/msst
+wandb: 🚀 View run at https://wandb.ai/kaimikkelsen-mcgill-university/msst/runs/m6xfusb0
+parsing args
+training model
+Use augmentation for training
+Dataset type: 1 Processes to use: 8 
+Collecting metadata for ['../data/MUSDB18HQ/train']
+  0%|          | 0/80 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 269, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 96, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train.py", line 23, in <module>
+    from utils import get_model_from_config
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/utils.py", line 11, in <module>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    import matplotlib.pyplot as plt
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/matplotlib/__init__.py", line 264, in <module>
+    exitcode = _main(fd, parent_sentinel)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 125, in _main
+    _check_versions()
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/matplotlib/__init__.py", line 249, in _check_versions
+    prepare(preparation_data)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    from . import ft2font  # noqa: F401
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+    main_content = runpy.run_path(main_path,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 269, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 96, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 674, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 577, in module_from_spec
+  File "<frozen importlib._bootstrap>", line 555, in _init_module_attrs
+KeyboardInterrupt
+    exec(code, run_globals)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train.py", line 23, in <module>
+    from utils import get_model_from_config
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/utils.py", line 11, in <module>
+    import matplotlib.pyplot as plt
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/matplotlib/__init__.py", line 161, in <module>
+    from . import _api, _version, cbook, _docstring, rcsetup
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/matplotlib/rcsetup.py", line 29, in <module>
+    from matplotlib._fontconfig_pattern import parse_fontconfig_pattern
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/matplotlib/_fontconfig_pattern.py", line 15, in <module>
+    from pyparsing import (
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/__init__.py", line 136, in <module>
+    from .helpers import *
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/helpers.py", line 644, in <module>
+    any_open_tag, any_close_tag = make_html_tags(
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/helpers.py", line 628, in make_html_tags
+    return _makeTags(tag_str, False)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/helpers.py", line 554, in _makeTags
+    tagAttrName = Word(alphas, alphanums + "_-:")
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/core.py", line 2938, in __init__
+    self.re = re.compile(self.reString)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/re.py", line 251, in compile
+    return _compile(pattern, flags)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/re.py", line 303, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_compile.py", line 764, in compile
+    p = sre_parse.parse(p, flags)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_parse.py", line 948, in parse
+    p = _parse_sub(source, state, flags & SRE_FLAG_VERBOSE, 0)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_parse.py", line 443, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_parse.py", line 605, in _parse
+    set = _uniq(set)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_parse.py", line 433, in _uniq
+    return list(dict.fromkeys(items))
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 269, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 96, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train.py", line 23, in <module>
+    from utils import get_model_from_config
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/utils.py", line 11, in <module>
+    import matplotlib.pyplot as plt
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/matplotlib/__init__.py", line 161, in <module>
+    from . import _api, _version, cbook, _docstring, rcsetup
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/matplotlib/rcsetup.py", line 29, in <module>
+    from matplotlib._fontconfig_pattern import parse_fontconfig_pattern
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/matplotlib/_fontconfig_pattern.py", line 15, in <module>
+    from pyparsing import (
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/__init__.py", line 136, in <module>
+    from .helpers import *
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/helpers.py", line 644, in <module>
+    any_open_tag, any_close_tag = make_html_tags(
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/helpers.py", line 628, in make_html_tags
+    return _makeTags(tag_str, False)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/helpers.py", line 554, in _makeTags
+    tagAttrName = Word(alphas, alphanums + "_-:")
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/core.py", line 2938, in __init__
+    self.re = re.compile(self.reString)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/re.py", line 251, in compile
+    return _compile(pattern, flags)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/re.py", line 303, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_compile.py", line 764, in compile
+    p = sre_parse.parse(p, flags)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_parse.py", line 948, in parse
+    p = _parse_sub(source, state, flags & SRE_FLAG_VERBOSE, 0)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_parse.py", line 443, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_parse.py", line 605, in _parse
+    set = _uniq(set)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_parse.py", line 433, in _uniq
+    return list(dict.fromkeys(items))
+KeyboardInterrupt
+  0%|          | 0/80 [00:08<?, ?it/s]
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 269, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 96, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train.py", line 23, in <module>
+    from utils import get_model_from_config
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/utils.py", line 11, in <module>
+    import matplotlib.pyplot as plt
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/matplotlib/__init__.py", line 161, in <module>
+    from . import _api, _version, cbook, _docstring, rcsetup
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/matplotlib/rcsetup.py", line 29, in <module>
+    from matplotlib._fontconfig_pattern import parse_fontconfig_pattern
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/matplotlib/_fontconfig_pattern.py", line 15, in <module>
+    from pyparsing import (
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/__init__.py", line 136, in <module>
+    from .helpers import *
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/helpers.py", line 644, in <module>
+    any_open_tag, any_close_tag = make_html_tags(
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/helpers.py", line 628, in make_html_tags
+    return _makeTags(tag_str, False)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/helpers.py", line 554, in _makeTags
+    tagAttrName = Word(alphas, alphanums + "_-:")
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/core.py", line 2938, in __init__
+    self.re = re.compile(self.reString)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/re.py", line 251, in compile
+    return _compile(pattern, flags)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/re.py", line 303, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_compile.py", line 764, in compile
+    p = sre_parse.parse(p, flags)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_parse.py", line 948, in parse
+    p = _parse_sub(source, state, flags & SRE_FLAG_VERBOSE, 0)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_parse.py", line 443, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_parse.py", line 605, in _parse
+    set = _uniq(set)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_parse.py", line 433, in _uniq
+    return list(dict.fromkeys(items))
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/pool.py", line 853, in next
+    item = self._items.popleft()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train.py", line 579, in <module>
+    train_model(None)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train.py", line 528, in train_model
+    train_loader = prepare_data(config, args, batch_size)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train.py", line 160, in prepare_data
+    trainset = MSSDataset(
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/dataset.py", line 98, in __init__
+    metadata = self.get_metadata()
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/dataset.py", line 179, in get_metadata
+    for track_path, track_length in track_iter:
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/pool.py", line 858, in next
+    self._cond.wait(timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/threading.py", line 320, in wait
+    waiter.acquire()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 269, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 96, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train.py", line 23, in <module>
+    from utils import get_model_from_config
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/utils.py", line 11, in <module>
+    import matplotlib.pyplot as plt
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/matplotlib/__init__.py", line 161, in <module>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from . import _api, _version, cbook, _docstring, rcsetup
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/matplotlib/rcsetup.py", line 29, in <module>
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    from matplotlib._fontconfig_pattern import parse_fontconfig_pattern
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/matplotlib/_fontconfig_pattern.py", line 15, in <module>
+    from pyparsing import (
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/__init__.py", line 136, in <module>
+    exitcode = _main(fd, parent_sentinel)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 125, in _main
+    from .helpers import *
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/helpers.py", line 644, in <module>
+    prepare(preparation_data)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 236, in prepare
+    any_open_tag, any_close_tag = make_html_tags(
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/helpers.py", line 628, in make_html_tags
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 269, in run_path
+    return _makeTags(tag_str, False)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/helpers.py", line 554, in _makeTags
+    tagAttrName = Word(alphas, alphanums + "_-:")
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/core.py", line 2938, in __init__
+    return _run_module_code(code, init_globals, run_name,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 96, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train.py", line 23, in <module>
+    from utils import get_model_from_config
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/utils.py", line 11, in <module>
+    import matplotlib.pyplot as plt
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/matplotlib/__init__.py", line 161, in <module>
+    from . import _api, _version, cbook, _docstring, rcsetup
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/matplotlib/rcsetup.py", line 29, in <module>
+    from matplotlib._fontconfig_pattern import parse_fontconfig_pattern
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/matplotlib/_fontconfig_pattern.py", line 15, in <module>
+    from pyparsing import (
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/__init__.py", line 136, in <module>
+    self.re = re.compile(self.reString)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/re.py", line 251, in compile
+    from .helpers import *
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/helpers.py", line 644, in <module>
+    return _compile(pattern, flags)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/re.py", line 303, in _compile
+    any_open_tag, any_close_tag = make_html_tags(
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/helpers.py", line 628, in make_html_tags
+    return _makeTags(tag_str, False)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/helpers.py", line 554, in _makeTags
+    p = sre_compile.compile(pattern, flags)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_compile.py", line 764, in compile
+    tagAttrName = Word(alphas, alphanums + "_-:")
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/core.py", line 2938, in __init__
+    p = sre_parse.parse(p, flags)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_parse.py", line 948, in parse
+    p = _parse_sub(source, state, flags & SRE_FLAG_VERBOSE, 0)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_parse.py", line 443, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+    self.re = re.compile(self.reString)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/re.py", line 251, in compile
+    return _compile(pattern, flags)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/re.py", line 303, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_compile.py", line 764, in compile
+    p = sre_parse.parse(p, flags)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_parse.py", line 948, in parse
+    p = _parse_sub(source, state, flags & SRE_FLAG_VERBOSE, 0)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_parse.py", line 443, in _parse_sub
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_parse.py", line 605, in _parse
+    set = _uniq(set)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_parse.py", line 433, in _uniq
+    return list(dict.fromkeys(items))
+KeyboardInterrupt
+    itemsappend(_parse(source, state, verbose, nested + 1,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_parse.py", line 605, in _parse
+    set = _uniq(set)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_parse.py", line 433, in _uniq
+    return list(dict.fromkeys(items))
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 269, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 96, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train.py", line 23, in <module>
+    from utils import get_model_from_config
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/utils.py", line 11, in <module>
+    import matplotlib.pyplot as plt
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/matplotlib/__init__.py", line 161, in <module>
+    from . import _api, _version, cbook, _docstring, rcsetup
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/matplotlib/rcsetup.py", line 29, in <module>
+    from matplotlib._fontconfig_pattern import parse_fontconfig_pattern
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/matplotlib/_fontconfig_pattern.py", line 15, in <module>
+    from pyparsing import (
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/__init__.py", line 136, in <module>
+    from .helpers import *
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/helpers.py", line 644, in <module>
+    any_open_tag, any_close_tag = make_html_tags(
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/helpers.py", line 628, in make_html_tags
+    return _makeTags(tag_str, False)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/helpers.py", line 554, in _makeTags
+    tagAttrName = Word(alphas, alphanums + "_-:")
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/core.py", line 2938, in __init__
+    self.re = re.compile(self.reString)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/re.py", line 251, in compile
+    return _compile(pattern, flags)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/re.py", line 303, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_compile.py", line 764, in compile
+    p = sre_parse.parse(p, flags)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_parse.py", line 948, in parse
+    p = _parse_sub(source, state, flags & SRE_FLAG_VERBOSE, 0)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_parse.py", line 443, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_parse.py", line 605, in _parse
+    set = _uniq(set)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_parse.py", line 433, in _uniq
+    return list(dict.fromkeys(items))
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 269, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 96, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train.py", line 23, in <module>
+    from utils import get_model_from_config
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/utils.py", line 11, in <module>
+    import matplotlib.pyplot as plt
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/matplotlib/__init__.py", line 161, in <module>
+    from . import _api, _version, cbook, _docstring, rcsetup
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/matplotlib/rcsetup.py", line 29, in <module>
+    from matplotlib._fontconfig_pattern import parse_fontconfig_pattern
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/matplotlib/_fontconfig_pattern.py", line 15, in <module>
+    from pyparsing import (
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/__init__.py", line 136, in <module>
+    from .helpers import *
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/helpers.py", line 644, in <module>
+    any_open_tag, any_close_tag = make_html_tags(
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/helpers.py", line 628, in make_html_tags
+    return _makeTags(tag_str, False)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/helpers.py", line 554, in _makeTags
+    tagAttrName = Word(alphas, alphanums + "_-:")
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/pyparsing/core.py", line 2938, in __init__
+    self.re = re.compile(self.reString)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/re.py", line 251, in compile
+    return _compile(pattern, flags)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/re.py", line 303, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_compile.py", line 764, in compile
+    p = sre_parse.parse(p, flags)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_parse.py", line 948, in parse
+    p = _parse_sub(source, state, flags & SRE_FLAG_VERBOSE, 0)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_parse.py", line 443, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_parse.py", line 605, in _parse
+    set = _uniq(set)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_parse.py", line 433, in _uniq
+    return list(dict.fromkeys(items))
+KeyboardInterrupt
+Exception ignored in atexit callback: 832245000
+Traceback (most recent call last):
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/lib/service_connection.py", line 93, in teardown_atexit
+    conn.teardown(hooks.exit_code)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/lib/service_connection.py", line 216, in teardown
+    return self._proc.join()
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/service/service.py", line 241, in join
+    ret = self._internal_proc.wait()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 1204, in wait
+    return self._wait(timeout=timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 1938, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 1896, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt: 
+[1;34mwandb[0m: 🚀 View run [33mmdx23c_['../data/MUSDB18HQ/train']_2025-01-31[0m at: [34mhttps://wandb.ai/kaimikkelsen-mcgill-university/msst/runs/m6xfusb0[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20250131_135435-m6xfusb0/logs[0m

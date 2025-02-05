@@ -1,0 +1,2 @@
+./run_mdx23c_training.sh: line 83: syntax error near unexpected token `fi'
+./run_mdx23c_training.sh: line 83: `fi'

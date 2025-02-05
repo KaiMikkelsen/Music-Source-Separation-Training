@@ -1,0 +1,11 @@
+Moving ../data/MOISESDB.zip to  for faster access
+cp: ../data/MOISESDB.zip: No such file or directory
+Unzipping dataset in /MOISESDB
+mkdir: /MOISESDB: Read-only file system
+created directory /MOISESDB
+unzip:  cannot find or open /MOISESDB.zip, /MOISESDB.zip.zip or /MOISESDB.zip.ZIP.
+Initial unzip failed. Attempting to repair the zip file.
+Fix archive (-FF) - salvage what can
+zip I/O error: Read-only file system
+zip error: Temporary file failure (/zitVaTMt)
+Repair failed. The dataset zip file may be severely corrupted.

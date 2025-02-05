@@ -1,0 +1,16 @@
+Running training script for model: htdemucs with dataset at ../data/MUSDB18HQ
+usage: train.py [-h] [--model_type MODEL_TYPE] [--config_path CONFIG_PATH]
+                [--start_check_point START_CHECK_POINT]
+                [--results_path RESULTS_PATH]
+                [--data_path DATA_PATH [DATA_PATH ...]]
+                [--dataset_type DATASET_TYPE]
+                [--valid_path VALID_PATH [VALID_PATH ...]]
+                [--num_workers NUM_WORKERS] [--pin_memory] [--seed SEED]
+                [--device_ids DEVICE_IDS [DEVICE_IDS ...]]
+                [--use_multistft_loss] [--use_mse_loss] [--use_l1_loss]
+                [--wandb_key WANDB_KEY] [--pre_valid]
+                [--metrics {sdr,l1_freq,si_sdr,neg_log_wmse,aura_stft,aura_mrstft,bleedless,fullness} [{sdr,l1_freq,si_sdr,neg_log_wmse,aura_stft,aura_mrstft,bleedless,fullness} ...]]
+                [--metric_for_scheduler {sdr,l1_freq,si_sdr,neg_log_wmse,aura_stft,aura_mrstft,bleedless,fullness}]
+                [--train_lora] [--lora_checkpoint LORA_CHECKPOINT]
+train.py: error: unrecognized arguments: --wandb_name 2025-01-31_13-47-47
+parsing args

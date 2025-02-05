@@ -1,0 +1,305 @@
+Running training script for model: htdemucs with dataset at ../data/MUSDB18HQ
+wandb: Using wandb-core as the SDK backend. Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: kaimikkelsen (kaimikkelsen-mcgill-university). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /Users/kaimikkelsen/.netrc
+wandb: Tracking run with wandb version 0.18.5
+wandb: Run data is saved locally in /Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/wandb/run-20250131_131537-xy8xqwvc
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run 2025-01-31_13-15-31
+wandb: ⭐️ View project at https://wandb.ai/kaimikkelsen-mcgill-university/msst
+wandb: 🚀 View run at https://wandb.ai/kaimikkelsen-mcgill-university/msst/runs/xy8xqwvc
+Use augmentation for training
+Dataset type: 1 Processes to use: 8 
+Collecting metadata for ['../data/MUSDB18HQ/train']
+  0%|          | 0/80 [00:00<?, ?it/s]  1%|▏         | 1/80 [00:09<12:33,  9.54s/it]  9%|▉         | 7/80 [00:09<01:14,  1.02s/it] 24%|██▍       | 19/80 [00:09<00:17,  3.42it/s] 36%|███▋      | 29/80 [00:09<00:08,  6.14it/s] 52%|█████▎    | 42/80 [00:10<00:03, 10.95it/s] 69%|██████▉   | 55/80 [00:10<00:01, 17.17it/s] 84%|████████▍ | 67/80 [00:10<00:00, 24.29it/s]100%|██████████| 80/80 [00:10<00:00,  7.78it/s]
+Found tracks in dataset: 80
+CUDA is not available. Running on CPU.
+Instruments: ['drums', 'bass', 'other', 'vocals']
+Metrics for training: ['sdr', 'l1_freq', 'si_sdr', 'neg_log_wmse', 'aura_stft', 'aura_mrstft', 'bleedless', 'fullness']. Metric for scheduler: sdr
+Patience: 2 Reduce factor: 0.95
+Batch size: 2 Grad accum steps: 1 Effective batch size: 2
+Dataset type: 1
+Optimizer: adam
+Train for: 1000 epochs
+Train epoch: 0 Learning rate: 9e-05
+  0%|          | 0/1000 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 125, in _main
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 125, in _main
+    exitcode = _main(fd, parent_sentinel)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 236, in prepare
+    exitcode = _main(fd, parent_sentinel)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 125, in _main
+    exitcode = _main(fd, parent_sentinel)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 125, in _main
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 125, in _main
+    prepare(preparation_data)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 236, in prepare
+    prepare(preparation_data)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 236, in prepare
+    prepare(preparation_data)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 236, in prepare
+    exitcode = _main(fd, parent_sentinel)
+    prepare(preparation_data)
+    prepare(preparation_data)
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 125, in _main
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 236, in prepare
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    prepare(preparation_data)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    exitcode = _main(fd, parent_sentinel)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 125, in _main
+    main_content = runpy.run_path(main_path,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 269, in run_path
+    main_content = runpy.run_path(main_path,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 269, in run_path
+    prepare(preparation_data)
+    main_content = runpy.run_path(main_path,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 236, in prepare
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 269, in run_path
+    main_content = runpy.run_path(main_path,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 269, in run_path
+    main_content = runpy.run_path(main_path,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 269, in run_path
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 236, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 96, in _run_module_code
+    return _run_module_code(code, init_globals, run_name,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 96, in _run_module_code
+    return _run_module_code(code, init_globals, run_name,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 96, in _run_module_code
+    return _run_module_code(code, init_globals, run_name,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 96, in _run_module_code
+    main_content = runpy.run_path(main_path,
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 269, in run_path
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/spawn.py", line 287, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 269, in run_path
+    _run_code(code, mod_globals, init_globals,
+    _run_code(code, mod_globals, init_globals,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+    _run_code(code, mod_globals, init_globals,
+    main_content = runpy.run_path(main_path,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 269, in run_path
+    return _run_module_code(code, init_globals, run_name,
+    return _run_module_code(code, init_globals, run_name,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 96, in _run_module_code
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 96, in _run_module_code
+    exec(code, run_globals)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train.py", line 9, in <module>
+    exec(code, run_globals)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train.py", line 9, in <module>
+    return _run_module_code(code, init_globals, run_name,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 96, in _run_module_code
+    import torch
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/__init__.py", line 2486, in <module>
+    _run_code(code, mod_globals, init_globals,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+    import torch
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/__init__.py", line 2486, in <module>
+    exec(code, run_globals)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train.py", line 9, in <module>
+    _run_code(code, mod_globals, init_globals,
+    return _run_module_code(code, init_globals, run_name,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 96, in _run_module_code
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train.py", line 9, in <module>
+    import torch
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/__init__.py", line 2486, in <module>
+    import torch
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/__init__.py", line 2665, in <module>
+    _run_code(code, mod_globals, init_globals,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train.py", line 9, in <module>
+    _run_code(code, mod_globals, init_globals,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train.py", line 10, in <module>
+    import torch
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/__init__.py", line 2665, in <module>
+    exec(code, run_globals)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train.py", line 9, in <module>
+    import wandb
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/__init__.py", line 21, in <module>
+    import torch
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/__init__.py", line 2486, in <module>
+    from torch import _meta_registrations
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/_meta_registrations.py", line 10, in <module>
+    from torch import _meta_registrations
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/_meta_registrations.py", line 6067, in <module>
+    from torch._decomp import (
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/_decomp/__init__.py", line 250, in <module>
+    exec(code, run_globals)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train.py", line 9, in <module>
+    from torch import _meta_registrations
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/_meta_registrations.py", line 6636, in <module>
+    from wandb import sdk as wandb_sdk
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/__init__.py", line 24, in <module>
+  0%|          | 0/1000 [00:02<?, ?it/s]    import torch
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/__init__.py", line 2486, in <module>
+    _import_device_backends()
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/__init__.py", line 2626, in _import_device_backends
+    import torch._refs
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/_refs/__init__.py", line 6544, in <module>
+    from torch import _meta_registrations
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/_meta_registrations.py", line 2926, in <module>
+
+    from . import wandb_helper as helper
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/wandb_helper.py", line 6, in <module>
+    _import_device_backends()
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/__init__.py", line 2626, in _import_device_backends
+    from .lib import config_util
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/sdk/lib/config_util.py", line 10, in <module>
+    from wandb.util import load_yaml
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/wandb/util.py", line 54, in <module>
+    def meta_adaptive_max_pool3d(input, output_size):
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/_meta_registrations.py", line 51, in wrapper
+    from importlib.metadata import entry_points
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/metadata/__init__.py", line 17, in <module>
+    pytree.tree_map_(register, op)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/utils/_pytree.py", line 997, in tree_map_
+    import requests
+  File "<frozen importlib._bootstrap>", line 1024, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 171, in __enter__
+  File "<frozen importlib._bootstrap>", line 110, in acquire
+    from importlib.metadata import entry_points
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+KeyboardInterrupt
+    from torch import _meta_registrations
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/_meta_registrations.py", line 1297, in <module>
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+    from . import _adapters, _meta
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/metadata/_adapters.py", line 5, in <module>
+  File "<frozen importlib._bootstrap>", line 674, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 576, in module_from_spec
+    def kthvalue_meta(self, k, dim=-1, keepdim=False):
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/_prims_common/wrappers.py", line 254, in _out_wrapper
+  File "<frozen importlib._bootstrap>", line 49, in _new_module
+KeyboardInterrupt
+    activate_meta()
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/_meta_registrations.py", line 6588, in activate_meta
+    def _linalg_slogdet(A: Tensor) -> Tuple[Tensor, Tensor, Tensor, Tensor]:
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/_prims_common/wrappers.py", line 254, in _out_wrapper
+    else NamedTuple(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/typing.py", line 2289, in NamedTuple
+    else NamedTuple(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/typing.py", line 2289, in NamedTuple
+    from ._text import FoldedCase
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+    tuple(map(func, *flat_args))  # consume and exhaust the iterable
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/_meta_registrations.py", line 49, in register
+    _add_op_to_registry(meta_table, op, fn)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/_decomp/__init__.py", line 56, in _add_op_to_registry
+    overloads.append(getattr(op, ol))
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/_ops.py", line 1076, in __getattr__
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+    import torch._refs.nn.functional
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 674, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1012, in get_code
+  File "<frozen importlib._bootstrap>", line 577, in module_from_spec
+  File "<frozen importlib._bootstrap>", line 541, in _init_module_attrs
+  File "<frozen importlib._bootstrap_external>", line 672, in _compile_bytecode
+KeyboardInterrupt
+KeyboardInterrupt
+    return _make_nmtuple(typename, fields, module=module)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/typing.py", line 2216, in _make_nmtuple
+    op_overload.py_impl(torch._C.DispatchKey.Meta)(fn)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/_ops.py", line 113, in inner
+    return _make_nmtuple(typename, fields, module=module)
+    if isinstance(k, torch._C._functorch.TransformType):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/typing.py", line 2216, in _make_nmtuple
+KeyboardInterrupt
+    nm_tpl = collections.namedtuple(name, fields,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/collections/__init__.py", line 414, in namedtuple
+    nm_tpl = collections.namedtuple(name, fields,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/collections/__init__.py", line 414, in namedtuple
+    __new__ = eval(code, namespace)
+  File "<string>", line 1, in <module>
+KeyboardInterrupt
+    op_dk_tags = torch._C._get_operation_overload(
+KeyboardInterrupt
+    __new__ = eval(code, namespace)
+  File "<string>", line 1, in <module>
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train.py", line 575, in <module>
+    train_model(None)
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train.py", line 568, in train_model
+    train_one_epoch(model, config, args, optimizer, device, device_ids, epoch,
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/train.py", line 394, in train_one_epoch
+    for i, (batch, mixes) in enumerate(pbar):
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1448, in _next_data
+    idx, data = self._get_data()
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1412, in _get_data
+    success, data = self._try_get_data()
+  File "/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1243, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/queues.py", line 113, in get
+    if not self._poll(timeout):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/connection.py", line 262, in poll
+    return self._poll(timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/connection.py", line 429, in _poll
+    r = wait([self], timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/connection.py", line 936, in wait
+    ready = selector.select(timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+./run_htdemucs_training.sh: line 51: 46145 Segmentation fault: 11  python train.py --model_type "$MODEL_TYPE" --config_path "$CONFIG_PATH" --results_path "$CHECKPOINTS_PATH" --data_path "$DATA_PATH/train" --valid_path "$DATA_PATH/validation" --metrics sdr l1_freq si_sdr neg_log_wmse aura_stft aura_mrstft bleedless fullness --num_workers 4 --start_check_point "" --device_ids 0 --wandb_key 689bb384f0f7e0a9dbe275c4ba6458d13265990d --wandb_name "$MODEL_TYPE_$DATASET_NAME_$CURRENT_DATE"
+/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 41 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
