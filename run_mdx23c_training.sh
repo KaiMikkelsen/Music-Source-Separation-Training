@@ -2,7 +2,7 @@
 #SBATCH --gres=gpu:v100l:1       # Request GPU "generic resources"
 #SBATCH --cpus-per-task=6        # Adjust based on your cluster's CPU/GPU ratio
 #SBATCH --mem=125G               # Adjust memory as needed
-#SBATCH --time=3-00:00           # DD-HH:MM:SS
+#SBATCH --time=4-00:00           # DD-HH:MM:SS
 #SBATCH --account=def-ichiro
 #SBATCH --output=slurm_logs/slurm-%j.out  # Use Job ID for unique output files
 
@@ -15,7 +15,7 @@ SCRATCH_DIR=$SLURM_TMPDIR
 # Variables
 MODEL_TYPE="mdx23c"
 CONFIG_PATH="configs/config_musdb18_mdx23c.yaml"
-DATASET_NAME="MOISESDB"
+DATASET_NAME="MUSDB18HQ"
 DATASET_ZIP="../data/$DATASET_NAME.zip" # Specify the dataset ZIP name
 SLURM_LOGS_PATH="slurm_logs/${MODEL_TYPE}_${CURRENT_DATE}"
 CHECKPOINTS_PATH="checkpoints/${MODEL_TYPE}_${CURRENT_DATE}"
@@ -40,13 +40,17 @@ if [ "$RUNNING_ON_MAC" = False ]; then
     DATASET_ZIP_BASENAME=$(basename "$DATASET_ZIP")
     SCRATCH_ZIP="$SCRATCH_DIR/$DATASET_ZIP_BASENAME"
 
-    mkdir -p "$SCRATCH_DIR/$DATASET_NAME"
-    echo "created directory $SCRATCH_DIR/$DATASET_NAME"
-    echo "Unzipping dataset in $SCRATCH_DIR/$DATASET_NAME"
+    # mkdir -p "$SCRATCH_DIR/$DATASET_NAME"
+    # echo "created directory $SCRATCH_DIR/$DATASET_NAME"
+    # echo "Unzipping dataset in $SCRATCH_DIR/$DATASET_NAME"
 
-    if ! unzip -q "$SCRATCH_ZIP" -d "$SCRATCH_DIR/$DATASET_NAME"; then
-        echo "zip failed"
-    fi
+    echo "unzipping $SCRATCH_DIR/$DATASET_NAME.zip"
+    unzip "$SCRATCH_DIR/$DATASET_NAME.zip" -d "$SCRATCH_DIR"
+
+
+    # if ! unzip -q "$SCRATCH_ZIP" -d "$SCRATCH_DIR/$DATASET_NAME"; then
+    #     echo "zip failed"
+    # fi
 
     echo "Dataset successfully unzipped."
 
@@ -70,9 +74,10 @@ fi
 
 echo "Dataset path set to: $DATA_PATH"
 
+
 echo "Running training script for model: $MODEL_TYPE with dataset at $DATA_PATH"
 
-python train.py \
+python train_optuna.py \
     --model_type "$MODEL_TYPE" \
     --config_path "$CONFIG_PATH" \
     --results_path "$CHECKPOINTS_PATH" \
@@ -83,3 +88,4 @@ python train.py \
     --start_check_point "" \
     --device_ids 0 \
     --wandb_key 689bb384f0f7e0a9dbe275c4ba6458d13265990d
+
