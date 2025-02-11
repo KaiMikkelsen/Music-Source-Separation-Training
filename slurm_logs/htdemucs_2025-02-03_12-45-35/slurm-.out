@@ -1,0 +1,3 @@
+Running on Mac. Skipping dataset unzipping.
+Dataset path set to: ../data/MUSDB18HQ
+Running training script for model: htdemucs with dataset at ../data/MUSDB18HQ

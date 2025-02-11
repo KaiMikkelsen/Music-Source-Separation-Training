@@ -1,0 +1,4 @@
+Running on Mac. Skipping dataset unzipping.
+Dataset path set to: ../data/MUSDB18HQ
+Running training script for model: htdemucs with dataset at ../data/MUSDB18HQ
+slurmstepd: error: *** JOB 53653023 ON cdr2586 CANCELLED AT 2025-02-03T13:08:50 ***

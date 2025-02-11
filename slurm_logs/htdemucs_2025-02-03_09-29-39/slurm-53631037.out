@@ -1,0 +1,6 @@
+Moving ../data/MUSDB18HQ.zip to /localscratch/kaim.53631037.0 for faster access
+unzipping /localscratch/kaim.53631037.0/MUSDB18HQ.zip/MUSDB18HQ.zip
+unzip:  cannot find or open /localscratch/kaim.53631037.0/MUSDB18HQ.zip/MUSDB18HQ.zip, /localscratch/kaim.53631037.0/MUSDB18HQ.zip/MUSDB18HQ.zip.zip or /localscratch/kaim.53631037.0/MUSDB18HQ.zip/MUSDB18HQ.zip.ZIP.
+Dataset successfully unzipped.
+Dataset path set to: /localscratch/kaim.53631037.0/MUSDB18HQ
+Running training script for model: htdemucs with dataset at /localscratch/kaim.53631037.0/MUSDB18HQ

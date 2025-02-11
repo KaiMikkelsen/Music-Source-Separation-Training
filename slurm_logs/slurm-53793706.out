@@ -1,0 +1,119 @@
+wandb: Starting wandb agent 🕵️
+2025-02-05 11:58:47,326 - wandb.wandb_agent - INFO - Running runs: []
+2025-02-05 11:58:47,470 - wandb.wandb_agent - INFO - Agent received command: run
+2025-02-05 11:58:47,470 - wandb.wandb_agent - INFO - Agent starting run with config:
+	args: 'l1_freq'
+	batch_size: 15
+	config: audio:\n  chunk_size: 485100\n  dim_f: 1024\n  dim_t: 801\n  hop_length: 441\n  min_mean_abs: 0.0\n  n_fft: 2048\n  num_channels: 2\n  sample_rate: 44100\naugmentations:\n  all:\n    channel_shuffle: 0.5\n    random_inverse: 0.1\n    random_polarity: 0.5\n  bass:\n    pitch_shift: 0.1\n    pitch_shift_max_semitones: 2\n    pitch_shift_min_semitones: -2\n    seven_band_parametric_eq: 0.1\n    seven_band_parametric_eq_max_gain_db: 6\n    seven_band_parametric_eq_min_gain_db: -3\n    tanh_distortion: 0.1\n    tanh_distortion_max: 0.5\n    tanh_distortion_min: 0.1\n  drums:\n    pitch_shift: 0.1\n    pitch_shift_max_semitones: 5\n    pitch_shift_min_semitones: -5\n    seven_band_parametric_eq: 0.1\n    seven_band_parametric_eq_max_gain_db: 9\n    seven_band_parametric_eq_min_gain_db: -9\n    tanh_distortion: 0.1\n    tanh_distortion_max: 0.6\n    tanh_distortion_min: 0.1\n  enable: true\n  loudness: true\n  loudness_max: 1.5\n  loudness_min: 0.5\n  mixup: true\n  mixup_loudness_max: 1.5\n  mixup_loudness_min: 0.5\n  mixup_probs: !!python/tuple\n  - 0.2\n  - 0.02\n  other:\n    gaussian_noise: 0.1\n    gaussian_noise_max_amplitude: 0.015\n    gaussian_noise_min_amplitude: 0.001\n    pitch_shift: 0.1\n    pitch_shift_max_semitones: 4\n    pitch_shift_min_semitones: -4\n    time_stretch: 0.1\n    time_stretch_max_rate: 1.25\n    time_stretch_min_rate: 0.8\n  vocals:\n    pitch_shift: 0.1\n    pitch_shift_max_semitones: 5\n    pitch_shift_min_semitones: -5\n    seven_band_parametric_eq: 0.1\n    seven_band_parametric_eq_max_gain_db: 9\n    seven_band_parametric_eq_min_gain_db: -9\n    tanh_distortion: 0.1\n    tanh_distortion_max: 0.7\n    tanh_distortion_min: 0.1\ninference:\n  batch_size: 2\n  dim_t: 1101\n  num_overlap: 2\nmodel:\n  attn_dropout: 0.1\n  depth: 8\n  dim: 384\n  dim_freqs_in: 1025\n  dim_head: 64\n  ff_dropout: 0.1\n  flash_attn: true\n  freq_transformer_depth: 1\n  freqs_per_bands: !!python/tuple\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 4\n  - 4\n  - 4\n  - 4\n  - 4\n  - 4\n  - 4\n  - 4\n  - 4\n  - 4\n  - 4\n  - 4\n  - 12\n  - 12\n  - 12\n  - 12\n  - 12\n  - 12\n  - 12\n  - 12\n  - 24\n  - 24\n  - 24\n  - 24\n  - 24\n  - 24\n  - 24\n  - 24\n  - 48\n  - 48\n  - 48\n  - 48\n  - 48\n  - 48\n  - 48\n  - 48\n  - 128\n  - 129\n  heads: 8\n  linear_transformer_depth: 0\n  mask_estimator_depth: 2\n  mlp_expansion_factor: 2\n  multi_stft_hop_size: 147\n  multi_stft_normalized: false\n  multi_stft_resolution_loss_weight: 1.0\n  multi_stft_resolutions_window_sizes: !!python/tuple\n  - 4096\n  - 2048\n  - 1024\n  - 512\n  - 256\n  num_stems: 4\n  skip_connection: false\n  stereo: true\n  stft_hop_length: 441\n  stft_n_fft: 2048\n  stft_normalized: false\n  stft_win_length: 2048\n  time_transformer_depth: 1\n  use_torch_checkpoint: false\ntraining:\n  augmentation: false\n  augmentation_loudness: true\n  augmentation_loudness_max: 1.5\n  augmentation_loudness_min: 0.5\n  augmentation_loudness_type: 1\n  augmentation_mix: true\n  augmentation_type: simple1\n  batch_size: 1\n  coarse_loss_clip: true\n  ema_momentum: 0.999\n  grad_clip: 0\n  gradient_accumulation_steps: 1\n  instruments:\n  - drums\n  - bass\n  - other\n  - vocals\n  lr: 1.0e-05\n  num_epochs: 1000\n  num_steps: 1000\n  optimizer: adam\n  other_fix: false\n  patience: 3\n  q: 0.95\n  reduce_factor: 0.95\n  target_instrument: null\n  use_amp: true\n  use_mp3_compress: false\n
+2025-02-05 11:58:47,493 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --args='l1_freq' --batch_size=15 "--config=audio:\n  chunk_size: 485100\n  dim_f: 1024\n  dim_t: 801\n  hop_length: 441\n  min_mean_abs: 0.0\n  n_fft: 2048\n  num_channels: 2\n  sample_rate: 44100\naugmentations:\n  all:\n    channel_shuffle: 0.5\n    random_inverse: 0.1\n    random_polarity: 0.5\n  bass:\n    pitch_shift: 0.1\n    pitch_shift_max_semitones: 2\n    pitch_shift_min_semitones: -2\n    seven_band_parametric_eq: 0.1\n    seven_band_parametric_eq_max_gain_db: 6\n    seven_band_parametric_eq_min_gain_db: -3\n    tanh_distortion: 0.1\n    tanh_distortion_max: 0.5\n    tanh_distortion_min: 0.1\n  drums:\n    pitch_shift: 0.1\n    pitch_shift_max_semitones: 5\n    pitch_shift_min_semitones: -5\n    seven_band_parametric_eq: 0.1\n    seven_band_parametric_eq_max_gain_db: 9\n    seven_band_parametric_eq_min_gain_db: -9\n    tanh_distortion: 0.1\n    tanh_distortion_max: 0.6\n    tanh_distortion_min: 0.1\n  enable: true\n  loudness: true\n  loudness_max: 1.5\n  loudness_min: 0.5\n  mixup: true\n  mixup_loudness_max: 1.5\n  mixup_loudness_min: 0.5\n  mixup_probs: !!python/tuple\n  - 0.2\n  - 0.02\n  other:\n    gaussian_noise: 0.1\n    gaussian_noise_max_amplitude: 0.015\n    gaussian_noise_min_amplitude: 0.001\n    pitch_shift: 0.1\n    pitch_shift_max_semitones: 4\n    pitch_shift_min_semitones: -4\n    time_stretch: 0.1\n    time_stretch_max_rate: 1.25\n    time_stretch_min_rate: 0.8\n  vocals:\n    pitch_shift: 0.1\n    pitch_shift_max_semitones: 5\n    pitch_shift_min_semitones: -5\n    seven_band_parametric_eq: 0.1\n    seven_band_parametric_eq_max_gain_db: 9\n    seven_band_parametric_eq_min_gain_db: -9\n    tanh_distortion: 0.1\n    tanh_distortion_max: 0.7\n    tanh_distortion_min: 0.1\ninference:\n  batch_size: 2\n  dim_t: 1101\n  num_overlap: 2\nmodel:\n  attn_dropout: 0.1\n  depth: 8\n  dim: 384\n  dim_freqs_in: 1025\n  dim_head: 64\n  ff_dropout: 0.1\n  flash_attn: true\n  freq_transformer_depth: 1\n  freqs_per_bands: !!python/tuple\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 2\n  - 4\n  - 4\n  - 4\n  - 4\n  - 4\n  - 4\n  - 4\n  - 4\n  - 4\n  - 4\n  - 4\n  - 4\n  - 12\n  - 12\n  - 12\n  - 12\n  - 12\n  - 12\n  - 12\n  - 12\n  - 24\n  - 24\n  - 24\n  - 24\n  - 24\n  - 24\n  - 24\n  - 24\n  - 48\n  - 48\n  - 48\n  - 48\n  - 48\n  - 48\n  - 48\n  - 48\n  - 128\n  - 129\n  heads: 8\n  linear_transformer_depth: 0\n  mask_estimator_depth: 2\n  mlp_expansion_factor: 2\n  multi_stft_hop_size: 147\n  multi_stft_normalized: false\n  multi_stft_resolution_loss_weight: 1.0\n  multi_stft_resolutions_window_sizes: !!python/tuple\n  - 4096\n  - 2048\n  - 1024\n  - 512\n  - 256\n  num_stems: 4\n  skip_connection: false\n  stereo: true\n  stft_hop_length: 441\n  stft_n_fft: 2048\n  stft_normalized: false\n  stft_win_length: 2048\n  time_transformer_depth: 1\n  use_torch_checkpoint: false\ntraining:\n  augmentation: false\n  augmentation_loudness: true\n  augmentation_loudness_max: 1.5\n  augmentation_loudness_min: 0.5\n  augmentation_loudness_type: 1\n  augmentation_mix: true\n  augmentation_type: simple1\n  batch_size: 1\n  coarse_loss_clip: true\n  ema_momentum: 0.999\n  grad_clip: 0\n  gradient_accumulation_steps: 1\n  instruments:\n  - drums\n  - bass\n  - other\n  - vocals\n  lr: 1.0e-05\n  num_epochs: 1000\n  num_steps: 1000\n  optimizer: adam\n  other_fix: false\n  patience: 3\n  q: 0.95\n  reduce_factor: 0.95\n  target_instrument: null\n  use_amp: true\n  use_mp3_compress: false\n"
+2025-02-05 11:58:52,524 - wandb.wandb_agent - INFO - Running runs: ['cydgnrtd']
+usage: train.py [-h] [--model_type MODEL_TYPE] [--config_path CONFIG_PATH]
+                [--start_check_point START_CHECK_POINT]
+                [--results_path RESULTS_PATH]
+                [--data_path DATA_PATH [DATA_PATH ...]]
+                [--dataset_type DATASET_TYPE]
+                [--valid_path VALID_PATH [VALID_PATH ...]]
+                [--num_workers NUM_WORKERS] [--pin_memory] [--seed SEED]
+                [--device_ids DEVICE_IDS [DEVICE_IDS ...]]
+                [--use_multistft_loss] [--use_mse_loss] [--use_l1_loss]
+                [--wandb_key WANDB_KEY] [--pre_valid]
+                [--metrics {sdr,l1_freq,si_sdr,neg_log_wmse,aura_stft,aura_mrstft,bleedless,fullness} [{sdr,l1_freq,si_sdr,neg_log_wmse,aura_stft,aura_mrstft,bleedless,fullness} ...]]
+                [--metric_for_scheduler {sdr,l1_freq,si_sdr,neg_log_wmse,aura_stft,aura_mrstft,bleedless,fullness}]
+                [--train_lora] [--lora_checkpoint LORA_CHECKPOINT]
+train.py: error: unrecognized arguments: --args='l1_freq' --batch_size=15
+parsing args
+2025-02-05 11:59:53,772 - wandb.wandb_agent - INFO - Cleaning up finished run: cydgnrtd
+2025-02-05 11:59:54,367 - wandb.wandb_agent - INFO - Agent received command: run
+2025-02-05 11:59:54,367 - wandb.wandb_agent - INFO - Agent starting run with config:
+	args: 'bleedless'
+	batch_size: 1
+	config: 'seven_band_parametric_eq_min_gain_db': -3
+2025-02-05 11:59:54,385 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --args='bleedless' --batch_size=1 "--config='seven_band_parametric_eq_min_gain_db': -3"
+2025-02-05 11:59:59,415 - wandb.wandb_agent - INFO - Running runs: ['n47932an']
+usage: train.py [-h] [--model_type MODEL_TYPE] [--config_path CONFIG_PATH]
+                [--start_check_point START_CHECK_POINT]
+                [--results_path RESULTS_PATH]
+                [--data_path DATA_PATH [DATA_PATH ...]]
+                [--dataset_type DATASET_TYPE]
+                [--valid_path VALID_PATH [VALID_PATH ...]]
+                [--num_workers NUM_WORKERS] [--pin_memory] [--seed SEED]
+                [--device_ids DEVICE_IDS [DEVICE_IDS ...]]
+                [--use_multistft_loss] [--use_mse_loss] [--use_l1_loss]
+                [--wandb_key WANDB_KEY] [--pre_valid]
+                [--metrics {sdr,l1_freq,si_sdr,neg_log_wmse,aura_stft,aura_mrstft,bleedless,fullness} [{sdr,l1_freq,si_sdr,neg_log_wmse,aura_stft,aura_mrstft,bleedless,fullness} ...]]
+                [--metric_for_scheduler {sdr,l1_freq,si_sdr,neg_log_wmse,aura_stft,aura_mrstft,bleedless,fullness}]
+                [--train_lora] [--lora_checkpoint LORA_CHECKPOINT]
+train.py: error: unrecognized arguments: --args='bleedless' --batch_size=1
+parsing args
+2025-02-05 12:00:04,509 - wandb.wandb_agent - INFO - Cleaning up finished run: n47932an
+2025-02-05 12:00:04,847 - wandb.wandb_agent - INFO - Agent received command: run
+2025-02-05 12:00:04,847 - wandb.wandb_agent - INFO - Agent starting run with config:
+	args: Namespace(model_type='scnet'
+	batch_size: 3
+	config: 'shift': 1
+2025-02-05 12:00:04,864 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --args=Namespace(model_type='scnet' --batch_size=3 "--config='shift': 1"
+2025-02-05 12:00:09,894 - wandb.wandb_agent - INFO - Running runs: ['kk5vz25s']
+usage: train.py [-h] [--model_type MODEL_TYPE] [--config_path CONFIG_PATH]
+                [--start_check_point START_CHECK_POINT]
+                [--results_path RESULTS_PATH]
+                [--data_path DATA_PATH [DATA_PATH ...]]
+                [--dataset_type DATASET_TYPE]
+                [--valid_path VALID_PATH [VALID_PATH ...]]
+                [--num_workers NUM_WORKERS] [--pin_memory] [--seed SEED]
+                [--device_ids DEVICE_IDS [DEVICE_IDS ...]]
+                [--use_multistft_loss] [--use_mse_loss] [--use_l1_loss]
+                [--wandb_key WANDB_KEY] [--pre_valid]
+                [--metrics {sdr,l1_freq,si_sdr,neg_log_wmse,aura_stft,aura_mrstft,bleedless,fullness} [{sdr,l1_freq,si_sdr,neg_log_wmse,aura_stft,aura_mrstft,bleedless,fullness} ...]]
+                [--metric_for_scheduler {sdr,l1_freq,si_sdr,neg_log_wmse,aura_stft,aura_mrstft,bleedless,fullness}]
+                [--train_lora] [--lora_checkpoint LORA_CHECKPOINT]
+train.py: error: unrecognized arguments: --args=Namespace(model_type='scnet' --batch_size=3
+parsing args
+2025-02-05 12:00:14,991 - wandb.wandb_agent - INFO - Cleaning up finished run: kk5vz25s
+2025-02-05 12:00:15,238 - wandb.wandb_agent - INFO - Agent received command: run
+2025-02-05 12:00:15,238 - wandb.wandb_agent - INFO - Agent starting run with config:
+	args: metrics=['sdr'
+	batch_size: 4
+	config: 'seven_band_parametric_eq_max_gain_db': 6
+2025-02-05 12:00:15,241 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --args=metrics=['sdr' --batch_size=4 "--config='seven_band_parametric_eq_max_gain_db': 6"
+2025-02-05 12:00:20,271 - wandb.wandb_agent - INFO - Running runs: ['kq5p7ic5']
+usage: train.py [-h] [--model_type MODEL_TYPE] [--config_path CONFIG_PATH]
+                [--start_check_point START_CHECK_POINT]
+                [--results_path RESULTS_PATH]
+                [--data_path DATA_PATH [DATA_PATH ...]]
+                [--dataset_type DATASET_TYPE]
+                [--valid_path VALID_PATH [VALID_PATH ...]]
+                [--num_workers NUM_WORKERS] [--pin_memory] [--seed SEED]
+                [--device_ids DEVICE_IDS [DEVICE_IDS ...]]
+                [--use_multistft_loss] [--use_mse_loss] [--use_l1_loss]
+                [--wandb_key WANDB_KEY] [--pre_valid]
+                [--metrics {sdr,l1_freq,si_sdr,neg_log_wmse,aura_stft,aura_mrstft,bleedless,fullness} [{sdr,l1_freq,si_sdr,neg_log_wmse,aura_stft,aura_mrstft,bleedless,fullness} ...]]
+                [--metric_for_scheduler {sdr,l1_freq,si_sdr,neg_log_wmse,aura_stft,aura_mrstft,bleedless,fullness}]
+                [--train_lora] [--lora_checkpoint LORA_CHECKPOINT]
+train.py: error: unrecognized arguments: --args=metrics=['sdr' --batch_size=4
+parsing args
+2025-02-05 12:00:25,377 - wandb.wandb_agent - INFO - Cleaning up finished run: kq5p7ic5
+2025-02-05 12:00:25,686 - wandb.wandb_agent - INFO - Agent received command: run
+2025-02-05 12:00:25,686 - wandb.wandb_agent - INFO - Agent starting run with config:
+	args: pre_valid=False
+	batch_size: 19
+	config: {'audio': {'chunk_size': 485100
+2025-02-05 12:00:25,689 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python train.py --args=pre_valid=False --batch_size=19 "--config={'audio': {'chunk_size': 485100"
+2025-02-05 12:00:30,717 - wandb.wandb_agent - INFO - Running runs: ['len8vpdv']
+usage: train.py [-h] [--model_type MODEL_TYPE] [--config_path CONFIG_PATH]
+                [--start_check_point START_CHECK_POINT]
+                [--results_path RESULTS_PATH]
+                [--data_path DATA_PATH [DATA_PATH ...]]
+                [--dataset_type DATASET_TYPE]
+                [--valid_path VALID_PATH [VALID_PATH ...]]
+                [--num_workers NUM_WORKERS] [--pin_memory] [--seed SEED]
+                [--device_ids DEVICE_IDS [DEVICE_IDS ...]]
+                [--use_multistft_loss] [--use_mse_loss] [--use_l1_loss]
+                [--wandb_key WANDB_KEY] [--pre_valid]
+                [--metrics {sdr,l1_freq,si_sdr,neg_log_wmse,aura_stft,aura_mrstft,bleedless,fullness} [{sdr,l1_freq,si_sdr,neg_log_wmse,aura_stft,aura_mrstft,bleedless,fullness} ...]]
+                [--metric_for_scheduler {sdr,l1_freq,si_sdr,neg_log_wmse,aura_stft,aura_mrstft,bleedless,fullness}]
+                [--train_lora] [--lora_checkpoint LORA_CHECKPOINT]
+train.py: error: unrecognized arguments: --args=pre_valid=False --batch_size=19
+parsing args
+2025-02-05 12:00:35,826 - wandb.wandb_agent - ERROR - Detected 5 failed runs in a row, shutting down.
+2025-02-05 12:00:35,826 - wandb.wandb_agent - INFO - To change this value set WANDB_AGENT_MAX_INITIAL_FAILURES=val
+wandb: Terminating and syncing runs. Press ctrl-c to kill.
