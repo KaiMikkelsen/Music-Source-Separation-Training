@@ -1,0 +1,4 @@
+Moving ../data/MUSDB18HQ.zip to /localscratch/kaim.53628224.0 for faster access
+Unzipping dataset in /localscratch/kaim.53628224.0
+MUSDB18HQ/train/Leaf - Come Around/other.wav:  write error (disk full?).  Continue? (y/n/^C) MUSDB18HQ/train/Leaf - Come Around/other.wav  bad CRC b1e490b6  (should be 47aef03e)
+MUSDB18HQ/train/Leaf - Come Around/drums.wav:  write error (disk full?).  Continue? (y/n/^C) 

@@ -1,0 +1,8 @@
+Moving ../data/MUSDB18HQ.zip to /localscratch/kaim.53631037.0 for faster access
+unzipping /localscratch/kaim.53631037.0/MUSDB18HQ.zip
+Archive:  /localscratch/kaim.53631037.0/MUSDB18HQ.zip
+checkdir:  cannot create extraction directory: /localscratch/kaim.53631037.0/MUSDB18HQ.zip
+           File exists
+Dataset successfully unzipped.
+Dataset path set to: /localscratch/kaim.53631037.0/MUSDB18HQ
+Running training script for model: htdemucs with dataset at /localscratch/kaim.53631037.0/MUSDB18HQ
