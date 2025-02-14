@@ -14,15 +14,17 @@ SCRATCH_DIR=$SLURM_TMPDIR
 
 # Variables
 MODEL_TYPE="htdemucs"
-CONFIG_PATH="configs/config_musdb18_htdemucs.yaml"
+CONFIG_PATH="configs/optimized_configs/config_musdb18_htdemucs.yaml"
 DATASET_NAME="MUSDB18HQ"
 DATASET_ZIP="../data/$DATASET_NAME.zip" # Specify the dataset ZIP name
 SLURM_LOGS_PATH="slurm_logs/${MODEL_TYPE}_${CURRENT_DATE}"
-CHECKPOINTS_PATH="checkpoints/${MODEL_TYPE}_${CURRENT_DATE}"
+CHECKPOINTS_PATH="~/scratch/checkpoints/${MODEL_TYPE}_${CURRENT_DATE}"
 
 # Create necessary directories
 #mkdir -p "$SCRATCH_DIR"
 mkdir -p "$SLURM_LOGS_PATH"
+
+mkdir -p "$CHECKPOINTS_PATH"
 
 # Redirect SLURM output dynamically
 exec > >(tee -a "$SLURM_LOGS_PATH/slurm-${SLURM_JOB_ID}.out") 2>&1
@@ -77,7 +79,7 @@ echo "Dataset path set to: $DATA_PATH"
 
 echo "Running training script for model: $MODEL_TYPE with dataset at $DATA_PATH"
 
-python train_optuna.py \
+python train.py \
     --model_type "$MODEL_TYPE" \
     --config_path "$CONFIG_PATH" \
     --results_path "$CHECKPOINTS_PATH" \
