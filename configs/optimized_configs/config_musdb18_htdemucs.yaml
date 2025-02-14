@@ -6,7 +6,7 @@ audio:
   hop_length: 1024
 
 training:
-  batch_size: 2
+  batch_size: 32
   gradient_accumulation_steps: 4
   grad_clip: 0
   segment: 11
@@ -16,8 +16,8 @@ training:
   normalize: true
   instruments: ['drums', 'bass', 'other', 'vocals']
   target_instrument: null
-  num_epochs: 7
-  num_steps: 500
+  num_epochs: 1000
+  num_steps: 1000
   optimizer: adamw
   lr: 1.80504892971876e-06
   patience: 6
