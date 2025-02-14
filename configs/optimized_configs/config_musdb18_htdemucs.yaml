@@ -1,0 +1,246 @@
+# taken from https://github.com/ZFTurbo/Music-Source-Separation-Training/blob/main/docs/pretrained_models.md
+
+audio:
+  chunk_size: 485100 # samplerate * segment
+  min_mean_abs: 0.001
+  hop_length: 1024
+
+training:
+  batch_size: 2
+  gradient_accumulation_steps: 4
+  grad_clip: 0
+  segment: 11
+  shift: 1
+  samplerate: 44100
+  channels: 2
+  normalize: true
+  instruments: ['drums', 'bass', 'other', 'vocals']
+  target_instrument: null
+  num_epochs: 7
+  num_steps: 500
+  optimizer: adamw
+  lr: 1.80504892971876e-06
+  patience: 6
+  reduce_factor: 0.4542863469427565
+  q: 0.95
+  coarse_loss_clip: true
+  ema_momentum: 0.9225736193316697
+  other_fix: false # it's needed for checking on multisong dataset if other is actually instrumental
+  use_amp: true # enable or disable usage of mixed precision (float16) - usually it must be true
+
+augmentations:
+  enable: true # enable or disable all augmentations (to fast disable if needed)
+  loudness: true # randomly change loudness of each stem on the range (loudness_min; loudness_max)
+  loudness_min: 0.3333676166964341
+  loudness_max: 1.3743779445490638
+  mixup: true # mix several stems of same type with some probability (only works for dataset types: 1, 2, 3)
+  mixup_probs: !!python/tuple # 2 additional stems of the same type (1st with prob 0.2, 2nd with prob 0.02)
+    - 0.1
+    - 0.01
+  mixup_loudness_min: 0.5
+  mixup_loudness_max: 1.5
+
+  # apply mp3 compression to mixture only (emulate downloading mp3 from internet)
+  mp3_compression_on_mixture: 0.01
+  mp3_compression_on_mixture_bitrate_min: 32
+  mp3_compression_on_mixture_bitrate_max: 320
+  mp3_compression_on_mixture_backend: "lameenc"
+
+  all:
+    channel_shuffle: 0.5 # Set 0 or lower to disable
+    random_inverse: 0.1 # inverse track (better lower probability)
+    random_polarity: 0.5 # polarity change (multiply waveform to -1)
+    mp3_compression: 0.01
+    mp3_compression_min_bitrate: 53
+    mp3_compression_max_bitrate: 275
+    mp3_compression_backend: "lameenc"
+
+    # pedalboard reverb block
+    pedalboard_reverb: 0.01
+    pedalboard_reverb_room_size_min: 0.1
+    pedalboard_reverb_room_size_max: 0.9
+    pedalboard_reverb_damping_min: 0.1
+    pedalboard_reverb_damping_max: 0.9
+    pedalboard_reverb_wet_level_min: 0.1
+    pedalboard_reverb_wet_level_max: 0.9
+    pedalboard_reverb_dry_level_min: 0.1
+    pedalboard_reverb_dry_level_max: 0.9
+    pedalboard_reverb_width_min: 0.9
+    pedalboard_reverb_width_max: 1.0
+
+    # pedalboard chorus block
+    pedalboard_chorus: 0.01
+    pedalboard_chorus_rate_hz_min: 1.0
+    pedalboard_chorus_rate_hz_max: 7.0
+    pedalboard_chorus_depth_min: 0.25
+    pedalboard_chorus_depth_max: 0.95
+    pedalboard_chorus_centre_delay_ms_min: 3
+    pedalboard_chorus_centre_delay_ms_max: 10
+    pedalboard_chorus_feedback_min: 0.0
+    pedalboard_chorus_feedback_max: 0.5
+    pedalboard_chorus_mix_min: 0.1
+    pedalboard_chorus_mix_max: 0.9
+
+    # pedalboard phazer block
+    pedalboard_phazer: 0.01
+    pedalboard_phazer_rate_hz_min: 1.0
+    pedalboard_phazer_rate_hz_max: 10.0
+    pedalboard_phazer_depth_min: 0.25
+    pedalboard_phazer_depth_max: 0.95
+    pedalboard_phazer_centre_frequency_hz_min: 200
+    pedalboard_phazer_centre_frequency_hz_max: 12000
+    pedalboard_phazer_feedback_min: 0.0
+    pedalboard_phazer_feedback_max: 0.5
+    pedalboard_phazer_mix_min: 0.1
+    pedalboard_phazer_mix_max: 0.9
+
+    # pedalboard distortion block
+    pedalboard_distortion: 0.01
+    pedalboard_distortion_drive_db_min: 1.0
+    pedalboard_distortion_drive_db_max: 25.0
+
+    # pedalboard pitch shift block
+    pedalboard_pitch_shift: 0.01
+    pedalboard_pitch_shift_semitones_min: -7
+    pedalboard_pitch_shift_semitones_max: 7
+
+    # pedalboard resample block
+    pedalboard_resample: 0.01
+    pedalboard_resample_target_sample_rate_min: 4000
+    pedalboard_resample_target_sample_rate_max: 44100
+
+    # pedalboard bitcrash block
+    pedalboard_bitcrash: 0.01
+    pedalboard_bitcrash_bit_depth_min: 4
+    pedalboard_bitcrash_bit_depth_max: 16
+
+    # pedalboard mp3 compressor block
+    pedalboard_mp3_compressor: 0.01
+    pedalboard_mp3_compressor_pedalboard_mp3_compressor_min: 0
+    pedalboard_mp3_compressor_pedalboard_mp3_compressor_max: 9.999
+
+  vocals:
+    pitch_shift: 0.1
+    pitch_shift_min_semitones: -5
+    pitch_shift_max_semitones: 5
+    seven_band_parametric_eq: 0.25
+    seven_band_parametric_eq_min_gain_db: -9
+    seven_band_parametric_eq_max_gain_db: 9
+    tanh_distortion: 0.1
+    tanh_distortion_min: 0.1
+    tanh_distortion_max: 0.7
+  bass:
+    pitch_shift: 0.1
+    pitch_shift_min_semitones: -2
+    pitch_shift_max_semitones: 2
+    seven_band_parametric_eq: 0.25
+    seven_band_parametric_eq_min_gain_db: -3
+    seven_band_parametric_eq_max_gain_db: 6
+    tanh_distortion: 0.2
+    tanh_distortion_min: 0.1
+    tanh_distortion_max: 0.5
+  drums:
+    pitch_shift: 0.33
+    pitch_shift_min_semitones: -5
+    pitch_shift_max_semitones: 5
+    seven_band_parametric_eq: 0.25
+    seven_band_parametric_eq_min_gain_db: -9
+    seven_band_parametric_eq_max_gain_db: 9
+    tanh_distortion: 0.33
+    tanh_distortion_min: 0.1
+    tanh_distortion_max: 0.6
+  other:
+    pitch_shift: 0.1
+    pitch_shift_min_semitones: -4
+    pitch_shift_max_semitones: 4
+    gaussian_noise: 0.1
+    gaussian_noise_min_amplitude: 0.001
+    gaussian_noise_max_amplitude: 0.015
+    time_stretch: 0.01
+    time_stretch_min_rate: 0.8
+    time_stretch_max_rate: 1.25
+
+inference:
+  num_overlap: 4
+  batch_size: 32
+
+model: htdemucs
+
+htdemucs:  # see demucs/htdemucs.py for a detailed description
+  # Channels
+  channels: 48
+  channels_time:
+  growth: 2
+  # STFT
+  num_subbands: 1
+  nfft: 4096
+  wiener_iters: 0
+  end_iters: 0
+  wiener_residual: false
+  cac: true
+  # Main structure
+  depth: 6
+  rewrite: true
+  # Frequency Branch
+  multi_freqs: []
+  multi_freqs_depth: 3
+  freq_emb: 0.2
+  emb_scale: 10
+  emb_smooth: true
+  # Convolutions
+  kernel_size: 7
+  stride: 2
+  time_stride: 2
+  context: 1
+  context_enc: 0
+  # normalization
+  norm_starts: 4
+  norm_groups: 5
+  # DConv residual branch
+  dconv_mode: 3
+  dconv_depth: 2
+  dconv_comp: 8
+  dconv_init: 1e-3
+  # Before the Transformer
+  bottom_channels: 512
+  # CrossTransformer
+  # ------ Common to all
+  # Regular parameters
+  t_layers: 3
+  t_hidden_scale: 3.29750674845959
+  t_heads: 5
+  t_dropout: 0.3837848313128083
+  t_layer_scale: True
+  t_gelu: True
+  # ------------- Positional Embedding
+  t_emb: sin
+  t_max_positions: 10000 # for the scaled embedding
+  t_max_period: 10000.0
+  t_weight_pos_embed: 1.0
+  t_cape_mean_normalize: True
+  t_cape_augment: True
+  t_cape_glob_loc_scale: [5000.0, 1.0, 1.4]
+  t_sin_random_shift: 0
+  # ------------- norm before a transformer encoder
+  t_norm_in: True
+  t_norm_in_group: False
+  # ------------- norm inside the encoder
+  t_group_norm: False
+  t_norm_first: True
+  t_norm_out: True
+  # ------------- optim
+  t_weight_decay: 0.0059153241635059505
+  t_lr:
+  # ------------- sparsity
+  t_sparse_self_attn: False
+  t_sparse_cross_attn: False
+  t_mask_type: diag
+  t_mask_random_seed: 42
+  t_sparse_attn_window: 400
+  t_global_window: 100
+  t_sparsity: 0.95
+  t_auto_sparsity: False
+  # Cross Encoder First (False)
+  t_cross_first: False
+  # Weight init
+  rescale: 0.1
