@@ -195,7 +195,7 @@ htdemucs:  # see demucs/htdemucs.py for a detailed description
   context_enc: 0
   # normalization
   norm_starts: 4
-  norm_groups: 5
+  norm_groups: 4
   # DConv residual branch
   dconv_mode: 3
   dconv_depth: 2
@@ -208,7 +208,7 @@ htdemucs:  # see demucs/htdemucs.py for a detailed description
   # Regular parameters
   t_layers: 3
   t_hidden_scale: 3.29750674845959
-  t_heads: 5
+  t_heads: 4
   t_dropout: 0.3837848313128083
   t_layer_scale: True
   t_gelu: True
