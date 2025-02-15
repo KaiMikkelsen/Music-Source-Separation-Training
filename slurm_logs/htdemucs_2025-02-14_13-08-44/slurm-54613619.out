@@ -1,0 +1,27 @@
+Moving ../data/MUSDB18HQ.zip to /localscratch/kaim.54613619.0 for faster access
+unzipping /localscratch/kaim.54613619.0/MUSDB18HQ.zip
+Archive:  /localscratch/kaim.54613619.0/MUSDB18HQ.zip
+replace /localscratch/kaim.54613619.0/MUSDB18HQ/train/Music Delta - Hendrix/other.wav? [y]es, [n]o, [A]ll, [N]one, [r]ename: Dataset successfully unzipped.
+Dataset path set to: /localscratch/kaim.54613619.0/MUSDB18HQ
+Running training script for model: htdemucs with dataset at /localscratch/kaim.54613619.0/MUSDB18HQ
+parsing args
+Traceback (most recent call last):
+  File "/project/6002780/kaim/Music-Source-Separation-Training/train.py", line 579, in <module>
+    train_model(None)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/train.py", line 520, in train_model
+    model, config = get_model_from_config(args.model_type, args.config_path)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/utils.py", line 87, in get_model_from_config
+    model = get_model(config)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/models/demucs4ht.py", line 710, in get_model
+    model = klass(**extra, **kw)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/demucs/states.py", line 146, in __init__
+    init(self, *args, **kwargs)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/models/demucs4ht.py", line 310, in __init__
+    enc = HEncLayer(
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/demucs/hdemucs.py", line 113, in __init__
+    self.norm1 = norm_fn(chout)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/demucs/hdemucs.py", line 93, in <lambda>
+    norm_fn = lambda d: nn.GroupNorm(norm_groups, d)  # noqa
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/nn/modules/normalization.py", line 292, in __init__
+    raise ValueError("num_channels must be divisible by num_groups")
+ValueError: num_channels must be divisible by num_groups
