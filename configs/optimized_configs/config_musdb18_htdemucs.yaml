@@ -14,7 +14,7 @@ training:
   samplerate: 44100
   channels: 2
   normalize: true
-  instruments: ['drums', 'bass', 'other', 'vocals']
+  instruments: ["drums", "bass", "other", "vocals"]
   target_instrument: null
   num_epochs: 1000
   num_steps: 1000
@@ -33,12 +33,13 @@ augmentations:
   loudness: true # randomly change loudness of each stem on the range (loudness_min; loudness_max)
   loudness_min: 0.5
   loudness_max: 1.5
-  # mixup: true # mix several stems of same type with some probability (only works for dataset types: 1, 2, 3)
-  # mixup_probs: !!python/tuple # 2 additional stems of the same type (1st with prob 0.2, 2nd with prob 0.02)
-  #   - 0.2
-  #   - 0.02
-  # mixup_loudness_min: 0.5
-  # mixup_loudness_max: 1.5
+  mixup: true # mix several stems of same type with some probability (only works for dataset types: 1, 2, 3)
+    # mixup_probs: !!python/tuple # 2 additional stems of the same type (1st with prob 0.2, 2nd with prob 0.02)
+#   - 0.1
+#   - 0.01
+  mixup_probs: [0.1, 0.01]  # Use a standard YAML list instead of !!python/tuple
+  mixup_loudness_min: 0.5
+  mixup_loudness_max: 1.5
 
   # apply mp3 compression to mixture only (emulate downloading mp3 from internet)
   mp3_compression_on_mixture: 0.01
@@ -166,7 +167,7 @@ inference:
 
 model: htdemucs
 
-htdemucs:  # see demucs/htdemucs.py for a detailed description
+htdemucs: # see demucs/htdemucs.py for a detailed description
   # Channels
   channels: 48
   channels_time:
