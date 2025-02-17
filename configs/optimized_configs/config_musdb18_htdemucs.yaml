@@ -6,8 +6,8 @@ audio:
   hop_length: 1024
 
 training:
-  batch_size: 2
-  gradient_accumulation_steps: 2
+  batch_size: 1
+  gradient_accumulation_steps: 1
   grad_clip: 0
   segment: 11
   shift: 1
