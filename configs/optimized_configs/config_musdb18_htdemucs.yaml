@@ -6,7 +6,7 @@ audio:
   hop_length: 1024
 
 training:
-  batch_size: 1
+  batch_size: 2
   gradient_accumulation_steps: 1
   grad_clip: 0
   segment: 11
@@ -33,11 +33,8 @@ augmentations:
   loudness: true # randomly change loudness of each stem on the range (loudness_min; loudness_max)
   loudness_min: 0.3333676166964341
   loudness_max: 1.3743779445490638
-  # mixup: true # mix several stems of same type with some probability (only works for dataset types: 1, 2, 3)
-  # mixup_probs: [0.1, 0.01]  # Use a standard YAML list instead of !!python/tuple
-  # mixup_probs: !!python/tuple # 2 additional stems of the same type (1st with prob 0.2, 2nd with prob 0.02)
-  #   - 0.1
-  #   - 0.01
+  mixup: true # mix several stems of same type with some probability (only works for dataset types: 1, 2, 3)
+  mixup_probs: [0.1, 0.01] 
 
   mixup_loudness_min: 0.5
   mixup_loudness_max: 1.5
@@ -164,7 +161,7 @@ augmentations:
 
 inference:
   num_overlap: 4
-  batch_size: 32
+  batch_size: 8
 
 model: htdemucs
 
@@ -181,7 +178,7 @@ htdemucs:  # see demucs/htdemucs.py for a detailed description
   wiener_residual: false
   cac: true
   # Main structure
-  depth: 6
+  depth: 4
   rewrite: true
   # Frequency Branch
   multi_freqs: []
@@ -190,8 +187,8 @@ htdemucs:  # see demucs/htdemucs.py for a detailed description
   emb_scale: 10
   emb_smooth: true
   # Convolutions
-  kernel_size: 7
-  stride: 2
+  kernel_size: 8
+  stride: 4
   time_stride: 2
   context: 1
   context_enc: 0
@@ -208,10 +205,10 @@ htdemucs:  # see demucs/htdemucs.py for a detailed description
   # CrossTransformer
   # ------ Common to all
   # Regular parameters
-  t_layers: 3
-  t_hidden_scale: 3.29750674845959
-  t_heads: 4
-  t_dropout: 0.3837848313128083
+  t_layers: 5
+  t_hidden_scale: 4.0
+  t_heads: 8
+  t_dropout: 0.0
   t_layer_scale: True
   t_gelu: True
   # ------------- Positional Embedding
@@ -231,7 +228,7 @@ htdemucs:  # see demucs/htdemucs.py for a detailed description
   t_norm_first: True
   t_norm_out: True
   # ------------- optim
-  t_weight_decay: 0.0059153241635059505
+  t_weight_decay: 0.0
   t_lr:
   # ------------- sparsity
   t_sparse_self_attn: False
