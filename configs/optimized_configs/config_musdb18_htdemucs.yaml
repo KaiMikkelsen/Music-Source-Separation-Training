@@ -31,13 +31,14 @@ training:
 augmentations:
   enable: true # enable or disable all augmentations (to fast disable if needed)
   loudness: true # randomly change loudness of each stem on the range (loudness_min; loudness_max)
-  loudness_min: 0.3333676166964341
-  loudness_max: 1.3743779445490638
-  mixup: true # mix several stems of same type with some probability (only works for dataset types: 1, 2, 3)
-  mixup_probs: [0.1, 0.01] 
-
-  mixup_loudness_min: 0.5
-  mixup_loudness_max: 1.5
+  loudness_min: 0.5
+  loudness_max: 1.5
+  # mixup: true # mix several stems of same type with some probability (only works for dataset types: 1, 2, 3)
+  # mixup_probs: !!python/tuple # 2 additional stems of the same type (1st with prob 0.2, 2nd with prob 0.02)
+  #   - 0.2
+  #   - 0.02
+  # mixup_loudness_min: 0.5
+  # mixup_loudness_max: 1.5
 
   # apply mp3 compression to mixture only (emulate downloading mp3 from internet)
   mp3_compression_on_mixture: 0.01
@@ -50,8 +51,8 @@ augmentations:
     random_inverse: 0.1 # inverse track (better lower probability)
     random_polarity: 0.5 # polarity change (multiply waveform to -1)
     mp3_compression: 0.01
-    mp3_compression_min_bitrate: 53
-    mp3_compression_max_bitrate: 275
+    mp3_compression_min_bitrate: 32
+    mp3_compression_max_bitrate: 320
     mp3_compression_backend: "lameenc"
 
     # pedalboard reverb block
@@ -178,7 +179,7 @@ htdemucs:  # see demucs/htdemucs.py for a detailed description
   wiener_residual: false
   cac: true
   # Main structure
-  depth: 6
+  depth: 4
   rewrite: true
   # Frequency Branch
   multi_freqs: []
@@ -187,8 +188,8 @@ htdemucs:  # see demucs/htdemucs.py for a detailed description
   emb_scale: 10
   emb_smooth: true
   # Convolutions
-  kernel_size: 7
-  stride: 2
+  kernel_size: 8
+  stride: 4
   time_stride: 2
   context: 1
   context_enc: 0
