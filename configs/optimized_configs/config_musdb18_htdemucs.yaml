@@ -188,7 +188,7 @@ htdemucs:  # see demucs/htdemucs.py for a detailed description
   emb_scale: 10
   emb_smooth: true
   # Convolutions
-  kernel_size: 7
+  kernel_size: 8
   stride: 2
   time_stride: 2
   context: 1
