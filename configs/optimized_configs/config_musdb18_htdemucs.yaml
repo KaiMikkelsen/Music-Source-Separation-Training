@@ -179,7 +179,7 @@ htdemucs:  # see demucs/htdemucs.py for a detailed description
   wiener_residual: false
   cac: true
   # Main structure
-  depth: 6
+  depth: 4
   rewrite: true
   # Frequency Branch
   multi_freqs: []
@@ -188,7 +188,7 @@ htdemucs:  # see demucs/htdemucs.py for a detailed description
   emb_scale: 10
   emb_smooth: true
   # Convolutions
-  kernel_size: 8
+  kernel_size: 7
   stride: 2
   time_stride: 2
   context: 1
