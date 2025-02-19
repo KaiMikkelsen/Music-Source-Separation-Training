@@ -1,0 +1,42 @@
+Dataset already exists in /localscratch/kaim.54829571.0, skipping copy.
+unzipping /localscratch/kaim.54829571.0/MUSDB18HQ.zip
+Archive:  /localscratch/kaim.54829571.0/MUSDB18HQ.zip
+replace /localscratch/kaim.54829571.0/MUSDB18HQ/train/Music Delta - Hendrix/other.wav? [y]es, [n]o, [A]ll, [N]one, [r]ename: Dataset successfully unzipped.
+Dataset path set to: /localscratch/kaim.54829571.0/MUSDB18HQ
+Running training script for model: htdemucs with dataset at /localscratch/kaim.54829571.0/MUSDB18HQ
+parsing args
+Traceback (most recent call last):
+  File "/project/6002780/kaim/Music-Source-Separation-Training/utils.py", line 45, in load_config
+    config = OmegaConf.load(config_path)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/omegaconf/omegaconf.py", line 188, in load
+    obj = yaml.load(f, Loader=get_yaml_loader())
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/yaml/constructor.py", line 51, in get_single_data
+    return self.construct_document(node)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/yaml/constructor.py", line 60, in construct_document
+    for dummy in generator:
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/yaml/constructor.py", line 413, in construct_yaml_map
+    value = self.construct_mapping(node)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/omegaconf/_utils.py", line 144, in construct_mapping
+    raise yaml.constructor.ConstructorError(
+yaml.constructor.ConstructorError: while constructing a mapping
+  in "/project/6002780/kaim/Music-Source-Separation-Training/configs/optimized_configs/config_musdb18_htdemucs.yaml", line 51, column 3
+found duplicate key pitch_shift
+  in "/project/6002780/kaim/Music-Source-Separation-Training/configs/optimized_configs/config_musdb18_htdemucs.yaml", line 134, column 3
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/project/6002780/kaim/Music-Source-Separation-Training/train.py", line 579, in <module>
+    train_model(None)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/train.py", line 520, in train_model
+    model, config = get_model_from_config(args.model_type, args.config_path)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/utils.py", line 80, in get_model_from_config
+    config = load_config(model_type, config_path)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/utils.py", line 52, in load_config
+    raise ValueError(f"Error loading configuration: {e}")
+ValueError: Error loading configuration: while constructing a mapping
+  in "/project/6002780/kaim/Music-Source-Separation-Training/configs/optimized_configs/config_musdb18_htdemucs.yaml", line 51, column 3
+found duplicate key pitch_shift
+  in "/project/6002780/kaim/Music-Source-Separation-Training/configs/optimized_configs/config_musdb18_htdemucs.yaml", line 134, column 3

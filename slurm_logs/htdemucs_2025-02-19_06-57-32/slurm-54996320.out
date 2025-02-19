@@ -1,0 +1,54 @@
+Dataset already exists in /localscratch/kaim.54996320.0, skipping copy.
+unzipping /localscratch/kaim.54996320.0/MUSDB18HQ.zip
+Archive:  /localscratch/kaim.54996320.0/MUSDB18HQ.zip
+replace /localscratch/kaim.54996320.0/MUSDB18HQ/train/Music Delta - Hendrix/other.wav? [y]es, [n]o, [A]ll, [N]one, [r]ename: Dataset successfully unzipped.
+Dataset path set to: /localscratch/kaim.54996320.0/MUSDB18HQ
+Running training script for model: htdemucs with dataset at /localscratch/kaim.54996320.0/MUSDB18HQ
+wandb: Using wandb-core as the SDK backend. Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: kaimikkelsen (kaimikkelsen-mcgill-university). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/kaim/.netrc
+wandb: Tracking run with wandb version 0.18.0
+wandb: Run data is saved locally in /project/6002780/kaim/Music-Source-Separation-Training/wandb/run-20250219_065811-cidbaa9k
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run htdemucs_['/localscratch/kaim.54996320.0/MUSDB18HQ/train']_2025-02-19
+wandb: ⭐️ View project at https://wandb.ai/kaimikkelsen-mcgill-university/msst
+wandb: 🚀 View run at https://wandb.ai/kaimikkelsen-mcgill-university/msst/runs/cidbaa9k
+parsing args
+training model
+Use augmentation for training
+Dataset type: 1 Processes to use: 32 
+Collecting metadata for ['/localscratch/kaim.54996320.0/MUSDB18HQ/train']
+  0%|          | 0/86 [00:00<?, ?it/s]  1%|          | 1/86 [00:23<33:40, 23.77s/it]  2%|▏         | 2/86 [00:24<14:12, 10.14s/it]  6%|▌         | 5/86 [00:25<04:06,  3.04s/it]  7%|▋         | 6/86 [00:25<03:05,  2.32s/it]  8%|▊         | 7/86 [00:26<02:45,  2.09s/it] 16%|█▋        | 14/86 [00:26<00:42,  1.71it/s] 22%|██▏       | 19/86 [00:27<00:25,  2.59it/s] 27%|██▋       | 23/86 [00:28<00:20,  3.10it/s] 36%|███▌      | 31/86 [00:28<00:10,  5.02it/s] 38%|███▊      | 33/86 [00:28<00:09,  5.56it/s] 42%|████▏     | 36/86 [00:29<00:07,  6.83it/s] 44%|████▍     | 38/86 [00:29<00:06,  7.45it/s] 50%|█████     | 43/86 [00:30<00:08,  5.22it/s]100%|██████████| 86/86 [00:30<00:00,  2.81it/s]
+Found tracks in dataset: 86
+Instruments: ['drums', 'bass', 'other', 'vocals']
+Metrics for training: ['sdr', 'l1_freq', 'si_sdr', 'neg_log_wmse', 'aura_stft', 'aura_mrstft', 'bleedless', 'fullness']. Metric for scheduler: sdr
+Patience: 6 Reduce factor: 0.4542863469427565
+Batch size: 1 Grad accum steps: 1 Effective batch size: 1
+Dataset type: 1
+Optimizer: adamw
+Train for: 1000 epochs
+Train epoch: 0 Learning rate: 1.80504892971876e-06
+  0%|          | 0/1000 [00:00<?, ?it/s]terminate called without an active exception
+  0%|          | 0/1000 [00:18<?, ?it/s]
+Traceback (most recent call last):
+  File "/project/6002780/kaim/Music-Source-Separation-Training/train.py", line 579, in <module>
+    train_model(None)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/train.py", line 572, in train_model
+    train_one_epoch(model, config, args, optimizer, device, device_ids, epoch,
+  File "/project/6002780/kaim/Music-Source-Separation-Training/train.py", line 412, in train_one_epoch
+    y_ = model(x)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/models/demucs4ht.py", line 638, in forward
+    x, pre = decode(x, skip, lengths.pop(-1))
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/demucs/hdemucs.py", line 310, in forward
+    x = x + skip
+RuntimeError: The size of tensor a (1021) must match the size of tensor b (1022) at non-singleton dimension 2
+[1;34mwandb[0m: 🚀 View run [33mhtdemucs_['/localscratch/kaim.54996320.0/MUSDB18HQ/train']_2025-02-19[0m at: [34mhttps://wandb.ai/kaimikkelsen-mcgill-university/msst/runs/cidbaa9k[0m
+[1;34mwandb[0m: Find logs at: [1;35m../../../../../../project/6002780/kaim/Music-Source-Separation-Training/wandb/run-20250219_065811-cidbaa9k/logs[0m

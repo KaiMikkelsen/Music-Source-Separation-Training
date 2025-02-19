@@ -1,0 +1,21 @@
+Moving ../data/MUSDB18HQ.zip to /localscratch/kaim.54628853.0 for faster access
+unzipping /localscratch/kaim.54628853.0/MUSDB18HQ.zip
+Archive:  /localscratch/kaim.54628853.0/MUSDB18HQ.zip
+replace /localscratch/kaim.54628853.0/MUSDB18HQ/train/Music Delta - Hendrix/other.wav? [y]es, [n]o, [A]ll, [N]one, [r]ename: Dataset successfully unzipped.
+Dataset path set to: /localscratch/kaim.54628853.0/MUSDB18HQ
+Running training script for model: mdx23c with dataset at /localscratch/kaim.54628853.0/MUSDB18HQ
+wandb: Using wandb-core as the SDK backend. Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: kaimikkelsen (kaimikkelsen-mcgill-university). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/kaim/.netrc
+wandb: Tracking run with wandb version 0.18.0
+wandb: Run data is saved locally in /project/6002780/kaim/Music-Source-Separation-Training/wandb/run-20250214_173423-f84d7xwq
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run mdx23c_['/localscratch/kaim.54628853.0/MUSDB18HQ/train']_2025-02-14
+wandb: ⭐️ View project at https://wandb.ai/kaimikkelsen-mcgill-university/msst
+wandb: 🚀 View run at https://wandb.ai/kaimikkelsen-mcgill-university/msst/runs/f84d7xwq
+parsing args
+training model
+Use augmentation for training
+Dataset type: 1 Processes to use: 32 
+Collecting metadata for ['/localscratch/kaim.54628853.0/MUSDB18HQ/train']
+  0%|          | 0/86 [00:00<?, ?it/s]
