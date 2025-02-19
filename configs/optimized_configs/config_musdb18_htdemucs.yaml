@@ -179,7 +179,7 @@ htdemucs:  # see demucs/htdemucs.py for a detailed description
   wiener_residual: false
   cac: true
   # Main structure
-  depth: 6
+  depth: 4
   rewrite: true
   # Frequency Branch
   multi_freqs: []
@@ -188,8 +188,8 @@ htdemucs:  # see demucs/htdemucs.py for a detailed description
   emb_scale: 10
   emb_smooth: true
   # Convolutions
-  kernel_size: 7
-  stride: 2
+  kernel_size: 8
+  stride: 4
   time_stride: 2
   context: 1
   context_enc: 0
@@ -206,10 +206,10 @@ htdemucs:  # see demucs/htdemucs.py for a detailed description
   # CrossTransformer
   # ------ Common to all
   # Regular parameters
-  t_layers: 5
-  t_hidden_scale: 4.0
-  t_heads: 8
-  t_dropout: 0.0
+  t_layers: 3
+  t_hidden_scale: 3.29750674845959
+  t_heads: 4
+  t_dropout: 0.3837848313128083
   t_layer_scale: True
   t_gelu: True
   # ------------- Positional Embedding
