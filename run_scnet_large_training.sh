@@ -36,8 +36,12 @@ RUNNING_ON_MAC=False
 if [ "$RUNNING_ON_MAC" = False ]; then
 
     # Move and unzip dataset to scratch directory
-    echo "Moving $DATASET_ZIP to $SCRATCH_DIR for faster access"
-    cp "$DATASET_ZIP" "$SCRATCH_DIR"
+    if [ ! -f "$SCRATCH_DIR/$(basename "$DATASET_ZIP")" ]; then
+        echo "Moving $DATASET_ZIP to $SCRATCH_DIR for faster access"
+        cp "$DATASET_ZIP" "$SCRATCH_DIR"
+    else
+        echo "Dataset already exists in $SCRATCH_DIR, skipping copy."
+    fi
 
     DATASET_ZIP_BASENAME=$(basename "$DATASET_ZIP")
     SCRATCH_ZIP="$SCRATCH_DIR/$DATASET_ZIP_BASENAME"
