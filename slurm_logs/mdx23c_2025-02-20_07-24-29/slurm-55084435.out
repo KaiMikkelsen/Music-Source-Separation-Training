@@ -1,0 +1,935 @@
+Moving ../data/MUSDB18HQ.zip to /localscratch/kaim.55084435.0 for faster access
+unzipping /localscratch/kaim.55084435.0/MUSDB18HQ.zip
+Archive:  /localscratch/kaim.55084435.0/MUSDB18HQ.zip
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Hendrix/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Hendrix/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Hendrix/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Hendrix/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Hendrix/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Hendrix/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - 80s Rock/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - 80s Rock/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - 80s Rock/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - 80s Rock/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - 80s Rock/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - 80s Rock/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The Wrong'Uns - Rothko/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The Wrong'Uns - Rothko/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The Wrong'Uns - Rothko/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The Wrong'Uns - Rothko/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The Wrong'Uns - Rothko/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The Wrong'Uns - Rothko/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Reggae/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Reggae/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Reggae/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Reggae/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Reggae/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Reggae/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Secret Mountains - High Horse/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Secret Mountains - High Horse/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Secret Mountains - High Horse/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Secret Mountains - High Horse/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Secret Mountains - High Horse/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Secret Mountains - High Horse/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Young Griffo - Facade/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Young Griffo - Facade/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Young Griffo - Facade/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Young Griffo - Facade/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Young Griffo - Facade/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Young Griffo - Facade/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/BigTroubles - Phantom/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/BigTroubles - Phantom/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/BigTroubles - Phantom/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/BigTroubles - Phantom/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/BigTroubles - Phantom/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/BigTroubles - Phantom/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Alexander Ross - Velvet Curtain/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Alexander Ross - Velvet Curtain/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Alexander Ross - Velvet Curtain/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Alexander Ross - Velvet Curtain/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Alexander Ross - Velvet Curtain/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Alexander Ross - Velvet Curtain/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/ANiMAL - Easy Tiger/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/ANiMAL - Easy Tiger/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/ANiMAL - Easy Tiger/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/ANiMAL - Easy Tiger/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/ANiMAL - Easy Tiger/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/ANiMAL - Easy Tiger/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Creepoid - OldTree/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Creepoid - OldTree/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Creepoid - OldTree/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Creepoid - OldTree/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Creepoid - OldTree/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Creepoid - OldTree/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Jay Menon - Through My Eyes/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Jay Menon - Through My Eyes/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Jay Menon - Through My Eyes/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Jay Menon - Through My Eyes/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Jay Menon - Through My Eyes/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Jay Menon - Through My Eyes/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Dreamers Of The Ghetto - Heavy Love/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Dreamers Of The Ghetto - Heavy Love/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Dreamers Of The Ghetto - Heavy Love/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Dreamers Of The Ghetto - Heavy Love/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Dreamers Of The Ghetto - Heavy Love/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Dreamers Of The Ghetto - Heavy Love/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Phre The Eon - Everybody's Falling Apart/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Phre The Eon - Everybody's Falling Apart/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Phre The Eon - Everybody's Falling Apart/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Phre The Eon - Everybody's Falling Apart/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Phre The Eon - Everybody's Falling Apart/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Phre The Eon - Everybody's Falling Apart/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/AvaLuna - Waterduct/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/AvaLuna - Waterduct/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/AvaLuna - Waterduct/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/AvaLuna - Waterduct/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/AvaLuna - Waterduct/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/AvaLuna - Waterduct/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Fergessen - The Wind/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Fergessen - The Wind/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Fergessen - The Wind/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Fergessen - The Wind/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Fergessen - The Wind/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Fergessen - The Wind/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Clara Berry And Wooldog - Stella/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Clara Berry And Wooldog - Stella/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Clara Berry And Wooldog - Stella/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Clara Berry And Wooldog - Stella/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Clara Berry And Wooldog - Stella/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Clara Berry And Wooldog - Stella/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Cnoc An Tursa - Bannockburn/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Cnoc An Tursa - Bannockburn/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Cnoc An Tursa - Bannockburn/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Cnoc An Tursa - Bannockburn/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Cnoc An Tursa - Bannockburn/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Cnoc An Tursa - Bannockburn/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Port St Willow - Stay Even/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Port St Willow - Stay Even/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Port St Willow - Stay Even/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Port St Willow - Stay Even/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Port St Willow - Stay Even/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Port St Willow - Stay Even/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Britpop/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Britpop/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Britpop/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Britpop/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Britpop/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Britpop/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Faces On Film - Waiting For Ga/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Faces On Film - Waiting For Ga/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Faces On Film - Waiting For Ga/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Faces On Film - Waiting For Ga/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Faces On Film - Waiting For Ga/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Faces On Film - Waiting For Ga/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Matthew Entwistle - Dont You Ever/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Matthew Entwistle - Dont You Ever/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Matthew Entwistle - Dont You Ever/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Matthew Entwistle - Dont You Ever/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Matthew Entwistle - Dont You Ever/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Matthew Entwistle - Dont You Ever/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Snowmine - Curfews/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Snowmine - Curfews/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Snowmine - Curfews/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Snowmine - Curfews/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Snowmine - Curfews/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Snowmine - Curfews/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Hop Along - Sister Cities/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Hop Along - Sister Cities/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Hop Along - Sister Cities/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Hop Along - Sister Cities/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Hop Along - Sister Cities/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Hop Along - Sister Cities/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Meaxic - You Listen/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Meaxic - You Listen/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Meaxic - You Listen/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Meaxic - You Listen/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Meaxic - You Listen/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Meaxic - You Listen/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Invisible Familiars - Disturbing Wildlife/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Invisible Familiars - Disturbing Wildlife/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Invisible Familiars - Disturbing Wildlife/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Invisible Familiars - Disturbing Wildlife/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Invisible Familiars - Disturbing Wildlife/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Invisible Familiars - Disturbing Wildlife/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Jokers, Jacks & Kings - Sea Of Leaves/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Jokers, Jacks & Kings - Sea Of Leaves/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Jokers, Jacks & Kings - Sea Of Leaves/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Jokers, Jacks & Kings - Sea Of Leaves/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Jokers, Jacks & Kings - Sea Of Leaves/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Jokers, Jacks & Kings - Sea Of Leaves/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Rock/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Rock/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Rock/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Rock/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Rock/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Rock/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Lushlife - Toynbee Suite/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Lushlife - Toynbee Suite/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Lushlife - Toynbee Suite/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Lushlife - Toynbee Suite/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Lushlife - Toynbee Suite/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Lushlife - Toynbee Suite/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Hollow Ground - Left Blind/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Hollow Ground - Left Blind/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Hollow Ground - Left Blind/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Hollow Ground - Left Blind/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Hollow Ground - Left Blind/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Hollow Ground - Left Blind/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Strand Of Oaks - Spacestation/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Strand Of Oaks - Spacestation/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Strand Of Oaks - Spacestation/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Strand Of Oaks - Spacestation/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Strand Of Oaks - Spacestation/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Strand Of Oaks - Spacestation/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Aimee Norwich - Child/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Aimee Norwich - Child/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Aimee Norwich - Child/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Aimee Norwich - Child/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Aimee Norwich - Child/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Aimee Norwich - Child/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/James May - If You Say/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/James May - If You Say/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/James May - If You Say/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/James May - If You Say/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/James May - If You Say/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/James May - If You Say/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Helado Negro - Mitad Del Mundo/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Helado Negro - Mitad Del Mundo/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Helado Negro - Mitad Del Mundo/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Helado Negro - Mitad Del Mundo/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Helado Negro - Mitad Del Mundo/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Helado Negro - Mitad Del Mundo/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Auctioneer - Our Future Faces/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Auctioneer - Our Future Faces/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Auctioneer - Our Future Faces/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Auctioneer - Our Future Faces/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Auctioneer - Our Future Faces/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Auctioneer - Our Future Faces/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Celestial Shore - Die For Us/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Celestial Shore - Die For Us/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Celestial Shore - Die For Us/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Celestial Shore - Die For Us/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Celestial Shore - Die For Us/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Celestial Shore - Die For Us/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Leaf - Wicked/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Leaf - Wicked/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Leaf - Wicked/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Leaf - Wicked/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Leaf - Wicked/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Leaf - Wicked/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Swinging Steaks - Lost My Way/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Swinging Steaks - Lost My Way/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Swinging Steaks - Lost My Way/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Swinging Steaks - Lost My Way/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Swinging Steaks - Lost My Way/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Swinging Steaks - Lost My Way/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Country2/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Country2/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Country2/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Country2/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Country2/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Country2/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Actions - Devil's Words/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Actions - Devil's Words/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Actions - Devil's Words/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Actions - Devil's Words/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Actions - Devil's Words/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Actions - Devil's Words/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Dark Ride - Burning Bridges/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Dark Ride - Burning Bridges/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Dark Ride - Burning Bridges/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Dark Ride - Burning Bridges/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Dark Ride - Burning Bridges/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Dark Ride - Burning Bridges/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Grants - PunchDrunk/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Grants - PunchDrunk/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Grants - PunchDrunk/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Grants - PunchDrunk/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Grants - PunchDrunk/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Grants - PunchDrunk/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Traffic Experiment - Once More (With Feeling)/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Traffic Experiment - Once More (With Feeling)/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Traffic Experiment - Once More (With Feeling)/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Traffic Experiment - Once More (With Feeling)/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Traffic Experiment - Once More (With Feeling)/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Traffic Experiment - Once More (With Feeling)/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Titanium - Haunted Age/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Titanium - Haunted Age/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Titanium - Haunted Age/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Titanium - Haunted Age/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Titanium - Haunted Age/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Titanium - Haunted Age/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Rockabilly/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Rockabilly/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Rockabilly/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Rockabilly/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Rockabilly/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Rockabilly/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Leaf - Come Around/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Leaf - Come Around/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Leaf - Come Around/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Leaf - Come Around/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Leaf - Come Around/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Leaf - Come Around/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/St Vitus - Word Gets Around/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/St Vitus - Word Gets Around/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/St Vitus - Word Gets Around/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/St Vitus - Word Gets Around/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/St Vitus - Word Gets Around/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/St Vitus - Word Gets Around/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Disco/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Disco/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Disco/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Disco/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Disco/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Disco/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Johnny Lokke - Whisper To A Scream/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Johnny Lokke - Whisper To A Scream/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Johnny Lokke - Whisper To A Scream/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Johnny Lokke - Whisper To A Scream/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Johnny Lokke - Whisper To A Scream/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Johnny Lokke - Whisper To A Scream/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Triviul - Dorothy/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Triviul - Dorothy/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Triviul - Dorothy/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Triviul - Dorothy/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Triviul - Dorothy/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Triviul - Dorothy/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Skelpolu - Together Alone/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Skelpolu - Together Alone/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Skelpolu - Together Alone/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Skelpolu - Together Alone/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Skelpolu - Together Alone/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Skelpolu - Together Alone/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Fergessen - Back From The Start/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Fergessen - Back From The Start/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Fergessen - Back From The Start/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Fergessen - Back From The Start/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Fergessen - Back From The Start/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Fergessen - Back From The Start/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Tim Taler - Stalker/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Tim Taler - Stalker/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Tim Taler - Stalker/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Tim Taler - Stalker/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Tim Taler - Stalker/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Tim Taler - Stalker/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Hezekiah Jones - Borrowed Heart/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Hezekiah Jones - Borrowed Heart/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Hezekiah Jones - Borrowed Heart/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Hezekiah Jones - Borrowed Heart/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Hezekiah Jones - Borrowed Heart/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Hezekiah Jones - Borrowed Heart/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The Scarlet Brand - Les Fleurs Du Mal/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The Scarlet Brand - Les Fleurs Du Mal/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The Scarlet Brand - Les Fleurs Du Mal/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The Scarlet Brand - Les Fleurs Du Mal/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The Scarlet Brand - Les Fleurs Du Mal/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The Scarlet Brand - Les Fleurs Du Mal/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Night Panther - Fire/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Night Panther - Fire/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Night Panther - Fire/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Night Panther - Fire/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Night Panther - Fire/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Night Panther - Fire/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Grunge/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Grunge/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Grunge/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Grunge/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Grunge/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Grunge/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The Districts - Vermont/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The Districts - Vermont/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The Districts - Vermont/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The Districts - Vermont/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The Districts - Vermont/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The Districts - Vermont/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Giselle - Moss/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Giselle - Moss/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Giselle - Moss/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Giselle - Moss/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Giselle - Moss/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Giselle - Moss/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Actions - South Of The Water/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Actions - South Of The Water/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Actions - South Of The Water/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Actions - South Of The Water/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Actions - South Of The Water/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Actions - South Of The Water/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Angela Thomas Wade - Milk Cow Blues/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Angela Thomas Wade - Milk Cow Blues/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Angela Thomas Wade - Milk Cow Blues/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Angela Thomas Wade - Milk Cow Blues/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Angela Thomas Wade - Milk Cow Blues/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Angela Thomas Wade - Milk Cow Blues/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Country1/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Country1/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Country1/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Country1/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Country1/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Country1/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/James May - Dont Let Go/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/James May - Dont Let Go/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/James May - Dont Let Go/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/James May - Dont Let Go/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/James May - Dont Let Go/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/James May - Dont Let Go/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/James May - All Souls Moon/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/James May - All Souls Moon/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/James May - All Souls Moon/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/James May - All Souls Moon/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/James May - All Souls Moon/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/James May - All Souls Moon/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Clara Berry And Wooldog - Air Traffic/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Clara Berry And Wooldog - Air Traffic/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Clara Berry And Wooldog - Air Traffic/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Clara Berry And Wooldog - Air Traffic/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Clara Berry And Wooldog - Air Traffic/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Clara Berry And Wooldog - Air Traffic/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Voelund - Comfort Lives In Belief/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Voelund - Comfort Lives In Belief/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Voelund - Comfort Lives In Belief/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Voelund - Comfort Lives In Belief/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Voelund - Comfort Lives In Belief/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Voelund - Comfort Lives In Belief/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Bill Chudziak - Children Of No-one/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Bill Chudziak - Children Of No-one/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Bill Chudziak - Children Of No-one/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Bill Chudziak - Children Of No-one/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Bill Chudziak - Children Of No-one/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Bill Chudziak - Children Of No-one/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Sweet Lights - You Let Me Down/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Sweet Lights - You Let Me Down/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Sweet Lights - You Let Me Down/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Sweet Lights - You Let Me Down/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Sweet Lights - You Let Me Down/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Sweet Lights - You Let Me Down/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Beatles/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Beatles/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Beatles/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Beatles/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Beatles/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Beatles/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Chris Durban - Celebrate/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Chris Durban - Celebrate/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Chris Durban - Celebrate/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Chris Durban - Celebrate/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Chris Durban - Celebrate/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Chris Durban - Celebrate/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Flags - 54/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Flags - 54/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Flags - 54/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Flags - 54/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Flags - 54/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Flags - 54/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Young Griffo - Blood To Bone/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Young Griffo - Blood To Bone/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Young Griffo - Blood To Bone/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Young Griffo - Blood To Bone/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Young Griffo - Blood To Bone/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Young Griffo - Blood To Bone/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Atlantis Bound - It Was My Fault For Waiting/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Atlantis Bound - It Was My Fault For Waiting/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Atlantis Bound - It Was My Fault For Waiting/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Atlantis Bound - It Was My Fault For Waiting/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Atlantis Bound - It Was My Fault For Waiting/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Atlantis Bound - It Was My Fault For Waiting/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/A Classic Education - NightOwl/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/A Classic Education - NightOwl/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/A Classic Education - NightOwl/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/A Classic Education - NightOwl/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/A Classic Education - NightOwl/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/A Classic Education - NightOwl/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Drumtracks - Ghost Bitch/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Drumtracks - Ghost Bitch/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Drumtracks - Ghost Bitch/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Drumtracks - Ghost Bitch/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Drumtracks - Ghost Bitch/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Drumtracks - Ghost Bitch/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/ANiMAL - Clinic A/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/ANiMAL - Clinic A/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/ANiMAL - Clinic A/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/ANiMAL - Clinic A/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/ANiMAL - Clinic A/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/ANiMAL - Clinic A/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Punk/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Punk/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Punk/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Punk/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Punk/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Punk/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Steven Clark - Bounty/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Steven Clark - Bounty/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Steven Clark - Bounty/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Steven Clark - Bounty/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Steven Clark - Bounty/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Steven Clark - Bounty/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Spike Mullings - Mike's Sulking/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Spike Mullings - Mike's Sulking/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Spike Mullings - Mike's Sulking/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Spike Mullings - Mike's Sulking/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Spike Mullings - Mike's Sulking/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Spike Mullings - Mike's Sulking/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Wall Of Death - Femme/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Wall Of Death - Femme/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Wall Of Death - Femme/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Wall Of Death - Femme/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Wall Of Death - Femme/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Wall Of Death - Femme/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/North To Alaska - All The Same/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/North To Alaska - All The Same/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/North To Alaska - All The Same/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/North To Alaska - All The Same/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/North To Alaska - All The Same/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/North To Alaska - All The Same/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The Long Wait - Back Home To Blue/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The Long Wait - Back Home To Blue/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The Long Wait - Back Home To Blue/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The Long Wait - Back Home To Blue/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The Long Wait - Back Home To Blue/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The Long Wait - Back Home To Blue/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The So So Glos - Emergency/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The So So Glos - Emergency/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The So So Glos - Emergency/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The So So Glos - Emergency/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The So So Glos - Emergency/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/The So So Glos - Emergency/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Remember December - C U Next Time/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Remember December - C U Next Time/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Remember December - C U Next Time/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Remember December - C U Next Time/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Remember December - C U Next Time/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Remember December - C U Next Time/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Gospel/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Gospel/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Gospel/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Gospel/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Gospel/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Music Delta - Gospel/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Patrick Talbot - Set Me Free/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Patrick Talbot - Set Me Free/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Patrick Talbot - Set Me Free/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Patrick Talbot - Set Me Free/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Patrick Talbot - Set Me Free/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Patrick Talbot - Set Me Free/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Black Bloc - If You Want Success/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Black Bloc - If You Want Success/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Black Bloc - If You Want Success/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Black Bloc - If You Want Success/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Black Bloc - If You Want Success/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/train/Black Bloc - If You Want Success/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Ben Carrigan - We'll Talk About It All Tonight/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Ben Carrigan - We'll Talk About It All Tonight/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Ben Carrigan - We'll Talk About It All Tonight/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Ben Carrigan - We'll Talk About It All Tonight/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Ben Carrigan - We'll Talk About It All Tonight/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Ben Carrigan - We'll Talk About It All Tonight/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/AM Contra - Heart Peripheral/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/AM Contra - Heart Peripheral/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/AM Contra - Heart Peripheral/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/AM Contra - Heart Peripheral/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/AM Contra - Heart Peripheral/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/AM Contra - Heart Peripheral/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Tom McKenzie - Directions/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Tom McKenzie - Directions/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Tom McKenzie - Directions/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Tom McKenzie - Directions/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Tom McKenzie - Directions/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Tom McKenzie - Directions/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Long Wait - Dark Horses/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Long Wait - Dark Horses/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Long Wait - Dark Horses/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Long Wait - Dark Horses/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Long Wait - Dark Horses/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Long Wait - Dark Horses/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/We Fell From The Sky - Not You/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/We Fell From The Sky - Not You/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/We Fell From The Sky - Not You/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/We Fell From The Sky - Not You/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/We Fell From The Sky - Not You/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/We Fell From The Sky - Not You/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Doppler Shift - Atrophy/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Doppler Shift - Atrophy/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Doppler Shift - Atrophy/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Doppler Shift - Atrophy/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Doppler Shift - Atrophy/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Doppler Shift - Atrophy/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Lyndsey Ollard - Catching Up/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Lyndsey Ollard - Catching Up/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Lyndsey Ollard - Catching Up/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Lyndsey Ollard - Catching Up/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Lyndsey Ollard - Catching Up/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Lyndsey Ollard - Catching Up/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Bobby Nobody - Stitch Up/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Bobby Nobody - Stitch Up/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Bobby Nobody - Stitch Up/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Bobby Nobody - Stitch Up/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Bobby Nobody - Stitch Up/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Bobby Nobody - Stitch Up/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Sunshine Garcia Band - For I Am The Moon/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Sunshine Garcia Band - For I Am The Moon/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Sunshine Garcia Band - For I Am The Moon/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Sunshine Garcia Band - For I Am The Moon/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Sunshine Garcia Band - For I Am The Moon/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Sunshine Garcia Band - For I Am The Moon/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Girls Under Glass - We Feel Alright/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Girls Under Glass - We Feel Alright/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Girls Under Glass - We Feel Alright/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Girls Under Glass - We Feel Alright/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Girls Under Glass - We Feel Alright/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Girls Under Glass - We Feel Alright/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Angels In Amplifiers - I'm Alright/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Angels In Amplifiers - I'm Alright/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Angels In Amplifiers - I'm Alright/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Angels In Amplifiers - I'm Alright/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Angels In Amplifiers - I'm Alright/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Angels In Amplifiers - I'm Alright/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Juliet's Rescue - Heartbeats/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Juliet's Rescue - Heartbeats/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Juliet's Rescue - Heartbeats/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Juliet's Rescue - Heartbeats/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Juliet's Rescue - Heartbeats/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Juliet's Rescue - Heartbeats/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Sambasevam Shanmugam - Kaathaadi/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Sambasevam Shanmugam - Kaathaadi/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Sambasevam Shanmugam - Kaathaadi/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Sambasevam Shanmugam - Kaathaadi/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Sambasevam Shanmugam - Kaathaadi/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Sambasevam Shanmugam - Kaathaadi/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Enda Reilly - Cur An Long Ag Seol/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Enda Reilly - Cur An Long Ag Seol/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Enda Reilly - Cur An Long Ag Seol/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Enda Reilly - Cur An Long Ag Seol/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Enda Reilly - Cur An Long Ag Seol/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Enda Reilly - Cur An Long Ag Seol/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Speak Softly - Like Horses/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Speak Softly - Like Horses/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Speak Softly - Like Horses/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Speak Softly - Like Horses/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Speak Softly - Like Horses/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Speak Softly - Like Horses/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/PR - Happy Daze/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/PR - Happy Daze/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/PR - Happy Daze/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/PR - Happy Daze/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/PR - Happy Daze/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/PR - Happy Daze/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Easton Ellises (Baumi) - SDRNR/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Easton Ellises (Baumi) - SDRNR/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Easton Ellises (Baumi) - SDRNR/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Easton Ellises (Baumi) - SDRNR/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Easton Ellises (Baumi) - SDRNR/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Easton Ellises (Baumi) - SDRNR/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/James Elder & Mark M Thompson - The English Actor/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/James Elder & Mark M Thompson - The English Actor/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/James Elder & Mark M Thompson - The English Actor/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/James Elder & Mark M Thompson - The English Actor/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/James Elder & Mark M Thompson - The English Actor/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/James Elder & Mark M Thompson - The English Actor/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/BKS - Bulldozer/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/BKS - Bulldozer/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/BKS - Bulldozer/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/BKS - Bulldozer/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/BKS - Bulldozer/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/BKS - Bulldozer/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Moosmusic - Big Dummy Shake/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Moosmusic - Big Dummy Shake/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Moosmusic - Big Dummy Shake/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Moosmusic - Big Dummy Shake/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Moosmusic - Big Dummy Shake/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Moosmusic - Big Dummy Shake/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Speak Softly - Broken Man/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Speak Softly - Broken Man/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Speak Softly - Broken Man/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Speak Softly - Broken Man/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Speak Softly - Broken Man/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Speak Softly - Broken Man/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Al James - Schoolboy Facination/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Al James - Schoolboy Facination/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Al James - Schoolboy Facination/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Al James - Schoolboy Facination/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Al James - Schoolboy Facination/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Al James - Schoolboy Facination/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Motor Tapes - Shore/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Motor Tapes - Shore/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Motor Tapes - Shore/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Motor Tapes - Shore/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Motor Tapes - Shore/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Motor Tapes - Shore/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Side Effects Project - Sing With Me/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Side Effects Project - Sing With Me/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Side Effects Project - Sing With Me/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Side Effects Project - Sing With Me/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Side Effects Project - Sing With Me/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Side Effects Project - Sing With Me/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Signe Jakobsen - What Have You Done To Me/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Signe Jakobsen - What Have You Done To Me/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Signe Jakobsen - What Have You Done To Me/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Signe Jakobsen - What Have You Done To Me/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Signe Jakobsen - What Have You Done To Me/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Signe Jakobsen - What Have You Done To Me/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Little Chicago's Finest - My Own/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Little Chicago's Finest - My Own/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Little Chicago's Finest - My Own/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Little Chicago's Finest - My Own/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Little Chicago's Finest - My Own/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Little Chicago's Finest - My Own/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Buitraker - Revo X/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Buitraker - Revo X/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Buitraker - Revo X/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Buitraker - Revo X/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Buitraker - Revo X/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Buitraker - Revo X/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Easton Ellises - Falcon 69/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Easton Ellises - Falcon 69/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Easton Ellises - Falcon 69/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Easton Ellises - Falcon 69/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Easton Ellises - Falcon 69/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Easton Ellises - Falcon 69/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Timboz - Pony/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Timboz - Pony/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Timboz - Pony/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Timboz - Pony/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Timboz - Pony/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Timboz - Pony/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/BKS - Too Much/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/BKS - Too Much/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/BKS - Too Much/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/BKS - Too Much/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/BKS - Too Much/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/BKS - Too Much/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Detsky Sad - Walkie Talkie/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Detsky Sad - Walkie Talkie/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Detsky Sad - Walkie Talkie/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Detsky Sad - Walkie Talkie/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Detsky Sad - Walkie Talkie/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Detsky Sad - Walkie Talkie/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Secretariat - Borderline/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Secretariat - Borderline/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Secretariat - Borderline/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Secretariat - Borderline/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Secretariat - Borderline/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Secretariat - Borderline/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Nerve 9 - Pray For The Rain/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Nerve 9 - Pray For The Rain/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Nerve 9 - Pray For The Rain/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Nerve 9 - Pray For The Rain/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Nerve 9 - Pray For The Rain/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Nerve 9 - Pray For The Rain/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/M.E.R.C. Music - Knockout/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/M.E.R.C. Music - Knockout/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/M.E.R.C. Music - Knockout/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/M.E.R.C. Music - Knockout/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/M.E.R.C. Music - Knockout/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/M.E.R.C. Music - Knockout/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Forkupines - Semantics/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Forkupines - Semantics/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Forkupines - Semantics/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Forkupines - Semantics/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Forkupines - Semantics/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Forkupines - Semantics/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Mu - Too Bright/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Mu - Too Bright/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Mu - Too Bright/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Mu - Too Bright/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Mu - Too Bright/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Mu - Too Bright/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Cristina Vane - So Easy/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Cristina Vane - So Easy/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Cristina Vane - So Easy/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Cristina Vane - So Easy/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Cristina Vane - So Easy/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Cristina Vane - So Easy/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Raft Monk - Tiring/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Raft Monk - Tiring/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Raft Monk - Tiring/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Raft Monk - Tiring/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Raft Monk - Tiring/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Raft Monk - Tiring/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Louis Cressy Band - Good Time/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Louis Cressy Band - Good Time/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Louis Cressy Band - Good Time/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Louis Cressy Band - Good Time/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Louis Cressy Band - Good Time/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Louis Cressy Band - Good Time/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Zeno - Signs/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Zeno - Signs/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Zeno - Signs/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Zeno - Signs/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Zeno - Signs/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Zeno - Signs/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Triviul feat. The Fiend - Widow/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Triviul feat. The Fiend - Widow/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Triviul feat. The Fiend - Widow/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Triviul feat. The Fiend - Widow/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Triviul feat. The Fiend - Widow/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Triviul feat. The Fiend - Widow/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Mountaineering Club - Mallory/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Mountaineering Club - Mallory/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Mountaineering Club - Mallory/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Mountaineering Club - Mallory/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Mountaineering Club - Mallory/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/The Mountaineering Club - Mallory/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Secretariat - Over The Top/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Secretariat - Over The Top/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Secretariat - Over The Top/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Secretariat - Over The Top/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Secretariat - Over The Top/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Secretariat - Over The Top/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Punkdisco - Oral Hygiene/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Punkdisco - Oral Hygiene/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Punkdisco - Oral Hygiene/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Punkdisco - Oral Hygiene/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Punkdisco - Oral Hygiene/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Punkdisco - Oral Hygiene/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Arise - Run Run Run/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Arise - Run Run Run/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Arise - Run Run Run/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Arise - Run Run Run/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Arise - Run Run Run/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Arise - Run Run Run/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Georgia Wonder - Siren/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Georgia Wonder - Siren/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Georgia Wonder - Siren/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Georgia Wonder - Siren/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Georgia Wonder - Siren/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Georgia Wonder - Siren/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/PR - Oh No/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/PR - Oh No/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/PR - Oh No/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/PR - Oh No/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/PR - Oh No/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/PR - Oh No/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Skelpolu - Resurrection/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Skelpolu - Resurrection/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Skelpolu - Resurrection/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Skelpolu - Resurrection/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Skelpolu - Resurrection/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Skelpolu - Resurrection/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Hollow Ground - Ill Fate/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Hollow Ground - Ill Fate/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Hollow Ground - Ill Fate/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Hollow Ground - Ill Fate/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Hollow Ground - Ill Fate/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Hollow Ground - Ill Fate/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Carlos Gonzalez - A Place For Us/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Carlos Gonzalez - A Place For Us/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Carlos Gonzalez - A Place For Us/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Carlos Gonzalez - A Place For Us/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Carlos Gonzalez - A Place For Us/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/test/Carlos Gonzalez - A Place For Us/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/ANiMAL - Rockshow/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/ANiMAL - Rockshow/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/ANiMAL - Rockshow/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/ANiMAL - Rockshow/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/ANiMAL - Rockshow/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/ANiMAL - Rockshow/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Fergessen - Nos Palpitants/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Fergessen - Nos Palpitants/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Fergessen - Nos Palpitants/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Fergessen - Nos Palpitants/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Fergessen - Nos Palpitants/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Fergessen - Nos Palpitants/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Skelpolu - Human Mistakes/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Skelpolu - Human Mistakes/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Skelpolu - Human Mistakes/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Skelpolu - Human Mistakes/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Skelpolu - Human Mistakes/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Skelpolu - Human Mistakes/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Meaxic - Take A Step/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Meaxic - Take A Step/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Meaxic - Take A Step/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Meaxic - Take A Step/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Meaxic - Take A Step/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Meaxic - Take A Step/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Clara Berry And Wooldog - Waltz For My Victims/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Clara Berry And Wooldog - Waltz For My Victims/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Clara Berry And Wooldog - Waltz For My Victims/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Clara Berry And Wooldog - Waltz For My Victims/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Clara Berry And Wooldog - Waltz For My Victims/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Clara Berry And Wooldog - Waltz For My Victims/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Johnny Lokke - Promises & Lies/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Johnny Lokke - Promises & Lies/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Johnny Lokke - Promises & Lies/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Johnny Lokke - Promises & Lies/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Johnny Lokke - Promises & Lies/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Johnny Lokke - Promises & Lies/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Traffic Experiment - Sirens/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Traffic Experiment - Sirens/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Traffic Experiment - Sirens/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Traffic Experiment - Sirens/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Traffic Experiment - Sirens/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Traffic Experiment - Sirens/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Young Griffo - Pennies/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Young Griffo - Pennies/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Young Griffo - Pennies/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Young Griffo - Pennies/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Young Griffo - Pennies/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Young Griffo - Pennies/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/James May - On The Line/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/James May - On The Line/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/James May - On The Line/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/James May - On The Line/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/James May - On The Line/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/James May - On The Line/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Patrick Talbot - A Reason To Leave/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Patrick Talbot - A Reason To Leave/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Patrick Talbot - A Reason To Leave/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Patrick Talbot - A Reason To Leave/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Patrick Talbot - A Reason To Leave/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Patrick Talbot - A Reason To Leave/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Actions - One Minute Smile/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Actions - One Minute Smile/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Actions - One Minute Smile/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Actions - One Minute Smile/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Actions - One Minute Smile/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Actions - One Minute Smile/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Leaf - Summerghost/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Leaf - Summerghost/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Leaf - Summerghost/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Leaf - Summerghost/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Leaf - Summerghost/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Leaf - Summerghost/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Alexander Ross - Goodbye Bolero/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Alexander Ross - Goodbye Bolero/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Alexander Ross - Goodbye Bolero/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Alexander Ross - Goodbye Bolero/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Alexander Ross - Goodbye Bolero/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Alexander Ross - Goodbye Bolero/bass.wav  
+   creating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Triviul - Angelsaint/
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Triviul - Angelsaint/other.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Triviul - Angelsaint/drums.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Triviul - Angelsaint/mixture.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Triviul - Angelsaint/vocals.wav  
+  inflating: /localscratch/kaim.55084435.0/MUSDB18HQ/validation/Triviul - Angelsaint/bass.wav  
+Dataset successfully unzipped.
+Dataset path set to: /localscratch/kaim.55084435.0/MUSDB18HQ
+Running training script for model: mdx23c with dataset at /localscratch/kaim.55084435.0/MUSDB18HQ
+wandb: Using wandb-core as the SDK backend. Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: kaimikkelsen (kaimikkelsen-mcgill-university). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/kaim/.netrc
+wandb: Tracking run with wandb version 0.18.0
+wandb: Run data is saved locally in /project/6002780/kaim/Music-Source-Separation-Training/wandb/run-20250220_073410-7xlruj87
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run mdx23c_['/localscratch/kaim.55084435.0/MUSDB18HQ/train']_2025-02-20
+wandb: ⭐️ View project at https://wandb.ai/kaimikkelsen-mcgill-university/msst
+wandb: 🚀 View run at https://wandb.ai/kaimikkelsen-mcgill-university/msst/runs/7xlruj87
+parsing args
+training model
+Use augmentation for training
+Dataset type: 1 Processes to use: 32 
+Collecting metadata for ['/localscratch/kaim.55084435.0/MUSDB18HQ/train']
+  0%|          | 0/86 [00:00<?, ?it/s]  1%|          | 1/86 [00:23<32:51, 23.20s/it]  2%|▏         | 2/86 [00:24<14:02, 10.03s/it]  8%|▊         | 7/86 [00:25<02:54,  2.21s/it] 16%|█▋        | 14/86 [00:26<01:04,  1.12it/s] 26%|██▌       | 22/86 [00:26<00:31,  2.05it/s] 27%|██▋       | 23/86 [00:27<00:30,  2.08it/s] 36%|███▌      | 31/86 [00:27<00:15,  3.60it/s] 38%|███▊      | 33/86 [00:28<00:16,  3.18it/s] 45%|████▌     | 39/86 [00:29<00:09,  4.82it/s] 48%|████▊     | 41/86 [00:29<00:08,  5.36it/s] 70%|██████▉   | 60/86 [00:29<00:01, 13.57it/s] 76%|███████▌  | 65/86 [00:30<00:01, 10.73it/s] 94%|█████████▍| 81/86 [00:30<00:00, 18.69it/s]100%|██████████| 86/86 [00:30<00:00,  2.80it/s]
+Found tracks in dataset: 86
+Instruments: ['vocals', 'bass', 'drums', 'other']
+Metrics for training: ['sdr', 'l1_freq', 'si_sdr', 'neg_log_wmse', 'aura_stft', 'aura_mrstft', 'bleedless', 'fullness']. Metric for scheduler: sdr
+Patience: 4 Reduce factor: 0.10285472278822129
+Batch size: 4 Grad accum steps: 1 Effective batch size: 4
+Dataset type: 1
+Optimizer: adamw
+Train for: 1000 epochs
+Train epoch: 0 Learning rate: 0.0009770339803835022
+  0%|          | 0/1000 [00:00<?, ?it/s]  0%|          | 0/1000 [00:22<?, ?it/s, loss=0.304, avg_loss=0.304]  0%|          | 1/1000 [00:22<6:19:29, 22.79s/it, loss=0.304, avg_loss=0.304]  0%|          | 1/1000 [00:23<6:19:29, 22.79s/it, loss=0.156, avg_loss=0.23]   0%|          | 2/1000 [00:23<2:40:36,  9.66s/it, loss=0.156, avg_loss=0.23]  0%|          | 2/1000 [00:23<2:40:36,  9.66s/it, loss=0.257, avg_loss=0.239]  0%|          | 3/1000 [00:23<1:30:30,  5.45s/it, loss=0.257, avg_loss=0.239]  0%|          | 3/1000 [00:24<1:30:30,  5.45s/it, loss=0.36, avg_loss=0.269]   0%|          | 4/1000 [00:24<57:27,  3.46s/it, loss=0.36, avg_loss=0.269]    0%|          | 4/1000 [00:24<57:27,  3.46s/it, loss=0.0877, avg_loss=0.233]  0%|          | 5/1000 [00:24<39:03,  2.36s/it, loss=0.0877, avg_loss=0.233]  0%|          | 5/1000 [00:24<39:03,  2.36s/it, loss=0.201, avg_loss=0.228]   1%|          | 6/1000 [00:24<27:59,  1.69s/it, loss=0.201, avg_loss=0.228]  1%|          | 6/1000 [00:25<27:59,  1.69s/it, loss=0.201, avg_loss=0.224]  1%|          | 7/1000 [00:25<20:57,  1.27s/it, loss=0.201, avg_loss=0.224]  1%|          | 7/1000 [00:25<20:57,  1.27s/it, loss=0.18, avg_loss=0.218]   1%|          | 8/1000 [00:25<16:20,  1.01it/s, loss=0.18, avg_loss=0.218]  1%|          | 8/1000 [00:26<16:20,  1.01it/s, loss=0.216, avg_loss=0.218]  1%|          | 9/1000 [00:26<13:15,  1.25it/s, loss=0.216, avg_loss=0.218]  1%|          | 9/1000 [00:28<13:15,  1.25it/s, loss=0.079, avg_loss=0.204]  1%|          | 10/1000 [00:28<21:44,  1.32s/it, loss=0.079, avg_loss=0.204]  1%|          | 10/1000 [00:28<21:44,  1.32s/it, loss=0.386, avg_loss=0.221]  1%|          | 11/1000 [00:28<17:02,  1.03s/it, loss=0.386, avg_loss=0.221]  1%|          | 11/1000 [00:29<17:02,  1.03s/it, loss=0.212, avg_loss=0.22]   1%|          | 12/1000 [00:29<13:48,  1.19it/s, loss=0.212, avg_loss=0.22]  1%|          | 12/1000 [00:29<13:48,  1.19it/s, loss=0.367, avg_loss=0.231]  1%|▏         | 13/1000 [00:29<11:33,  1.42it/s, loss=0.367, avg_loss=0.231]  1%|▏         | 13/1000 [00:33<11:33,  1.42it/s, loss=0.298, avg_loss=0.236]  1%|▏         | 14/1000 [00:33<27:50,  1.69s/it, loss=0.298, avg_loss=0.236]  1%|▏         | 14/1000 [00:34<27:50,  1.69s/it, loss=0.335, avg_loss=0.243]  2%|▏         | 15/1000 [00:34<21:21,  1.30s/it, loss=0.335, avg_loss=0.243]  2%|▏         | 15/1000 [00:34<21:21,  1.30s/it, loss=0.201, avg_loss=0.24]   2%|▏         | 16/1000 [00:34<16:49,  1.03s/it, loss=0.201, avg_loss=0.24]  2%|▏         | 16/1000 [00:34<16:49,  1.03s/it, loss=0.137, avg_loss=0.234]  2%|▏         | 17/1000 [00:34<13:40,  1.20it/s, loss=0.137, avg_loss=0.234]  2%|▏         | 17/1000 [00:36<13:40,  1.20it/s, loss=0.366, avg_loss=0.241]  2%|▏         | 18/1000 [00:36<18:05,  1.10s/it, loss=0.366, avg_loss=0.241]  2%|▏         | 18/1000 [00:37<18:05,  1.10s/it, loss=0.188, avg_loss=0.239]  2%|▏         | 19/1000 [00:37<14:33,  1.12it/s, loss=0.188, avg_loss=0.239]  2%|▏         | 19/1000 [00:37<14:33,  1.12it/s, loss=0.182, avg_loss=0.236]  2%|▏         | 20/1000 [00:37<12:05,  1.35it/s, loss=0.182, avg_loss=0.236]  2%|▏         | 20/1000 [00:37<12:05,  1.35it/s, loss=0.242, avg_loss=0.236]  2%|▏         | 21/1000 [00:37<10:21,  1.57it/s, loss=0.242, avg_loss=0.236]  2%|▏         | 21/1000 [00:39<10:21,  1.57it/s, loss=0.193, avg_loss=0.234]  2%|▏         | 22/1000 [00:39<13:32,  1.20it/s, loss=0.193, avg_loss=0.234]  2%|▏         | 22/1000 [00:39<13:32,  1.20it/s, loss=0.341, avg_loss=0.239]  2%|▏         | 23/1000 [00:39<11:22,  1.43it/s, loss=0.341, avg_loss=0.239]  2%|▏         | 23/1000 [00:39<11:22,  1.43it/s, loss=0.107, avg_loss=0.233]  2%|▏         | 24/1000 [00:39<09:51,  1.65it/s, loss=0.107, avg_loss=0.233]  2%|▏         | 24/1000 [00:40<09:51,  1.65it/s, loss=0.313, avg_loss=0.236]  2%|▎         | 25/1000 [00:40<08:48,  1.85it/s, loss=0.313, avg_loss=0.236]  2%|▎         | 25/1000 [00:41<08:48,  1.85it/s, loss=0.288, avg_loss=0.238]  3%|▎         | 26/1000 [00:41<12:18,  1.32it/s, loss=0.288, avg_loss=0.238]  3%|▎         | 26/1000 [00:41<12:18,  1.32it/s, loss=0.148, avg_loss=0.235]  3%|▎         | 27/1000 [00:41<10:31,  1.54it/s, loss=0.148, avg_loss=0.235]  3%|▎         | 27/1000 [00:42<10:31,  1.54it/s, loss=0.162, avg_loss=0.232]  3%|▎         | 28/1000 [00:42<09:15,  1.75it/s, loss=0.162, avg_loss=0.232]  3%|▎         | 28/1000 [00:42<09:15,  1.75it/s, loss=0.601, avg_loss=0.245]  3%|▎         | 29/1000 [00:42<08:21,  1.94it/s, loss=0.601, avg_loss=0.245]  3%|▎         | 29/1000 [00:49<08:21,  1.94it/s, loss=0.125, avg_loss=0.241]  3%|▎         | 30/1000 [00:49<40:16,  2.49s/it, loss=0.125, avg_loss=0.241]  3%|▎         | 30/1000 [00:50<40:16,  2.49s/it, loss=0.22, avg_loss=0.24]    3%|▎         | 31/1000 [00:50<30:02,  1.86s/it, loss=0.22, avg_loss=0.24]  3%|▎         | 31/1000 [00:50<30:02,  1.86s/it, loss=0.131, avg_loss=0.237]  3%|▎         | 32/1000 [00:50<22:53,  1.42s/it, loss=0.131, avg_loss=0.237]  3%|▎         | 32/1000 [00:50<22:53,  1.42s/it, loss=0.223, avg_loss=0.237]  3%|▎         | 33/1000 [00:50<17:54,  1.11s/it, loss=0.223, avg_loss=0.237]  3%|▎         | 33/1000 [00:51<17:54,  1.11s/it, loss=0.142, avg_loss=0.234]  3%|▎         | 34/1000 [00:51<15:30,  1.04it/s, loss=0.142, avg_loss=0.234]  3%|▎         | 34/1000 [00:51<15:30,  1.04it/s, loss=0.213, avg_loss=0.233]  4%|▎         | 35/1000 [00:51<12:44,  1.26it/s, loss=0.213, avg_loss=0.233]  4%|▎         | 35/1000 [00:52<12:44,  1.26it/s, loss=0.177, avg_loss=0.232]  4%|▎         | 36/1000 [00:52<10:47,  1.49it/s, loss=0.177, avg_loss=0.232]  4%|▎         | 36/1000 [00:52<10:47,  1.49it/s, loss=0.233, avg_loss=0.232]  4%|▎         | 37/1000 [00:52<09:25,  1.70it/s, loss=0.233, avg_loss=0.232]  4%|▎         | 37/1000 [00:54<09:25,  1.70it/s, loss=0.182, avg_loss=0.23]   4%|▍         | 38/1000 [00:54<13:50,  1.16it/s, loss=0.182, avg_loss=0.23]  4%|▍         | 38/1000 [00:54<13:50,  1.16it/s, loss=0.425, avg_loss=0.235]  4%|▍         | 39/1000 [00:54<11:34,  1.38it/s, loss=0.425, avg_loss=0.235]  4%|▍         | 39/1000 [00:55<11:34,  1.38it/s, loss=0.235, avg_loss=0.235]  4%|▍         | 40/1000 [00:55<14:36,  1.10it/s, loss=0.235, avg_loss=0.235]  4%|▍         | 40/1000 [00:56<14:36,  1.10it/s, loss=0.364, avg_loss=0.239]  4%|▍         | 41/1000 [00:56<12:05,  1.32it/s, loss=0.364, avg_loss=0.239]  4%|▍         | 41/1000 [00:58<12:05,  1.32it/s, loss=0.237, avg_loss=0.239]  4%|▍         | 42/1000 [00:58<16:47,  1.05s/it, loss=0.237, avg_loss=0.239]  4%|▍         | 42/1000 [00:58<16:47,  1.05s/it, loss=0.246, avg_loss=0.239]  4%|▍         | 43/1000 [00:58<13:37,  1.17it/s, loss=0.246, avg_loss=0.239]  4%|▍         | 43/1000 [00:58<13:37,  1.17it/s, loss=0.153, avg_loss=0.237]  4%|▍         | 44/1000 [00:58<11:23,  1.40it/s, loss=0.153, avg_loss=0.237]  4%|▍         | 44/1000 [00:59<11:23,  1.40it/s, loss=0.278, avg_loss=0.238]  4%|▍         | 45/1000 [00:59<09:50,  1.62it/s, loss=0.278, avg_loss=0.238]  4%|▍         | 45/1000 [01:02<09:50,  1.62it/s, loss=0.145, avg_loss=0.236]  5%|▍         | 46/1000 [01:02<21:03,  1.32s/it, loss=0.145, avg_loss=0.236]  5%|▍         | 46/1000 [01:02<21:03,  1.32s/it, loss=0.294, avg_loss=0.237]  5%|▍         | 47/1000 [01:02<16:36,  1.05s/it, loss=0.294, avg_loss=0.237]  5%|▍         | 47/1000 [01:03<16:36,  1.05s/it, loss=0.196, avg_loss=0.236]  5%|▍         | 48/1000 [01:03<13:28,  1.18it/s, loss=0.196, avg_loss=0.236]  5%|▍         | 48/1000 [01:03<13:28,  1.18it/s, loss=0.29, avg_loss=0.237]   5%|▍         | 49/1000 [01:03<11:16,  1.41it/s, loss=0.29, avg_loss=0.237]  5%|▍         | 49/1000 [01:05<11:16,  1.41it/s, loss=0.21, avg_loss=0.237]  5%|▌         | 50/1000 [01:05<16:30,  1.04s/it, loss=0.21, avg_loss=0.237]  5%|▌         | 50/1000 [01:05<16:30,  1.04s/it, loss=0.204, avg_loss=0.236]  5%|▌         | 51/1000 [01:05<13:24,  1.18it/s, loss=0.204, avg_loss=0.236]  5%|▌         | 51/1000 [01:06<13:24,  1.18it/s, loss=0.38, avg_loss=0.239]   5%|▌         | 52/1000 [01:06<11:14,  1.41it/s, loss=0.38, avg_loss=0.239]  5%|▌         | 52/1000 [01:06<11:14,  1.41it/s, loss=0.165, avg_loss=0.237]  5%|▌         | 53/1000 [01:06<09:42,  1.63it/s, loss=0.165, avg_loss=0.237]  5%|▌         | 53/1000 [01:09<09:42,  1.63it/s, loss=0.304, avg_loss=0.239]  5%|▌         | 54/1000 [01:09<20:17,  1.29s/it, loss=0.304, avg_loss=0.239]  5%|▌         | 54/1000 [01:09<20:17,  1.29s/it, loss=0.192, avg_loss=0.238]  6%|▌         | 55/1000 [01:09<16:03,  1.02s/it, loss=0.192, avg_loss=0.238]  6%|▌         | 55/1000 [01:10<16:03,  1.02s/it, loss=0.495, avg_loss=0.242]  6%|▌         | 56/1000 [01:10<13:05,  1.20it/s, loss=0.495, avg_loss=0.242]  6%|▌         | 56/1000 [01:10<13:05,  1.20it/s, loss=0.431, avg_loss=0.246]  6%|▌         | 57/1000 [01:10<10:59,  1.43it/s, loss=0.431, avg_loss=0.246]  6%|▌         | 57/1000 [01:11<10:59,  1.43it/s, loss=0.19, avg_loss=0.245]   6%|▌         | 58/1000 [01:11<13:35,  1.15it/s, loss=0.19, avg_loss=0.245]  6%|▌         | 58/1000 [01:12<13:35,  1.15it/s, loss=0.358, avg_loss=0.247]  6%|▌         | 59/1000 [01:12<11:20,  1.38it/s, loss=0.358, avg_loss=0.247]  6%|▌         | 59/1000 [01:12<11:20,  1.38it/s, loss=0.192, avg_loss=0.246]  6%|▌         | 60/1000 [01:12<09:46,  1.60it/s, loss=0.192, avg_loss=0.246]  6%|▌         | 60/1000 [01:12<09:46,  1.60it/s, loss=0.366, avg_loss=0.248]  6%|▌         | 61/1000 [01:12<08:41,  1.80it/s, loss=0.366, avg_loss=0.248]  6%|▌         | 61/1000 [01:15<08:41,  1.80it/s, loss=0.181, avg_loss=0.247]  6%|▌         | 62/1000 [01:15<19:50,  1.27s/it, loss=0.181, avg_loss=0.247]  6%|▌         | 62/1000 [01:16<19:50,  1.27s/it, loss=0.121, avg_loss=0.245]  6%|▋         | 63/1000 [01:16<15:43,  1.01s/it, loss=0.121, avg_loss=0.245]  6%|▋         | 63/1000 [01:16<15:43,  1.01s/it, loss=0.207, avg_loss=0.244]  6%|▋         | 64/1000 [01:16<12:49,  1.22it/s, loss=0.207, avg_loss=0.244]  6%|▋         | 64/1000 [01:17<12:49,  1.22it/s, loss=0.124, avg_loss=0.242]  6%|▋         | 65/1000 [01:17<10:47,  1.44it/s, loss=0.124, avg_loss=0.242]  6%|▋         | 65/1000 [01:17<10:47,  1.44it/s, loss=0.417, avg_loss=0.245]  7%|▋         | 66/1000 [01:17<09:24,  1.65it/s, loss=0.417, avg_loss=0.245]  7%|▋         | 66/1000 [01:17<09:24,  1.65it/s, loss=0.473, avg_loss=0.248]  7%|▋         | 67/1000 [01:17<08:37,  1.80it/s, loss=0.473, avg_loss=0.248]  7%|▋         | 67/1000 [01:18<08:37,  1.80it/s, loss=0.209, avg_loss=0.248]  7%|▋         | 68/1000 [01:18<07:52,  1.97it/s, loss=0.209, avg_loss=0.248]  7%|▋         | 68/1000 [01:18<07:52,  1.97it/s, loss=0.134, avg_loss=0.246]  7%|▋         | 69/1000 [01:18<07:19,  2.12it/s, loss=0.134, avg_loss=0.246]  7%|▋         | 69/1000 [01:19<07:19,  2.12it/s, loss=0.308, avg_loss=0.247]  7%|▋         | 70/1000 [01:19<09:48,  1.58it/s, loss=0.308, avg_loss=0.247]  7%|▋         | 70/1000 [01:20<09:48,  1.58it/s, loss=0.176, avg_loss=0.246]  7%|▋         | 71/1000 [01:20<10:12,  1.52it/s, loss=0.176, avg_loss=0.246]  7%|▋         | 71/1000 [01:20<10:12,  1.52it/s, loss=0.162, avg_loss=0.245]  7%|▋         | 72/1000 [01:20<08:57,  1.73it/s, loss=0.162, avg_loss=0.245]  7%|▋         | 72/1000 [01:21<08:57,  1.73it/s, loss=0.313, avg_loss=0.246]  7%|▋         | 73/1000 [01:21<08:05,  1.91it/s, loss=0.313, avg_loss=0.246]  7%|▋         | 73/1000 [01:25<08:05,  1.91it/s, loss=0.308, avg_loss=0.246]  7%|▋         | 74/1000 [01:25<25:41,  1.66s/it, loss=0.308, avg_loss=0.246]  7%|▋         | 74/1000 [01:25<25:41,  1.66s/it, loss=0.174, avg_loss=0.245]  8%|▊         | 75/1000 [01:25<19:45,  1.28s/it, loss=0.174, avg_loss=0.245]  8%|▊         | 75/1000 [01:26<19:45,  1.28s/it, loss=0.132, avg_loss=0.244]  8%|▊         | 76/1000 [01:26<15:37,  1.01s/it, loss=0.132, avg_loss=0.244]  8%|▊         | 76/1000 [01:26<15:37,  1.01s/it, loss=0.192, avg_loss=0.243]  8%|▊         | 77/1000 [01:26<12:44,  1.21it/s, loss=0.192, avg_loss=0.243]  8%|▊         | 77/1000 [01:27<12:44,  1.21it/s, loss=0.233, avg_loss=0.243]  8%|▊         | 78/1000 [01:27<11:18,  1.36it/s, loss=0.233, avg_loss=0.243]  8%|▊         | 78/1000 [01:27<11:18,  1.36it/s, loss=0.0967, avg_loss=0.241]  8%|▊         | 79/1000 [01:27<09:42,  1.58it/s, loss=0.0967, avg_loss=0.241]  8%|▊         | 79/1000 [01:27<09:42,  1.58it/s, loss=0.256, avg_loss=0.242]   8%|▊         | 80/1000 [01:27<08:36,  1.78it/s, loss=0.256, avg_loss=0.242]  8%|▊         | 80/1000 [01:29<08:36,  1.78it/s, loss=0.251, avg_loss=0.242]  8%|▊         | 81/1000 [01:29<12:00,  1.28it/s, loss=0.251, avg_loss=0.242]  8%|▊         | 81/1000 [01:31<12:00,  1.28it/s, loss=nan, avg_loss=nan]      8%|▊         | 82/1000 [01:31<19:59,  1.31s/it, loss=nan, avg_loss=nan]  8%|▊         | 82/1000 [01:32<19:59,  1.31s/it, loss=0.244, avg_loss=nan]  8%|▊         | 83/1000 [01:32<15:46,  1.03s/it, loss=0.244, avg_loss=nan]  8%|▊         | 83/1000 [01:32<15:46,  1.03s/it, loss=0.128, avg_loss=nan]  8%|▊         | 84/1000 [01:32<12:48,  1.19it/s, loss=0.128, avg_loss=nan]  8%|▊         | 84/1000 [01:32<12:48,  1.19it/s, loss=0.243, avg_loss=nan]  8%|▊         | 85/1000 [01:32<10:45,  1.42it/s, loss=0.243, avg_loss=nan]  8%|▊         | 85/1000 [01:35<10:45,  1.42it/s, loss=0.111, avg_loss=nan]  9%|▊         | 86/1000 [01:35<17:56,  1.18s/it, loss=0.111, avg_loss=nan]  9%|▊         | 86/1000 [01:35<17:56,  1.18s/it, loss=0.133, avg_loss=nan]  9%|▊         | 87/1000 [01:35<14:18,  1.06it/s, loss=0.133, avg_loss=nan]  9%|▊         | 87/1000 [01:36<14:18,  1.06it/s, loss=0.384, avg_loss=nan]  9%|▉         | 88/1000 [01:36<11:47,  1.29it/s, loss=0.384, avg_loss=nan]  9%|▉         | 88/1000 [01:37<11:47,  1.29it/s, loss=0.276, avg_loss=nan]  9%|▉         | 89/1000 [01:37<13:45,  1.10it/s, loss=0.276, avg_loss=nan]  9%|▉         | 89/1000 [01:39<13:45,  1.10it/s, loss=0.123, avg_loss=nan]  9%|▉         | 90/1000 [01:39<19:31,  1.29s/it, loss=0.123, avg_loss=nan]  9%|▉         | 90/1000 [01:39<19:31,  1.29s/it, loss=0.133, avg_loss=nan]  9%|▉         | 91/1000 [01:39<15:24,  1.02s/it, loss=0.133, avg_loss=nan]  9%|▉         | 91/1000 [01:40<15:24,  1.02s/it, loss=0.101, avg_loss=nan]  9%|▉         | 92/1000 [01:40<12:32,  1.21it/s, loss=0.101, avg_loss=nan]  9%|▉         | 92/1000 [01:42<12:32,  1.21it/s, loss=0.357, avg_loss=nan]  9%|▉         | 93/1000 [01:42<19:52,  1.31s/it, loss=0.357, avg_loss=nan]  9%|▉         | 93/1000 [01:46<19:52,  1.31s/it, loss=0.321, avg_loss=nan]  9%|▉         | 94/1000 [01:46<30:51,  2.04s/it, loss=0.321, avg_loss=nan]  9%|▉         | 94/1000 [01:46<30:51,  2.04s/it, loss=0.289, avg_loss=nan] 10%|▉         | 95/1000 [01:46<23:20,  1.55s/it, loss=0.289, avg_loss=nan] 10%|▉         | 95/1000 [01:47<23:20,  1.55s/it, loss=0.198, avg_loss=nan] 10%|▉         | 96/1000 [01:47<18:04,  1.20s/it, loss=0.198, avg_loss=nan] 10%|▉         | 96/1000 [01:47<18:04,  1.20s/it, loss=0.456, avg_loss=nan] 10%|▉         | 97/1000 [01:47<14:23,  1.05it/s, loss=0.456, avg_loss=nan] 10%|▉         | 97/1000 [01:49<14:23,  1.05it/s, loss=0.455, avg_loss=nan] 10%|▉         | 98/1000 [01:49<18:05,  1.20s/it, loss=0.455, avg_loss=nan] 10%|▉         | 98/1000 [01:49<18:05,  1.20s/it, loss=0.184, avg_loss=nan] 10%|▉         | 99/1000 [01:49<14:24,  1.04it/s, loss=0.184, avg_loss=nan] 10%|▉         | 99/1000 [01:50<14:24,  1.04it/s, loss=0.0817, avg_loss=nan] 10%|█         | 100/1000 [01:50<11:50,  1.27it/s, loss=0.0817, avg_loss=nan] 10%|█         | 100/1000 [01:51<11:50,  1.27it/s, loss=0.0682, avg_loss=nan] 10%|█         | 101/1000 [01:51<15:46,  1.05s/it, loss=0.0682, avg_loss=nan] 10%|█         | 101/1000 [01:52<15:46,  1.05s/it, loss=0.21, avg_loss=nan]   10%|█         | 102/1000 [01:52<13:58,  1.07it/s, loss=0.21, avg_loss=nan] 10%|█         | 102/1000 [01:52<13:58,  1.07it/s, loss=0.236, avg_loss=nan] 10%|█         | 103/1000 [01:52<11:31,  1.30it/s, loss=0.236, avg_loss=nan] 10%|█         | 103/1000 [01:53<11:31,  1.30it/s, loss=0.124, avg_loss=nan] 10%|█         | 104/1000 [01:53<09:47,  1.52it/s, loss=0.124, avg_loss=nan]

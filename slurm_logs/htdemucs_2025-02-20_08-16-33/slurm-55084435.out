@@ -1,0 +1,26 @@
+Moving ../data/MOISESDB.zip to /localscratch/kaim.55084435.0 for faster access
+cp: cannot stat '../data/MOISESDB.zip': No such file or directory
+unzipping /localscratch/kaim.55084435.0/MOISESDB.zip
+unzip:  cannot find or open /localscratch/kaim.55084435.0/MOISESDB.zip, /localscratch/kaim.55084435.0/MOISESDB.zip.zip or /localscratch/kaim.55084435.0/MOISESDB.zip.ZIP.
+Dataset successfully unzipped.
+Dataset path set to: /localscratch/kaim.55084435.0/MOISESDB/moisesdb/moisesdb_v0.1
+Running training script for model: htdemucs with dataset at /localscratch/kaim.55084435.0/MOISESDB/moisesdb/moisesdb_v0.1
+wandb: Using wandb-core as the SDK backend. Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: kaimikkelsen (kaimikkelsen-mcgill-university). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/kaim/.netrc
+wandb: Tracking run with wandb version 0.18.0
+wandb: Run data is saved locally in /project/6002780/kaim/Music-Source-Separation-Training/wandb/run-20250220_082004-j27d1xpn
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run htdemucs_['/localscratch/kaim.55084435.0/MOISESDB/moisesdb/moisesdb_v0.1/train']_2025-02-20
+wandb: ⭐️ View project at https://wandb.ai/kaimikkelsen-mcgill-university/msst
+wandb: 🚀 View run at https://wandb.ai/kaimikkelsen-mcgill-university/msst/runs/j27d1xpn
+parsing args
+training model
+Use augmentation for training
+Dataset type: 1 Processes to use: 32 
+Collecting metadata for ['/localscratch/kaim.55084435.0/MOISESDB/moisesdb/moisesdb_v0.1/train']
+Warning: no tracks found in folder '/localscratch/kaim.55084435.0/MOISESDB/moisesdb/moisesdb_v0.1/train'. Please check it!
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+No tracks found for training. Check paths you provided!
+[1;34mwandb[0m: 🚀 View run [33mhtdemucs_['/localscratch/kaim.55084435.0/MOISESDB/moisesdb/moisesdb_v0.1/train']_2025-02-20[0m at: [34mhttps://wandb.ai/kaimikkelsen-mcgill-university/msst/runs/j27d1xpn[0m
+[1;34mwandb[0m: Find logs at: [1;35m../../../../../../project/6002780/kaim/Music-Source-Separation-Training/wandb/run-20250220_082004-j27d1xpn/logs[0m
