@@ -1,0 +1,7 @@
+Moving ../data/MOISESDB.zip to /localscratch/kaim.55091244.0 for faster access
+cp: cannot stat '../data/MOISESDB.zip': No such file or directory
+unzipping /localscratch/kaim.55091244.0/MOISESDB.zip
+unzip:  cannot find or open /localscratch/kaim.55091244.0/MOISESDB.zip, /localscratch/kaim.55091244.0/MOISESDB.zip.zip or /localscratch/kaim.55091244.0/MOISESDB.zip.ZIP.
+Dataset successfully unzipped.
+Dataset path set to: /localscratch/kaim.55091244.0/MOISESDB/moisesdb/moisesdb_v0.1
+Running training script for model: htdemucs with dataset at /localscratch/kaim.55091244.0/MOISESDB/moisesdb/moisesdb_v0.1
