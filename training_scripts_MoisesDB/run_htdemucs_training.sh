@@ -15,7 +15,7 @@ SCRATCH_DIR=$SLURM_TMPDIR
 # Variables
 MODEL_TYPE="htdemucs"
 CONFIG_PATH="configs/optimized_configs/config_musdb18_htdemucs.yaml"
-DATASET_NAME="MOISESDB"
+DATASET_NAME="moisesdb-4stem"
 DATASET_ZIP="../data/$DATASET_NAME.zip" # Specify the dataset ZIP name
 SLURM_LOGS_PATH="slurm_logs/${MODEL_TYPE}_${CURRENT_DATE}"
 CHECKPOINTS_PATH="~/scratch/checkpoints/${MODEL_TYPE}_${CURRENT_DATE}"
