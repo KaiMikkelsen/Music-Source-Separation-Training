@@ -60,7 +60,7 @@ if [ "$RUNNING_ON_MAC" = False ]; then
 
     echo "Dataset successfully unzipped."
 
-    if [ "$DATASET_NAME" = "MOISESDB" ]; then
+    if [ "$DATASET_NAME" = "moisesdb-4stem" ]; then
         DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/moisesdb/moisesdb_v0.1"
     elif [ "$DATASET_NAME" = "MUSDB18HQ" ]; then
         DATA_PATH="$SCRATCH_DIR/$DATASET_NAME"
