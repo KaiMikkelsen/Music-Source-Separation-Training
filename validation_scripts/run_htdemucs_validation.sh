@@ -30,7 +30,7 @@ mkdir -p "$SLURM_LOGS_PATH"
 exec > >(tee -a "$SLURM_LOGS_PATH/slurm-${SLURM_JOB_ID}.out") 2>&1
 
 # Activate the environment
-source separation_env/bin/activate
+source ../separation_env/bin/activate
 
 RUNNING_ON_MAC=False
 if [ "$RUNNING_ON_MAC" = False ]; then
