@@ -15,7 +15,7 @@ SCRATCH_DIR=$SLURM_TMPDIR
 # Variables
 BASE_DIR="/home/kaim/projects/def-ichiro/kaim/Music-Source-Separation-Training"
 MODEL_TYPE="htdemucs"
-CONFIG_PATH="/home/kaim/projects/def-ichiro/kaim/Music-Source-Separation-Training/configs/optimized_configs/config_musdb18_htdemucs.yaml"
+CONFIG_PATH="/home/kaim/projects/def-ichiro/kaim/Music-Source-Separation-Training/configs/config_musdb18_htdemucs.yaml"
 DATASET_NAME="MUSDB18HQ"
 DATASET_ZIP="/home/kaim/projects/def-ichiro/kaim/data/$DATASET_NAME.zip" # Specify the dataset ZIP name
 SLURM_LOGS_PATH="slurm_logs/${MODEL_TYPE}_${CURRENT_DATE}"
@@ -82,7 +82,7 @@ fi
 echo "Dataset path set to: $DATA_PATH"
 
 
-echo "Running training script for model: $MODEL_TYPE with dataset at $DATA_PATH"
+echo "Running validation script for model: $MODEL_TYPE with dataset at $DATA_PATH"
 
 python ../valid.py \
     --model_type "$MODEL_TYPE" \
