@@ -14,7 +14,7 @@ SCRATCH_DIR=$SLURM_TMPDIR
 
 # Variables
 MODEL_TYPE="bs_roformer"
-CONFIG_PATH="configs/optimized_configs/config_musdb18_bs_roformer.yaml"
+CONFIG_PATH="configs/config_musdb18_bs_roformer.yaml"
 DATASET_NAME="MUSDB18HQ"
 DATASET_ZIP="../data/$DATASET_NAME.zip" # Specify the dataset ZIP name
 SLURM_LOGS_PATH="slurm_logs/${MODEL_TYPE}_${CURRENT_DATE}"
