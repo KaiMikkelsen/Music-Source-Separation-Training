@@ -13,10 +13,11 @@ CURRENT_DATE=$(date +"%Y-%m-%d_%H-%M-%S")
 SCRATCH_DIR=$SLURM_TMPDIR
 
 # Variables
+BASE_DIR="/home/kaim/projects/def-ichiro/kaim/Music-Source-Separation-Training"
 MODEL_TYPE="htdemucs"
-CONFIG_PATH="configs/optimized_configs/config_musdb18_htdemucs.yaml"
+CONFIG_PATH="/home/kaim/projects/def-ichiro/kaim/Music-Source-Separation-Training/configs/optimized_configs/config_musdb18_htdemucs.yaml"
 DATASET_NAME="MUSDB18HQ"
-DATASET_ZIP="../data/$DATASET_NAME.zip" # Specify the dataset ZIP name
+DATASET_ZIP="/home/kaim/projects/def-ichiro/kaim/data/$DATASET_NAME.zip" # Specify the dataset ZIP name
 SLURM_LOGS_PATH="slurm_logs/${MODEL_TYPE}_${CURRENT_DATE}"
 #CHECKPOINTS_PATH="~/scratch/checkpoints/${MODEL_TYPE}_${CURRENT_DATE}"
 
@@ -30,7 +31,7 @@ mkdir -p "$SLURM_LOGS_PATH"
 exec > >(tee -a "$SLURM_LOGS_PATH/slurm-${SLURM_JOB_ID}.out") 2>&1
 
 # Activate the environment
-source ../separation_env/bin/activate
+source "$BASE_DIR/separation_env/bin/activate"
 
 RUNNING_ON_MAC=False
 if [ "$RUNNING_ON_MAC" = False ]; then
