@@ -89,7 +89,7 @@ python train.py \
     --results_path "$CHECKPOINTS_PATH" \
     --data_path "$DATA_PATH/train" \
     --valid_path "$DATA_PATH/validation" \
-    --metrics sdr l1_freq si_sdr neg_log_wmse aura_stft aura_mrstft bleedless fullness \
+    --metrics sdr \
     --num_workers 4 \
     --start_check_point "" \
     --device_ids 0 \
