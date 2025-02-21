@@ -12,6 +12,7 @@ import soundfile as sf
 from tqdm.auto import tqdm
 from ml_collections import ConfigDict
 from typing import Tuple, Dict, List, Union
+import torch.nn as nn
 from utils import demix, get_model_from_config, prefer_target_instrument, draw_spectrogram
 from utils import normalize_audio, denormalize_audio, apply_tta, read_audio_transposed, load_start_checkpoint
 from metrics import get_metrics
@@ -658,7 +659,12 @@ def check_validation(dict_args):
 
     device_ids = args.device_ids
     if torch.cuda.is_available():
-        device = torch.device(f'cuda:{device_ids[0]}')
+        if len(device_ids) <= 1:
+            device = torch.device(f'cuda:{device_ids[0]}')
+            model = model.to(device)
+        else:
+            device = torch.device(f'cuda:{device_ids[0]}')
+            model = nn.DataParallel(model, device_ids=device_ids).to(device)
     else:
         device = 'cpu'
         print('CUDA is not available. Run validation on CPU. It will be very slow...')
