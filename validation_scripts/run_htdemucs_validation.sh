@@ -89,4 +89,6 @@ python ../valid.py \
     --config_path "$CONFIG_PATH" \
     --start_check_point /home/kaim/projects/def-ichiro/kaim/Music-Source-Separation-Training/checkpoints/good_ckpts/htdemucs_2025-01-02_18-03-43/model_htdemucs_ep_435_sdr_6.0438.ckpt \
     --valid_path "$DATA_PATH/test" \
+    --device_ids 0 \
     --metrics sdr
+    
