@@ -1,0 +1,14 @@
+Dataset already exists in /localscratch/kaim.55201672.0, skipping copy.
+unzipping /localscratch/kaim.55201672.0/MUSDB18HQ.zip
+Archive:  /localscratch/kaim.55201672.0/MUSDB18HQ.zip
+replace /localscratch/kaim.55201672.0/MUSDB18HQ/train/Music Delta - Hendrix/other.wav? [y]es, [n]o, [A]ll, [N]one, [r]ename: Dataset successfully unzipped.
+Dataset path set to: /localscratch/kaim.55201672.0/MUSDB18HQ
+Running validation script for model: htdemucs with dataset at /localscratch/kaim.55201672.0/MUSDB18HQ
+Start from checkpoint: /home/kaim/projects/def-ichiro/kaim/Music-Source-Separation-Training/checkpoints/good_ckpts/htdemucs_2025-01-02_18-03-43/model_htdemucs_ep_435_sdr_6.0438.ckpt
+Instruments: ['drums', 'bass', 'other', 'vocals']
+Traceback (most recent call last):
+  File "/project/6002780/kaim/Music-Source-Separation-Training/validation_scripts/../valid.py", line 673, in <module>
+    check_validation(None)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/validation_scripts/../valid.py", line 661, in check_validation
+    device = torch.device(f'cuda:{device_ids[0]}')
+TypeError: 'int' object is not subscriptable
