@@ -1,0 +1,33 @@
+Dataset already exists in /localscratch/kaim.55208428.0, skipping copy.
+unzipping /localscratch/kaim.55208428.0/MUSDB18HQ.zip
+Archive:  /localscratch/kaim.55208428.0/MUSDB18HQ.zip
+replace /localscratch/kaim.55208428.0/MUSDB18HQ/train/Music Delta - Hendrix/other.wav? [y]es, [n]o, [A]ll, [N]one, [r]ename: Dataset successfully unzipped.
+Dataset path set to: /localscratch/kaim.55208428.0/MUSDB18HQ
+Running training script for model: bs_roformer with dataset at /localscratch/kaim.55208428.0/MUSDB18HQ
+wandb: Using wandb-core as the SDK backend. Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: kaimikkelsen (kaimikkelsen-mcgill-university). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/kaim/.netrc
+wandb: Tracking run with wandb version 0.18.0
+wandb: Run data is saved locally in /project/6002780/kaim/Music-Source-Separation-Training/wandb/run-20250221_120357-b0izpigp
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run bs_roformer_[drums-bass-other-vocals]_2025-02-21
+wandb: ⭐️ View project at https://wandb.ai/kaimikkelsen-mcgill-university/msst
+wandb: 🚀 View run at https://wandb.ai/kaimikkelsen-mcgill-university/msst/runs/b0izpigp
+parsing args
+GPU Compute Capability below 8.0, using math or mem efficient attention if input tensor is on cuda
+training model
+Use augmentation for training
+Dataset type: 1 Processes to use: 32 
+Collecting metadata for ['/localscratch/kaim.55208428.0/MUSDB18HQ/train']
+  0%|          | 0/86 [00:00<?, ?it/s]  1%|          | 1/86 [00:23<32:49, 23.16s/it]  2%|▏         | 2/86 [00:24<14:16, 10.19s/it]  3%|▎         | 3/86 [00:24<07:48,  5.65s/it]  5%|▍         | 4/86 [00:24<04:46,  3.49s/it]  7%|▋         | 6/86 [00:25<02:24,  1.81s/it]  8%|▊         | 7/86 [00:27<02:29,  1.89s/it] 16%|█▋        | 14/86 [00:27<00:37,  1.90it/s] 19%|█▊        | 16/86 [00:27<00:29,  2.36it/s] 23%|██▎       | 20/86 [00:28<00:20,  3.23it/s] 27%|██▋       | 23/86 [00:28<00:15,  4.16it/s] 31%|███▏      | 27/86 [00:29<00:13,  4.54it/s] 38%|███▊      | 33/86 [00:29<00:07,  7.26it/s] 45%|████▌     | 39/86 [00:29<00:05,  9.10it/s] 50%|█████     | 43/86 [00:30<00:06,  6.81it/s]100%|██████████| 86/86 [00:30<00:00,  2.78it/s]
+Found tracks in dataset: 86
+Losses for training: ['masked_loss']
+Instruments: ['drums', 'bass', 'other', 'vocals']
+Metrics for training: ['sdr']. Metric for scheduler: sdr
+Patience: 3 Reduce factor: 0.95
+Batch size: 1 Grad accum steps: 1 Effective batch size: 1
+Dataset type: 1
+Optimizer: adam
+Train for: 1000 epochs
+Train epoch: 0 Learning rate: 1e-05
+  0%|          | 0/1000 [00:00<?, ?it/s]  0%|          | 0/1000 [00:15<?, ?it/s, loss=180, avg_loss=180]  0%|          | 1/1000 [00:15<4:23:54, 15.85s/it, loss=180, avg_loss=180]  0%|          | 1/1000 [00:17<4:23:54, 15.85s/it, loss=151, avg_loss=166]  0%|          | 2/1000 [00:17<2:00:28,  7.24s/it, loss=151, avg_loss=166]  0%|          | 2/1000 [00:18<2:00:28,  7.24s/it, loss=127, avg_loss=153]  0%|          | 3/1000 [00:18<1:14:33,  4.49s/it, loss=127, avg_loss=153]  0%|          | 3/1000 [00:19<1:14:33,  4.49s/it, loss=141, avg_loss=150]  0%|          | 4/1000 [00:19<52:58,  3.19s/it, loss=141, avg_loss=150]    0%|          | 4/1000 [00:20<52:58,  3.19s/it, loss=260, avg_loss=172]  0%|          | 5/1000 [00:20<41:03,  2.48s/it, loss=260, avg_loss=172]  0%|          | 5/1000 [00:21<41:03,  2.48s/it, loss=88.7, avg_loss=158]  1%|          | 6/1000 [00:21<33:52,  2.04s/it, loss=88.7, avg_loss=158]  1%|          | 6/1000 [00:23<33:52,  2.04s/it, loss=105, avg_loss=151]   1%|          | 7/1000 [00:23<29:18,  1.77s/it, loss=105, avg_loss=151]  1%|          | 7/1000 [00:24<29:18,  1.77s/it, loss=206, avg_loss=157]  1%|          | 8/1000 [00:24<26:18,  1.59s/it, loss=206, avg_loss=157]  1%|          | 8/1000 [00:25<26:18,  1.59s/it, loss=97.5, avg_loss=151]  1%|          | 9/1000 [00:25<24:17,  1.47s/it, loss=97.5, avg_loss=151]  1%|          | 9/1000 [00:26<24:17,  1.47s/it, loss=81.5, avg_loss=144]  1%|          | 10/1000 [00:26<22:55,  1.39s/it, loss=81.5, avg_loss=144]  1%|          | 10/1000 [00:27<22:55,  1.39s/it, loss=157, avg_loss=145]   1%|          | 11/1000 [00:27<21:59,  1.33s/it, loss=157, avg_loss=145]  1%|          | 11/1000 [00:29<21:59,  1.33s/it, loss=107, avg_loss=142]  1%|          | 12/1000 [00:29<21:20,  1.30s/it, loss=107, avg_loss=142]  1%|          | 12/1000 [00:30<21:20,  1.30s/it, loss=138, avg_loss=142]  1%|▏         | 13/1000 [00:30<20:53,  1.27s/it, loss=138, avg_loss=142]  1%|▏         | 13/1000 [00:31<20:53,  1.27s/it, loss=235, avg_loss=148]  1%|▏         | 14/1000 [00:31<20:33,  1.25s/it, loss=235, avg_loss=148]  1%|▏         | 14/1000 [00:32<20:33,  1.25s/it, loss=200, avg_loss=152]  2%|▏         | 15/1000 [00:32<20:19,  1.24s/it, loss=200, avg_loss=152]  2%|▏         | 15/1000 [00:33<20:19,  1.24s/it, loss=105, avg_loss=149]  2%|▏         | 16/1000 [00:33<20:09,  1.23s/it, loss=105, avg_loss=149]  2%|▏         | 16/1000 [00:35<20:09,  1.23s/it, loss=113, avg_loss=147]  2%|▏         | 17/1000 [00:35<20:01,  1.22s/it, loss=113, avg_loss=147]  2%|▏         | 17/1000 [00:36<20:01,  1.22s/it, loss=164, avg_loss=148]  2%|▏         | 18/1000 [00:36<19:57,  1.22s/it, loss=164, avg_loss=148]  2%|▏         | 18/1000 [00:37<19:57,  1.22s/it, loss=162, avg_loss=148]  2%|▏         | 19/1000 [00:37<19:52,  1.22s/it, loss=162, avg_loss=148]  2%|▏         | 19/1000 [00:38<19:52,  1.22s/it, loss=109, avg_loss=147]  2%|▏         | 20/1000 [00:38<19:49,  1.21s/it, loss=109, avg_loss=147]  2%|▏         | 20/1000 [00:40<19:49,  1.21s/it, loss=108, avg_loss=145]  2%|▏         | 21/1000 [00:40<19:45,  1.21s/it, loss=108, avg_loss=145]  2%|▏         | 21/1000 [00:41<19:45,  1.21s/it, loss=93.1, avg_loss=142]  2%|▏         | 22/1000 [00:41<19:43,  1.21s/it, loss=93.1, avg_loss=142]  2%|▏         | 22/1000 [00:42<19:43,  1.21s/it, loss=145, avg_loss=142]   2%|▏         | 23/1000 [00:42<19:41,  1.21s/it, loss=145, avg_loss=142]  2%|▏         | 23/1000 [00:43<19:41,  1.21s/it, loss=73.7, avg_loss=140]  2%|▏         | 24/1000 [00:43<19:40,  1.21s/it, loss=73.7, avg_loss=140]  2%|▏         | 24/1000 [00:44<19:40,  1.21s/it, loss=106, avg_loss=138]   2%|▎         | 25/1000 [00:44<19:38,  1.21s/it, loss=106, avg_loss=138]

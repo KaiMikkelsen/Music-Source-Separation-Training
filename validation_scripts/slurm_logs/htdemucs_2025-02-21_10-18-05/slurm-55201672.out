@@ -1,0 +1,7 @@
+Moving ../data/MUSDB18HQ.zip to /localscratch/kaim.55201672.0 for faster access
+cp: cannot stat '../data/MUSDB18HQ.zip': No such file or directory
+unzipping /localscratch/kaim.55201672.0/MUSDB18HQ.zip
+unzip:  cannot find or open /localscratch/kaim.55201672.0/MUSDB18HQ.zip, /localscratch/kaim.55201672.0/MUSDB18HQ.zip.zip or /localscratch/kaim.55201672.0/MUSDB18HQ.zip.ZIP.
+Dataset successfully unzipped.
+Dataset path set to: /localscratch/kaim.55201672.0/MUSDB18HQ
+Running training script for model: htdemucs with dataset at /localscratch/kaim.55201672.0/MUSDB18HQ

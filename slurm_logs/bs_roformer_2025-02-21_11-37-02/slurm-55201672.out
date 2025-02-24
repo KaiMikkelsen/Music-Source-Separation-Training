@@ -1,0 +1,19 @@
+Dataset already exists in /localscratch/kaim.55201672.0, skipping copy.
+unzipping /localscratch/kaim.55201672.0/MUSDB18HQ.zip
+Archive:  /localscratch/kaim.55201672.0/MUSDB18HQ.zip
+replace /localscratch/kaim.55201672.0/MUSDB18HQ/train/Music Delta - Hendrix/other.wav? [y]es, [n]o, [A]ll, [N]one, [r]ename: Dataset successfully unzipped.
+Dataset path set to: /localscratch/kaim.55201672.0/MUSDB18HQ
+Running training script for model: bs_roformer with dataset at /localscratch/kaim.55201672.0/MUSDB18HQ
+parsing args
+Traceback (most recent call last):
+  File "/project/6002780/kaim/Music-Source-Separation-Training/train.py", line 549, in <module>
+    train_model(None)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/train.py", line 490, in train_model
+    model, config = get_model_from_config(args.model_type, args.config_path)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/utils.py", line 98, in get_model_from_config
+    from models.bs_roformer import BSRoformer
+  File "/project/6002780/kaim/Music-Source-Separation-Training/models/bs_roformer/__init__.py", line 1, in <module>
+    from models.bs_roformer.bs_roformer import BSRoformer
+  File "/project/6002780/kaim/Music-Source-Separation-Training/models/bs_roformer/bs_roformer.py", line 19, in <module>
+    from hyper_connections import get_init_and_expand_reduce_stream_functions
+ModuleNotFoundError: No module named 'hyper_connections'

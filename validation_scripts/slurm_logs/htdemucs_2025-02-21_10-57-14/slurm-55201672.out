@@ -1,0 +1,517 @@
+Dataset already exists in /localscratch/kaim.55201672.0, skipping copy.
+unzipping /localscratch/kaim.55201672.0/MUSDB18HQ.zip
+Archive:  /localscratch/kaim.55201672.0/MUSDB18HQ.zip
+replace /localscratch/kaim.55201672.0/MUSDB18HQ/train/Music Delta - Hendrix/other.wav? [y]es, [n]o, [A]ll, [N]one, [r]ename: Dataset successfully unzipped.
+Dataset path set to: /localscratch/kaim.55201672.0/MUSDB18HQ
+Running validation script for model: htdemucs with dataset at /localscratch/kaim.55201672.0/MUSDB18HQ
+Start from checkpoint: /home/kaim/projects/def-ichiro/kaim/Music-Source-Separation-Training/checkpoints/good_ckpts/htdemucs_2025-01-02_18-03-43/model_htdemucs_ep_435_sdr_6.0438.ckpt
+Instruments: ['drums', 'bass', 'other', 'vocals']
+Total mixtures: 50
+Overlap: 4 Batch size: 8
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/AM Contra - Heart Peripheral Shape: (2, 9265664)
+Instr: drums
+Metric sdr         value: 5.1760
+Instr: bass
+Metric sdr         value: -0.6528
+Instr: other
+Metric sdr         value: 0.6563
+Instr: vocals
+Metric sdr         value: 8.8093
+Time for song: 18.58 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Al James - Schoolboy Facination Shape: (2, 8843231)
+Instr: drums
+Metric sdr         value: 4.3172
+Instr: bass
+Metric sdr         value: 6.2664
+Instr: other
+Metric sdr         value: 2.1507
+Instr: vocals
+Metric sdr         value: 5.9745
+Time for song: 6.80 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Angels In Amplifiers - I'm Alright Shape: (2, 7920084)
+Instr: drums
+Metric sdr         value: 5.5937
+Instr: bass
+Metric sdr         value: 6.3223
+Instr: other
+Metric sdr         value: 6.0548
+Instr: vocals
+Metric sdr         value: 8.3672
+Time for song: 6.37 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Arise - Run Run Run Shape: (2, 9675225)
+Instr: drums
+Metric sdr         value: -2.7405
+Instr: bass
+Metric sdr         value: 7.4370
+Instr: other
+Metric sdr         value: 0.8375
+Instr: vocals
+Metric sdr         value: 7.4652
+Time for song: 6.70 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/BKS - Bulldozer Shape: (2, 14863472)
+Instr: drums
+Metric sdr         value: 9.3853
+Instr: bass
+Metric sdr         value: 6.7983
+Instr: other
+Metric sdr         value: 4.6191
+Instr: vocals
+Metric sdr         value: 6.2478
+Time for song: 11.27 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/BKS - Too Much Shape: (2, 9707512)
+Instr: drums
+Metric sdr         value: 7.4513
+Instr: bass
+Metric sdr         value: 9.2730
+Instr: other
+Metric sdr         value: 5.1683
+Instr: vocals
+Metric sdr         value: 9.8045
+Time for song: 6.84 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Ben Carrigan - We'll Talk About It All Tonight Shape: (2, 11241562)
+Instr: drums
+Metric sdr         value: 7.0636
+Instr: bass
+Metric sdr         value: 7.7886
+Instr: other
+Metric sdr         value: 4.3098
+Instr: vocals
+Metric sdr         value: 3.7632
+Time for song: 7.87 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Bobby Nobody - Stitch Up Shape: (2, 9757125)
+Instr: drums
+Metric sdr         value: 5.1932
+Instr: bass
+Metric sdr         value: 5.1835
+Instr: other
+Metric sdr         value: 3.2622
+Instr: vocals
+Metric sdr         value: 7.4581
+Time for song: 6.90 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Buitraker - Revo X Shape: (2, 12163922)
+Instr: drums
+Metric sdr         value: 9.6421
+Instr: bass
+Metric sdr         value: 6.7421
+Instr: other
+Metric sdr         value: 5.1321
+Instr: vocals
+Metric sdr         value: 3.8804
+Time for song: 8.53 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Carlos Gonzalez - A Place For Us Shape: (2, 11034647)
+Instr: drums
+Metric sdr         value: 5.3700
+Instr: bass
+Metric sdr         value: 1.6020
+Instr: other
+Metric sdr         value: 4.6487
+Instr: vocals
+Metric sdr         value: 5.0997
+Time for song: 7.74 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Cristina Vane - So Easy Shape: (2, 11207306)
+Instr: drums
+Metric sdr         value: 9.6059
+Instr: bass
+Metric sdr         value: 4.6498
+Instr: other
+Metric sdr         value: 3.8302
+Instr: vocals
+Metric sdr         value: 8.6800
+Time for song: 7.85 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Detsky Sad - Walkie Talkie Shape: (2, 8400262)
+Instr: drums
+Metric sdr         value: 4.7729
+Instr: bass
+Metric sdr         value: 1.2383
+Instr: other
+Metric sdr         value: 2.2716
+Instr: vocals
+Metric sdr         value: 2.9344
+Time for song: 7.73 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Enda Reilly - Cur An Long Ag Seol Shape: (2, 8246503)
+Instr: drums
+Metric sdr         value: 0.6307
+Instr: bass
+Metric sdr         value: -0.2302
+Instr: other
+Metric sdr         value: 5.9578
+Instr: vocals
+Metric sdr         value: 8.4748
+Time for song: 6.90 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Forkupines - Semantics Shape: (2, 12065091)
+Instr: drums
+Metric sdr         value: 9.6012
+Instr: bass
+Metric sdr         value: 4.0402
+Instr: other
+Metric sdr         value: 5.0361
+Instr: vocals
+Metric sdr         value: 6.8865
+Time for song: 8.43 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Georgia Wonder - Siren Shape: (2, 18979538)
+Instr: drums
+Metric sdr         value: 8.2331
+Instr: bass
+Metric sdr         value: 9.3815
+Instr: other
+Metric sdr         value: 4.7848
+Instr: vocals
+Metric sdr         value: 4.1165
+Time for song: 13.25 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Girls Under Glass - We Feel Alright Shape: (2, 13992103)
+Instr: drums
+Metric sdr         value: 4.9195
+Instr: bass
+Metric sdr         value: 2.6153
+Instr: other
+Metric sdr         value: 4.9865
+Instr: vocals
+Metric sdr         value: 4.4797
+Time for song: 9.87 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Hollow Ground - Ill Fate Shape: (2, 6247828)
+Instr: drums
+Metric sdr         value: 3.6558
+Instr: bass
+Metric sdr         value: -1.7503
+Instr: other
+Metric sdr         value: 1.6759
+Instr: vocals
+Metric sdr         value: 7.0535
+Time for song: 4.44 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/James Elder & Mark M Thompson - The English Actor Shape: (2, 9061369)
+Instr: drums
+Metric sdr         value: 7.7092
+Instr: bass
+Metric sdr         value: 5.8260
+Instr: other
+Metric sdr         value: 5.4716
+Instr: vocals
+Metric sdr         value: 6.3761
+Time for song: 6.39 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Juliet's Rescue - Heartbeats Shape: (2, 11803444)
+Instr: drums
+Metric sdr         value: 10.8424
+Instr: bass
+Metric sdr         value: 2.8652
+Instr: other
+Metric sdr         value: 4.9744
+Instr: vocals
+Metric sdr         value: 7.5936
+Time for song: 8.29 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Little Chicago's Finest - My Own Shape: (2, 12419072)
+Instr: drums
+Metric sdr         value: 0.6612
+Instr: bass
+Metric sdr         value: 3.8373
+Instr: other
+Metric sdr         value: -5.9585
+Instr: vocals
+Metric sdr         value: 6.9328
+Time for song: 10.59 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Louis Cressy Band - Good Time Shape: (2, 12913425)
+Instr: drums
+Metric sdr         value: 7.9124
+Instr: bass
+Metric sdr         value: 6.5925
+Instr: other
+Metric sdr         value: 7.4938
+Instr: vocals
+Metric sdr         value: 6.9800
+Time for song: 9.04 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Lyndsey Ollard - Catching Up Shape: (2, 10029600)
+Instr: drums
+Metric sdr         value: 6.3082
+Instr: bass
+Metric sdr         value: 7.6086
+Instr: other
+Metric sdr         value: 4.7289
+Instr: vocals
+Metric sdr         value: 11.2887
+Time for song: 7.03 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/M.E.R.C. Music - Knockout Shape: (2, 11907000)
+Instr: drums
+Metric sdr         value: 6.2635
+Instr: bass
+Metric sdr         value: 4.8279
+Instr: other
+Metric sdr         value: 3.9648
+Instr: vocals
+Metric sdr         value: 7.3125
+Time for song: 8.38 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Moosmusic - Big Dummy Shake Shape: (2, 8769600)
+Instr: drums
+Metric sdr         value: 8.0130
+Instr: bass
+Metric sdr         value: 5.1484
+Instr: other
+Metric sdr         value: 5.1401
+Instr: vocals
+Metric sdr         value: 8.7604
+Time for song: 6.17 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Motor Tapes - Shore Shape: (2, 10880494)
+Instr: drums
+Metric sdr         value: 5.4533
+Instr: bass
+Metric sdr         value: 8.3442
+Instr: other
+Metric sdr         value: 7.6994
+Instr: vocals
+Metric sdr         value: 5.7447
+Time for song: 7.64 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Mu - Too Bright Shape: (2, 12002484)
+Instr: drums
+Metric sdr         value: 11.4290
+Instr: bass
+Metric sdr         value: 2.4733
+Instr: other
+Metric sdr         value: 3.6241
+Instr: vocals
+Metric sdr         value: 6.6298
+Time for song: 8.37 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Nerve 9 - Pray For The Rain Shape: (2, 15157800)
+Instr: drums
+Metric sdr         value: 9.1671
+Instr: bass
+Metric sdr         value: 5.4415
+Instr: other
+Metric sdr         value: 5.2343
+Instr: vocals
+Metric sdr         value: 6.0298
+Time for song: 10.57 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/PR - Happy Daze Shape: (2, 7175168)
+Instr: drums
+Metric sdr         value: 11.3480
+Instr: bass
+Metric sdr         value: 3.9488
+Instr: other
+Metric sdr         value: 1.2003
+Instr: vocals
+Metric sdr         value: -3.4156
+Time for song: 5.09 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/PR - Oh No Shape: (2, 3360177)
+Instr: drums
+Metric sdr         value: 5.2746
+Instr: bass
+Metric sdr         value: 0.7055
+Instr: other
+Metric sdr         value: 0.2661
+Instr: vocals
+Metric sdr         value: 1.2519
+Time for song: 2.42 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Punkdisco - Oral Hygiene Shape: (2, 9772481)
+Instr: drums
+Metric sdr         value: 2.2316
+Instr: bass
+Metric sdr         value: 2.6694
+Instr: other
+Metric sdr         value: 2.5257
+Instr: vocals
+Metric sdr         value: 7.5741
+Time for song: 6.86 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Raft Monk - Tiring Shape: (2, 9360028)
+Instr: drums
+Metric sdr         value: 5.8334
+Instr: bass
+Metric sdr         value: 6.2312
+Instr: other
+Metric sdr         value: 3.2860
+Instr: vocals
+Metric sdr         value: 3.9624
+Time for song: 6.55 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Sambasevam Shanmugam - Kaathaadi Shape: (2, 14018484)
+Instr: drums
+Metric sdr         value: 4.0339
+Instr: bass
+Metric sdr         value: 8.2045
+Instr: other
+Metric sdr         value: 6.0760
+Instr: vocals
+Metric sdr         value: 8.4623
+Time for song: 9.79 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Secretariat - Borderline Shape: (2, 12649892)
+Instr: drums
+Metric sdr         value: 4.1503
+Instr: bass
+Metric sdr         value: 3.3764
+Instr: other
+Metric sdr         value: 6.5364
+Instr: vocals
+Metric sdr         value: 5.9916
+Time for song: 8.88 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Secretariat - Over The Top Shape: (2, 11073328)
+Instr: drums
+Metric sdr         value: 5.6530
+Instr: bass
+Metric sdr         value: 8.0507
+Instr: other
+Metric sdr         value: 6.1523
+Instr: vocals
+Metric sdr         value: 6.8174
+Time for song: 7.80 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Side Effects Project - Sing With Me Shape: (2, 10746422)
+Instr: drums
+Metric sdr         value: 11.0567
+Instr: bass
+Metric sdr         value: 5.7726
+Instr: other
+Metric sdr         value: 1.5105
+Instr: vocals
+Metric sdr         value: 9.3388
+Time for song: 7.64 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Signe Jakobsen - What Have You Done To Me Shape: (2, 7823222)
+Instr: drums
+Metric sdr         value: 3.7321
+Instr: bass
+Metric sdr         value: 1.3944
+Instr: other
+Metric sdr         value: 4.4444
+Instr: vocals
+Metric sdr         value: 9.0455
+Time for song: 5.52 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Skelpolu - Resurrection Shape: (2, 17448735)
+Instr: drums
+Metric sdr         value: 8.1801
+Instr: bass
+Metric sdr         value: 11.3896
+Instr: other
+Metric sdr         value: 4.0833
+Instr: vocals
+Metric sdr         value: 1.0314
+Time for song: 11.99 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Speak Softly - Broken Man Shape: (2, 11164364)
+Instr: drums
+Metric sdr         value: 6.1183
+Instr: bass
+Metric sdr         value: 8.5422
+Instr: other
+Metric sdr         value: 4.0423
+Instr: vocals
+Metric sdr         value: 4.0152
+Time for song: 7.92 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Speak Softly - Like Horses Shape: (2, 13788600)
+Instr: drums
+Metric sdr         value: 4.7873
+Instr: bass
+Metric sdr         value: 15.1985
+Instr: other
+Metric sdr         value: 5.3312
+Instr: vocals
+Metric sdr         value: 6.2472
+Time for song: 10.93 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/The Doppler Shift - Atrophy Shape: (2, 14616591)
+Instr: drums
+Metric sdr         value: 5.3821
+Instr: bass
+Metric sdr         value: -1.0663
+Instr: other
+Metric sdr         value: 4.4457
+Instr: vocals
+Metric sdr         value: 5.9700
+Time for song: 10.32 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/The Easton Ellises (Baumi) - SDRNR Shape: (2, 10349568)
+Instr: drums
+Metric sdr         value: 7.0234
+Instr: bass
+Metric sdr         value: 4.5602
+Instr: other
+Metric sdr         value: 1.0072
+Instr: vocals
+Metric sdr         value: 3.4804
+Time for song: 7.18 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/The Easton Ellises - Falcon 69 Shape: (2, 10892288)
+Instr: drums
+Metric sdr         value: 8.1390
+Instr: bass
+Metric sdr         value: 6.0926
+Instr: other
+Metric sdr         value: 1.1954
+Instr: vocals
+Metric sdr         value: 1.4668
+Time for song: 7.62 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/The Long Wait - Dark Horses Shape: (2, 13482293)
+Instr: drums
+Metric sdr         value: 5.3770
+Instr: bass
+Metric sdr         value: 5.6919
+Instr: other
+Metric sdr         value: 4.3346
+Instr: vocals
+Metric sdr         value: 7.4178
+Time for song: 9.31 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/The Mountaineering Club - Mallory Shape: (2, 10780678)
+Instr: drums
+Metric sdr         value: 7.7207
+Instr: bass
+Metric sdr         value: 9.8143
+Instr: other
+Metric sdr         value: 6.2705
+Instr: vocals
+Metric sdr         value: 8.3797
+Time for song: 7.49 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/The Sunshine Garcia Band - For I Am The Moon Shape: (2, 14125083)
+Instr: drums
+Metric sdr         value: 2.5405
+Instr: bass
+Metric sdr         value: 2.8423
+Instr: other
+Metric sdr         value: 0.7670
+Instr: vocals
+Metric sdr         value: 9.0734
+Time for song: 9.80 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Timboz - Pony Shape: (2, 11159449)
+Instr: drums
+Metric sdr         value: 3.7537
+Instr: bass
+Metric sdr         value: 2.1198
+Instr: other
+Metric sdr         value: 7.9680
+Instr: vocals
+Metric sdr         value: 4.9053
+Time for song: 7.80 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Tom McKenzie - Directions Shape: (2, 7755103)
+Instr: drums
+Metric sdr         value: 11.2255
+Instr: bass
+Metric sdr         value: 4.1733
+Instr: other
+Metric sdr         value: 2.1280
+Instr: vocals
+Metric sdr         value: 9.3238
+Time for song: 5.36 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Triviul feat. The Fiend - Widow Shape: (2, 10368337)
+Instr: drums
+Metric sdr         value: 5.4831
+Instr: bass
+Metric sdr         value: 11.7373
+Instr: other
+Metric sdr         value: 2.6526
+Instr: vocals
+Metric sdr         value: 7.5489
+Time for song: 7.23 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/We Fell From The Sky - Not You Shape: (2, 9168272)
+Instr: drums
+Metric sdr         value: 8.9557
+Instr: bass
+Metric sdr         value: 2.4331
+Instr: other
+Metric sdr         value: 6.4233
+Instr: vocals
+Metric sdr         value: 4.9230
+Time for song: 6.42 sec
+Song: /localscratch/kaim.55201672.0/MUSDB18HQ/test/Zeno - Signs Shape: (2, 10336331)
+Instr: drums
+Metric sdr         value: 7.3731
+Instr: bass
+Metric sdr         value: 2.0858
+Instr: other
+Metric sdr         value: 5.1126
+Instr: vocals
+Metric sdr         value: 6.3209
+Time for song: 7.20 sec
+Num overlap: 4
+Instr drums sdr: 6.3401 (Std: 2.9192)
+Instr bass sdr: 5.1128 (Std: 3.4260)
+Instr other sdr: 3.9103 (Std: 2.4001)
+Instr vocals sdr: 6.2455 (Std: 2.6304)
+Metric avg sdr        : 5.4022
+Elapsed time: 405.66 sec

@@ -1,0 +1,21 @@
+Dataset already exists in /localscratch/kaim.55201672.0, skipping copy.
+unzipping /localscratch/kaim.55201672.0/MUSDB18HQ.zip
+Archive:  /localscratch/kaim.55201672.0/MUSDB18HQ.zip
+replace /localscratch/kaim.55201672.0/MUSDB18HQ/train/Music Delta - Hendrix/other.wav? [y]es, [n]o, [A]ll, [N]one, [r]ename: Dataset successfully unzipped.
+Dataset path set to: /localscratch/kaim.55201672.0/MUSDB18HQ
+Running training script for model: htdemucs with dataset at /localscratch/kaim.55201672.0/MUSDB18HQ
+usage: train.py [-h] [--model_type MODEL_TYPE] [--config_path CONFIG_PATH]
+                [--start_check_point START_CHECK_POINT]
+                [--results_path RESULTS_PATH]
+                [--data_path DATA_PATH [DATA_PATH ...]]
+                [--dataset_type DATASET_TYPE]
+                [--valid_path VALID_PATH [VALID_PATH ...]]
+                [--num_workers NUM_WORKERS] [--pin_memory] [--seed SEED]
+                [--device_ids DEVICE_IDS [DEVICE_IDS ...]]
+                [--loss {masked_loss,mse_loss,l1_loss,multistft_loss} [{masked_loss,mse_loss,l1_loss,multistft_loss} ...]]
+                [--wandb_key WANDB_KEY] [--pre_valid]
+                [--metrics {sdr,l1_freq,si_sdr,log_wmse,aura_stft,aura_mrstft,bleedless,fullness} [{sdr,l1_freq,si_sdr,log_wmse,aura_stft,aura_mrstft,bleedless,fullness} ...]]
+                [--metric_for_scheduler {sdr,l1_freq,si_sdr,log_wmse,aura_stft,aura_mrstft,bleedless,fullness}]
+                [--train_lora] [--lora_checkpoint LORA_CHECKPOINT]
+train.py: error: argument --metrics: invalid choice: 'neg_log_wmse' (choose from 'sdr', 'l1_freq', 'si_sdr', 'log_wmse', 'aura_stft', 'aura_mrstft', 'bleedless', 'fullness')
+parsing args
