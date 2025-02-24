@@ -716,10 +716,10 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
         try:
             train_one_epoch(model, config, args, optimizer, device, device_ids, epoch,
                         use_amp, scaler, gradient_accumulation_steps, train_loader, multi_loss)
-        except MemoryError:
-            print("Memory Error: skipping epoch")
+        except Exception as e:
+            print(f"Error occurred during training: {e}")
             raise optuna.exceptions.TrialPruned()
-            continue
+            #continue
         save_last_weights(args, model, device_ids)
         best_metric = compute_epoch_metrics(model, args, config, device, device_ids, best_metric, epoch, scheduler)
         trial.report(best_metric, epoch)
