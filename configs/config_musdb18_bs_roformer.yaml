@@ -113,8 +113,8 @@ training:
   patience: 3
   reduce_factor: 0.95
   target_instrument: null
-  num_epochs: 1000
-  num_steps: 1000
+  num_epochs: 25
+  num_steps: 150
   augmentation: false # enable augmentations by audiomentations and pedalboard
   augmentation_type: simple1
   use_mp3_compress: false # Deprecated
