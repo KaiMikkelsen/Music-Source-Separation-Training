@@ -717,7 +717,7 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
             train_one_epoch(model, config, args, optimizer, device, device_ids, epoch,
                         use_amp, scaler, gradient_accumulation_steps, train_loader, multi_loss)
         except torch.cuda.OutOfMemoryError:
-            print(f"Error occurred during training: {e}")
+            #print(f"Error occurred during training: {e}")
             torch.cuda.empty_cache()
             raise optuna.exceptions.TrialPruned()
             #continue
