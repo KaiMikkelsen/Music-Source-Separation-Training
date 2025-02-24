@@ -612,8 +612,8 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
     # **Learning-related**:
     lr = trial.suggest_loguniform("lr", 1e-6, 1e-3)
     optimizer = trial.suggest_categorical("optimizer", ["rmsprop", "adam", "sgd"])
-    batch_size = trial.suggest_int("batch_size", 1, 16, step=1)
-    gradient_accumulation_steps = trial.suggest_int("gradient_accumulation_steps", 1, 16, step=1)
+    batch_size = trial.suggest_int("batch_size", 1, 2, step=1)
+    gradient_accumulation_steps = trial.suggest_int("gradient_accumulation_steps", 1, 2, step=1)
     ema_momentum = trial.suggest_loguniform("ema_momentum", 0.9, 0.999)
     #use_amp = trial.boolean("use_amp")
 
@@ -716,8 +716,8 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
         try:
             train_one_epoch(model, config, args, optimizer, device, device_ids, epoch,
                         use_amp, scaler, gradient_accumulation_steps, train_loader, multi_loss)
-        except torch.cuda.OutOfMemoryError:
-            #print(f"Error occurred during training: {e}")
+        except torch.cuda.OutOfMemoryError as e:
+            print(f"Error occurred during training: {e}")
             torch.cuda.empty_cache()
             raise optuna.exceptions.TrialPruned()
             #continue
@@ -745,7 +745,7 @@ if __name__ == "__main__":
     #train_model(None)
     # Run the optimization
     #study.optimize(objective, n_trials=100)  # Adjust n_trials as needed
-    study.optimize(lambda trial: objective(trial, None), n_trials=100)
+    study.optimize(lambda trial: objective(trial, None), n_trials=300)
 
     pruned_trials = study.get_trials(deepcopy=False, states=[TrialState.PRUNED])
     complete_trials = study.get_trials(deepcopy=False, states=[TrialState.COMPLETE])
