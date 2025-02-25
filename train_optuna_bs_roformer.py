@@ -720,6 +720,11 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
             print(f"Error occurred during training: {e}")
             torch.cuda.empty_cache()
             raise optuna.exceptions.TrialPruned()
+                
+        except Exception as e:
+            print(f"An unexpected error occurred during training: {e}")
+            #torch.cuda.empty_cache()  # Optional, only relevant if it's CUDA-related
+            raise optuna.exceptions.TrialPruned()  # Re-raise the exception to propagate it up
             #continue
         save_last_weights(args, model, device_ids)
         best_metric = compute_epoch_metrics(model, args, config, device, device_ids, best_metric, epoch, scheduler)
