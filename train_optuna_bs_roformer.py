@@ -490,10 +490,14 @@ def compute_epoch_metrics(model: torch.nn.Module, args: argparse.Namespace, conf
         The updated best_metric.
     """
 
+    print("printing epoch metrics")
+    print(f"metrics for scheduler {args.metric_for_scheduler}")
     if torch.cuda.is_available() and len(device_ids) > 1:
-        metrics_avg = valid_multi_gpu(model, args, config, args.device_ids, verbose=False)
+        metrics_avg, all_metrics = valid_multi_gpu(model, args, config, args.device_ids, verbose=False)
     else:
-        metrics_avg = valid(model, args, config, device, verbose=False)
+        metrics_avg, all_metrics = valid(model, args, config, device, verbose=False)
+    print(f"metrics_avg {metrics_avg}")
+    print(f"metrics for scheduler {args.metric_for_scheduler}")
     metric_avg = metrics_avg[args.metric_for_scheduler]
     if metric_avg > best_metric:
         store_path = f'{args.results_path}/model_{args.model_type}_ep_{epoch}_{args.metric_for_scheduler}_{metric_avg:.4f}.ckpt'
