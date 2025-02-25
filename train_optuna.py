@@ -487,7 +487,8 @@ def compute_epoch_metrics(model: torch.nn.Module, args: argparse.Namespace, conf
     Returns:
         The updated best_metric.
     """
-
+    print("printing epoch metrics")
+    print(f"metrics for scheduler {args.metric_for_scheduler}")
     if torch.cuda.is_available() and len(device_ids) > 1:
         metrics_avg, all_metrics = valid_multi_gpu(model, args, config, args.device_ids, verbose=False)
     else:
