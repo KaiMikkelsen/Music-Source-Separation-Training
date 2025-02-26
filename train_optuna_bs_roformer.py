@@ -445,6 +445,7 @@ def save_weights(store_path, model, device_ids, train_lora):
     if train_lora:
         torch.save(lora.lora_state_dict(model), store_path)
     else:
+        print("saving weights to ", store_path)
         state_dict = model.state_dict() if len(device_ids) <= 1 else model.module.state_dict()
         torch.save(
             state_dict,
