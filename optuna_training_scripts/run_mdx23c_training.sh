@@ -12,6 +12,8 @@ export XLA_FLAGS=--xla_gpu_cuda_data_dir=$CUDA_HOME
 CURRENT_DATE=$(date +"%Y-%m-%d_%H-%M-%S")
 SCRATCH_DIR=$SLURM_TMPDIR
 
+git pull
+
 # Variables
 MODEL_TYPE="mdx23c"
 CONFIG_PATH="configs/config_musdb18_mdx23c.yaml"
