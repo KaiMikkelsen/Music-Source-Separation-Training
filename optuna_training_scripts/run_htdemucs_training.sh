@@ -33,16 +33,16 @@ exec > >(tee -a "$SLURM_LOGS_PATH/slurm-${SLURM_JOB_ID}.out") 2>&1
 # Activate the environment
 source separation_env/bin/activate
 
-# RUNNING_ON_MAC=False
+RUNNING_ON_MAC=False
 
 
-if [[ "$(uname)" == "Darwin" ]]; then
-    RUNNING_ON_MAC=true
-else
-    RUNNING_ON_MAC=false
-fi
+# if [[ "$(uname)" == "Darwin" ]]; then
+#     RUNNING_ON_MAC=true
+# else
+#     RUNNING_ON_MAC=false
+# fi
 
-echo "Running on Mac: $IS_MAC"
+# echo "Running on Mac: $RUNNING_ON_MAC"
 
 
 
