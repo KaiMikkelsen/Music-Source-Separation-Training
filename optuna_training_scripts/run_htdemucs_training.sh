@@ -15,8 +15,8 @@ SCRATCH_DIR=$SLURM_TMPDIR
 git pull
 
 # Variables
-MODEL_TYPE="mdx23c"
-CONFIG_PATH="configs/config_musdb18_mdx23c.yaml"
+MODEL_TYPE="htdemucs"
+CONFIG_PATH="configs/config_musdb18_htdemucs.yaml"
 DATA_HOME_PATH="/home/kaim/projects/def-ichiro/kaim/data"
 DATASET_NAME="MUSDB18HQ"
 DATASET_ZIP="$DATA_HOME_PATH/$DATASET_NAME.zip" # Specify the dataset ZIP name
@@ -33,7 +33,16 @@ exec > >(tee -a "$SLURM_LOGS_PATH/slurm-${SLURM_JOB_ID}.out") 2>&1
 # Activate the environment
 source separation_env/bin/activate
 
-RUNNING_ON_MAC=False
+# RUNNING_ON_MAC=False
+
+
+if [[ "$(uname)" == "Darwin" ]]; then
+    RUNNING_ON_MAC=true
+else
+    RUNNING_ON_MAC=false
+fi
+
+echo "Running on Mac: $IS_MAC"
 
 
 
@@ -91,7 +100,7 @@ echo "Dataset path set to: $DATA_PATH"
 
 echo "Running training script for model: $MODEL_TYPE with dataset at $DATA_PATH"
 
-python train_optuna_mdx23c.py \
+python train_optuna_htdemucs.py \
     --model_type "$MODEL_TYPE" \
     --config_path "$CONFIG_PATH" \
     --results_path "$CHECKPOINTS_PATH" \
