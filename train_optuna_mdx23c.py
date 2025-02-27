@@ -619,7 +619,7 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
     lr = trial.suggest_loguniform("lr", 1e-6, 1e-4)
     reduce_factor = trial.suggest_uniform("reduce_factor", 0.1, 0.5)
     ema_momentum = trial.suggest_uniform("ema_momentum", 0.95, 0.99)
-    optimizer = trial.suggest_categorical("optimizer", ["rmsprop", "adam", "adamw", "lion"])
+    optimizer = trial.suggest_categorical("optimizer", ["rmsprop", "adam", "adamw", "sgd"])
     #batch_size = trial.suggest_categorical("batch_size", [1, 32, 48, 64])
     batch_size = trial.suggest_int("batch_size", 1, 16, step=2)
     gradient_accumulation_steps = trial.suggest_int("gradient_accumulation_steps", 1, 16, step=2)
