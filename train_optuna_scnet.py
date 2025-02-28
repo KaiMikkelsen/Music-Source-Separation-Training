@@ -760,8 +760,11 @@ if __name__ == "__main__":
     print("Optuna study started")
     study = optuna.create_study(
         direction="maximize",  # Change to "minimize" if optimizing a loss
-       sampler=TPESampler(),  # TPE sampler for efficient search
+        sampler=TPESampler(),  # TPE sampler for efficient search
+        storage="sqlite:///db.sqlite3",  # Specify the storage URL here.
+        study_name="scnet_optimization"  # Unique identifier for the study
     )
+    
 
     #train_model(None)
     # Run the optimization
