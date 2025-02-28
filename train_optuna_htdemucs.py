@@ -797,6 +797,8 @@ if __name__ == "__main__":
     study = optuna.create_study(
         direction="maximize",  # Change to "minimize" if optimizing a loss
        sampler=TPESampler(),  # TPE sampler for efficient search
+        storage="sqlite:///db.sqlite3",  # Specify the storage URL here.
+        study_name="scnet_optimization"  # Unique identifier for the study
     )
 
     #train_model(None)
