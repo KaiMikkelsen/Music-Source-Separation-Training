@@ -1,0 +1,1055 @@
+tee: slurm_logs/bs_roformer_2025-02-28_00-56-25/slurm-55645251.out: No such file or directory
+Moving /home/kaim/projects/def-ichiro/kaim/data/MUSDB18HQ.zip to /localscratch/kaim.55645251.0 for faster access
+unzipping /localscratch/kaim.55645251.0/MUSDB18HQ.zip
+Archive:  /localscratch/kaim.55645251.0/MUSDB18HQ.zip
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Hendrix/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Hendrix/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Hendrix/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Hendrix/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Hendrix/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Hendrix/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - 80s Rock/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - 80s Rock/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - 80s Rock/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - 80s Rock/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - 80s Rock/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - 80s Rock/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The Wrong'Uns - Rothko/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The Wrong'Uns - Rothko/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The Wrong'Uns - Rothko/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The Wrong'Uns - Rothko/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The Wrong'Uns - Rothko/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The Wrong'Uns - Rothko/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Reggae/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Reggae/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Reggae/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Reggae/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Reggae/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Reggae/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Secret Mountains - High Horse/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Secret Mountains - High Horse/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Secret Mountains - High Horse/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Secret Mountains - High Horse/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Secret Mountains - High Horse/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Secret Mountains - High Horse/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Young Griffo - Facade/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Young Griffo - Facade/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Young Griffo - Facade/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Young Griffo - Facade/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Young Griffo - Facade/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Young Griffo - Facade/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/BigTroubles - Phantom/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/BigTroubles - Phantom/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/BigTroubles - Phantom/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/BigTroubles - Phantom/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/BigTroubles - Phantom/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/BigTroubles - Phantom/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Alexander Ross - Velvet Curtain/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Alexander Ross - Velvet Curtain/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Alexander Ross - Velvet Curtain/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Alexander Ross - Velvet Curtain/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Alexander Ross - Velvet Curtain/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Alexander Ross - Velvet Curtain/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/ANiMAL - Easy Tiger/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/ANiMAL - Easy Tiger/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/ANiMAL - Easy Tiger/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/ANiMAL - Easy Tiger/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/ANiMAL - Easy Tiger/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/ANiMAL - Easy Tiger/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Creepoid - OldTree/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Creepoid - OldTree/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Creepoid - OldTree/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Creepoid - OldTree/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Creepoid - OldTree/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Creepoid - OldTree/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Jay Menon - Through My Eyes/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Jay Menon - Through My Eyes/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Jay Menon - Through My Eyes/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Jay Menon - Through My Eyes/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Jay Menon - Through My Eyes/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Jay Menon - Through My Eyes/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Dreamers Of The Ghetto - Heavy Love/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Dreamers Of The Ghetto - Heavy Love/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Dreamers Of The Ghetto - Heavy Love/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Dreamers Of The Ghetto - Heavy Love/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Dreamers Of The Ghetto - Heavy Love/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Dreamers Of The Ghetto - Heavy Love/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Phre The Eon - Everybody's Falling Apart/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Phre The Eon - Everybody's Falling Apart/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Phre The Eon - Everybody's Falling Apart/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Phre The Eon - Everybody's Falling Apart/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Phre The Eon - Everybody's Falling Apart/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Phre The Eon - Everybody's Falling Apart/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/AvaLuna - Waterduct/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/AvaLuna - Waterduct/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/AvaLuna - Waterduct/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/AvaLuna - Waterduct/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/AvaLuna - Waterduct/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/AvaLuna - Waterduct/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Fergessen - The Wind/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Fergessen - The Wind/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Fergessen - The Wind/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Fergessen - The Wind/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Fergessen - The Wind/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Fergessen - The Wind/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Clara Berry And Wooldog - Stella/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Clara Berry And Wooldog - Stella/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Clara Berry And Wooldog - Stella/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Clara Berry And Wooldog - Stella/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Clara Berry And Wooldog - Stella/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Clara Berry And Wooldog - Stella/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Cnoc An Tursa - Bannockburn/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Cnoc An Tursa - Bannockburn/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Cnoc An Tursa - Bannockburn/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Cnoc An Tursa - Bannockburn/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Cnoc An Tursa - Bannockburn/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Cnoc An Tursa - Bannockburn/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Port St Willow - Stay Even/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Port St Willow - Stay Even/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Port St Willow - Stay Even/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Port St Willow - Stay Even/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Port St Willow - Stay Even/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Port St Willow - Stay Even/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Britpop/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Britpop/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Britpop/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Britpop/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Britpop/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Britpop/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Faces On Film - Waiting For Ga/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Faces On Film - Waiting For Ga/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Faces On Film - Waiting For Ga/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Faces On Film - Waiting For Ga/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Faces On Film - Waiting For Ga/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Faces On Film - Waiting For Ga/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Matthew Entwistle - Dont You Ever/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Matthew Entwistle - Dont You Ever/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Matthew Entwistle - Dont You Ever/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Matthew Entwistle - Dont You Ever/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Matthew Entwistle - Dont You Ever/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Matthew Entwistle - Dont You Ever/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Snowmine - Curfews/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Snowmine - Curfews/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Snowmine - Curfews/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Snowmine - Curfews/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Snowmine - Curfews/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Snowmine - Curfews/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Hop Along - Sister Cities/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Hop Along - Sister Cities/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Hop Along - Sister Cities/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Hop Along - Sister Cities/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Hop Along - Sister Cities/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Hop Along - Sister Cities/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Meaxic - You Listen/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Meaxic - You Listen/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Meaxic - You Listen/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Meaxic - You Listen/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Meaxic - You Listen/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Meaxic - You Listen/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Invisible Familiars - Disturbing Wildlife/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Invisible Familiars - Disturbing Wildlife/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Invisible Familiars - Disturbing Wildlife/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Invisible Familiars - Disturbing Wildlife/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Invisible Familiars - Disturbing Wildlife/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Invisible Familiars - Disturbing Wildlife/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Jokers, Jacks & Kings - Sea Of Leaves/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Jokers, Jacks & Kings - Sea Of Leaves/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Jokers, Jacks & Kings - Sea Of Leaves/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Jokers, Jacks & Kings - Sea Of Leaves/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Jokers, Jacks & Kings - Sea Of Leaves/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Jokers, Jacks & Kings - Sea Of Leaves/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Rock/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Rock/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Rock/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Rock/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Rock/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Rock/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Lushlife - Toynbee Suite/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Lushlife - Toynbee Suite/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Lushlife - Toynbee Suite/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Lushlife - Toynbee Suite/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Lushlife - Toynbee Suite/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Lushlife - Toynbee Suite/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Hollow Ground - Left Blind/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Hollow Ground - Left Blind/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Hollow Ground - Left Blind/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Hollow Ground - Left Blind/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Hollow Ground - Left Blind/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Hollow Ground - Left Blind/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Strand Of Oaks - Spacestation/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Strand Of Oaks - Spacestation/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Strand Of Oaks - Spacestation/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Strand Of Oaks - Spacestation/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Strand Of Oaks - Spacestation/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Strand Of Oaks - Spacestation/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Aimee Norwich - Child/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Aimee Norwich - Child/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Aimee Norwich - Child/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Aimee Norwich - Child/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Aimee Norwich - Child/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Aimee Norwich - Child/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/James May - If You Say/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/James May - If You Say/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/James May - If You Say/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/James May - If You Say/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/James May - If You Say/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/James May - If You Say/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Helado Negro - Mitad Del Mundo/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Helado Negro - Mitad Del Mundo/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Helado Negro - Mitad Del Mundo/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Helado Negro - Mitad Del Mundo/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Helado Negro - Mitad Del Mundo/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Helado Negro - Mitad Del Mundo/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Auctioneer - Our Future Faces/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Auctioneer - Our Future Faces/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Auctioneer - Our Future Faces/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Auctioneer - Our Future Faces/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Auctioneer - Our Future Faces/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Auctioneer - Our Future Faces/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Celestial Shore - Die For Us/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Celestial Shore - Die For Us/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Celestial Shore - Die For Us/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Celestial Shore - Die For Us/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Celestial Shore - Die For Us/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Celestial Shore - Die For Us/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Leaf - Wicked/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Leaf - Wicked/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Leaf - Wicked/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Leaf - Wicked/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Leaf - Wicked/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Leaf - Wicked/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Swinging Steaks - Lost My Way/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Swinging Steaks - Lost My Way/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Swinging Steaks - Lost My Way/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Swinging Steaks - Lost My Way/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Swinging Steaks - Lost My Way/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Swinging Steaks - Lost My Way/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Country2/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Country2/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Country2/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Country2/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Country2/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Country2/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Actions - Devil's Words/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Actions - Devil's Words/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Actions - Devil's Words/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Actions - Devil's Words/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Actions - Devil's Words/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Actions - Devil's Words/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Dark Ride - Burning Bridges/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Dark Ride - Burning Bridges/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Dark Ride - Burning Bridges/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Dark Ride - Burning Bridges/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Dark Ride - Burning Bridges/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Dark Ride - Burning Bridges/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Grants - PunchDrunk/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Grants - PunchDrunk/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Grants - PunchDrunk/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Grants - PunchDrunk/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Grants - PunchDrunk/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Grants - PunchDrunk/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Traffic Experiment - Once More (With Feeling)/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Traffic Experiment - Once More (With Feeling)/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Traffic Experiment - Once More (With Feeling)/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Traffic Experiment - Once More (With Feeling)/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Traffic Experiment - Once More (With Feeling)/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Traffic Experiment - Once More (With Feeling)/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Titanium - Haunted Age/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Titanium - Haunted Age/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Titanium - Haunted Age/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Titanium - Haunted Age/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Titanium - Haunted Age/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Titanium - Haunted Age/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Rockabilly/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Rockabilly/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Rockabilly/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Rockabilly/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Rockabilly/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Rockabilly/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Leaf - Come Around/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Leaf - Come Around/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Leaf - Come Around/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Leaf - Come Around/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Leaf - Come Around/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Leaf - Come Around/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/St Vitus - Word Gets Around/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/St Vitus - Word Gets Around/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/St Vitus - Word Gets Around/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/St Vitus - Word Gets Around/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/St Vitus - Word Gets Around/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/St Vitus - Word Gets Around/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Disco/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Disco/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Disco/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Disco/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Disco/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Disco/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Johnny Lokke - Whisper To A Scream/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Johnny Lokke - Whisper To A Scream/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Johnny Lokke - Whisper To A Scream/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Johnny Lokke - Whisper To A Scream/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Johnny Lokke - Whisper To A Scream/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Johnny Lokke - Whisper To A Scream/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Triviul - Dorothy/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Triviul - Dorothy/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Triviul - Dorothy/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Triviul - Dorothy/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Triviul - Dorothy/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Triviul - Dorothy/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Skelpolu - Together Alone/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Skelpolu - Together Alone/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Skelpolu - Together Alone/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Skelpolu - Together Alone/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Skelpolu - Together Alone/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Skelpolu - Together Alone/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Fergessen - Back From The Start/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Fergessen - Back From The Start/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Fergessen - Back From The Start/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Fergessen - Back From The Start/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Fergessen - Back From The Start/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Fergessen - Back From The Start/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Tim Taler - Stalker/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Tim Taler - Stalker/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Tim Taler - Stalker/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Tim Taler - Stalker/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Tim Taler - Stalker/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Tim Taler - Stalker/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Hezekiah Jones - Borrowed Heart/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Hezekiah Jones - Borrowed Heart/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Hezekiah Jones - Borrowed Heart/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Hezekiah Jones - Borrowed Heart/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Hezekiah Jones - Borrowed Heart/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Hezekiah Jones - Borrowed Heart/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The Scarlet Brand - Les Fleurs Du Mal/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The Scarlet Brand - Les Fleurs Du Mal/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The Scarlet Brand - Les Fleurs Du Mal/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The Scarlet Brand - Les Fleurs Du Mal/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The Scarlet Brand - Les Fleurs Du Mal/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The Scarlet Brand - Les Fleurs Du Mal/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Night Panther - Fire/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Night Panther - Fire/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Night Panther - Fire/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Night Panther - Fire/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Night Panther - Fire/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Night Panther - Fire/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Grunge/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Grunge/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Grunge/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Grunge/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Grunge/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Grunge/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The Districts - Vermont/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The Districts - Vermont/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The Districts - Vermont/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The Districts - Vermont/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The Districts - Vermont/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The Districts - Vermont/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Giselle - Moss/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Giselle - Moss/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Giselle - Moss/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Giselle - Moss/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Giselle - Moss/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Giselle - Moss/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Actions - South Of The Water/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Actions - South Of The Water/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Actions - South Of The Water/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Actions - South Of The Water/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Actions - South Of The Water/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Actions - South Of The Water/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Angela Thomas Wade - Milk Cow Blues/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Angela Thomas Wade - Milk Cow Blues/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Angela Thomas Wade - Milk Cow Blues/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Angela Thomas Wade - Milk Cow Blues/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Angela Thomas Wade - Milk Cow Blues/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Angela Thomas Wade - Milk Cow Blues/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Country1/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Country1/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Country1/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Country1/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Country1/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Country1/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/James May - Dont Let Go/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/James May - Dont Let Go/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/James May - Dont Let Go/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/James May - Dont Let Go/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/James May - Dont Let Go/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/James May - Dont Let Go/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/James May - All Souls Moon/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/James May - All Souls Moon/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/James May - All Souls Moon/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/James May - All Souls Moon/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/James May - All Souls Moon/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/James May - All Souls Moon/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Clara Berry And Wooldog - Air Traffic/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Clara Berry And Wooldog - Air Traffic/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Clara Berry And Wooldog - Air Traffic/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Clara Berry And Wooldog - Air Traffic/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Clara Berry And Wooldog - Air Traffic/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Clara Berry And Wooldog - Air Traffic/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Voelund - Comfort Lives In Belief/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Voelund - Comfort Lives In Belief/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Voelund - Comfort Lives In Belief/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Voelund - Comfort Lives In Belief/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Voelund - Comfort Lives In Belief/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Voelund - Comfort Lives In Belief/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Bill Chudziak - Children Of No-one/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Bill Chudziak - Children Of No-one/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Bill Chudziak - Children Of No-one/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Bill Chudziak - Children Of No-one/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Bill Chudziak - Children Of No-one/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Bill Chudziak - Children Of No-one/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Sweet Lights - You Let Me Down/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Sweet Lights - You Let Me Down/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Sweet Lights - You Let Me Down/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Sweet Lights - You Let Me Down/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Sweet Lights - You Let Me Down/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Sweet Lights - You Let Me Down/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Beatles/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Beatles/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Beatles/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Beatles/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Beatles/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Beatles/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Chris Durban - Celebrate/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Chris Durban - Celebrate/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Chris Durban - Celebrate/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Chris Durban - Celebrate/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Chris Durban - Celebrate/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Chris Durban - Celebrate/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Flags - 54/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Flags - 54/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Flags - 54/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Flags - 54/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Flags - 54/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Flags - 54/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Young Griffo - Blood To Bone/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Young Griffo - Blood To Bone/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Young Griffo - Blood To Bone/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Young Griffo - Blood To Bone/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Young Griffo - Blood To Bone/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Young Griffo - Blood To Bone/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Atlantis Bound - It Was My Fault For Waiting/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Atlantis Bound - It Was My Fault For Waiting/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Atlantis Bound - It Was My Fault For Waiting/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Atlantis Bound - It Was My Fault For Waiting/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Atlantis Bound - It Was My Fault For Waiting/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Atlantis Bound - It Was My Fault For Waiting/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/A Classic Education - NightOwl/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/A Classic Education - NightOwl/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/A Classic Education - NightOwl/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/A Classic Education - NightOwl/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/A Classic Education - NightOwl/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/A Classic Education - NightOwl/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Drumtracks - Ghost Bitch/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Drumtracks - Ghost Bitch/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Drumtracks - Ghost Bitch/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Drumtracks - Ghost Bitch/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Drumtracks - Ghost Bitch/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Drumtracks - Ghost Bitch/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/ANiMAL - Clinic A/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/ANiMAL - Clinic A/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/ANiMAL - Clinic A/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/ANiMAL - Clinic A/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/ANiMAL - Clinic A/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/ANiMAL - Clinic A/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Punk/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Punk/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Punk/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Punk/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Punk/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Punk/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Steven Clark - Bounty/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Steven Clark - Bounty/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Steven Clark - Bounty/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Steven Clark - Bounty/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Steven Clark - Bounty/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Steven Clark - Bounty/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Spike Mullings - Mike's Sulking/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Spike Mullings - Mike's Sulking/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Spike Mullings - Mike's Sulking/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Spike Mullings - Mike's Sulking/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Spike Mullings - Mike's Sulking/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Spike Mullings - Mike's Sulking/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Wall Of Death - Femme/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Wall Of Death - Femme/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Wall Of Death - Femme/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Wall Of Death - Femme/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Wall Of Death - Femme/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Wall Of Death - Femme/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/North To Alaska - All The Same/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/North To Alaska - All The Same/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/North To Alaska - All The Same/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/North To Alaska - All The Same/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/North To Alaska - All The Same/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/North To Alaska - All The Same/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The Long Wait - Back Home To Blue/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The Long Wait - Back Home To Blue/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The Long Wait - Back Home To Blue/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The Long Wait - Back Home To Blue/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The Long Wait - Back Home To Blue/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The Long Wait - Back Home To Blue/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The So So Glos - Emergency/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The So So Glos - Emergency/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The So So Glos - Emergency/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The So So Glos - Emergency/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The So So Glos - Emergency/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/The So So Glos - Emergency/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Remember December - C U Next Time/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Remember December - C U Next Time/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Remember December - C U Next Time/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Remember December - C U Next Time/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Remember December - C U Next Time/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Remember December - C U Next Time/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Gospel/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Gospel/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Gospel/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Gospel/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Gospel/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Music Delta - Gospel/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Patrick Talbot - Set Me Free/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Patrick Talbot - Set Me Free/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Patrick Talbot - Set Me Free/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Patrick Talbot - Set Me Free/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Patrick Talbot - Set Me Free/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Patrick Talbot - Set Me Free/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Black Bloc - If You Want Success/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Black Bloc - If You Want Success/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Black Bloc - If You Want Success/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Black Bloc - If You Want Success/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Black Bloc - If You Want Success/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/train/Black Bloc - If You Want Success/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Ben Carrigan - We'll Talk About It All Tonight/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Ben Carrigan - We'll Talk About It All Tonight/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Ben Carrigan - We'll Talk About It All Tonight/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Ben Carrigan - We'll Talk About It All Tonight/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Ben Carrigan - We'll Talk About It All Tonight/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Ben Carrigan - We'll Talk About It All Tonight/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/AM Contra - Heart Peripheral/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/AM Contra - Heart Peripheral/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/AM Contra - Heart Peripheral/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/AM Contra - Heart Peripheral/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/AM Contra - Heart Peripheral/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/AM Contra - Heart Peripheral/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Tom McKenzie - Directions/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Tom McKenzie - Directions/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Tom McKenzie - Directions/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Tom McKenzie - Directions/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Tom McKenzie - Directions/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Tom McKenzie - Directions/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Long Wait - Dark Horses/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Long Wait - Dark Horses/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Long Wait - Dark Horses/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Long Wait - Dark Horses/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Long Wait - Dark Horses/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Long Wait - Dark Horses/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/We Fell From The Sky - Not You/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/We Fell From The Sky - Not You/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/We Fell From The Sky - Not You/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/We Fell From The Sky - Not You/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/We Fell From The Sky - Not You/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/We Fell From The Sky - Not You/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Doppler Shift - Atrophy/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Doppler Shift - Atrophy/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Doppler Shift - Atrophy/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Doppler Shift - Atrophy/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Doppler Shift - Atrophy/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Doppler Shift - Atrophy/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Lyndsey Ollard - Catching Up/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Lyndsey Ollard - Catching Up/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Lyndsey Ollard - Catching Up/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Lyndsey Ollard - Catching Up/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Lyndsey Ollard - Catching Up/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Lyndsey Ollard - Catching Up/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Bobby Nobody - Stitch Up/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Bobby Nobody - Stitch Up/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Bobby Nobody - Stitch Up/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Bobby Nobody - Stitch Up/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Bobby Nobody - Stitch Up/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Bobby Nobody - Stitch Up/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Sunshine Garcia Band - For I Am The Moon/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Sunshine Garcia Band - For I Am The Moon/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Sunshine Garcia Band - For I Am The Moon/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Sunshine Garcia Band - For I Am The Moon/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Sunshine Garcia Band - For I Am The Moon/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Sunshine Garcia Band - For I Am The Moon/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Girls Under Glass - We Feel Alright/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Girls Under Glass - We Feel Alright/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Girls Under Glass - We Feel Alright/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Girls Under Glass - We Feel Alright/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Girls Under Glass - We Feel Alright/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Girls Under Glass - We Feel Alright/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Angels In Amplifiers - I'm Alright/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Angels In Amplifiers - I'm Alright/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Angels In Amplifiers - I'm Alright/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Angels In Amplifiers - I'm Alright/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Angels In Amplifiers - I'm Alright/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Angels In Amplifiers - I'm Alright/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Juliet's Rescue - Heartbeats/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Juliet's Rescue - Heartbeats/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Juliet's Rescue - Heartbeats/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Juliet's Rescue - Heartbeats/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Juliet's Rescue - Heartbeats/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Juliet's Rescue - Heartbeats/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Sambasevam Shanmugam - Kaathaadi/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Sambasevam Shanmugam - Kaathaadi/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Sambasevam Shanmugam - Kaathaadi/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Sambasevam Shanmugam - Kaathaadi/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Sambasevam Shanmugam - Kaathaadi/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Sambasevam Shanmugam - Kaathaadi/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Enda Reilly - Cur An Long Ag Seol/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Enda Reilly - Cur An Long Ag Seol/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Enda Reilly - Cur An Long Ag Seol/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Enda Reilly - Cur An Long Ag Seol/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Enda Reilly - Cur An Long Ag Seol/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Enda Reilly - Cur An Long Ag Seol/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Speak Softly - Like Horses/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Speak Softly - Like Horses/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Speak Softly - Like Horses/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Speak Softly - Like Horses/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Speak Softly - Like Horses/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Speak Softly - Like Horses/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/PR - Happy Daze/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/PR - Happy Daze/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/PR - Happy Daze/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/PR - Happy Daze/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/PR - Happy Daze/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/PR - Happy Daze/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Easton Ellises (Baumi) - SDRNR/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Easton Ellises (Baumi) - SDRNR/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Easton Ellises (Baumi) - SDRNR/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Easton Ellises (Baumi) - SDRNR/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Easton Ellises (Baumi) - SDRNR/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Easton Ellises (Baumi) - SDRNR/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/James Elder & Mark M Thompson - The English Actor/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/James Elder & Mark M Thompson - The English Actor/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/James Elder & Mark M Thompson - The English Actor/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/James Elder & Mark M Thompson - The English Actor/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/James Elder & Mark M Thompson - The English Actor/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/James Elder & Mark M Thompson - The English Actor/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/BKS - Bulldozer/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/BKS - Bulldozer/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/BKS - Bulldozer/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/BKS - Bulldozer/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/BKS - Bulldozer/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/BKS - Bulldozer/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Moosmusic - Big Dummy Shake/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Moosmusic - Big Dummy Shake/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Moosmusic - Big Dummy Shake/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Moosmusic - Big Dummy Shake/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Moosmusic - Big Dummy Shake/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Moosmusic - Big Dummy Shake/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Speak Softly - Broken Man/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Speak Softly - Broken Man/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Speak Softly - Broken Man/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Speak Softly - Broken Man/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Speak Softly - Broken Man/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Speak Softly - Broken Man/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Al James - Schoolboy Facination/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Al James - Schoolboy Facination/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Al James - Schoolboy Facination/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Al James - Schoolboy Facination/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Al James - Schoolboy Facination/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Al James - Schoolboy Facination/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Motor Tapes - Shore/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Motor Tapes - Shore/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Motor Tapes - Shore/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Motor Tapes - Shore/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Motor Tapes - Shore/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Motor Tapes - Shore/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Side Effects Project - Sing With Me/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Side Effects Project - Sing With Me/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Side Effects Project - Sing With Me/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Side Effects Project - Sing With Me/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Side Effects Project - Sing With Me/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Side Effects Project - Sing With Me/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Signe Jakobsen - What Have You Done To Me/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Signe Jakobsen - What Have You Done To Me/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Signe Jakobsen - What Have You Done To Me/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Signe Jakobsen - What Have You Done To Me/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Signe Jakobsen - What Have You Done To Me/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Signe Jakobsen - What Have You Done To Me/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Little Chicago's Finest - My Own/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Little Chicago's Finest - My Own/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Little Chicago's Finest - My Own/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Little Chicago's Finest - My Own/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Little Chicago's Finest - My Own/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Little Chicago's Finest - My Own/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Buitraker - Revo X/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Buitraker - Revo X/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Buitraker - Revo X/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Buitraker - Revo X/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Buitraker - Revo X/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Buitraker - Revo X/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Easton Ellises - Falcon 69/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Easton Ellises - Falcon 69/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Easton Ellises - Falcon 69/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Easton Ellises - Falcon 69/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Easton Ellises - Falcon 69/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Easton Ellises - Falcon 69/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Timboz - Pony/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Timboz - Pony/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Timboz - Pony/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Timboz - Pony/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Timboz - Pony/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Timboz - Pony/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/BKS - Too Much/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/BKS - Too Much/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/BKS - Too Much/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/BKS - Too Much/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/BKS - Too Much/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/BKS - Too Much/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Detsky Sad - Walkie Talkie/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Detsky Sad - Walkie Talkie/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Detsky Sad - Walkie Talkie/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Detsky Sad - Walkie Talkie/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Detsky Sad - Walkie Talkie/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Detsky Sad - Walkie Talkie/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Secretariat - Borderline/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Secretariat - Borderline/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Secretariat - Borderline/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Secretariat - Borderline/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Secretariat - Borderline/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Secretariat - Borderline/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Nerve 9 - Pray For The Rain/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Nerve 9 - Pray For The Rain/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Nerve 9 - Pray For The Rain/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Nerve 9 - Pray For The Rain/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Nerve 9 - Pray For The Rain/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Nerve 9 - Pray For The Rain/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/M.E.R.C. Music - Knockout/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/M.E.R.C. Music - Knockout/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/M.E.R.C. Music - Knockout/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/M.E.R.C. Music - Knockout/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/M.E.R.C. Music - Knockout/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/M.E.R.C. Music - Knockout/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Forkupines - Semantics/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Forkupines - Semantics/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Forkupines - Semantics/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Forkupines - Semantics/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Forkupines - Semantics/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Forkupines - Semantics/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Mu - Too Bright/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Mu - Too Bright/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Mu - Too Bright/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Mu - Too Bright/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Mu - Too Bright/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Mu - Too Bright/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Cristina Vane - So Easy/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Cristina Vane - So Easy/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Cristina Vane - So Easy/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Cristina Vane - So Easy/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Cristina Vane - So Easy/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Cristina Vane - So Easy/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Raft Monk - Tiring/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Raft Monk - Tiring/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Raft Monk - Tiring/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Raft Monk - Tiring/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Raft Monk - Tiring/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Raft Monk - Tiring/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Louis Cressy Band - Good Time/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Louis Cressy Band - Good Time/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Louis Cressy Band - Good Time/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Louis Cressy Band - Good Time/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Louis Cressy Band - Good Time/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Louis Cressy Band - Good Time/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Zeno - Signs/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Zeno - Signs/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Zeno - Signs/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Zeno - Signs/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Zeno - Signs/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Zeno - Signs/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Triviul feat. The Fiend - Widow/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Triviul feat. The Fiend - Widow/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Triviul feat. The Fiend - Widow/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Triviul feat. The Fiend - Widow/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Triviul feat. The Fiend - Widow/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Triviul feat. The Fiend - Widow/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Mountaineering Club - Mallory/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Mountaineering Club - Mallory/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Mountaineering Club - Mallory/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Mountaineering Club - Mallory/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Mountaineering Club - Mallory/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/The Mountaineering Club - Mallory/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Secretariat - Over The Top/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Secretariat - Over The Top/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Secretariat - Over The Top/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Secretariat - Over The Top/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Secretariat - Over The Top/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Secretariat - Over The Top/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Punkdisco - Oral Hygiene/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Punkdisco - Oral Hygiene/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Punkdisco - Oral Hygiene/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Punkdisco - Oral Hygiene/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Punkdisco - Oral Hygiene/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Punkdisco - Oral Hygiene/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Arise - Run Run Run/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Arise - Run Run Run/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Arise - Run Run Run/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Arise - Run Run Run/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Arise - Run Run Run/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Arise - Run Run Run/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Georgia Wonder - Siren/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Georgia Wonder - Siren/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Georgia Wonder - Siren/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Georgia Wonder - Siren/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Georgia Wonder - Siren/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Georgia Wonder - Siren/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/PR - Oh No/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/PR - Oh No/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/PR - Oh No/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/PR - Oh No/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/PR - Oh No/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/PR - Oh No/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Skelpolu - Resurrection/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Skelpolu - Resurrection/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Skelpolu - Resurrection/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Skelpolu - Resurrection/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Skelpolu - Resurrection/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Skelpolu - Resurrection/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Hollow Ground - Ill Fate/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Hollow Ground - Ill Fate/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Hollow Ground - Ill Fate/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Hollow Ground - Ill Fate/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Hollow Ground - Ill Fate/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Hollow Ground - Ill Fate/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Carlos Gonzalez - A Place For Us/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Carlos Gonzalez - A Place For Us/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Carlos Gonzalez - A Place For Us/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Carlos Gonzalez - A Place For Us/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Carlos Gonzalez - A Place For Us/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/test/Carlos Gonzalez - A Place For Us/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/ANiMAL - Rockshow/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/ANiMAL - Rockshow/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/ANiMAL - Rockshow/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/ANiMAL - Rockshow/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/ANiMAL - Rockshow/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/ANiMAL - Rockshow/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Fergessen - Nos Palpitants/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Fergessen - Nos Palpitants/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Fergessen - Nos Palpitants/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Fergessen - Nos Palpitants/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Fergessen - Nos Palpitants/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Fergessen - Nos Palpitants/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Skelpolu - Human Mistakes/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Skelpolu - Human Mistakes/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Skelpolu - Human Mistakes/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Skelpolu - Human Mistakes/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Skelpolu - Human Mistakes/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Skelpolu - Human Mistakes/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Meaxic - Take A Step/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Meaxic - Take A Step/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Meaxic - Take A Step/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Meaxic - Take A Step/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Meaxic - Take A Step/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Meaxic - Take A Step/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Clara Berry And Wooldog - Waltz For My Victims/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Clara Berry And Wooldog - Waltz For My Victims/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Clara Berry And Wooldog - Waltz For My Victims/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Clara Berry And Wooldog - Waltz For My Victims/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Clara Berry And Wooldog - Waltz For My Victims/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Clara Berry And Wooldog - Waltz For My Victims/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Johnny Lokke - Promises & Lies/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Johnny Lokke - Promises & Lies/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Johnny Lokke - Promises & Lies/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Johnny Lokke - Promises & Lies/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Johnny Lokke - Promises & Lies/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Johnny Lokke - Promises & Lies/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Traffic Experiment - Sirens/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Traffic Experiment - Sirens/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Traffic Experiment - Sirens/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Traffic Experiment - Sirens/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Traffic Experiment - Sirens/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Traffic Experiment - Sirens/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Young Griffo - Pennies/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Young Griffo - Pennies/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Young Griffo - Pennies/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Young Griffo - Pennies/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Young Griffo - Pennies/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Young Griffo - Pennies/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/James May - On The Line/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/James May - On The Line/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/James May - On The Line/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/James May - On The Line/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/James May - On The Line/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/James May - On The Line/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Patrick Talbot - A Reason To Leave/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Patrick Talbot - A Reason To Leave/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Patrick Talbot - A Reason To Leave/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Patrick Talbot - A Reason To Leave/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Patrick Talbot - A Reason To Leave/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Patrick Talbot - A Reason To Leave/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Actions - One Minute Smile/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Actions - One Minute Smile/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Actions - One Minute Smile/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Actions - One Minute Smile/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Actions - One Minute Smile/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Actions - One Minute Smile/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Leaf - Summerghost/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Leaf - Summerghost/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Leaf - Summerghost/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Leaf - Summerghost/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Leaf - Summerghost/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Leaf - Summerghost/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Alexander Ross - Goodbye Bolero/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Alexander Ross - Goodbye Bolero/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Alexander Ross - Goodbye Bolero/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Alexander Ross - Goodbye Bolero/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Alexander Ross - Goodbye Bolero/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Alexander Ross - Goodbye Bolero/bass.wav  
+   creating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Triviul - Angelsaint/
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Triviul - Angelsaint/other.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Triviul - Angelsaint/drums.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Triviul - Angelsaint/mixture.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Triviul - Angelsaint/vocals.wav  
+  inflating: /localscratch/kaim.55645251.0/MUSDB18HQ/validation/Triviul - Angelsaint/bass.wav  
+Dataset successfully unzipped.
+Dataset path set to: /localscratch/kaim.55645251.0/MUSDB18HQ
+Running training script for model: bs_roformer with dataset at /localscratch/kaim.55645251.0/MUSDB18HQ
+[I 2025-02-28 01:06:00,859] A new study created in memory with name: no-name-01d72e94-8766-4fe8-835e-dfaf66e575da
+wandb: Using wandb-core as the SDK backend. Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: kaimikkelsen (kaimikkelsen-mcgill-university). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/kaim/.netrc
+wandb: Tracking run with wandb version 0.18.0
+wandb: Run data is saved locally in /project/6002780/kaim/Music-Source-Separation-Training/wandb/run-20250228_010712-zzi4ght0
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run bs_roformer_['/localscratch/kaim.55645251.0/MUSDB18HQ/train']_2025-02-28
+wandb: ⭐️ View project at https://wandb.ai/kaimikkelsen-mcgill-university/msst
+wandb: 🚀 View run at https://wandb.ai/kaimikkelsen-mcgill-university/msst/runs/zzi4ght0
+Optuna study started
+GPU Compute Capability below 8.0, using math or mem efficient attention if input tensor is on cuda
+Initializing wandb: Namespace(model_type='bs_roformer', config_path='configs/config_musdb18_bs_roformer.yaml', start_check_point='', results_path='~/scratch/checkpoints/bs_roformer_2025-02-28_00-56-25', data_path=['/localscratch/kaim.55645251.0/MUSDB18HQ/train'], dataset_type=1, valid_path=['/localscratch/kaim.55645251.0/MUSDB18HQ/validation'], num_workers=4, pin_memory=False, seed=0, device_ids=[0], use_multistft_loss=False, use_mse_loss=False, use_l1_loss=False, wandb_key='689bb384f0f7e0a9dbe275c4ba6458d13265990d', pre_valid=False, metrics=['sdr'], metric_for_scheduler='sdr', train_lora=False, lora_checkpoint='')
+Use augmentation for training
+Dataset type: 1 Processes to use: 32 
+Collecting metadata for ['/localscratch/kaim.55645251.0/MUSDB18HQ/train']
+  0%|          | 0/86 [00:00<?, ?it/s]  1%|          | 1/86 [00:22<31:25, 22.18s/it]  2%|▏         | 2/86 [00:22<12:57,  9.26s/it]  3%|▎         | 3/86 [00:22<07:04,  5.12s/it]  5%|▍         | 4/86 [00:22<04:23,  3.22s/it]  7%|▋         | 6/86 [00:23<02:06,  1.58s/it]  8%|▊         | 7/86 [00:25<02:28,  1.89s/it] 13%|█▎        | 11/86 [00:26<00:59,  1.26it/s] 16%|█▋        | 14/86 [00:26<00:39,  1.83it/s] 27%|██▋       | 23/86 [00:28<00:20,  3.03it/s] 43%|████▎     | 37/86 [00:29<00:07,  6.36it/s] 50%|█████     | 43/86 [00:31<00:08,  4.85it/s] 94%|█████████▍| 81/86 [00:31<00:00, 15.58it/s]100%|██████████| 86/86 [00:31<00:00,  2.75it/s]
+Found tracks in dataset: 86
+Use SGD optimizer
+Instruments: ['drums', 'bass', 'other', 'vocals']
+Metrics for training: ['sdr']. Metric for scheduler: sdr
+Patience: 3 Reduce factor: 0.95
+Batch size: 1 Grad accum steps: 2 Effective batch size: 2
+Dataset type: 1
+Optimizer: sgd
+Train for: 8 epochs
+Train epoch: 0 Learning rate: 0.0001653135087572272
+  0%|          | 0/150 [00:00<?, ?it/s]  0%|          | 0/150 [00:20<?, ?it/s, loss=180, avg_loss=180]  1%|          | 1/150 [00:20<50:54, 20.50s/it, loss=180, avg_loss=180]  1%|          | 1/150 [00:23<50:54, 20.50s/it, loss=153, avg_loss=167]  1%|▏         | 2/150 [00:23<25:46, 10.45s/it, loss=153, avg_loss=167]  1%|▏         | 2/150 [00:25<25:46, 10.45s/it, loss=130, avg_loss=154]  2%|▏         | 3/150 [00:25<15:13,  6.21s/it, loss=130, avg_loss=154]  2%|▏         | 3/150 [00:26<15:13,  6.21s/it, loss=146, avg_loss=152]  3%|▎         | 4/150 [00:26<10:18,  4.24s/it, loss=146, avg_loss=152]  3%|▎         | 4/150 [00:27<10:18,  4.24s/it, loss=271, avg_loss=176]  3%|▎         | 5/150 [00:27<07:34,  3.13s/it, loss=271, avg_loss=176]  3%|▎         | 5/150 [00:28<07:34,  3.13s/it, loss=93.3, avg_loss=162]  4%|▍         | 6/150 [00:28<05:56,  2.48s/it, loss=93.3, avg_loss=162]  4%|▍         | 6/150 [00:29<05:56,  2.48s/it, loss=112, avg_loss=155]   5%|▍         | 7/150 [00:29<04:53,  2.05s/it, loss=112, avg_loss=155]  5%|▍         | 7/150 [00:31<04:53,  2.05s/it, loss=217, avg_loss=163]  5%|▌         | 8/150 [00:31<04:13,  1.78s/it, loss=217, avg_loss=163]  5%|▌         | 8/150 [00:32<04:13,  1.78s/it, loss=103, avg_loss=156]  6%|▌         | 9/150 [00:32<03:44,  1.59s/it, loss=103, avg_loss=156]  6%|▌         | 9/150 [00:33<03:44,  1.59s/it, loss=88.4, avg_loss=149]  7%|▋         | 10/150 [00:33<03:26,  1.47s/it, loss=88.4, avg_loss=149]  7%|▋         | 10/150 [00:34<03:26,  1.47s/it, loss=169, avg_loss=151]   7%|▋         | 11/150 [00:34<03:12,  1.38s/it, loss=169, avg_loss=151]  7%|▋         | 11/150 [00:35<03:12,  1.38s/it, loss=115, avg_loss=148]  8%|▊         | 12/150 [00:35<03:03,  1.33s/it, loss=115, avg_loss=148]  8%|▊         | 12/150 [00:37<03:03,  1.33s/it, loss=151, avg_loss=148]  9%|▊         | 13/150 [00:37<02:56,  1.28s/it, loss=151, avg_loss=148]  9%|▊         | 13/150 [00:38<02:56,  1.28s/it, loss=255, avg_loss=156]  9%|▉         | 14/150 [00:38<02:51,  1.26s/it, loss=255, avg_loss=156]  9%|▉         | 14/150 [00:39<02:51,  1.26s/it, loss=212, avg_loss=160] 10%|█         | 15/150 [00:39<02:46,  1.24s/it, loss=212, avg_loss=160] 10%|█         | 15/150 [00:40<02:46,  1.24s/it, loss=117, avg_loss=157] 11%|█         | 16/150 [00:40<02:44,  1.23s/it, loss=117, avg_loss=157] 11%|█         | 16/150 [00:41<02:44,  1.23s/it, loss=123, avg_loss=155] 11%|█▏        | 17/150 [00:41<02:41,  1.21s/it, loss=123, avg_loss=155] 11%|█▏        | 17/150 [00:42<02:41,  1.21s/it, loss=175, avg_loss=156] 12%|█▏        | 18/150 [00:42<02:39,  1.21s/it, loss=175, avg_loss=156] 12%|█▏        | 18/150 [00:44<02:39,  1.21s/it, loss=178, avg_loss=157] 13%|█▎        | 19/150 [00:44<02:37,  1.20s/it, loss=178, avg_loss=157] 13%|█▎        | 19/150 [00:45<02:37,  1.20s/it, loss=119, avg_loss=155] 13%|█▎        | 20/150 [00:45<02:36,  1.20s/it, loss=119, avg_loss=155] 13%|█▎        | 20/150 [00:46<02:36,  1.20s/it, loss=118, avg_loss=154] 14%|█▍        | 21/150 [00:46<02:34,  1.20s/it, loss=118, avg_loss=154] 14%|█▍        | 21/150 [00:47<02:34,  1.20s/it, loss=107, avg_loss=152] 15%|█▍        | 22/150 [00:47<02:33,  1.20s/it, loss=107, avg_loss=152] 15%|█▍        | 22/150 [00:48<02:33,  1.20s/it, loss=163, avg_loss=152] 15%|█▌        | 23/150 [00:48<02:31,  1.19s/it, loss=163, avg_loss=152] 15%|█▌        | 23/150 [00:50<02:31,  1.19s/it, loss=81, avg_loss=149]  16%|█▌        | 24/150 [00:50<02:30,  1.20s/it, loss=81, avg_loss=149] 16%|█▌        | 24/150 [00:51<02:30,  1.20s/it, loss=120, avg_loss=148] 17%|█▋        | 25/150 [00:51<02:29,  1.19s/it, loss=120, avg_loss=148] 17%|█▋        | 25/150 [00:52<02:29,  1.19s/it, loss=202, avg_loss=150] 17%|█▋        | 26/150 [00:52<02:28,  1.20s/it, loss=202, avg_loss=150] 17%|█▋        | 26/150 [00:53<02:28,  1.20s/it, loss=165, avg_loss=151] 18%|█▊        | 27/150 [00:53<02:26,  1.19s/it, loss=165, avg_loss=151] 18%|█▊        | 27/150 [00:54<02:26,  1.19s/it, loss=159, avg_loss=151] 19%|█▊        | 28/150 [00:54<02:25,  1.20s/it, loss=159, avg_loss=151] 19%|█▊        | 28/150 [00:56<02:25,  1.20s/it, loss=55.4, avg_loss=148] 19%|█▉        | 29/150 [00:56<02:24,  1.19s/it, loss=55.4, avg_loss=148] 19%|█▉        | 29/150 [00:57<02:24,  1.19s/it, loss=135, avg_loss=147]  20%|██        | 30/150 [00:57<02:23,  1.20s/it, loss=135, avg_loss=147] 20%|██        | 30/150 [00:58<02:23,  1.20s/it, loss=146, avg_loss=147] 21%|██        | 31/150 [00:58<02:21,  1.19s/it, loss=146, avg_loss=147] 21%|██        | 31/150 [00:59<02:21,  1.19s/it, loss=124, avg_loss=146] 21%|██▏       | 32/150 [00:59<02:21,  1.20s/it, loss=124, avg_loss=146] 21%|██▏       | 32/150 [01:00<02:21,  1.20s/it, loss=75.7, avg_loss=144] 22%|██▏       | 33/150 [01:00<02:19,  1.19s/it, loss=75.7, avg_loss=144] 22%|██▏       | 33/150 [01:02<02:19,  1.19s/it, loss=153, avg_loss=144]  23%|██▎       | 34/150 [01:02<02:18,  1.20s/it, loss=153, avg_loss=144] 23%|██▎       | 34/150 [01:03<02:18,  1.20s/it, loss=76, avg_loss=143]  23%|██▎       | 35/150 [01:03<02:16,  1.19s/it, loss=76, avg_loss=143] 23%|██▎       | 35/150 [01:04<02:16,  1.19s/it, loss=111, avg_loss=142] 24%|██▍       | 36/150 [01:04<02:16,  1.20s/it, loss=111, avg_loss=142] 24%|██▍       | 36/150 [01:05<02:16,  1.20s/it, loss=102, avg_loss=141] 25%|██▍       | 37/150 [01:05<02:14,  1.19s/it, loss=102, avg_loss=141] 25%|██▍       | 37/150 [01:06<02:14,  1.19s/it, loss=140, avg_loss=141] 25%|██▌       | 38/150 [01:06<02:13,  1.20s/it, loss=140, avg_loss=141] 25%|██▌       | 38/150 [01:08<02:13,  1.20s/it, loss=192, avg_loss=142] 26%|██▌       | 39/150 [01:08<02:12,  1.19s/it, loss=192, avg_loss=142] 26%|██▌       | 39/150 [01:09<02:12,  1.19s/it, loss=145, avg_loss=142] 27%|██▋       | 40/150 [01:09<02:11,  1.20s/it, loss=145, avg_loss=142] 27%|██▋       | 40/150 [01:10<02:11,  1.20s/it, loss=70.7, avg_loss=140] 27%|██▋       | 41/150 [01:10<02:10,  1.19s/it, loss=70.7, avg_loss=140] 27%|██▋       | 41/150 [01:11<02:10,  1.19s/it, loss=171, avg_loss=141]  28%|██▊       | 42/150 [01:11<02:09,  1.20s/it, loss=171, avg_loss=141] 28%|██▊       | 42/150 [01:12<02:09,  1.20s/it, loss=131, avg_loss=141] 29%|██▊       | 43/150 [01:12<02:07,  1.19s/it, loss=131, avg_loss=141] 29%|██▊       | 43/150 [01:14<02:07,  1.19s/it, loss=102, avg_loss=140] 29%|██▉       | 44/150 [01:14<02:06,  1.20s/it, loss=102, avg_loss=140] 29%|██▉       | 44/150 [01:15<02:06,  1.20s/it, loss=151, avg_loss=140] 30%|███       | 45/150 [01:15<02:05,  1.19s/it, loss=151, avg_loss=140] 30%|███       | 45/150 [01:16<02:05,  1.19s/it, loss=200, avg_loss=141] 31%|███       | 46/150 [01:16<02:04,  1.20s/it, loss=200, avg_loss=141] 31%|███       | 46/150 [01:17<02:04,  1.20s/it, loss=202, avg_loss=143] 31%|███▏      | 47/150 [01:17<02:02,  1.19s/it, loss=202, avg_loss=143] 31%|███▏      | 47/150 [01:18<02:02,  1.19s/it, loss=214, avg_loss=144] 32%|███▏      | 48/150 [01:18<02:02,  1.20s/it, loss=214, avg_loss=144] 32%|███▏      | 48/150 [01:19<02:02,  1.20s/it, loss=147, avg_loss=144] 33%|███▎      | 49/150 [01:19<02:00,  1.19s/it, loss=147, avg_loss=144] 33%|███▎      | 49/150 [01:21<02:00,  1.19s/it, loss=169, avg_loss=145] 33%|███▎      | 50/150 [01:21<01:59,  1.20s/it, loss=169, avg_loss=145] 33%|███▎      | 50/150 [01:22<01:59,  1.20s/it, loss=220, avg_loss=146] 34%|███▍      | 51/150 [01:22<01:58,  1.19s/it, loss=220, avg_loss=146] 34%|███▍      | 51/150 [01:23<01:58,  1.19s/it, loss=159, avg_loss=146] 35%|███▍      | 52/150 [01:23<01:57,  1.20s/it, loss=159, avg_loss=146] 35%|███▍      | 52/150 [01:24<01:57,  1.20s/it, loss=258, avg_loss=149] 35%|███▌      | 53/150 [01:24<01:55,  1.19s/it, loss=258, avg_loss=149] 35%|███▌      | 53/150 [01:25<01:55,  1.19s/it, loss=227, avg_loss=150] 36%|███▌      | 54/150 [01:25<01:54,  1.20s/it, loss=227, avg_loss=150] 36%|███▌      | 54/150 [01:27<01:54,  1.20s/it, loss=153, avg_loss=150] 37%|███▋      | 55/150 [01:27<01:53,  1.19s/it, loss=153, avg_loss=150] 37%|███▋      | 55/150 [01:28<01:53,  1.19s/it, loss=197, avg_loss=151] 37%|███▋      | 56/150 [01:28<01:52,  1.20s/it, loss=197, avg_loss=151] 37%|███▋      | 56/150 [01:29<01:52,  1.20s/it, loss=56.4, avg_loss=149] 38%|███▊      | 57/150 [01:29<01:50,  1.19s/it, loss=56.4, avg_loss=149] 38%|███▊      | 57/150 [01:30<01:50,  1.19s/it, loss=165, avg_loss=150]  39%|███▊      | 58/150 [01:30<01:50,  1.20s/it, loss=165, avg_loss=150] 39%|███▊      | 58/150 [01:31<01:50,  1.20s/it, loss=76.2, avg_loss=148] 39%|███▉      | 59/150 [01:31<01:48,  1.19s/it, loss=76.2, avg_loss=148] 39%|███▉      | 59/150 [01:33<01:48,  1.19s/it, loss=83.1, avg_loss=147] 40%|████      | 60/150 [01:33<01:47,  1.20s/it, loss=83.1, avg_loss=147] 40%|████      | 60/150 [01:34<01:47,  1.20s/it, loss=114, avg_loss=147]  41%|████      | 61/150 [01:34<01:46,  1.19s/it, loss=114, avg_loss=147] 41%|████      | 61/150 [01:35<01:46,  1.19s/it, loss=104, avg_loss=146] 41%|████▏     | 62/150 [01:35<01:45,  1.20s/it, loss=104, avg_loss=146] 41%|████▏     | 62/150 [01:36<01:45,  1.20s/it, loss=167, avg_loss=146] 42%|████▏     | 63/150 [01:36<01:43,  1.19s/it, loss=167, avg_loss=146] 42%|████▏     | 63/150 [01:37<01:43,  1.19s/it, loss=120, avg_loss=146] 43%|████▎     | 64/150 [01:37<01:43,  1.20s/it, loss=120, avg_loss=146] 43%|████▎     | 64/150 [01:39<01:43,  1.20s/it, loss=185, avg_loss=147] 43%|████▎     | 65/150 [01:39<01:41,  1.19s/it, loss=185, avg_loss=147] 43%|████▎     | 65/150 [01:40<01:41,  1.19s/it, loss=106, avg_loss=146] 44%|████▍     | 66/150 [01:40<01:40,  1.20s/it, loss=106, avg_loss=146] 44%|████▍     | 66/150 [01:41<01:40,  1.20s/it, loss=245, avg_loss=147] 45%|████▍     | 67/150 [01:41<01:39,  1.19s/it, loss=245, avg_loss=147] 45%|████▍     | 67/150 [01:42<01:39,  1.19s/it, loss=146, avg_loss=147] 45%|████▌     | 68/150 [01:42<01:38,  1.20s/it, loss=146, avg_loss=147] 45%|████▌     | 68/150 [01:43<01:38,  1.20s/it, loss=142, avg_loss=147] 46%|████▌     | 69/150 [01:43<01:36,  1.19s/it, loss=142, avg_loss=147] 46%|████▌     | 69/150 [01:45<01:36,  1.19s/it, loss=206, avg_loss=148] 47%|████▋     | 70/150 [01:45<01:35,  1.20s/it, loss=206, avg_loss=148] 47%|████▋     | 70/150 [01:46<01:35,  1.20s/it, loss=127, avg_loss=148] 47%|████▋     | 71/150 [01:46<01:34,  1.19s/it, loss=127, avg_loss=148] 47%|████▋     | 71/150 [01:47<01:34,  1.19s/it, loss=101, avg_loss=147] 48%|████▊     | 72/150 [01:47<01:33,  1.20s/it, loss=101, avg_loss=147] 48%|████▊     | 72/150 [01:48<01:33,  1.20s/it, loss=176, avg_loss=148] 49%|████▊     | 73/150 [01:48<01:31,  1.19s/it, loss=176, avg_loss=148] 49%|████▊     | 73/150 [01:49<01:31,  1.19s/it, loss=174, avg_loss=148] 49%|████▉     | 74/150 [01:49<01:31,  1.20s/it, loss=174, avg_loss=148] 49%|████▉     | 74/150 [01:51<01:31,  1.20s/it, loss=83.8, avg_loss=147] 50%|█████     | 75/150 [01:51<01:29,  1.19s/it, loss=83.8, avg_loss=147] 50%|█████     | 75/150 [01:52<01:29,  1.19s/it, loss=122, avg_loss=147]  51%|█████     | 76/150 [01:52<01:28,  1.20s/it, loss=122, avg_loss=147] 51%|█████     | 76/150 [01:53<01:28,  1.20s/it, loss=125, avg_loss=146] 51%|█████▏    | 77/150 [01:53<01:27,  1.19s/it, loss=125, avg_loss=146] 51%|█████▏    | 77/150 [01:54<01:27,  1.19s/it, loss=124, avg_loss=146] 52%|█████▏    | 78/150 [01:54<01:26,  1.20s/it, loss=124, avg_loss=146] 52%|█████▏    | 78/150 [01:55<01:26,  1.20s/it, loss=55.2, avg_loss=145] 53%|█████▎    | 79/150 [01:55<01:24,  1.19s/it, loss=55.2, avg_loss=145] 53%|█████▎    | 79/150 [01:57<01:24,  1.19s/it, loss=332, avg_loss=147]  53%|█████▎    | 80/150 [01:57<01:23,  1.20s/it, loss=332, avg_loss=147] 53%|█████▎    | 80/150 [01:58<01:23,  1.20s/it, loss=126, avg_loss=147] 54%|█████▍    | 81/150 [01:58<01:22,  1.19s/it, loss=126, avg_loss=147] 54%|█████▍    | 81/150 [01:59<01:22,  1.19s/it, loss=162, avg_loss=147] 55%|█████▍    | 82/150 [01:59<01:21,  1.20s/it, loss=162, avg_loss=147] 55%|█████▍    | 82/150 [02:00<01:21,  1.20s/it, loss=87.4, avg_loss=147] 55%|█████▌    | 83/150 [02:00<01:19,  1.19s/it, loss=87.4, avg_loss=147] 55%|█████▌    | 83/150 [02:01<01:19,  1.19s/it, loss=160, avg_loss=147]  56%|█████▌    | 84/150 [02:01<01:19,  1.20s/it, loss=160, avg_loss=147] 56%|█████▌    | 84/150 [02:03<01:19,  1.20s/it, loss=57.6, avg_loss=146] 57%|█████▋    | 85/150 [02:03<01:17,  1.19s/it, loss=57.6, avg_loss=146] 57%|█████▋    | 85/150 [02:04<01:17,  1.19s/it, loss=133, avg_loss=146]  57%|█████▋    | 86/150 [02:04<01:16,  1.20s/it, loss=133, avg_loss=146] 57%|█████▋    | 86/150 [02:05<01:16,  1.20s/it, loss=113, avg_loss=145] 58%|█████▊    | 87/150 [02:05<01:15,  1.19s/it, loss=113, avg_loss=145] 58%|█████▊    | 87/150 [02:06<01:15,  1.19s/it, loss=114, avg_loss=145] 59%|█████▊    | 88/150 [02:06<01:14,  1.20s/it, loss=114, avg_loss=145] 59%|█████▊    | 88/150 [02:07<01:14,  1.20s/it, loss=40, avg_loss=144]  59%|█████▉    | 89/150 [02:07<01:12,  1.19s/it, loss=40, avg_loss=144] 59%|█████▉    | 89/150 [02:09<01:12,  1.19s/it, loss=204, avg_loss=144] 60%|██████    | 90/150 [02:09<01:11,  1.20s/it, loss=204, avg_loss=144] 60%|██████    | 90/150 [02:10<01:11,  1.20s/it, loss=149, avg_loss=144] 61%|██████    | 91/150 [02:10<01:10,  1.19s/it, loss=149, avg_loss=144] 61%|██████    | 91/150 [02:11<01:10,  1.19s/it, loss=143, avg_loss=144] 61%|██████▏   | 92/150 [02:11<01:09,  1.20s/it, loss=143, avg_loss=144] 61%|██████▏   | 92/150 [02:12<01:09,  1.20s/it, loss=109, avg_loss=144] 62%|██████▏   | 93/150 [02:12<01:08,  1.19s/it, loss=109, avg_loss=144] 62%|██████▏   | 93/150 [02:13<01:08,  1.19s/it, loss=134, avg_loss=144] 63%|██████▎   | 94/150 [02:13<01:07,  1.20s/it, loss=134, avg_loss=144] 63%|██████▎   | 94/150 [02:15<01:07,  1.20s/it, loss=123, avg_loss=144] 63%|██████▎   | 95/150 [02:15<01:05,  1.19s/it, loss=123, avg_loss=144] 63%|██████▎   | 95/150 [02:16<01:05,  1.19s/it, loss=132, avg_loss=144] 64%|██████▍   | 96/150 [02:16<01:04,  1.20s/it, loss=132, avg_loss=144] 64%|██████▍   | 96/150 [02:17<01:04,  1.20s/it, loss=162, avg_loss=144] 65%|██████▍   | 97/150 [02:17<01:03,  1.19s/it, loss=162, avg_loss=144] 65%|██████▍   | 97/150 [02:18<01:03,  1.19s/it, loss=120, avg_loss=143] 65%|██████▌   | 98/150 [02:18<01:02,  1.20s/it, loss=120, avg_loss=143] 65%|██████▌   | 98/150 [02:19<01:02,  1.20s/it, loss=110, avg_loss=143] 66%|██████▌   | 99/150 [02:19<01:00,  1.19s/it, loss=110, avg_loss=143] 66%|██████▌   | 99/150 [02:20<01:00,  1.19s/it, loss=71, avg_loss=142]  67%|██████▋   | 100/150 [02:20<00:59,  1.20s/it, loss=71, avg_loss=142] 67%|██████▋   | 100/150 [02:22<00:59,  1.20s/it, loss=103, avg_loss=142] 67%|██████▋   | 101/150 [02:22<00:58,  1.19s/it, loss=103, avg_loss=142] 67%|██████▋   | 101/150 [02:23<00:58,  1.19s/it, loss=151, avg_loss=142] 68%|██████▊   | 102/150 [02:23<00:57,  1.20s/it, loss=151, avg_loss=142] 68%|██████▊   | 102/150 [02:24<00:57,  1.20s/it, loss=189, avg_loss=143] 69%|██████▊   | 103/150 [02:24<00:56,  1.19s/it, loss=189, avg_loss=143] 69%|██████▊   | 103/150 [02:25<00:56,  1.19s/it, loss=114, avg_loss=142] 69%|██████▉   | 104/150 [02:25<00:55,  1.20s/it, loss=114, avg_loss=142] 69%|██████▉   | 104/150 [02:26<00:55,  1.20s/it, loss=166, avg_loss=142] 70%|███████   | 105/150 [02:26<00:53,  1.19s/it, loss=166, avg_loss=142] 70%|███████   | 105/150 [02:28<00:53,  1.19s/it, loss=74, avg_loss=142]  71%|███████   | 106/150 [02:28<00:52,  1.20s/it, loss=74, avg_loss=142] 71%|███████   | 106/150 [02:29<00:52,  1.20s/it, loss=139, avg_loss=142] 71%|███████▏  | 107/150 [02:29<00:51,  1.19s/it, loss=139, avg_loss=142] 71%|███████▏  | 107/150 [02:30<00:51,  1.19s/it, loss=103, avg_loss=141] 72%|███████▏  | 108/150 [02:30<00:50,  1.20s/it, loss=103, avg_loss=141] 72%|███████▏  | 108/150 [02:31<00:50,  1.20s/it, loss=205, avg_loss=142] 73%|███████▎  | 109/150 [02:31<00:48,  1.19s/it, loss=205, avg_loss=142] 73%|███████▎  | 109/150 [02:32<00:48,  1.19s/it, loss=184, avg_loss=142] 73%|███████▎  | 110/150 [02:32<00:47,  1.20s/it, loss=184, avg_loss=142] 73%|███████▎  | 110/150 [02:34<00:47,  1.20s/it, loss=187, avg_loss=143] 74%|███████▍  | 111/150 [02:34<00:46,  1.19s/it, loss=187, avg_loss=143] 74%|███████▍  | 111/150 [02:35<00:46,  1.19s/it, loss=88.8, avg_loss=142] 75%|███████▍  | 112/150 [02:35<00:45,  1.20s/it, loss=88.8, avg_loss=142] 75%|███████▍  | 112/150 [02:36<00:45,  1.20s/it, loss=149, avg_loss=142]  75%|███████▌  | 113/150 [02:36<00:44,  1.19s/it, loss=149, avg_loss=142] 75%|███████▌  | 113/150 [02:37<00:44,  1.19s/it, loss=210, avg_loss=143] 76%|███████▌  | 114/150 [02:37<00:43,  1.20s/it, loss=210, avg_loss=143] 76%|███████▌  | 114/150 [02:38<00:43,  1.20s/it, loss=169, avg_loss=143] 77%|███████▋  | 115/150 [02:38<00:41,  1.19s/it, loss=169, avg_loss=143] 77%|███████▋  | 115/150 [02:40<00:41,  1.19s/it, loss=63.6, avg_loss=143] 77%|███████▋  | 116/150 [02:40<00:40,  1.20s/it, loss=63.6, avg_loss=143] 77%|███████▋  | 116/150 [02:41<00:40,  1.20s/it, loss=43.7, avg_loss=142] 78%|███████▊  | 117/150 [02:41<00:39,  1.19s/it, loss=43.7, avg_loss=142] 78%|███████▊  | 117/150 [02:42<00:39,  1.19s/it, loss=107, avg_loss=141]  79%|███████▊  | 118/150 [02:42<00:38,  1.20s/it, loss=107, avg_loss=141] 79%|███████▊  | 118/150 [02:43<00:38,  1.20s/it, loss=234, avg_loss=142] 79%|███████▉  | 119/150 [02:43<00:37,  1.19s/it, loss=234, avg_loss=142] 79%|███████▉  | 119/150 [02:44<00:37,  1.19s/it, loss=206, avg_loss=143] 80%|████████  | 120/150 [02:44<00:35,  1.20s/it, loss=206, avg_loss=143] 80%|████████  | 120/150 [02:46<00:35,  1.20s/it, loss=147, avg_loss=143] 81%|████████  | 121/150 [02:46<00:34,  1.19s/it, loss=147, avg_loss=143] 81%|████████  | 121/150 [02:47<00:34,  1.19s/it, loss=62, avg_loss=142]  81%|████████▏ | 122/150 [02:47<00:33,  1.20s/it, loss=62, avg_loss=142] 81%|████████▏ | 122/150 [02:48<00:33,  1.20s/it, loss=97.1, avg_loss=142] 82%|████████▏ | 123/150 [02:48<00:32,  1.19s/it, loss=97.1, avg_loss=142] 82%|████████▏ | 123/150 [02:49<00:32,  1.19s/it, loss=196, avg_loss=142]  83%|████████▎ | 124/150 [02:49<00:31,  1.20s/it, loss=196, avg_loss=142] 83%|████████▎ | 124/150 [02:50<00:31,  1.20s/it, loss=183, avg_loss=142] 83%|████████▎ | 125/150 [02:50<00:29,  1.19s/it, loss=183, avg_loss=142] 83%|████████▎ | 125/150 [02:52<00:29,  1.19s/it, loss=130, avg_loss=142] 84%|████████▍ | 126/150 [02:52<00:28,  1.20s/it, loss=130, avg_loss=142] 84%|████████▍ | 126/150 [02:53<00:28,  1.20s/it, loss=167, avg_loss=143] 85%|████████▍ | 127/150 [02:53<00:27,  1.19s/it, loss=167, avg_loss=143] 85%|████████▍ | 127/150 [02:54<00:27,  1.19s/it, loss=120, avg_loss=142] 85%|████████▌ | 128/150 [02:54<00:26,  1.20s/it, loss=120, avg_loss=142] 85%|████████▌ | 128/150 [02:55<00:26,  1.20s/it, loss=122, avg_loss=142] 86%|████████▌ | 129/150 [02:55<00:25,  1.19s/it, loss=122, avg_loss=142] 86%|████████▌ | 129/150 [02:56<00:25,  1.19s/it, loss=39.8, avg_loss=141] 87%|████████▋ | 130/150 [02:56<00:23,  1.20s/it, loss=39.8, avg_loss=141] 87%|████████▋ | 130/150 [02:58<00:23,  1.20s/it, loss=116, avg_loss=141]  87%|████████▋ | 131/150 [02:58<00:22,  1.19s/it, loss=116, avg_loss=141] 87%|████████▋ | 131/150 [02:59<00:22,  1.19s/it, loss=121, avg_loss=141] 88%|████████▊ | 132/150 [02:59<00:21,  1.20s/it, loss=121, avg_loss=141] 88%|████████▊ | 132/150 [03:00<00:21,  1.20s/it, loss=102, avg_loss=141] 89%|████████▊ | 133/150 [03:00<00:20,  1.19s/it, loss=102, avg_loss=141] 89%|████████▊ | 133/150 [03:01<00:20,  1.19s/it, loss=151, avg_loss=141] 89%|████████▉ | 134/150 [03:01<00:19,  1.20s/it, loss=151, avg_loss=141] 89%|████████▉ | 134/150 [03:02<00:19,  1.20s/it, loss=126, avg_loss=141] 90%|█████████ | 135/150 [03:02<00:17,  1.19s/it, loss=126, avg_loss=141] 90%|█████████ | 135/150 [03:04<00:17,  1.19s/it, loss=122, avg_loss=141] 91%|█████████ | 136/150 [03:04<00:16,  1.20s/it, loss=122, avg_loss=141] 91%|█████████ | 136/150 [03:05<00:16,  1.20s/it, loss=51.1, avg_loss=140] 91%|█████████▏| 137/150 [03:05<00:15,  1.19s/it, loss=51.1, avg_loss=140] 91%|█████████▏| 137/150 [03:06<00:15,  1.19s/it, loss=92.2, avg_loss=140] 92%|█████████▏| 138/150 [03:06<00:14,  1.20s/it, loss=92.2, avg_loss=140] 92%|█████████▏| 138/150 [03:07<00:14,  1.20s/it, loss=78.3, avg_loss=139] 93%|█████████▎| 139/150 [03:07<00:13,  1.19s/it, loss=78.3, avg_loss=139] 93%|█████████▎| 139/150 [03:08<00:13,  1.19s/it, loss=108, avg_loss=139]  93%|█████████▎| 140/150 [03:08<00:11,  1.20s/it, loss=108, avg_loss=139] 93%|█████████▎| 140/150 [03:09<00:11,  1.20s/it, loss=80.9, avg_loss=139] 94%|█████████▍| 141/150 [03:09<00:10,  1.19s/it, loss=80.9, avg_loss=139] 94%|█████████▍| 141/150 [03:11<00:10,  1.19s/it, loss=74.2, avg_loss=138] 95%|█████████▍| 142/150 [03:11<00:09,  1.20s/it, loss=74.2, avg_loss=138] 95%|█████████▍| 142/150 [03:12<00:09,  1.20s/it, loss=73.1, avg_loss=138] 95%|█████████▌| 143/150 [03:12<00:08,  1.19s/it, loss=73.1, avg_loss=138] 95%|█████████▌| 143/150 [03:13<00:08,  1.19s/it, loss=185, avg_loss=138]  96%|█████████▌| 144/150 [03:13<00:07,  1.20s/it, loss=185, avg_loss=138] 96%|█████████▌| 144/150 [03:14<00:07,  1.20s/it, loss=91, avg_loss=138]  97%|█████████▋| 145/150 [03:14<00:05,  1.19s/it, loss=91, avg_loss=138] 97%|█████████▋| 145/150 [03:15<00:05,  1.19s/it, loss=159, avg_loss=138] 97%|█████████▋| 146/150 [03:15<00:04,  1.20s/it, loss=159, avg_loss=138] 97%|█████████▋| 146/150 [03:17<00:04,  1.20s/it, loss=124, avg_loss=138] 98%|█████████▊| 147/150 [03:17<00:03,  1.19s/it, loss=124, avg_loss=138] 98%|█████████▊| 147/150 [03:18<00:03,  1.19s/it, loss=73.7, avg_loss=137] 99%|█████████▊| 148/150 [03:18<00:02,  1.20s/it, loss=73.7, avg_loss=137] 99%|█████████▊| 148/150 [03:19<00:02,  1.20s/it, loss=183, avg_loss=138]  99%|█████████▉| 149/150 [03:19<00:01,  1.19s/it, loss=183, avg_loss=138] 99%|█████████▉| 149/150 [03:20<00:01,  1.19s/it, loss=69.5, avg_loss=137]100%|██████████| 150/150 [03:20<00:00,  1.19s/it, loss=69.5, avg_loss=137]100%|██████████| 150/150 [03:23<00:00,  1.36s/it, loss=69.5, avg_loss=137]
+Training loss: 1.3713482958078385
+saving weights to  ~/scratch/checkpoints/bs_roformer_2025-02-28_00-56-25/last_bs_roformer.ckpt
+printing epoch metrics
+metrics for scheduler sdr
+  0%|          | 0/14 [00:00<?, ?it/s]  0%|          | 0/14 [00:36<?, ?it/s, sdr_drums=0.0609]  0%|          | 0/14 [00:36<?, ?it/s, sdr_drums=0.0609, sdr_bass=0.632]  0%|          | 0/14 [00:37<?, ?it/s, sdr_drums=0.0609, sdr_bass=0.632, sdr_other=-0.185]  0%|          | 0/14 [00:37<?, ?it/s, sdr_drums=0.0609, sdr_bass=0.632, sdr_other=-0.185, sdr_vocals=-0.181]  7%|▋         | 1/14 [00:37<08:04, 37.26s/it, sdr_drums=0.0609, sdr_bass=0.632, sdr_other=-0.185, sdr_vocals=-0.181]  7%|▋         | 1/14 [01:12<08:04, 37.26s/it, sdr_drums=-0.0648]                                                      7%|▋         | 1/14 [01:13<08:04, 37.26s/it, sdr_drums=-0.0648, sdr_bass=-0.145]  7%|▋         | 1/14 [01:13<08:04, 37.26s/it, sdr_drums=-0.0648, sdr_bass=-0.145, sdr_other=0.297]  7%|▋         | 1/14 [01:13<08:04, 37.26s/it, sdr_drums=-0.0648, sdr_bass=-0.145, sdr_other=0.297, sdr_vocals=-0.0473] 14%|█▍        | 2/14 [01:13<07:19, 36.66s/it, sdr_drums=-0.0648, sdr_bass=-0.145, sdr_other=0.297, sdr_vocals=-0.0473] 14%|█▍        | 2/14 [02:39<07:19, 36.66s/it, sdr_drums=-0.293]                                                        14%|█▍        | 2/14 [02:39<07:19, 36.66s/it, sdr_drums=-0.293, sdr_bass=0.282] 14%|█▍        | 2/14 [02:40<07:19, 36.66s/it, sdr_drums=-0.293, sdr_bass=0.282, sdr_other=0.458] 14%|█▍        | 2/14 [02:40<07:19, 36.66s/it, sdr_drums=-0.293, sdr_bass=0.282, sdr_other=0.458, sdr_vocals=-0.128] 21%|██▏       | 3/14 [02:40<10:57, 59.74s/it, sdr_drums=-0.293, sdr_bass=0.282, sdr_other=0.458, sdr_vocals=-0.128] 21%|██▏       | 3/14 [03:18<10:57, 59.74s/it, sdr_drums=-0.735]                                                     21%|██▏       | 3/14 [03:19<10:57, 59.74s/it, sdr_drums=-0.735, sdr_bass=0.554] 21%|██▏       | 3/14 [03:19<10:57, 59.74s/it, sdr_drums=-0.735, sdr_bass=0.554, sdr_other=0.451] 21%|██▏       | 3/14 [03:19<10:57, 59.74s/it, sdr_drums=-0.735, sdr_bass=0.554, sdr_other=0.451, sdr_vocals=-0.313] 29%|██▊       | 4/14 [03:19<08:34, 51.45s/it, sdr_drums=-0.735, sdr_bass=0.554, sdr_other=0.451, sdr_vocals=-0.313] 29%|██▊       | 4/14 [04:02<08:34, 51.45s/it, sdr_drums=-0.137]                                                     29%|██▊       | 4/14 [04:02<08:34, 51.45s/it, sdr_drums=-0.137, sdr_bass=-0.0927] 29%|██▊       | 4/14 [04:02<08:34, 51.45s/it, sdr_drums=-0.137, sdr_bass=-0.0927, sdr_other=0.2] 29%|██▊       | 4/14 [04:02<08:34, 51.45s/it, sdr_drums=-0.137, sdr_bass=-0.0927, sdr_other=0.2, sdr_vocals=0.00115] 36%|███▌      | 5/14 [04:02<07:16, 48.55s/it, sdr_drums=-0.137, sdr_bass=-0.0927, sdr_other=0.2, sdr_vocals=0.00115] 36%|███▌      | 5/14 [04:56<07:16, 48.55s/it, sdr_drums=0.45]                                                        36%|███▌      | 5/14 [04:57<07:16, 48.55s/it, sdr_drums=0.45, sdr_bass=1] 36%|███▌      | 5/14 [04:57<07:16, 48.55s/it, sdr_drums=0.45, sdr_bass=1, sdr_other=0.226] 36%|███▌      | 5/14 [04:58<07:16, 48.55s/it, sdr_drums=0.45, sdr_bass=1, sdr_other=0.226, sdr_vocals=0.00808] 43%|████▎     | 6/14 [04:58<06:46, 50.82s/it, sdr_drums=0.45, sdr_bass=1, sdr_other=0.226, sdr_vocals=0.00808] 43%|████▎     | 6/14 [05:58<06:46, 50.82s/it, sdr_drums=0.328]                                                 43%|████▎     | 6/14 [05:58<06:46, 50.82s/it, sdr_drums=0.328, sdr_bass=-0.0219] 43%|████▎     | 6/14 [05:59<06:46, 50.82s/it, sdr_drums=0.328, sdr_bass=-0.0219, sdr_other=0.242] 43%|████▎     | 6/14 [05:59<06:46, 50.82s/it, sdr_drums=0.328, sdr_bass=-0.0219, sdr_other=0.242, sdr_vocals=-0.19] 50%|█████     | 7/14 [05:59<06:20, 54.30s/it, sdr_drums=0.328, sdr_bass=-0.0219, sdr_other=0.242, sdr_vocals=-0.19] 50%|█████     | 7/14 [06:48<06:20, 54.30s/it, sdr_drums=-0.0151]                                                    50%|█████     | 7/14 [06:49<06:20, 54.30s/it, sdr_drums=-0.0151, sdr_bass=0.695] 50%|█████     | 7/14 [06:49<06:20, 54.30s/it, sdr_drums=-0.0151, sdr_bass=0.695, sdr_other=-0.112] 50%|█████     | 7/14 [06:49<06:20, 54.30s/it, sdr_drums=-0.0151, sdr_bass=0.695, sdr_other=-0.112, sdr_vocals=-0.0701] 57%|█████▋    | 8/14 [06:49<05:17, 52.95s/it, sdr_drums=-0.0151, sdr_bass=0.695, sdr_other=-0.112, sdr_vocals=-0.0701] 57%|█████▋    | 8/14 [07:48<05:17, 52.95s/it, sdr_drums=-0.0913]                                                       57%|█████▋    | 8/14 [07:49<05:17, 52.95s/it, sdr_drums=-0.0913, sdr_bass=0.84] 57%|█████▋    | 8/14 [07:49<05:17, 52.95s/it, sdr_drums=-0.0913, sdr_bass=0.84, sdr_other=-0.04] 57%|█████▋    | 8/14 [07:49<05:17, 52.95s/it, sdr_drums=-0.0913, sdr_bass=0.84, sdr_other=-0.04, sdr_vocals=-0.121] 64%|██████▍   | 9/14 [07:49<04:35, 55.18s/it, sdr_drums=-0.0913, sdr_bass=0.84, sdr_other=-0.04, sdr_vocals=-0.121] 64%|██████▍   | 9/14 [08:44<04:35, 55.18s/it, sdr_drums=0.0843]                                                     64%|██████▍   | 9/14 [08:44<04:35, 55.18s/it, sdr_drums=0.0843, sdr_bass=0.384] 64%|██████▍   | 9/14 [08:44<04:35, 55.18s/it, sdr_drums=0.0843, sdr_bass=0.384, sdr_other=0.233] 64%|██████▍   | 9/14 [08:45<04:35, 55.18s/it, sdr_drums=0.0843, sdr_bass=0.384, sdr_other=0.233, sdr_vocals=0.0914] 71%|███████▏  | 10/14 [08:45<03:41, 55.26s/it, sdr_drums=0.0843, sdr_bass=0.384, sdr_other=0.233, sdr_vocals=0.0914] 71%|███████▏  | 10/14 [09:52<03:41, 55.26s/it, sdr_drums=-0.106]                                                     71%|███████▏  | 10/14 [09:52<03:41, 55.26s/it, sdr_drums=-0.106, sdr_bass=0.974] 71%|███████▏  | 10/14 [09:53<03:41, 55.26s/it, sdr_drums=-0.106, sdr_bass=0.974, sdr_other=0.328] 71%|███████▏  | 10/14 [09:53<03:41, 55.26s/it, sdr_drums=-0.106, sdr_bass=0.974, sdr_other=0.328, sdr_vocals=-0.187] 79%|███████▊  | 11/14 [09:53<02:58, 59.34s/it, sdr_drums=-0.106, sdr_bass=0.974, sdr_other=0.328, sdr_vocals=-0.187] 79%|███████▊  | 11/14 [11:20<02:58, 59.34s/it, sdr_drums=-0.268]                                                     79%|███████▊  | 11/14 [11:21<02:58, 59.34s/it, sdr_drums=-0.268, sdr_bass=0.189] 79%|███████▊  | 11/14 [11:21<02:58, 59.34s/it, sdr_drums=-0.268, sdr_bass=0.189, sdr_other=0.229] 79%|███████▊  | 11/14 [11:22<02:58, 59.34s/it, sdr_drums=-0.268, sdr_bass=0.189, sdr_other=0.229, sdr_vocals=-0.0962] 86%|████████▌ | 12/14 [11:22<02:16, 68.15s/it, sdr_drums=-0.268, sdr_bass=0.189, sdr_other=0.229, sdr_vocals=-0.0962] 86%|████████▌ | 12/14 [12:12<02:16, 68.15s/it, sdr_drums=-0.248]                                                      86%|████████▌ | 12/14 [12:12<02:16, 68.15s/it, sdr_drums=-0.248, sdr_bass=0.724] 86%|████████▌ | 12/14 [12:12<02:16, 68.15s/it, sdr_drums=-0.248, sdr_bass=0.724, sdr_other=0.235] 86%|████████▌ | 12/14 [12:13<02:16, 68.15s/it, sdr_drums=-0.248, sdr_bass=0.724, sdr_other=0.235, sdr_vocals=0.022] 93%|█████████▎| 13/14 [12:13<01:03, 63.02s/it, sdr_drums=-0.248, sdr_bass=0.724, sdr_other=0.235, sdr_vocals=0.022] 93%|█████████▎| 13/14 [13:11<01:03, 63.02s/it, sdr_drums=0.0375]                                                    93%|█████████▎| 13/14 [13:11<01:03, 63.02s/it, sdr_drums=0.0375, sdr_bass=0.645] 93%|█████████▎| 13/14 [13:12<01:03, 63.02s/it, sdr_drums=0.0375, sdr_bass=0.645, sdr_other=-0.0758] 93%|█████████▎| 13/14 [13:12<01:03, 63.02s/it, sdr_drums=0.0375, sdr_bass=0.645, sdr_other=-0.0758, sdr_vocals=-0.038]100%|██████████| 14/14 [13:12<00:00, 61.89s/it, sdr_drums=0.0375, sdr_bass=0.645, sdr_other=-0.0758, sdr_vocals=-0.038]100%|██████████| 14/14 [13:12<00:00, 56.61s/it, sdr_drums=0.0375, sdr_bass=0.645, sdr_other=-0.0758, sdr_vocals=-0.038]
+Num overlap: 8
+Instr drums sdr: -0.0713 (Std: 0.2743)
+Instr bass sdr: 0.4760 (Std: 0.3697)
+Instr other sdr: 0.1776 (Std: 0.1952)
+Instr vocals sdr: -0.0893 (Std: 0.1029)
+Metric avg sdr        : 0.1233
+Elapsed time: 792.58 sec
+metrics_avg {'sdr': 0.12326230885472156}
+metrics for scheduler sdr
+Store weights: ~/scratch/checkpoints/bs_roformer_2025-02-28_00-56-25/model_bs_roformer_ep_0_sdr_0.1233.ckpt
+saving weights to  ~/scratch/checkpoints/bs_roformer_2025-02-28_00-56-25/model_bs_roformer_ep_0_sdr_0.1233.ckpt
+Train epoch: 1 Learning rate: 0.0001653135087572272
+  0%|          | 0/150 [00:00<?, ?it/s]  0%|          | 0/150 [02:41<?, ?it/s, loss=150, avg_loss=150]  1%|          | 1/150 [02:41<6:41:41, 161.76s/it, loss=150, avg_loss=150]  1%|          | 1/150 [02:49<6:41:41, 161.76s/it, loss=205, avg_loss=177]  1%|▏         | 2/150 [02:49<2:55:15, 71.05s/it, loss=205, avg_loss=177]   1%|▏         | 2/150 [02:50<2:55:15, 71.05s/it, loss=113, avg_loss=156]  2%|▏         | 3/150 [02:50<1:35:54, 39.14s/it, loss=113, avg_loss=156]  2%|▏         | 3/150 [02:51<1:35:54, 39.14s/it, loss=77.3, avg_loss=136]  3%|▎         | 4/150 [02:51<58:48, 24.17s/it, loss=77.3, avg_loss=136]    3%|▎         | 4/150 [02:52<58:48, 24.17s/it, loss=132, avg_loss=135]   3%|▎         | 5/150 [02:52<38:22, 15.88s/it, loss=132, avg_loss=135]  3%|▎         | 5/150 [02:54<38:22, 15.88s/it, loss=105, avg_loss=130]  4%|▍         | 6/150 [02:54<26:08, 10.89s/it, loss=105, avg_loss=130]  4%|▍         | 6/150 [02:55<26:08, 10.89s/it, loss=132, avg_loss=131]  5%|▍         | 7/150 [02:55<18:23,  7.71s/it, loss=132, avg_loss=131]  5%|▍         | 7/150 [02:56<18:23,  7.71s/it, loss=90.8, avg_loss=126]  5%|▌         | 8/150 [02:56<13:21,  5.64s/it, loss=90.8, avg_loss=126]  5%|▌         | 8/150 [02:57<13:21,  5.64s/it, loss=130, avg_loss=126]   6%|▌         | 9/150 [02:57<09:58,  4.25s/it, loss=130, avg_loss=126]  6%|▌         | 9/150 [02:58<09:58,  4.25s/it, loss=133, avg_loss=127]  7%|▋         | 10/150 [02:58<07:43,  3.31s/it, loss=133, avg_loss=127]  7%|▋         | 10/150 [03:00<07:43,  3.31s/it, loss=170, avg_loss=131]  7%|▋         | 11/150 [03:00<06:09,  2.66s/it, loss=170, avg_loss=131]  7%|▋         | 11/150 [03:01<06:09,  2.66s/it, loss=51, avg_loss=124]   8%|▊         | 12/150 [03:01<05:05,  2.21s/it, loss=51, avg_loss=124]  8%|▊         | 12/150 [03:02<05:05,  2.21s/it, loss=64.3, avg_loss=119]  9%|▊         | 13/150 [03:02<04:20,  1.90s/it, loss=64.3, avg_loss=119]  9%|▊         | 13/150 [03:03<04:20,  1.90s/it, loss=39, avg_loss=114]    9%|▉         | 14/150 [03:03<03:49,  1.69s/it, loss=39, avg_loss=114]  9%|▉         | 14/150 [03:04<03:49,  1.69s/it, loss=84.7, avg_loss=112] 10%|█         | 15/150 [03:04<03:27,  1.54s/it, loss=84.7, avg_loss=112] 10%|█         | 15/150 [03:06<03:27,  1.54s/it, loss=166, avg_loss=115]  11%|█         | 16/150 [03:06<03:12,  1.44s/it, loss=166, avg_loss=115] 11%|█         | 16/150 [03:07<03:12,  1.44s/it, loss=155, avg_loss=118] 11%|█▏        | 17/150 [03:07<03:00,  1.36s/it, loss=155, avg_loss=118] 11%|█▏        | 17/150 [03:08<03:00,  1.36s/it, loss=257, avg_loss=125] 12%|█▏        | 18/150 [03:08<02:53,  1.31s/it, loss=257, avg_loss=125] 12%|█▏        | 18/150 [03:09<02:53,  1.31s/it, loss=138, avg_loss=126] 13%|█▎        | 19/150 [03:09<02:46,  1.27s/it, loss=138, avg_loss=126] 13%|█▎        | 19/150 [03:10<02:46,  1.27s/it, loss=228, avg_loss=131] 13%|█▎        | 20/150 [03:10<02:43,  1.25s/it, loss=228, avg_loss=131] 13%|█▎        | 20/150 [03:11<02:43,  1.25s/it, loss=122, avg_loss=131] 14%|█▍        | 21/150 [03:11<02:39,  1.23s/it, loss=122, avg_loss=131] 14%|█▍        | 21/150 [03:13<02:39,  1.23s/it, loss=73.2, avg_loss=128] 15%|█▍        | 22/150 [03:13<02:36,  1.23s/it, loss=73.2, avg_loss=128] 15%|█▍        | 22/150 [03:14<02:36,  1.23s/it, loss=179, avg_loss=130]  15%|█▌        | 23/150 [03:14<02:33,  1.21s/it, loss=179, avg_loss=130] 15%|█▌        | 23/150 [03:15<02:33,  1.21s/it, loss=107, avg_loss=129] 16%|█▌        | 24/150 [03:15<02:32,  1.21s/it, loss=107, avg_loss=129] 16%|█▌        | 24/150 [03:16<02:32,  1.21s/it, loss=94.1, avg_loss=128] 17%|█▋        | 25/150 [03:16<02:30,  1.20s/it, loss=94.1, avg_loss=128] 17%|█▋        | 25/150 [03:17<02:30,  1.20s/it, loss=169, avg_loss=129]  17%|█▋        | 26/150 [03:17<02:29,  1.20s/it, loss=169, avg_loss=129] 17%|█▋        | 26/150 [03:19<02:29,  1.20s/it, loss=106, avg_loss=129] 18%|█▊        | 27/150 [03:19<02:27,  1.20s/it, loss=106, avg_loss=129] 18%|█▊        | 27/150 [03:20<02:27,  1.20s/it, loss=109, avg_loss=128] 19%|█▊        | 28/150 [03:20<02:26,  1.20s/it, loss=109, avg_loss=128] 19%|█▊        | 28/150 [03:21<02:26,  1.20s/it, loss=87.4, avg_loss=127] 19%|█▉        | 29/150 [03:21<02:24,  1.20s/it, loss=87.4, avg_loss=127] 19%|█▉        | 29/150 [03:22<02:24,  1.20s/it, loss=46.3, avg_loss=124] 20%|██        | 30/150 [03:22<02:23,  1.20s/it, loss=46.3, avg_loss=124] 20%|██        | 30/150 [03:23<02:23,  1.20s/it, loss=91.8, avg_loss=123] 21%|██        | 31/150 [03:23<02:22,  1.19s/it, loss=91.8, avg_loss=123] 21%|██        | 31/150 [03:25<02:22,  1.19s/it, loss=143, avg_loss=123]  21%|██▏       | 32/150 [03:25<02:21,  1.20s/it, loss=143, avg_loss=123] 21%|██▏       | 32/150 [03:26<02:21,  1.20s/it, loss=115, avg_loss=123] 22%|██▏       | 33/150 [03:26<02:19,  1.19s/it, loss=115, avg_loss=123] 22%|██▏       | 33/150 [03:27<02:19,  1.19s/it, loss=113, avg_loss=123] 23%|██▎       | 34/150 [03:27<02:18,  1.20s/it, loss=113, avg_loss=123] 23%|██▎       | 34/150 [03:28<02:18,  1.20s/it, loss=74.5, avg_loss=121] 23%|██▎       | 35/150 [03:28<02:17,  1.19s/it, loss=74.5, avg_loss=121] 23%|██▎       | 35/150 [03:29<02:17,  1.19s/it, loss=101, avg_loss=121]  24%|██▍       | 36/150 [03:29<02:16,  1.20s/it, loss=101, avg_loss=121] 24%|██▍       | 36/150 [03:31<02:16,  1.20s/it, loss=76.4, avg_loss=120] 25%|██▍       | 37/150 [03:31<02:14,  1.19s/it, loss=76.4, avg_loss=120] 25%|██▍       | 37/150 [03:32<02:14,  1.19s/it, loss=145, avg_loss=120]  25%|██▌       | 38/150 [03:32<02:14,  1.20s/it, loss=145, avg_loss=120] 25%|██▌       | 38/150 [03:33<02:14,  1.20s/it, loss=227, avg_loss=123] 26%|██▌       | 39/150 [03:33<02:12,  1.19s/it, loss=227, avg_loss=123] 26%|██▌       | 39/150 [03:34<02:12,  1.19s/it, loss=135, avg_loss=123] 27%|██▋       | 40/150 [03:34<02:11,  1.20s/it, loss=135, avg_loss=123] 27%|██▋       | 40/150 [03:35<02:11,  1.20s/it, loss=104, avg_loss=123] 27%|██▋       | 41/150 [03:35<02:10,  1.19s/it, loss=104, avg_loss=123] 27%|██▋       | 41/150 [03:37<02:10,  1.19s/it, loss=192, avg_loss=125] 28%|██▊       | 42/150 [03:37<02:09,  1.20s/it, loss=192, avg_loss=125] 28%|██▊       | 42/150 [03:38<02:09,  1.20s/it, loss=90.6, avg_loss=124] 29%|██▊       | 43/150 [03:38<02:07,  1.19s/it, loss=90.6, avg_loss=124] 29%|██▊       | 43/150 [03:39<02:07,  1.19s/it, loss=136, avg_loss=124]  29%|██▉       | 44/150 [03:39<02:06,  1.20s/it, loss=136, avg_loss=124] 29%|██▉       | 44/150 [03:40<02:06,  1.20s/it, loss=162, avg_loss=125] 30%|███       | 45/150 [03:40<02:05,  1.19s/it, loss=162, avg_loss=125] 30%|███       | 45/150 [03:41<02:05,  1.19s/it, loss=104, avg_loss=124] 31%|███       | 46/150 [03:41<02:04,  1.20s/it, loss=104, avg_loss=124] 31%|███       | 46/150 [03:43<02:04,  1.20s/it, loss=131, avg_loss=125] 31%|███▏      | 47/150 [03:43<02:02,  1.19s/it, loss=131, avg_loss=125] 31%|███▏      | 47/150 [03:44<02:02,  1.19s/it, loss=116, avg_loss=124] 32%|███▏      | 48/150 [03:44<02:02,  1.20s/it, loss=116, avg_loss=124] 32%|███▏      | 48/150 [03:45<02:02,  1.20s/it, loss=132, avg_loss=125] 33%|███▎      | 49/150 [03:45<02:00,  1.19s/it, loss=132, avg_loss=125] 33%|███▎      | 49/150 [03:46<02:00,  1.19s/it, loss=106, avg_loss=124] 33%|███▎      | 50/150 [03:46<01:59,  1.20s/it, loss=106, avg_loss=124] 33%|███▎      | 50/150 [03:47<01:59,  1.20s/it, loss=136, avg_loss=124] 34%|███▍      | 51/150 [03:47<01:58,  1.19s/it, loss=136, avg_loss=124] 34%|███▍      | 51/150 [03:49<01:58,  1.19s/it, loss=78.5, avg_loss=124] 35%|███▍      | 52/150 [03:49<01:57,  1.20s/it, loss=78.5, avg_loss=124] 35%|███▍      | 52/150 [03:50<01:57,  1.20s/it, loss=130, avg_loss=124]  35%|███▌      | 53/150 [03:50<01:55,  1.19s/it, loss=130, avg_loss=124] 35%|███▌      | 53/150 [03:51<01:55,  1.19s/it, loss=86.2, avg_loss=123] 36%|███▌      | 54/150 [03:51<01:54,  1.20s/it, loss=86.2, avg_loss=123] 36%|███▌      | 54/150 [03:52<01:54,  1.20s/it, loss=219, avg_loss=125]  37%|███▋      | 55/150 [03:52<01:53,  1.19s/it, loss=219, avg_loss=125] 37%|███▋      | 55/150 [03:53<01:53,  1.19s/it, loss=93.9, avg_loss=124] 37%|███▋      | 56/150 [03:53<01:52,  1.20s/it, loss=93.9, avg_loss=124] 37%|███▋      | 56/150 [03:54<01:52,  1.20s/it, loss=131, avg_loss=124]  38%|███▊      | 57/150 [03:54<01:50,  1.19s/it, loss=131, avg_loss=124] 38%|███▊      | 57/150 [03:56<01:50,  1.19s/it, loss=195, avg_loss=126] 39%|███▊      | 58/150 [03:56<01:50,  1.20s/it, loss=195, avg_loss=126] 39%|███▊      | 58/150 [03:57<01:50,  1.20s/it, loss=64.9, avg_loss=125] 39%|███▉      | 59/150 [03:57<01:48,  1.19s/it, loss=64.9, avg_loss=125] 39%|███▉      | 59/150 [03:58<01:48,  1.19s/it, loss=244, avg_loss=127]  40%|████      | 60/150 [03:58<01:47,  1.20s/it, loss=244, avg_loss=127] 40%|████      | 60/150 [03:59<01:47,  1.20s/it, loss=196, avg_loss=128] 41%|████      | 61/150 [03:59<01:46,  1.19s/it, loss=196, avg_loss=128] 41%|████      | 61/150 [04:00<01:46,  1.19s/it, loss=164, avg_loss=128] 41%|████▏     | 62/150 [04:00<01:45,  1.20s/it, loss=164, avg_loss=128] 41%|████▏     | 62/150 [04:02<01:45,  1.20s/it, loss=71.8, avg_loss=127] 42%|████▏     | 63/150 [04:02<01:43,  1.19s/it, loss=71.8, avg_loss=127] 42%|████▏     | 63/150 [04:03<01:43,  1.19s/it, loss=221, avg_loss=129]  43%|████▎     | 64/150 [04:03<01:42,  1.20s/it, loss=221, avg_loss=129] 43%|████▎     | 64/150 [04:04<01:42,  1.20s/it, loss=24.9, avg_loss=127] 43%|████▎     | 65/150 [04:04<01:41,  1.19s/it, loss=24.9, avg_loss=127] 43%|████▎     | 65/150 [04:05<01:41,  1.19s/it, loss=143, avg_loss=127]  44%|████▍     | 66/150 [04:05<01:40,  1.20s/it, loss=143, avg_loss=127] 44%|████▍     | 66/150 [04:06<01:40,  1.20s/it, loss=104, avg_loss=127] 45%|████▍     | 67/150 [04:06<01:38,  1.19s/it, loss=104, avg_loss=127] 45%|████▍     | 67/150 [04:08<01:38,  1.19s/it, loss=199, avg_loss=128] 45%|████▌     | 68/150 [04:08<01:38,  1.20s/it, loss=199, avg_loss=128] 45%|████▌     | 68/150 [04:09<01:38,  1.20s/it, loss=86.1, avg_loss=128] 46%|████▌     | 69/150 [04:09<01:36,  1.19s/it, loss=86.1, avg_loss=128] 46%|████▌     | 69/150 [04:10<01:36,  1.19s/it, loss=159, avg_loss=128]  47%|████▋     | 70/150 [04:10<01:35,  1.20s/it, loss=159, avg_loss=128] 47%|████▋     | 70/150 [04:11<01:35,  1.20s/it, loss=64.9, avg_loss=127] 47%|████▋     | 71/150 [04:11<01:34,  1.19s/it, loss=64.9, avg_loss=127] 47%|████▋     | 71/150 [04:12<01:34,  1.19s/it, loss=69.5, avg_loss=126] 48%|████▊     | 72/150 [04:12<01:33,  1.20s/it, loss=69.5, avg_loss=126] 48%|████▊     | 72/150 [04:14<01:33,  1.20s/it, loss=203, avg_loss=127]  49%|████▊     | 73/150 [04:14<01:31,  1.19s/it, loss=203, avg_loss=127] 49%|████▊     | 73/150 [04:15<01:31,  1.19s/it, loss=186, avg_loss=128] 49%|████▉     | 74/150 [04:15<01:30,  1.20s/it, loss=186, avg_loss=128] 49%|████▉     | 74/150 [04:16<01:30,  1.20s/it, loss=42.7, avg_loss=127] 50%|█████     | 75/150 [04:16<01:29,  1.19s/it, loss=42.7, avg_loss=127] 50%|█████     | 75/150 [04:17<01:29,  1.19s/it, loss=115, avg_loss=127]  51%|█████     | 76/150 [04:17<01:28,  1.20s/it, loss=115, avg_loss=127] 51%|█████     | 76/150 [04:18<01:28,  1.20s/it, loss=140, avg_loss=127] 51%|█████▏    | 77/150 [04:18<01:27,  1.19s/it, loss=140, avg_loss=127] 51%|█████▏    | 77/150 [04:20<01:27,  1.19s/it, loss=131, avg_loss=127] 52%|█████▏    | 78/150 [04:20<01:26,  1.20s/it, loss=131, avg_loss=127] 52%|█████▏    | 78/150 [04:21<01:26,  1.20s/it, loss=27.3, avg_loss=126] 53%|█████▎    | 79/150 [04:21<01:24,  1.19s/it, loss=27.3, avg_loss=126] 53%|█████▎    | 79/150 [04:22<01:24,  1.19s/it, loss=113, avg_loss=126]  53%|█████▎    | 80/150 [04:22<01:23,  1.20s/it, loss=113, avg_loss=126] 53%|█████▎    | 80/150 [04:23<01:23,  1.20s/it, loss=174, avg_loss=126] 54%|█████▍    | 81/150 [04:23<01:22,  1.19s/it, loss=174, avg_loss=126] 54%|█████▍    | 81/150 [04:24<01:22,  1.19s/it, loss=83.8, avg_loss=126] 55%|█████▍    | 82/150 [04:24<01:21,  1.20s/it, loss=83.8, avg_loss=126] 55%|█████▍    | 82/150 [04:26<01:21,  1.20s/it, loss=48.9, avg_loss=125] 55%|█████▌    | 83/150 [04:26<01:19,  1.19s/it, loss=48.9, avg_loss=125] 55%|█████▌    | 83/150 [04:27<01:19,  1.19s/it, loss=72.1, avg_loss=124] 56%|█████▌    | 84/150 [04:27<01:19,  1.20s/it, loss=72.1, avg_loss=124] 56%|█████▌    | 84/150 [04:28<01:19,  1.20s/it, loss=83.6, avg_loss=124] 57%|█████▋    | 85/150 [04:28<01:17,  1.19s/it, loss=83.6, avg_loss=124] 57%|█████▋    | 85/150 [04:29<01:17,  1.19s/it, loss=76.4, avg_loss=123] 57%|█████▋    | 86/150 [04:29<01:16,  1.20s/it, loss=76.4, avg_loss=123] 57%|█████▋    | 86/150 [04:30<01:16,  1.20s/it, loss=120, avg_loss=123]  58%|█████▊    | 87/150 [04:30<01:15,  1.19s/it, loss=120, avg_loss=123] 58%|█████▊    | 87/150 [04:32<01:15,  1.19s/it, loss=95.3, avg_loss=123] 59%|█████▊    | 88/150 [04:32<01:14,  1.20s/it, loss=95.3, avg_loss=123] 59%|█████▊    | 88/150 [04:33<01:14,  1.20s/it, loss=67.4, avg_loss=122] 59%|█████▉    | 89/150 [04:33<01:12,  1.19s/it, loss=67.4, avg_loss=122] 59%|█████▉    | 89/150 [04:34<01:12,  1.19s/it, loss=135, avg_loss=122]  60%|██████    | 90/150 [04:34<01:11,  1.20s/it, loss=135, avg_loss=122] 60%|██████    | 90/150 [04:35<01:11,  1.20s/it, loss=176, avg_loss=123] 61%|██████    | 91/150 [04:35<01:10,  1.19s/it, loss=176, avg_loss=123] 61%|██████    | 91/150 [04:36<01:10,  1.19s/it, loss=65.7, avg_loss=122] 61%|██████▏   | 92/150 [04:36<01:09,  1.20s/it, loss=65.7, avg_loss=122] 61%|██████▏   | 92/150 [04:37<01:09,  1.20s/it, loss=103, avg_loss=122]  62%|██████▏   | 93/150 [04:37<01:07,  1.19s/it, loss=103, avg_loss=122] 62%|██████▏   | 93/150 [04:39<01:07,  1.19s/it, loss=88.4, avg_loss=122] 63%|██████▎   | 94/150 [04:39<01:07,  1.20s/it, loss=88.4, avg_loss=122] 63%|██████▎   | 94/150 [04:40<01:07,  1.20s/it, loss=68.9, avg_loss=121] 63%|██████▎   | 95/150 [04:40<01:05,  1.19s/it, loss=68.9, avg_loss=121] 63%|██████▎   | 95/150 [04:41<01:05,  1.19s/it, loss=131, avg_loss=121]  64%|██████▍   | 96/150 [04:41<01:04,  1.20s/it, loss=131, avg_loss=121] 64%|██████▍   | 96/150 [04:42<01:04,  1.20s/it, loss=122, avg_loss=121] 65%|██████▍   | 97/150 [04:42<01:03,  1.19s/it, loss=122, avg_loss=121] 65%|██████▍   | 97/150 [04:43<01:03,  1.19s/it, loss=57.9, avg_loss=121] 65%|██████▌   | 98/150 [04:43<01:02,  1.20s/it, loss=57.9, avg_loss=121] 65%|██████▌   | 98/150 [04:45<01:02,  1.20s/it, loss=141, avg_loss=121]  66%|██████▌   | 99/150 [04:45<01:00,  1.19s/it, loss=141, avg_loss=121] 66%|██████▌   | 99/150 [04:46<01:00,  1.19s/it, loss=116, avg_loss=121] 67%|██████▋   | 100/150 [04:46<00:59,  1.20s/it, loss=116, avg_loss=121] 67%|██████▋   | 100/150 [04:47<00:59,  1.20s/it, loss=64.2, avg_loss=120] 67%|██████▋   | 101/150 [04:47<00:58,  1.19s/it, loss=64.2, avg_loss=120] 67%|██████▋   | 101/150 [04:48<00:58,  1.19s/it, loss=142, avg_loss=120]  68%|██████▊   | 102/150 [04:48<00:57,  1.20s/it, loss=142, avg_loss=120] 68%|██████▊   | 102/150 [04:49<00:57,  1.20s/it, loss=130, avg_loss=121] 69%|██████▊   | 103/150 [04:49<00:56,  1.19s/it, loss=130, avg_loss=121] 69%|██████▊   | 103/150 [04:51<00:56,  1.19s/it, loss=201, avg_loss=121] 69%|██████▉   | 104/150 [04:51<00:55,  1.20s/it, loss=201, avg_loss=121] 69%|██████▉   | 104/150 [04:52<00:55,  1.20s/it, loss=172, avg_loss=122] 70%|███████   | 105/150 [04:52<00:53,  1.19s/it, loss=172, avg_loss=122] 70%|███████   | 105/150 [04:53<00:53,  1.19s/it, loss=47.2, avg_loss=121] 71%|███████   | 106/150 [04:53<00:52,  1.20s/it, loss=47.2, avg_loss=121] 71%|███████   | 106/150 [04:54<00:52,  1.20s/it, loss=69, avg_loss=121]   71%|███████▏  | 107/150 [04:54<00:51,  1.19s/it, loss=69, avg_loss=121] 71%|███████▏  | 107/150 [04:55<00:51,  1.19s/it, loss=307, avg_loss=122] 72%|███████▏  | 108/150 [04:55<00:50,  1.20s/it, loss=307, avg_loss=122] 72%|███████▏  | 108/150 [04:57<00:50,  1.20s/it, loss=128, avg_loss=122] 73%|███████▎  | 109/150 [04:57<00:48,  1.19s/it, loss=128, avg_loss=122] 73%|███████▎  | 109/150 [04:58<00:48,  1.19s/it, loss=156, avg_loss=123] 73%|███████▎  | 110/150 [04:58<00:47,  1.20s/it, loss=156, avg_loss=123] 73%|███████▎  | 110/150 [04:59<00:47,  1.20s/it, loss=91.6, avg_loss=122] 74%|███████▍  | 111/150 [04:59<00:46,  1.19s/it, loss=91.6, avg_loss=122] 74%|███████▍  | 111/150 [05:00<00:46,  1.19s/it, loss=71, avg_loss=122]   75%|███████▍  | 112/150 [05:00<00:45,  1.20s/it, loss=71, avg_loss=122] 75%|███████▍  | 112/150 [05:01<00:45,  1.20s/it, loss=197, avg_loss=123] 75%|███████▌  | 113/150 [05:01<00:44,  1.19s/it, loss=197, avg_loss=123] 75%|███████▌  | 113/150 [05:03<00:44,  1.19s/it, loss=121, avg_loss=123] 76%|███████▌  | 114/150 [05:03<00:43,  1.20s/it, loss=121, avg_loss=123] 76%|███████▌  | 114/150 [05:04<00:43,  1.20s/it, loss=35.6, avg_loss=122] 77%|███████▋  | 115/150 [05:04<00:41,  1.19s/it, loss=35.6, avg_loss=122] 77%|███████▋  | 115/150 [05:05<00:41,  1.19s/it, loss=108, avg_loss=122]  77%|███████▋  | 116/150 [05:05<00:40,  1.20s/it, loss=108, avg_loss=122] 77%|███████▋  | 116/150 [05:06<00:40,  1.20s/it, loss=91.3, avg_loss=121] 78%|███████▊  | 117/150 [05:06<00:39,  1.19s/it, loss=91.3, avg_loss=121] 78%|███████▊  | 117/150 [05:07<00:39,  1.19s/it, loss=62, avg_loss=121]   79%|███████▊  | 118/150 [05:07<00:38,  1.20s/it, loss=62, avg_loss=121] 79%|███████▊  | 118/150 [05:09<00:38,  1.20s/it, loss=131, avg_loss=121] 79%|███████▉  | 119/150 [05:09<00:36,  1.19s/it, loss=131, avg_loss=121] 79%|███████▉  | 119/150 [05:10<00:36,  1.19s/it, loss=83.1, avg_loss=121] 80%|████████  | 120/150 [05:10<00:35,  1.20s/it, loss=83.1, avg_loss=121] 80%|████████  | 120/150 [05:11<00:35,  1.20s/it, loss=40.9, avg_loss=120] 81%|████████  | 121/150 [05:11<00:34,  1.19s/it, loss=40.9, avg_loss=120] 81%|████████  | 121/150 [05:12<00:34,  1.19s/it, loss=124, avg_loss=120]  81%|████████▏ | 122/150 [05:12<00:33,  1.20s/it, loss=124, avg_loss=120] 81%|████████▏ | 122/150 [05:13<00:33,  1.20s/it, loss=72, avg_loss=120]  82%|████████▏ | 123/150 [05:13<00:32,  1.19s/it, loss=72, avg_loss=120] 82%|████████▏ | 123/150 [05:15<00:32,  1.19s/it, loss=250, avg_loss=121] 83%|████████▎ | 124/150 [05:15<00:31,  1.20s/it, loss=250, avg_loss=121] 83%|████████▎ | 124/150 [05:16<00:31,  1.20s/it, loss=182, avg_loss=121] 83%|████████▎ | 125/150 [05:16<00:29,  1.19s/it, loss=182, avg_loss=121] 83%|████████▎ | 125/150 [05:17<00:29,  1.19s/it, loss=69.7, avg_loss=121] 84%|████████▍ | 126/150 [05:17<00:28,  1.20s/it, loss=69.7, avg_loss=121] 84%|████████▍ | 126/150 [05:18<00:28,  1.20s/it, loss=164, avg_loss=121]  85%|████████▍ | 127/150 [05:18<00:27,  1.19s/it, loss=164, avg_loss=121] 85%|████████▍ | 127/150 [05:19<00:27,  1.19s/it, loss=177, avg_loss=122] 85%|████████▌ | 128/150 [05:19<00:26,  1.20s/it, loss=177, avg_loss=122] 85%|████████▌ | 128/150 [05:20<00:26,  1.20s/it, loss=274, avg_loss=123] 86%|████████▌ | 129/150 [05:20<00:25,  1.19s/it, loss=274, avg_loss=123] 86%|████████▌ | 129/150 [05:22<00:25,  1.19s/it, loss=114, avg_loss=123] 87%|████████▋ | 130/150 [05:22<00:23,  1.20s/it, loss=114, avg_loss=123] 87%|████████▋ | 130/150 [05:23<00:23,  1.20s/it, loss=175, avg_loss=123] 87%|████████▋ | 131/150 [05:23<00:22,  1.19s/it, loss=175, avg_loss=123] 87%|████████▋ | 131/150 [05:24<00:22,  1.19s/it, loss=145, avg_loss=123] 88%|████████▊ | 132/150 [05:24<00:21,  1.20s/it, loss=145, avg_loss=123] 88%|████████▊ | 132/150 [05:25<00:21,  1.20s/it, loss=139, avg_loss=123] 89%|████████▊ | 133/150 [05:25<00:20,  1.19s/it, loss=139, avg_loss=123] 89%|████████▊ | 133/150 [05:26<00:20,  1.19s/it, loss=166, avg_loss=124] 89%|████████▉ | 134/150 [05:26<00:19,  1.20s/it, loss=166, avg_loss=124] 89%|████████▉ | 134/150 [05:28<00:19,  1.20s/it, loss=55.9, avg_loss=123] 90%|█████████ | 135/150 [05:28<00:17,  1.19s/it, loss=55.9, avg_loss=123] 90%|█████████ | 135/150 [05:29<00:17,  1.19s/it, loss=100, avg_loss=123]  91%|█████████ | 136/150 [05:29<00:16,  1.20s/it, loss=100, avg_loss=123] 91%|█████████ | 136/150 [05:30<00:16,  1.20s/it, loss=200, avg_loss=124] 91%|█████████▏| 137/150 [05:30<00:15,  1.19s/it, loss=200, avg_loss=124] 91%|█████████▏| 137/150 [05:31<00:15,  1.19s/it, loss=216, avg_loss=124] 92%|█████████▏| 138/150 [05:31<00:14,  1.20s/it, loss=216, avg_loss=124] 92%|█████████▏| 138/150 [05:32<00:14,  1.20s/it, loss=79.9, avg_loss=124] 93%|█████████▎| 139/150 [05:32<00:13,  1.19s/it, loss=79.9, avg_loss=124] 93%|█████████▎| 139/150 [05:34<00:13,  1.19s/it, loss=147, avg_loss=124]  93%|█████████▎| 140/150 [05:34<00:11,  1.20s/it, loss=147, avg_loss=124] 93%|█████████▎| 140/150 [05:35<00:11,  1.20s/it, loss=142, avg_loss=124] 94%|█████████▍| 141/150 [05:35<00:10,  1.19s/it, loss=142, avg_loss=124] 94%|█████████▍| 141/150 [05:36<00:10,  1.19s/it, loss=118, avg_loss=124] 95%|█████████▍| 142/150 [05:36<00:09,  1.20s/it, loss=118, avg_loss=124] 95%|█████████▍| 142/150 [05:37<00:09,  1.20s/it, loss=180, avg_loss=125] 95%|█████████▌| 143/150 [05:37<00:08,  1.19s/it, loss=180, avg_loss=125] 95%|█████████▌| 143/150 [05:38<00:08,  1.19s/it, loss=139, avg_loss=125] 96%|█████████▌| 144/150 [05:38<00:07,  1.20s/it, loss=139, avg_loss=125] 96%|█████████▌| 144/150 [05:40<00:07,  1.20s/it, loss=180, avg_loss=125] 97%|█████████▋| 145/150 [05:40<00:05,  1.19s/it, loss=180, avg_loss=125] 97%|█████████▋| 145/150 [05:41<00:05,  1.19s/it, loss=72, avg_loss=125]  97%|█████████▋| 146/150 [05:41<00:04,  1.20s/it, loss=72, avg_loss=125] 97%|█████████▋| 146/150 [05:42<00:04,  1.20s/it, loss=111, avg_loss=125] 98%|█████████▊| 147/150 [05:42<00:03,  1.19s/it, loss=111, avg_loss=125] 98%|█████████▊| 147/150 [05:43<00:03,  1.19s/it, loss=81.8, avg_loss=124] 99%|█████████▊| 148/150 [05:43<00:02,  1.20s/it, loss=81.8, avg_loss=124] 99%|█████████▊| 148/150 [05:44<00:02,  1.20s/it, loss=28, avg_loss=124]   99%|█████████▉| 149/150 [05:44<00:01,  1.19s/it, loss=28, avg_loss=124] 99%|█████████▉| 149/150 [05:46<00:01,  1.19s/it, loss=124, avg_loss=124]100%|██████████| 150/150 [05:46<00:00,  1.20s/it, loss=124, avg_loss=124]100%|██████████| 150/150 [05:48<00:00,  2.32s/it, loss=124, avg_loss=124]
+Training loss: 1.2368026300271353
+saving weights to  ~/scratch/checkpoints/bs_roformer_2025-02-28_00-56-25/last_bs_roformer.ckpt
+printing epoch metrics
+metrics for scheduler sdr
+  0%|          | 0/14 [00:00<?, ?it/s]  0%|          | 0/14 [00:36<?, ?it/s, sdr_drums=0.285]  0%|          | 0/14 [00:36<?, ?it/s, sdr_drums=0.285, sdr_bass=0.8]  0%|          | 0/14 [00:36<?, ?it/s, sdr_drums=0.285, sdr_bass=0.8, sdr_other=-0.0695]  0%|          | 0/14 [00:36<?, ?it/s, sdr_drums=0.285, sdr_bass=0.8, sdr_other=-0.0695, sdr_vocals=-0.137]  7%|▋         | 1/14 [00:36<07:59, 36.86s/it, sdr_drums=0.285, sdr_bass=0.8, sdr_other=-0.0695, sdr_vocals=-0.137]  7%|▋         | 1/14 [01:12<07:59, 36.86s/it, sdr_drums=-0.0211]                                                    7%|▋         | 1/14 [01:12<07:59, 36.86s/it, sdr_drums=-0.0211, sdr_bass=0.0136]  7%|▋         | 1/14 [01:12<07:59, 36.86s/it, sdr_drums=-0.0211, sdr_bass=0.0136, sdr_other=0.352]  7%|▋         | 1/14 [01:13<07:59, 36.86s/it, sdr_drums=-0.0211, sdr_bass=0.0136, sdr_other=0.352, sdr_vocals=-0.000343] 14%|█▍        | 2/14 [01:13<07:18, 36.53s/it, sdr_drums=-0.0211, sdr_bass=0.0136, sdr_other=0.352, sdr_vocals=-0.000343] 14%|█▍        | 2/14 [02:38<07:18, 36.53s/it, sdr_drums=-0.0827]                                                         14%|█▍        | 2/14 [02:39<07:18, 36.53s/it, sdr_drums=-0.0827, sdr_bass=0.446] 14%|█▍        | 2/14 [02:39<07:18, 36.53s/it, sdr_drums=-0.0827, sdr_bass=0.446, sdr_other=0.467] 14%|█▍        | 2/14 [02:40<07:18, 36.53s/it, sdr_drums=-0.0827, sdr_bass=0.446, sdr_other=0.467, sdr_vocals=-0.0717] 21%|██▏       | 3/14 [02:40<10:56, 59.69s/it, sdr_drums=-0.0827, sdr_bass=0.446, sdr_other=0.467, sdr_vocals=-0.0717] 21%|██▏       | 3/14 [03:18<10:56, 59.69s/it, sdr_drums=-0.378]                                                       21%|██▏       | 3/14 [03:18<10:56, 59.69s/it, sdr_drums=-0.378, sdr_bass=0.772] 21%|██▏       | 3/14 [03:18<10:56, 59.69s/it, sdr_drums=-0.378, sdr_bass=0.772, sdr_other=0.504] 21%|██▏       | 3/14 [03:19<10:56, 59.69s/it, sdr_drums=-0.378, sdr_bass=0.772, sdr_other=0.504, sdr_vocals=-0.286] 29%|██▊       | 4/14 [03:19<08:34, 51.41s/it, sdr_drums=-0.378, sdr_bass=0.772, sdr_other=0.504, sdr_vocals=-0.286] 29%|██▊       | 4/14 [04:01<08:34, 51.41s/it, sdr_drums=0.049]                                                      29%|██▊       | 4/14 [04:02<08:34, 51.41s/it, sdr_drums=0.049, sdr_bass=0.0164] 29%|██▊       | 4/14 [04:02<08:34, 51.41s/it, sdr_drums=0.049, sdr_bass=0.0164, sdr_other=0.303] 29%|██▊       | 4/14 [04:02<08:34, 51.41s/it, sdr_drums=0.049, sdr_bass=0.0164, sdr_other=0.303, sdr_vocals=0.00949] 36%|███▌      | 5/14 [04:02<07:16, 48.53s/it, sdr_drums=0.049, sdr_bass=0.0164, sdr_other=0.303, sdr_vocals=0.00949] 36%|███▌      | 5/14 [04:56<07:16, 48.53s/it, sdr_drums=0.642]                                                       36%|███▌      | 5/14 [04:57<07:16, 48.53s/it, sdr_drums=0.642, sdr_bass=1.23] 36%|███▌      | 5/14 [04:57<07:16, 48.53s/it, sdr_drums=0.642, sdr_bass=1.23, sdr_other=0.29] 36%|███▌      | 5/14 [04:57<07:16, 48.53s/it, sdr_drums=0.642, sdr_bass=1.23, sdr_other=0.29, sdr_vocals=0.0564] 43%|████▎     | 6/14 [04:57<06:46, 50.85s/it, sdr_drums=0.642, sdr_bass=1.23, sdr_other=0.29, sdr_vocals=0.0564] 43%|████▎     | 6/14 [05:57<06:46, 50.85s/it, sdr_drums=0.57]                                                    43%|████▎     | 6/14 [05:58<06:46, 50.85s/it, sdr_drums=0.57, sdr_bass=0.0645] 43%|████▎     | 6/14 [05:58<06:46, 50.85s/it, sdr_drums=0.57, sdr_bass=0.0645, sdr_other=0.291] 43%|████▎     | 6/14 [05:58<06:46, 50.85s/it, sdr_drums=0.57, sdr_bass=0.0645, sdr_other=0.291, sdr_vocals=-0.136] 50%|█████     | 7/14 [05:58<06:19, 54.18s/it, sdr_drums=0.57, sdr_bass=0.0645, sdr_other=0.291, sdr_vocals=-0.136] 50%|█████     | 7/14 [06:47<06:19, 54.18s/it, sdr_drums=0.161]                                                     50%|█████     | 7/14 [06:48<06:19, 54.18s/it, sdr_drums=0.161, sdr_bass=0.973] 50%|█████     | 7/14 [06:48<06:19, 54.18s/it, sdr_drums=0.161, sdr_bass=0.973, sdr_other=0.00567] 50%|█████     | 7/14 [06:48<06:19, 54.18s/it, sdr_drums=0.161, sdr_bass=0.973, sdr_other=0.00567, sdr_vocals=-0.0256] 57%|█████▋    | 8/14 [06:48<05:16, 52.81s/it, sdr_drums=0.161, sdr_bass=0.973, sdr_other=0.00567, sdr_vocals=-0.0256] 57%|█████▋    | 8/14 [07:47<05:16, 52.81s/it, sdr_drums=0.0991]                                                       57%|█████▋    | 8/14 [07:48<05:16, 52.81s/it, sdr_drums=0.0991, sdr_bass=1.11] 57%|█████▋    | 8/14 [07:48<05:16, 52.81s/it, sdr_drums=0.0991, sdr_bass=1.11, sdr_other=0.0332] 57%|█████▋    | 8/14 [07:48<05:16, 52.81s/it, sdr_drums=0.0991, sdr_bass=1.11, sdr_other=0.0332, sdr_vocals=-0.0833] 64%|██████▍   | 9/14 [07:48<04:35, 55.06s/it, sdr_drums=0.0991, sdr_bass=1.11, sdr_other=0.0332, sdr_vocals=-0.0833] 64%|██████▍   | 9/14 [08:43<04:35, 55.06s/it, sdr_drums=0.294]                                                       64%|██████▍   | 9/14 [08:43<04:35, 55.06s/it, sdr_drums=0.294, sdr_bass=0.526] 64%|██████▍   | 9/14 [08:43<04:35, 55.06s/it, sdr_drums=0.294, sdr_bass=0.526, sdr_other=0.305] 64%|██████▍   | 9/14 [08:44<04:35, 55.06s/it, sdr_drums=0.294, sdr_bass=0.526, sdr_other=0.305, sdr_vocals=0.0894] 71%|███████▏  | 10/14 [08:44<03:40, 55.15s/it, sdr_drums=0.294, sdr_bass=0.526, sdr_other=0.305, sdr_vocals=0.0894] 71%|███████▏  | 10/14 [09:52<03:40, 55.15s/it, sdr_drums=0.117]                                                     71%|███████▏  | 10/14 [09:52<03:40, 55.15s/it, sdr_drums=0.117, sdr_bass=1.23] 71%|███████▏  | 10/14 [09:53<03:40, 55.15s/it, sdr_drums=0.117, sdr_bass=1.23, sdr_other=0.396] 71%|███████▏  | 10/14 [09:53<03:40, 55.15s/it, sdr_drums=0.117, sdr_bass=1.23, sdr_other=0.396, sdr_vocals=-0.0724] 79%|███████▊  | 11/14 [09:53<02:58, 59.54s/it, sdr_drums=0.117, sdr_bass=1.23, sdr_other=0.396, sdr_vocals=-0.0724] 79%|███████▊  | 11/14 [11:20<02:58, 59.54s/it, sdr_drums=-0.0732]                                                   79%|███████▊  | 11/14 [11:20<02:58, 59.54s/it, sdr_drums=-0.0732, sdr_bass=0.322] 79%|███████▊  | 11/14 [11:21<02:58, 59.54s/it, sdr_drums=-0.0732, sdr_bass=0.322, sdr_other=0.266] 79%|███████▊  | 11/14 [11:21<02:58, 59.54s/it, sdr_drums=-0.0732, sdr_bass=0.322, sdr_other=0.266, sdr_vocals=-0.042] 86%|████████▌ | 12/14 [11:21<02:16, 68.15s/it, sdr_drums=-0.0732, sdr_bass=0.322, sdr_other=0.266, sdr_vocals=-0.042] 86%|████████▌ | 12/14 [12:11<02:16, 68.15s/it, sdr_drums=-0.00497]                                                    86%|████████▌ | 12/14 [12:12<02:16, 68.15s/it, sdr_drums=-0.00497, sdr_bass=0.942] 86%|████████▌ | 12/14 [12:12<02:16, 68.15s/it, sdr_drums=-0.00497, sdr_bass=0.942, sdr_other=0.32] 86%|████████▌ | 12/14 [12:12<02:16, 68.15s/it, sdr_drums=-0.00497, sdr_bass=0.942, sdr_other=0.32, sdr_vocals=0.0477] 93%|█████████▎| 13/14 [12:12<01:02, 62.99s/it, sdr_drums=-0.00497, sdr_bass=0.942, sdr_other=0.32, sdr_vocals=0.0477] 93%|█████████▎| 13/14 [13:10<01:02, 62.99s/it, sdr_drums=0.237]                                                       93%|█████████▎| 13/14 [13:11<01:02, 62.99s/it, sdr_drums=0.237, sdr_bass=0.841] 93%|█████████▎| 13/14 [13:11<01:02, 62.99s/it, sdr_drums=0.237, sdr_bass=0.841, sdr_other=0.0253] 93%|█████████▎| 13/14 [13:11<01:02, 62.99s/it, sdr_drums=0.237, sdr_bass=0.841, sdr_other=0.0253, sdr_vocals=-0.0602]100%|██████████| 14/14 [13:11<00:00, 61.84s/it, sdr_drums=0.237, sdr_bass=0.841, sdr_other=0.0253, sdr_vocals=-0.0602]100%|██████████| 14/14 [13:11<00:00, 56.56s/it, sdr_drums=0.237, sdr_bass=0.841, sdr_other=0.0253, sdr_vocals=-0.0602]
+Num overlap: 8
+Instr drums sdr: 0.1353 (Std: 0.2553)
+Instr bass sdr: 0.6638 (Std: 0.4198)
+Instr other sdr: 0.2493 (Std: 0.1726)
+Instr vocals sdr: -0.0508 (Std: 0.0925)
+Metric avg sdr        : 0.2494
+Elapsed time: 791.98 sec
+metrics_avg {'sdr': 0.24938111330021864}
+metrics for scheduler sdr
+Store weights: ~/scratch/checkpoints/bs_roformer_2025-02-28_00-56-25/model_bs_roformer_ep_1_sdr_0.2494.ckpt
+saving weights to  ~/scratch/checkpoints/bs_roformer_2025-02-28_00-56-25/model_bs_roformer_ep_1_sdr_0.2494.ckpt
+Train epoch: 2 Learning rate: 0.0001653135087572272
+  0%|          | 0/150 [00:00<?, ?it/s]  0%|          | 0/150 [02:36<?, ?it/s, loss=127, avg_loss=127]  1%|          | 1/150 [02:36<6:28:01, 156.25s/it, loss=127, avg_loss=127]  1%|          | 1/150 [02:43<6:28:01, 156.25s/it, loss=55.7, avg_loss=91.4]  1%|▏         | 2/150 [02:43<2:48:37, 68.36s/it, loss=55.7, avg_loss=91.4]   1%|▏         | 2/150 [02:44<2:48:37, 68.36s/it, loss=144, avg_loss=109]    2%|▏         | 3/150 [02:44<1:32:19, 37.69s/it, loss=144, avg_loss=109]  2%|▏         | 3/150 [02:45<1:32:19, 37.69s/it, loss=192, avg_loss=130]  3%|▎         | 4/150 [02:45<56:39, 23.28s/it, loss=192, avg_loss=130]    3%|▎         | 4/150 [02:46<56:39, 23.28s/it, loss=97.6, avg_loss=123]  3%|▎         | 5/150 [02:46<36:59, 15.31s/it, loss=97.6, avg_loss=123]  3%|▎         | 5/150 [02:47<36:59, 15.31s/it, loss=171, avg_loss=131]   4%|▍         | 6/150 [02:47<25:13, 10.51s/it, loss=171, avg_loss=131]  4%|▍         | 6/150 [02:49<25:13, 10.51s/it, loss=233, avg_loss=146]  5%|▍         | 7/150 [02:49<17:46,  7.46s/it, loss=233, avg_loss=146]  5%|▍         | 7/150 [02:50<17:46,  7.46s/it, loss=128, avg_loss=144]  5%|▌         | 8/150 [02:50<12:56,  5.47s/it, loss=128, avg_loss=144]  5%|▌         | 8/150 [02:51<12:56,  5.47s/it, loss=284, avg_loss=159]  6%|▌         | 9/150 [02:51<09:41,  4.12s/it, loss=284, avg_loss=159]  6%|▌         | 9/150 [02:52<09:41,  4.12s/it, loss=115, avg_loss=155]  7%|▋         | 10/150 [02:52<07:30,  3.22s/it, loss=115, avg_loss=155]  7%|▋         | 10/150 [02:53<07:30,  3.22s/it, loss=114, avg_loss=151]  7%|▋         | 11/150 [02:53<06:00,  2.59s/it, loss=114, avg_loss=151]  7%|▋         | 11/150 [02:54<06:00,  2.59s/it, loss=123, avg_loss=149]  8%|▊         | 12/150 [02:54<04:59,  2.17s/it, loss=123, avg_loss=149]  8%|▊         | 12/150 [02:56<04:59,  2.17s/it, loss=45.9, avg_loss=141]  9%|▊         | 13/150 [02:56<04:16,  1.87s/it, loss=45.9, avg_loss=141]  9%|▊         | 13/150 [02:57<04:16,  1.87s/it, loss=113, avg_loss=139]   9%|▉         | 14/150 [02:57<03:46,  1.67s/it, loss=113, avg_loss=139]  9%|▉         | 14/150 [02:58<03:46,  1.67s/it, loss=122, avg_loss=138] 10%|█         | 15/150 [02:58<03:25,  1.52s/it, loss=122, avg_loss=138] 10%|█         | 15/150 [02:59<03:25,  1.52s/it, loss=46.5, avg_loss=132] 11%|█         | 16/150 [02:59<03:10,  1.42s/it, loss=46.5, avg_loss=132] 11%|█         | 16/150 [03:00<03:10,  1.42s/it, loss=101, avg_loss=130]  11%|█▏        | 17/150 [03:00<02:59,  1.35s/it, loss=101, avg_loss=130] 11%|█▏        | 17/150 [03:02<02:59,  1.35s/it, loss=75.2, avg_loss=127] 12%|█▏        | 18/150 [03:02<02:52,  1.30s/it, loss=75.2, avg_loss=127] 12%|█▏        | 18/150 [03:03<02:52,  1.30s/it, loss=149, avg_loss=128]  13%|█▎        | 19/150 [03:03<02:45,  1.27s/it, loss=149, avg_loss=128] 13%|█▎        | 19/150 [03:04<02:45,  1.27s/it, loss=157, avg_loss=130] 13%|█▎        | 20/150 [03:04<02:41,  1.25s/it, loss=157, avg_loss=130] 13%|█▎        | 20/150 [03:05<02:41,  1.25s/it, loss=97.4, avg_loss=128] 14%|█▍        | 21/150 [03:05<02:37,  1.22s/it, loss=97.4, avg_loss=128] 14%|█▍        | 21/150 [03:06<02:37,  1.22s/it, loss=80.1, avg_loss=126] 15%|█▍        | 22/150 [03:06<02:35,  1.22s/it, loss=80.1, avg_loss=126] 15%|█▍        | 22/150 [03:08<02:35,  1.22s/it, loss=133, avg_loss=126]  15%|█▌        | 23/150 [03:08<02:32,  1.20s/it, loss=133, avg_loss=126] 15%|█▌        | 23/150 [03:09<02:32,  1.20s/it, loss=79.7, avg_loss=124] 16%|█▌        | 24/150 [03:09<02:31,  1.20s/it, loss=79.7, avg_loss=124] 16%|█▌        | 24/150 [03:10<02:31,  1.20s/it, loss=158, avg_loss=126]  17%|█▋        | 25/150 [03:10<02:29,  1.20s/it, loss=158, avg_loss=126] 17%|█▋        | 25/150 [03:11<02:29,  1.20s/it, loss=159, avg_loss=127] 17%|█▋        | 26/150 [03:11<02:28,  1.20s/it, loss=159, avg_loss=127] 17%|█▋        | 26/150 [03:12<02:28,  1.20s/it, loss=174, avg_loss=129] 18%|█▊        | 27/150 [03:12<02:26,  1.19s/it, loss=174, avg_loss=129] 18%|█▊        | 27/150 [03:13<02:26,  1.19s/it, loss=179, avg_loss=131] 19%|█▊        | 28/150 [03:13<02:25,  1.19s/it, loss=179, avg_loss=131] 19%|█▊        | 28/150 [03:15<02:25,  1.19s/it, loss=93.1, avg_loss=129] 19%|█▉        | 29/150 [03:15<02:23,  1.19s/it, loss=93.1, avg_loss=129] 19%|█▉        | 29/150 [03:16<02:23,  1.19s/it, loss=161, avg_loss=130]  20%|██        | 30/150 [03:16<02:23,  1.19s/it, loss=161, avg_loss=130] 20%|██        | 30/150 [03:17<02:23,  1.19s/it, loss=115, avg_loss=130] 21%|██        | 31/150 [03:17<02:21,  1.19s/it, loss=115, avg_loss=130] 21%|██        | 31/150 [03:18<02:21,  1.19s/it, loss=56.1, avg_loss=127] 21%|██▏       | 32/150 [03:18<02:20,  1.19s/it, loss=56.1, avg_loss=127] 21%|██▏       | 32/150 [03:19<02:20,  1.19s/it, loss=172, avg_loss=129]  22%|██▏       | 33/150 [03:19<02:18,  1.19s/it, loss=172, avg_loss=129] 22%|██▏       | 33/150 [03:21<02:18,  1.19s/it, loss=135, avg_loss=129] 23%|██▎       | 34/150 [03:21<02:18,  1.19s/it, loss=135, avg_loss=129] 23%|██▎       | 34/150 [03:22<02:18,  1.19s/it, loss=42.9, avg_loss=127] 23%|██▎       | 35/150 [03:22<02:16,  1.19s/it, loss=42.9, avg_loss=127] 23%|██▎       | 35/150 [03:23<02:16,  1.19s/it, loss=142, avg_loss=127]  24%|██▍       | 36/150 [03:23<02:15,  1.19s/it, loss=142, avg_loss=127] 24%|██▍       | 36/150 [03:24<02:15,  1.19s/it, loss=30.1, avg_loss=124] 25%|██▍       | 37/150 [03:24<02:14,  1.19s/it, loss=30.1, avg_loss=124] 25%|██▍       | 37/150 [03:25<02:14,  1.19s/it, loss=120, avg_loss=124]  25%|██▌       | 38/150 [03:25<02:13,  1.19s/it, loss=120, avg_loss=124] 25%|██▌       | 38/150 [03:27<02:13,  1.19s/it, loss=87.8, avg_loss=123] 26%|██▌       | 39/150 [03:27<02:11,  1.19s/it, loss=87.8, avg_loss=123] 26%|██▌       | 39/150 [03:28<02:11,  1.19s/it, loss=112, avg_loss=123]  27%|██▋       | 40/150 [03:28<02:10,  1.19s/it, loss=112, avg_loss=123] 27%|██▋       | 40/150 [03:29<02:10,  1.19s/it, loss=100, avg_loss=122] 27%|██▋       | 41/150 [03:29<02:09,  1.19s/it, loss=100, avg_loss=122] 27%|██▋       | 41/150 [03:30<02:09,  1.19s/it, loss=154, avg_loss=123] 28%|██▊       | 42/150 [03:30<02:08,  1.19s/it, loss=154, avg_loss=123] 28%|██▊       | 42/150 [03:31<02:08,  1.19s/it, loss=165, avg_loss=124] 29%|██▊       | 43/150 [03:31<02:06,  1.19s/it, loss=165, avg_loss=124] 29%|██▊       | 43/150 [03:32<02:06,  1.19s/it, loss=144, avg_loss=125] 29%|██▉       | 44/150 [03:32<02:06,  1.19s/it, loss=144, avg_loss=125] 29%|██▉       | 44/150 [03:34<02:06,  1.19s/it, loss=220, avg_loss=127] 30%|███       | 45/150 [03:34<02:04,  1.19s/it, loss=220, avg_loss=127] 30%|███       | 45/150 [03:35<02:04,  1.19s/it, loss=72.2, avg_loss=126] 31%|███       | 46/150 [03:35<02:03,  1.19s/it, loss=72.2, avg_loss=126] 31%|███       | 46/150 [03:36<02:03,  1.19s/it, loss=107, avg_loss=125]  31%|███▏      | 47/150 [03:36<02:02,  1.19s/it, loss=107, avg_loss=125] 31%|███▏      | 47/150 [03:37<02:02,  1.19s/it, loss=106, avg_loss=125] 32%|███▏      | 48/150 [03:37<02:01,  1.19s/it, loss=106, avg_loss=125] 32%|███▏      | 48/150 [03:38<02:01,  1.19s/it, loss=220, avg_loss=127] 33%|███▎      | 49/150 [03:38<01:59,  1.19s/it, loss=220, avg_loss=127] 33%|███▎      | 49/150 [03:40<01:59,  1.19s/it, loss=155, avg_loss=127] 33%|███▎      | 50/150 [03:40<01:59,  1.19s/it, loss=155, avg_loss=127] 33%|███▎      | 50/150 [03:41<01:59,  1.19s/it, loss=162, avg_loss=128] 34%|███▍      | 51/150 [03:41<01:57,  1.19s/it, loss=162, avg_loss=128] 34%|███▍      | 51/150 [03:42<01:57,  1.19s/it, loss=111, avg_loss=128] 35%|███▍      | 52/150 [03:42<01:56,  1.19s/it, loss=111, avg_loss=128] 35%|███▍      | 52/150 [03:43<01:56,  1.19s/it, loss=131, avg_loss=128] 35%|███▌      | 53/150 [03:43<01:55,  1.19s/it, loss=131, avg_loss=128] 35%|███▌      | 53/150 [03:44<01:55,  1.19s/it, loss=52.4, avg_loss=126] 36%|███▌      | 54/150 [03:44<01:54,  1.19s/it, loss=52.4, avg_loss=126] 36%|███▌      | 54/150 [03:46<01:54,  1.19s/it, loss=144, avg_loss=127]  37%|███▋      | 55/150 [03:46<01:52,  1.19s/it, loss=144, avg_loss=127] 37%|███▋      | 55/150 [03:47<01:52,  1.19s/it, loss=264, avg_loss=129] 37%|███▋      | 56/150 [03:47<01:52,  1.19s/it, loss=264, avg_loss=129] 37%|███▋      | 56/150 [03:48<01:52,  1.19s/it, loss=199, avg_loss=130] 38%|███▊      | 57/150 [03:48<01:50,  1.19s/it, loss=199, avg_loss=130] 38%|███▊      | 57/150 [03:49<01:50,  1.19s/it, loss=97.9, avg_loss=130] 39%|███▊      | 58/150 [03:49<01:49,  1.19s/it, loss=97.9, avg_loss=130] 39%|███▊      | 58/150 [03:50<01:49,  1.19s/it, loss=67.9, avg_loss=129] 39%|███▉      | 59/150 [03:50<01:47,  1.19s/it, loss=67.9, avg_loss=129] 39%|███▉      | 59/150 [03:52<01:47,  1.19s/it, loss=144, avg_loss=129]  40%|████      | 60/150 [03:52<01:47,  1.19s/it, loss=144, avg_loss=129] 40%|████      | 60/150 [03:53<01:47,  1.19s/it, loss=71.2, avg_loss=128] 41%|████      | 61/150 [03:53<01:45,  1.19s/it, loss=71.2, avg_loss=128] 41%|████      | 61/150 [03:54<01:45,  1.19s/it, loss=123, avg_loss=128]  41%|████▏     | 62/150 [03:54<01:44,  1.19s/it, loss=123, avg_loss=128] 41%|████▏     | 62/150 [03:55<01:44,  1.19s/it, loss=174, avg_loss=129] 42%|████▏     | 63/150 [03:55<01:43,  1.19s/it, loss=174, avg_loss=129] 42%|████▏     | 63/150 [03:56<01:43,  1.19s/it, loss=135, avg_loss=129] 43%|████▎     | 64/150 [03:56<01:42,  1.19s/it, loss=135, avg_loss=129] 43%|████▎     | 64/150 [03:57<01:42,  1.19s/it, loss=82.8, avg_loss=128] 43%|████▎     | 65/150 [03:57<01:40,  1.19s/it, loss=82.8, avg_loss=128] 43%|████▎     | 65/150 [03:59<01:40,  1.19s/it, loss=197, avg_loss=129]  44%|████▍     | 66/150 [03:59<01:40,  1.19s/it, loss=197, avg_loss=129] 44%|████▍     | 66/150 [04:00<01:40,  1.19s/it, loss=115, avg_loss=129] 45%|████▍     | 67/150 [04:00<01:38,  1.19s/it, loss=115, avg_loss=129] 45%|████▍     | 67/150 [04:01<01:38,  1.19s/it, loss=162, avg_loss=129] 45%|████▌     | 68/150 [04:01<01:37,  1.19s/it, loss=162, avg_loss=129] 45%|████▌     | 68/150 [04:02<01:37,  1.19s/it, loss=277, avg_loss=132] 46%|████▌     | 69/150 [04:02<01:36,  1.19s/it, loss=277, avg_loss=132] 46%|████▌     | 69/150 [04:03<01:36,  1.19s/it, loss=80.8, avg_loss=131] 47%|████▋     | 70/150 [04:03<01:35,  1.19s/it, loss=80.8, avg_loss=131] 47%|████▋     | 70/150 [04:05<01:35,  1.19s/it, loss=96.6, avg_loss=130] 47%|████▋     | 71/150 [04:05<01:33,  1.19s/it, loss=96.6, avg_loss=130] 47%|████▋     | 71/150 [04:06<01:33,  1.19s/it, loss=146, avg_loss=131]  48%|████▊     | 72/150 [04:06<01:32,  1.19s/it, loss=146, avg_loss=131] 48%|████▊     | 72/150 [04:07<01:32,  1.19s/it, loss=167, avg_loss=131] 49%|████▊     | 73/150 [04:07<01:31,  1.19s/it, loss=167, avg_loss=131] 49%|████▊     | 73/150 [04:08<01:31,  1.19s/it, loss=120, avg_loss=131] 49%|████▉     | 74/150 [04:08<01:30,  1.19s/it, loss=120, avg_loss=131] 49%|████▉     | 74/150 [04:09<01:30,  1.19s/it, loss=143, avg_loss=131] 50%|█████     | 75/150 [04:09<01:29,  1.19s/it, loss=143, avg_loss=131] 50%|█████     | 75/150 [04:11<01:29,  1.19s/it, loss=144, avg_loss=131] 51%|█████     | 76/150 [04:11<01:28,  1.19s/it, loss=144, avg_loss=131] 51%|█████     | 76/150 [04:12<01:28,  1.19s/it, loss=148, avg_loss=131] 51%|█████▏    | 77/150 [04:12<01:26,  1.19s/it, loss=148, avg_loss=131] 51%|█████▏    | 77/150 [04:13<01:26,  1.19s/it, loss=123, avg_loss=131] 52%|█████▏    | 78/150 [04:13<01:25,  1.19s/it, loss=123, avg_loss=131] 52%|█████▏    | 78/150 [04:14<01:25,  1.19s/it, loss=140, avg_loss=131] 53%|█████▎    | 79/150 [04:14<01:24,  1.19s/it, loss=140, avg_loss=131] 53%|█████▎    | 79/150 [04:15<01:24,  1.19s/it, loss=252, avg_loss=133] 53%|█████▎    | 80/150 [04:15<01:23,  1.19s/it, loss=252, avg_loss=133] 53%|█████▎    | 80/150 [04:16<01:23,  1.19s/it, loss=76.2, avg_loss=132] 54%|█████▍    | 81/150 [04:16<01:21,  1.19s/it, loss=76.2, avg_loss=132] 54%|█████▍    | 81/150 [04:18<01:21,  1.19s/it, loss=125, avg_loss=132]  55%|█████▍    | 82/150 [04:18<01:21,  1.19s/it, loss=125, avg_loss=132] 55%|█████▍    | 82/150 [04:19<01:21,  1.19s/it, loss=243, avg_loss=133] 55%|█████▌    | 83/150 [04:19<01:19,  1.19s/it, loss=243, avg_loss=133] 55%|█████▌    | 83/150 [04:20<01:19,  1.19s/it, loss=208, avg_loss=134] 56%|█████▌    | 84/150 [04:20<01:18,  1.19s/it, loss=208, avg_loss=134] 56%|█████▌    | 84/150 [04:21<01:18,  1.19s/it, loss=137, avg_loss=134] 57%|█████▋    | 85/150 [04:21<01:17,  1.19s/it, loss=137, avg_loss=134] 57%|█████▋    | 85/150 [04:22<01:17,  1.19s/it, loss=118, avg_loss=134] 57%|█████▋    | 86/150 [04:22<01:16,  1.19s/it, loss=118, avg_loss=134] 57%|█████▋    | 86/150 [04:24<01:16,  1.19s/it, loss=71.3, avg_loss=134] 58%|█████▊    | 87/150 [04:24<01:14,  1.19s/it, loss=71.3, avg_loss=134] 58%|█████▊    | 87/150 [04:25<01:14,  1.19s/it, loss=129, avg_loss=133]  59%|█████▊    | 88/150 [04:25<01:13,  1.19s/it, loss=129, avg_loss=133] 59%|█████▊    | 88/150 [04:26<01:13,  1.19s/it, loss=51.3, avg_loss=133] 59%|█████▉    | 89/150 [04:26<01:12,  1.19s/it, loss=51.3, avg_loss=133] 59%|█████▉    | 89/150 [04:27<01:12,  1.19s/it, loss=134, avg_loss=133]  60%|██████    | 90/150 [04:27<01:11,  1.19s/it, loss=134, avg_loss=133] 60%|██████    | 90/150 [04:28<01:11,  1.19s/it, loss=126, avg_loss=132] 61%|██████    | 91/150 [04:28<01:10,  1.19s/it, loss=126, avg_loss=132] 61%|██████    | 91/150 [04:30<01:10,  1.19s/it, loss=104, avg_loss=132] 61%|██████▏   | 92/150 [04:30<01:09,  1.19s/it, loss=104, avg_loss=132] 61%|██████▏   | 92/150 [04:31<01:09,  1.19s/it, loss=177, avg_loss=133] 62%|██████▏   | 93/150 [04:31<01:07,  1.19s/it, loss=177, avg_loss=133] 62%|██████▏   | 93/150 [04:32<01:07,  1.19s/it, loss=95.7, avg_loss=132] 63%|██████▎   | 94/150 [04:32<01:06,  1.19s/it, loss=95.7, avg_loss=132] 63%|██████▎   | 94/150 [04:33<01:06,  1.19s/it, loss=241, avg_loss=133]  63%|██████▎   | 95/150 [04:33<01:05,  1.19s/it, loss=241, avg_loss=133] 63%|██████▎   | 95/150 [04:34<01:05,  1.19s/it, loss=73.4, avg_loss=133] 64%|██████▍   | 96/150 [04:34<01:04,  1.19s/it, loss=73.4, avg_loss=133] 64%|██████▍   | 96/150 [04:36<01:04,  1.19s/it, loss=78.5, avg_loss=132] 65%|██████▍   | 97/150 [04:36<01:02,  1.19s/it, loss=78.5, avg_loss=132] 65%|██████▍   | 97/150 [04:37<01:02,  1.19s/it, loss=119, avg_loss=132]  65%|██████▌   | 98/150 [04:37<01:01,  1.19s/it, loss=119, avg_loss=132] 65%|██████▌   | 98/150 [04:38<01:01,  1.19s/it, loss=157, avg_loss=132] 66%|██████▌   | 99/150 [04:38<01:00,  1.19s/it, loss=157, avg_loss=132] 66%|██████▌   | 99/150 [04:39<01:00,  1.19s/it, loss=61.4, avg_loss=132] 67%|██████▋   | 100/150 [04:39<00:59,  1.19s/it, loss=61.4, avg_loss=132] 67%|██████▋   | 100/150 [04:40<00:59,  1.19s/it, loss=270, avg_loss=133]  67%|██████▋   | 101/150 [04:40<00:58,  1.19s/it, loss=270, avg_loss=133] 67%|██████▋   | 101/150 [04:41<00:58,  1.19s/it, loss=148, avg_loss=133] 68%|██████▊   | 102/150 [04:41<00:57,  1.19s/it, loss=148, avg_loss=133] 68%|██████▊   | 102/150 [04:43<00:57,  1.19s/it, loss=82, avg_loss=133]  69%|██████▊   | 103/150 [04:43<00:55,  1.19s/it, loss=82, avg_loss=133] 69%|██████▊   | 103/150 [04:44<00:55,  1.19s/it, loss=144, avg_loss=133] 69%|██████▉   | 104/150 [04:44<00:54,  1.19s/it, loss=144, avg_loss=133] 69%|██████▉   | 104/150 [04:45<00:54,  1.19s/it, loss=112, avg_loss=133] 70%|███████   | 105/150 [04:45<00:53,  1.19s/it, loss=112, avg_loss=133] 70%|███████   | 105/150 [04:46<00:53,  1.19s/it, loss=143, avg_loss=133] 71%|███████   | 106/150 [04:46<00:52,  1.19s/it, loss=143, avg_loss=133] 71%|███████   | 106/150 [04:47<00:52,  1.19s/it, loss=120, avg_loss=133] 71%|███████▏  | 107/150 [04:47<00:51,  1.19s/it, loss=120, avg_loss=133] 71%|███████▏  | 107/150 [04:49<00:51,  1.19s/it, loss=165, avg_loss=133] 72%|███████▏  | 108/150 [04:49<00:50,  1.19s/it, loss=165, avg_loss=133] 72%|███████▏  | 108/150 [04:50<00:50,  1.19s/it, loss=116, avg_loss=133] 73%|███████▎  | 109/150 [04:50<00:48,  1.19s/it, loss=116, avg_loss=133] 73%|███████▎  | 109/150 [04:51<00:48,  1.19s/it, loss=109, avg_loss=132] 73%|███████▎  | 110/150 [04:51<00:47,  1.19s/it, loss=109, avg_loss=132] 73%|███████▎  | 110/150 [04:52<00:47,  1.19s/it, loss=89.6, avg_loss=132] 74%|███████▍  | 111/150 [04:52<00:46,  1.19s/it, loss=89.6, avg_loss=132] 74%|███████▍  | 111/150 [04:53<00:46,  1.19s/it, loss=126, avg_loss=132]  75%|███████▍  | 112/150 [04:53<00:45,  1.19s/it, loss=126, avg_loss=132] 75%|███████▍  | 112/150 [04:55<00:45,  1.19s/it, loss=89.5, avg_loss=132] 75%|███████▌  | 113/150 [04:55<00:43,  1.19s/it, loss=89.5, avg_loss=132] 75%|███████▌  | 113/150 [04:56<00:43,  1.19s/it, loss=138, avg_loss=132]  76%|███████▌  | 114/150 [04:56<00:42,  1.19s/it, loss=138, avg_loss=132] 76%|███████▌  | 114/150 [04:57<00:42,  1.19s/it, loss=113, avg_loss=132] 77%|███████▋  | 115/150 [04:57<00:41,  1.19s/it, loss=113, avg_loss=132] 77%|███████▋  | 115/150 [04:58<00:41,  1.19s/it, loss=193, avg_loss=132] 77%|███████▋  | 116/150 [04:58<00:40,  1.19s/it, loss=193, avg_loss=132] 77%|███████▋  | 116/150 [04:59<00:40,  1.19s/it, loss=115, avg_loss=132] 78%|███████▊  | 117/150 [04:59<00:39,  1.19s/it, loss=115, avg_loss=132] 78%|███████▊  | 117/150 [05:01<00:39,  1.19s/it, loss=98.8, avg_loss=132] 79%|███████▊  | 118/150 [05:01<00:38,  1.19s/it, loss=98.8, avg_loss=132] 79%|███████▊  | 118/150 [05:02<00:38,  1.19s/it, loss=104, avg_loss=131]  79%|███████▉  | 119/150 [05:02<00:36,  1.19s/it, loss=104, avg_loss=131] 79%|███████▉  | 119/150 [05:03<00:36,  1.19s/it, loss=53.2, avg_loss=131] 80%|████████  | 120/150 [05:03<00:36,  1.23s/it, loss=53.2, avg_loss=131] 80%|████████  | 120/150 [05:04<00:36,  1.23s/it, loss=106, avg_loss=131]  81%|████████  | 121/150 [05:04<00:35,  1.21s/it, loss=106, avg_loss=131] 81%|████████  | 121/150 [05:05<00:35,  1.21s/it, loss=151, avg_loss=131] 81%|████████▏ | 122/150 [05:05<00:33,  1.21s/it, loss=151, avg_loss=131] 81%|████████▏ | 122/150 [05:07<00:33,  1.21s/it, loss=163, avg_loss=131] 82%|████████▏ | 123/150 [05:07<00:32,  1.20s/it, loss=163, avg_loss=131] 82%|████████▏ | 123/150 [05:08<00:32,  1.20s/it, loss=101, avg_loss=131] 83%|████████▎ | 124/150 [05:08<00:31,  1.20s/it, loss=101, avg_loss=131] 83%|████████▎ | 124/150 [05:09<00:31,  1.20s/it, loss=167, avg_loss=131] 83%|████████▎ | 125/150 [05:09<00:29,  1.19s/it, loss=167, avg_loss=131] 83%|████████▎ | 125/150 [05:10<00:29,  1.19s/it, loss=144, avg_loss=131] 84%|████████▍ | 126/150 [05:10<00:28,  1.20s/it, loss=144, avg_loss=131] 84%|████████▍ | 126/150 [05:11<00:28,  1.20s/it, loss=170, avg_loss=131] 85%|████████▍ | 127/150 [05:11<00:27,  1.19s/it, loss=170, avg_loss=131] 85%|████████▍ | 127/150 [05:13<00:27,  1.19s/it, loss=172, avg_loss=132] 85%|████████▌ | 128/150 [05:13<00:26,  1.19s/it, loss=172, avg_loss=132] 85%|████████▌ | 128/150 [05:14<00:26,  1.19s/it, loss=74.5, avg_loss=131] 86%|████████▌ | 129/150 [05:14<00:24,  1.19s/it, loss=74.5, avg_loss=131] 86%|████████▌ | 129/150 [05:15<00:24,  1.19s/it, loss=139, avg_loss=131]  87%|████████▋ | 130/150 [05:15<00:23,  1.19s/it, loss=139, avg_loss=131] 87%|████████▋ | 130/150 [05:16<00:23,  1.19s/it, loss=130, avg_loss=131] 87%|████████▋ | 131/150 [05:16<00:22,  1.19s/it, loss=130, avg_loss=131] 87%|████████▋ | 131/150 [05:17<00:22,  1.19s/it, loss=123, avg_loss=131] 88%|████████▊ | 132/150 [05:17<00:21,  1.19s/it, loss=123, avg_loss=131] 88%|████████▊ | 132/150 [05:18<00:21,  1.19s/it, loss=67.8, avg_loss=131] 89%|████████▊ | 133/150 [05:18<00:20,  1.19s/it, loss=67.8, avg_loss=131] 89%|████████▊ | 133/150 [05:20<00:20,  1.19s/it, loss=133, avg_loss=131]  89%|████████▉ | 134/150 [05:20<00:19,  1.19s/it, loss=133, avg_loss=131] 89%|████████▉ | 134/150 [05:21<00:19,  1.19s/it, loss=145, avg_loss=131] 90%|█████████ | 135/150 [05:21<00:17,  1.19s/it, loss=145, avg_loss=131] 90%|█████████ | 135/150 [05:22<00:17,  1.19s/it, loss=83.3, avg_loss=131] 91%|█████████ | 136/150 [05:22<00:16,  1.19s/it, loss=83.3, avg_loss=131] 91%|█████████ | 136/150 [05:23<00:16,  1.19s/it, loss=199, avg_loss=131]  91%|█████████▏| 137/150 [05:23<00:15,  1.19s/it, loss=199, avg_loss=131] 91%|█████████▏| 137/150 [05:24<00:15,  1.19s/it, loss=123, avg_loss=131] 92%|█████████▏| 138/150 [05:24<00:14,  1.19s/it, loss=123, avg_loss=131] 92%|█████████▏| 138/150 [05:26<00:14,  1.19s/it, loss=90.3, avg_loss=131] 93%|█████████▎| 139/150 [05:26<00:13,  1.19s/it, loss=90.3, avg_loss=131] 93%|█████████▎| 139/150 [05:27<00:13,  1.19s/it, loss=80.5, avg_loss=130] 93%|█████████▎| 140/150 [05:27<00:11,  1.19s/it, loss=80.5, avg_loss=130] 93%|█████████▎| 140/150 [05:28<00:11,  1.19s/it, loss=85.6, avg_loss=130] 94%|█████████▍| 141/150 [05:28<00:10,  1.19s/it, loss=85.6, avg_loss=130] 94%|█████████▍| 141/150 [05:29<00:10,  1.19s/it, loss=206, avg_loss=131]  95%|█████████▍| 142/150 [05:29<00:09,  1.19s/it, loss=206, avg_loss=131] 95%|█████████▍| 142/150 [05:30<00:09,  1.19s/it, loss=132, avg_loss=131] 95%|█████████▌| 143/150 [05:30<00:08,  1.19s/it, loss=132, avg_loss=131] 95%|█████████▌| 143/150 [05:32<00:08,  1.19s/it, loss=80.3, avg_loss=130] 96%|█████████▌| 144/150 [05:32<00:07,  1.19s/it, loss=80.3, avg_loss=130] 96%|█████████▌| 144/150 [05:33<00:07,  1.19s/it, loss=164, avg_loss=130]  97%|█████████▋| 145/150 [05:33<00:05,  1.19s/it, loss=164, avg_loss=130] 97%|█████████▋| 145/150 [05:34<00:05,  1.19s/it, loss=138, avg_loss=131] 97%|█████████▋| 146/150 [05:34<00:04,  1.19s/it, loss=138, avg_loss=131] 97%|█████████▋| 146/150 [05:35<00:04,  1.19s/it, loss=130, avg_loss=131] 98%|█████████▊| 147/150 [05:35<00:03,  1.19s/it, loss=130, avg_loss=131] 98%|█████████▊| 147/150 [05:36<00:03,  1.19s/it, loss=164, avg_loss=131] 99%|█████████▊| 148/150 [05:36<00:02,  1.19s/it, loss=164, avg_loss=131] 99%|█████████▊| 148/150 [05:37<00:02,  1.19s/it, loss=249, avg_loss=132] 99%|█████████▉| 149/150 [05:37<00:01,  1.19s/it, loss=249, avg_loss=132] 99%|█████████▉| 149/150 [05:39<00:01,  1.19s/it, loss=160, avg_loss=132]100%|██████████| 150/150 [05:39<00:00,  1.19s/it, loss=160, avg_loss=132]100%|██████████| 150/150 [05:41<00:00,  2.28s/it, loss=160, avg_loss=132]
+Training loss: 1.3174508521954218
+saving weights to  ~/scratch/checkpoints/bs_roformer_2025-02-28_00-56-25/last_bs_roformer.ckpt
+printing epoch metrics
+metrics for scheduler sdr
+  0%|          | 0/14 [00:00<?, ?it/s]  0%|          | 0/14 [00:36<?, ?it/s, sdr_drums=0.488]  0%|          | 0/14 [00:36<?, ?it/s, sdr_drums=0.488, sdr_bass=0.901]  0%|          | 0/14 [00:36<?, ?it/s, sdr_drums=0.488, sdr_bass=0.901, sdr_other=-0.0167]  0%|          | 0/14 [00:36<?, ?it/s, sdr_drums=0.488, sdr_bass=0.901, sdr_other=-0.0167, sdr_vocals=-0.0879]  7%|▋         | 1/14 [00:36<07:58, 36.81s/it, sdr_drums=0.488, sdr_bass=0.901, sdr_other=-0.0167, sdr_vocals=-0.0879]  7%|▋         | 1/14 [01:12<07:58, 36.81s/it, sdr_drums=-0.0118]                                                       7%|▋         | 1/14 [01:12<07:58, 36.81s/it, sdr_drums=-0.0118, sdr_bass=0.0682]  7%|▋         | 1/14 [01:12<07:58, 36.81s/it, sdr_drums=-0.0118, sdr_bass=0.0682, sdr_other=0.407]  7%|▋         | 1/14 [01:13<07:58, 36.81s/it, sdr_drums=-0.0118, sdr_bass=0.0682, sdr_other=0.407, sdr_vocals=0.0404] 14%|█▍        | 2/14 [01:13<07:17, 36.47s/it, sdr_drums=-0.0118, sdr_bass=0.0682, sdr_other=0.407, sdr_vocals=0.0404] 14%|█▍        | 2/14 [02:39<07:17, 36.47s/it, sdr_drums=0.0947]                                                       14%|█▍        | 2/14 [02:39<07:17, 36.47s/it, sdr_drums=0.0947, sdr_bass=0.545] 14%|█▍        | 2/14 [02:40<07:17, 36.47s/it, sdr_drums=0.0947, sdr_bass=0.545, sdr_other=0.443] 14%|█▍        | 2/14 [02:40<07:17, 36.47s/it, sdr_drums=0.0947, sdr_bass=0.545, sdr_other=0.443, sdr_vocals=-0.0078] 21%|██▏       | 3/14 [02:40<10:57, 59.80s/it, sdr_drums=0.0947, sdr_bass=0.545, sdr_other=0.443, sdr_vocals=-0.0078] 21%|██▏       | 3/14 [03:18<10:57, 59.80s/it, sdr_drums=-0.124]                                                      21%|██▏       | 3/14 [03:19<10:57, 59.80s/it, sdr_drums=-0.124, sdr_bass=0.908] 21%|██▏       | 3/14 [03:19<10:57, 59.80s/it, sdr_drums=-0.124, sdr_bass=0.908, sdr_other=0.502] 21%|██▏       | 3/14 [03:19<10:57, 59.80s/it, sdr_drums=-0.124, sdr_bass=0.908, sdr_other=0.502, sdr_vocals=-0.216] 29%|██▊       | 4/14 [03:19<08:35, 51.53s/it, sdr_drums=-0.124, sdr_bass=0.908, sdr_other=0.502, sdr_vocals=-0.216] 29%|██▊       | 4/14 [04:02<08:35, 51.53s/it, sdr_drums=0.218]                                                      29%|██▊       | 4/14 [04:02<08:35, 51.53s/it, sdr_drums=0.218, sdr_bass=0.0872] 29%|██▊       | 4/14 [04:02<08:35, 51.53s/it, sdr_drums=0.218, sdr_bass=0.0872, sdr_other=0.352] 29%|██▊       | 4/14 [04:02<08:35, 51.53s/it, sdr_drums=0.218, sdr_bass=0.0872, sdr_other=0.352, sdr_vocals=0.0577] 36%|███▌      | 5/14 [04:02<07:17, 48.61s/it, sdr_drums=0.218, sdr_bass=0.0872, sdr_other=0.352, sdr_vocals=0.0577] 36%|███▌      | 5/14 [04:56<07:17, 48.61s/it, sdr_drums=0.799]                                                      36%|███▌      | 5/14 [04:57<07:17, 48.61s/it, sdr_drums=0.799, sdr_bass=1.36] 36%|███▌      | 5/14 [04:57<07:17, 48.61s/it, sdr_drums=0.799, sdr_bass=1.36, sdr_other=0.337] 36%|███▌      | 5/14 [04:57<07:17, 48.61s/it, sdr_drums=0.799, sdr_bass=1.36, sdr_other=0.337, sdr_vocals=0.147] 43%|████▎     | 6/14 [04:57<06:45, 50.74s/it, sdr_drums=0.799, sdr_bass=1.36, sdr_other=0.337, sdr_vocals=0.147] 43%|████▎     | 6/14 [05:57<06:45, 50.74s/it, sdr_drums=0.77]                                                    43%|████▎     | 6/14 [05:57<06:45, 50.74s/it, sdr_drums=0.77, sdr_bass=0.105] 43%|████▎     | 6/14 [05:58<06:45, 50.74s/it, sdr_drums=0.77, sdr_bass=0.105, sdr_other=0.321] 43%|████▎     | 6/14 [05:58<06:45, 50.74s/it, sdr_drums=0.77, sdr_bass=0.105, sdr_other=0.321, sdr_vocals=-0.0691] 50%|█████     | 7/14 [05:58<06:18, 54.06s/it, sdr_drums=0.77, sdr_bass=0.105, sdr_other=0.321, sdr_vocals=-0.0691] 50%|█████     | 7/14 [06:47<06:18, 54.06s/it, sdr_drums=0.311]                                                     50%|█████     | 7/14 [06:48<06:18, 54.06s/it, sdr_drums=0.311, sdr_bass=1.13] 50%|█████     | 7/14 [06:48<06:18, 54.06s/it, sdr_drums=0.311, sdr_bass=1.13, sdr_other=0.0707] 50%|█████     | 7/14 [06:48<06:18, 54.06s/it, sdr_drums=0.311, sdr_bass=1.13, sdr_other=0.0707, sdr_vocals=-0.00451] 57%|█████▋    | 8/14 [06:48<05:16, 52.74s/it, sdr_drums=0.311, sdr_bass=1.13, sdr_other=0.0707, sdr_vocals=-0.00451] 57%|█████▋    | 8/14 [07:48<05:16, 52.74s/it, sdr_drums=0.308]                                                       57%|█████▋    | 8/14 [07:48<05:16, 52.74s/it, sdr_drums=0.308, sdr_bass=1.25] 57%|█████▋    | 8/14 [07:48<05:16, 52.74s/it, sdr_drums=0.308, sdr_bass=1.25, sdr_other=0.0908] 57%|█████▋    | 8/14 [07:49<05:16, 52.74s/it, sdr_drums=0.308, sdr_bass=1.25, sdr_other=0.0908, sdr_vocals=-0.0434] 64%|██████▍   | 9/14 [07:49<04:35, 55.19s/it, sdr_drums=0.308, sdr_bass=1.25, sdr_other=0.0908, sdr_vocals=-0.0434] 64%|██████▍   | 9/14 [08:43<04:35, 55.19s/it, sdr_drums=0.501]                                                      64%|██████▍   | 9/14 [08:44<04:35, 55.19s/it, sdr_drums=0.501, sdr_bass=0.626] 64%|██████▍   | 9/14 [08:44<04:35, 55.19s/it, sdr_drums=0.501, sdr_bass=0.626, sdr_other=0.334] 64%|██████▍   | 9/14 [08:44<04:35, 55.19s/it, sdr_drums=0.501, sdr_bass=0.626, sdr_other=0.334, sdr_vocals=0.164] 71%|███████▏  | 10/14 [08:44<03:41, 55.31s/it, sdr_drums=0.501, sdr_bass=0.626, sdr_other=0.334, sdr_vocals=0.164] 71%|███████▏  | 10/14 [09:52<03:41, 55.31s/it, sdr_drums=0.351]                                                    71%|███████▏  | 10/14 [09:52<03:41, 55.31s/it, sdr_drums=0.351, sdr_bass=1.35] 71%|███████▏  | 10/14 [09:52<03:41, 55.31s/it, sdr_drums=0.351, sdr_bass=1.35, sdr_other=0.443] 71%|███████▏  | 10/14 [09:53<03:41, 55.31s/it, sdr_drums=0.351, sdr_bass=1.35, sdr_other=0.443, sdr_vocals=0.00962] 79%|███████▊  | 11/14 [09:53<02:58, 59.37s/it, sdr_drums=0.351, sdr_bass=1.35, sdr_other=0.443, sdr_vocals=0.00962] 79%|███████▊  | 11/14 [11:19<02:58, 59.37s/it, sdr_drums=0.114]                                                     79%|███████▊  | 11/14 [11:20<02:58, 59.37s/it, sdr_drums=0.114, sdr_bass=0.386] 79%|███████▊  | 11/14 [11:20<02:58, 59.37s/it, sdr_drums=0.114, sdr_bass=0.386, sdr_other=0.283] 79%|███████▊  | 11/14 [11:21<02:58, 59.37s/it, sdr_drums=0.114, sdr_bass=0.386, sdr_other=0.283, sdr_vocals=0.0344] 86%|████████▌ | 12/14 [11:21<02:15, 67.99s/it, sdr_drums=0.114, sdr_bass=0.386, sdr_other=0.283, sdr_vocals=0.0344] 86%|████████▌ | 12/14 [12:11<02:15, 67.99s/it, sdr_drums=0.222]                                                     86%|████████▌ | 12/14 [12:11<02:15, 67.99s/it, sdr_drums=0.222, sdr_bass=1.07] 86%|████████▌ | 12/14 [12:12<02:15, 67.99s/it, sdr_drums=0.222, sdr_bass=1.07, sdr_other=0.365] 86%|████████▌ | 12/14 [12:12<02:15, 67.99s/it, sdr_drums=0.222, sdr_bass=1.07, sdr_other=0.365, sdr_vocals=0.0983] 93%|█████████▎| 13/14 [12:12<01:02, 62.95s/it, sdr_drums=0.222, sdr_bass=1.07, sdr_other=0.365, sdr_vocals=0.0983] 93%|█████████▎| 13/14 [13:10<01:02, 62.95s/it, sdr_drums=0.401]                                                    93%|█████████▎| 13/14 [13:11<01:02, 62.95s/it, sdr_drums=0.401, sdr_bass=0.949] 93%|█████████▎| 13/14 [13:11<01:02, 62.95s/it, sdr_drums=0.401, sdr_bass=0.949, sdr_other=0.0941] 93%|█████████▎| 13/14 [13:11<01:02, 62.95s/it, sdr_drums=0.401, sdr_bass=0.949, sdr_other=0.0941, sdr_vocals=-0.0457]100%|██████████| 14/14 [13:11<00:00, 61.90s/it, sdr_drums=0.401, sdr_bass=0.949, sdr_other=0.0941, sdr_vocals=-0.0457]100%|██████████| 14/14 [13:11<00:00, 56.56s/it, sdr_drums=0.401, sdr_bass=0.949, sdr_other=0.0941, sdr_vocals=-0.0457]
+[W 2025-02-28 02:02:41,786] Trial 0 failed with parameters: {'dim': 512, 'depth': 2, 'dim_head': 128, 'heads': 4, 'mask_estimator_depth': 4, 'lr': 0.0001653135087572272, 'optimizer': 'sgd', 'batch_size': 1, 'gradient_accumulation_steps': 2, 'ema_momentum': 0.9344313148008699, 'augmentation_loudness_min': 0.5501771140224742, 'augmentation_loudness_max': 1.6623995681337402, 'pitch_shift_min_semitones': -3.5954625075210522, 'pitch_shift_max_semitones': 0.9148152006599566, 'dim_t': 64, 'num_overlap': 8} because of the following error: RuntimeError('[enforce fail at inline_container.cc:603] . unexpected pos 321330176 vs 321330064').
+Traceback (most recent call last):
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/serialization.py", line 850, in save
+    _save(
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/serialization.py", line 1114, in _save
+    zip_file.write_record(name, storage, num_bytes)
+RuntimeError: [enforce fail at inline_container.cc:778] . PytorchStreamWriter failed writing file data/571: file write failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/train_optuna_bs_roformer.py", line 758, in <lambda>
+    study.optimize(lambda trial: objective(trial, None), n_trials=300)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/train_optuna_bs_roformer.py", line 735, in objective
+    best_metric = compute_epoch_metrics(model, args, config, device, device_ids, best_metric, epoch, scheduler)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/train_optuna_bs_roformer.py", line 507, in compute_epoch_metrics
+    save_weights(store_path, model, device_ids, train_lora)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/train_optuna_bs_roformer.py", line 450, in save_weights
+    torch.save(
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/serialization.py", line 849, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/serialization.py", line 690, in __exit__
+    self.file_like.write_end_of_file()
+RuntimeError: [enforce fail at inline_container.cc:603] . unexpected pos 321330176 vs 321330064
+[W 2025-02-28 02:02:41,953] Trial 0 failed with value None.
+Num overlap: 8
+Instr drums sdr: 0.3173 (Std: 0.2565)
+Instr bass sdr: 0.7666 (Std: 0.4487)
+Instr other sdr: 0.2875 (Std: 0.1559)
+Instr vocals sdr: 0.0055 (Std: 0.0953)
+Metric avg sdr        : 0.3442
+Elapsed time: 791.88 sec
+metrics_avg {'sdr': 0.3442091916638465}
+metrics for scheduler sdr
+Store weights: ~/scratch/checkpoints/bs_roformer_2025-02-28_00-56-25/model_bs_roformer_ep_2_sdr_0.3442.ckpt
+saving weights to  ~/scratch/checkpoints/bs_roformer_2025-02-28_00-56-25/model_bs_roformer_ep_2_sdr_0.3442.ckpt
+Traceback (most recent call last):
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/serialization.py", line 850, in save
+    _save(
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/serialization.py", line 1114, in _save
+    zip_file.write_record(name, storage, num_bytes)
+RuntimeError: [enforce fail at inline_container.cc:778] . PytorchStreamWriter failed writing file data/571: file write failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/project/6002780/kaim/Music-Source-Separation-Training/train_optuna_bs_roformer.py", line 758, in <module>
+    study.optimize(lambda trial: objective(trial, None), n_trials=300)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/train_optuna_bs_roformer.py", line 758, in <lambda>
+    study.optimize(lambda trial: objective(trial, None), n_trials=300)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/train_optuna_bs_roformer.py", line 735, in objective
+    best_metric = compute_epoch_metrics(model, args, config, device, device_ids, best_metric, epoch, scheduler)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/train_optuna_bs_roformer.py", line 507, in compute_epoch_metrics
+    save_weights(store_path, model, device_ids, train_lora)
+  File "/project/6002780/kaim/Music-Source-Separation-Training/train_optuna_bs_roformer.py", line 450, in save_weights
+    torch.save(
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/serialization.py", line 849, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "/project/6002780/kaim/Music-Source-Separation-Training/separation_env/lib/python3.10/site-packages/torch/serialization.py", line 690, in __exit__
+    self.file_like.write_end_of_file()
+RuntimeError: [enforce fail at inline_container.cc:603] . unexpected pos 321330176 vs 321330064
+[1;34mwandb[0m: 🚀 View run [33mbs_roformer_['/localscratch/kaim.55645251.0/MUSDB18HQ/train']_2025-02-28[0m at: [34mhttps://wandb.ai/kaimikkelsen-mcgill-university/msst/runs/zzi4ght0[0m
+[1;34mwandb[0m: Find logs at: [1;35m../../../../../../project/6002780/kaim/Music-Source-Separation-Training/wandb/run-20250228_010712-zzi4ght0/logs[0m
