@@ -19,6 +19,8 @@ from torch.optim.lr_scheduler import ReduceLROnPlateau
 from ml_collections import ConfigDict
 import torch.nn.functional as F
 from typing import List, Tuple, Dict, Union, Callable
+from datetime import datetime
+import uuid
 
 from dataset import MSSDataset
 from utils import get_model_from_config
@@ -744,14 +746,19 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
 #if __name__ == "__main__":
 #    train_model(None)
 
+
+
 if __name__ == "__main__":
+
+
+    unique_id = uuid.uuid4().hex[:8]  # Generate a short unique ID
     # Define an Optuna study
     print("Optuna study started")
     study = optuna.create_study(
         direction="maximize",  # Change to "minimize" if optimizing a loss
-       sampler=TPESampler(),  # TPE sampler for efficient search
+        sampler=TPESampler(),  # TPE sampler for efficient search
         storage="sqlite:///db.sqlite3",  # Specify the storage URL here.
-        study_name="scnet_optimization"  # Unique identifier for the study
+        study_name = f"bs_roformer_optimization_{datetime.now().strftime('%Y-%m-%d')}_{unique_id}"
     )
 
     #train_model(None)
