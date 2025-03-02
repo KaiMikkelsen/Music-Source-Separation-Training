@@ -751,14 +751,19 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
 if __name__ == "__main__":
 
 
+    db_folder = "optunadb"
+    os.makedirs(db_folder, exist_ok=True)  # Create folder if it doesn't exist
+
     unique_id = uuid.uuid4().hex[:8]  # Generate a short unique ID
-    # Define an Optuna study
-    print("Optuna study started")
+    # Generate a unique filename for each study
+    db_path = os.path.join(db_folder, f"bs_roformer_optimization_{datetime.now().strftime('%Y-%m-%d')}_{unique_id}.sqlite3")
+
+    # Create the study with the new database path
     study = optuna.create_study(
         direction="maximize",  # Change to "minimize" if optimizing a loss
         sampler=TPESampler(),  # TPE sampler for efficient search
-        storage="sqlite:///db.sqlite3",  # Specify the storage URL here.
-        study_name = f"bs_roformer_optimization_{datetime.now().strftime('%Y-%m-%d')}_{unique_id}"
+        storage=f"sqlite:///{db_path}",  # Save in "optunadb" folder
+        study_name=f"bs_roformer_optimization_{datetime.now().strftime('%Y-%m-%d')}_{unique_id}"
     )
 
     #train_model(None)
