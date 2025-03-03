@@ -21,7 +21,7 @@ DATA_HOME_PATH="/home/kaim/projects/def-ichiro/kaim/data"
 DATASET_NAME="MUSDB18HQ"
 DATASET_ZIP="$DATA_HOME_PATH/$DATASET_NAME.zip" # Specify the dataset ZIP name
 SLURM_LOGS_PATH="slurm_logs/${MODEL_TYPE}_${CURRENT_DATE}"
-CHECKPOINTS_PATH="~/scratch/checkpoints/${MODEL_TYPE}_${CURRENT_DATE}"
+CHECKPOINTS_PATH="/home/kaim/scratch/checkpoints/${MODEL_TYPE}_${CURRENT_DATE}"
 
 # Create necessary directories
 #mkdir -p "$SCRATCH_DIR"
