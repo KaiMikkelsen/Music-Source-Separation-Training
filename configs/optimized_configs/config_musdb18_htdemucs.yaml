@@ -12,7 +12,7 @@ training:
   segment: 6
   shift: 1
   samplerate: 44100
-  channels: 56
+  channels: 2
   normalize: true
   instruments: ['drums', 'bass', 'other', 'vocals']
   target_instrument: null
@@ -42,7 +42,7 @@ model: htdemucs
 
 htdemucs:  # see demucs/htdemucs.py for a detailed description
   # Channels
-  channels: 48
+  channels: 56
   channels_time:
   growth: 2
   # STFT
