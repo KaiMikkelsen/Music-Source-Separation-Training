@@ -7,7 +7,7 @@ import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
 
 # Original dataset path (all songs)
-data_dir = "/home/kaim/projects/def-ichiro/kaim/data/MUSDB18HQ_ALL_SONGS"
+data_dir = "/home/kaim/projects/def-ichiro/kaim/data/MUSDB18HQ_ALL"
 
 # Output splits path (where the new datasets will be created)
 output_dir = "/home/kaim/projects/def-ichiro/kaim/data/MUSDB18HQ_SPLITS"
