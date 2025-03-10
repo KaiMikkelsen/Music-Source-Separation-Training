@@ -8,6 +8,7 @@ data_dir = "/home/kaim/projects/def-ichiro/kaim/data/MUSDB18HQ_ALL_SONGS"  # Ori
 # List all files in your dataset directory (ensure there are enough files)
 all_files = [f for f in os.listdir(data_dir) if os.path.isfile(os.path.join(data_dir, f))]
 
+print(f"Total files in dataset: {len(all_files)}")
 # Ensure the dataset has at least 150 files
 assert len(all_files) >= 150, "Dataset should have at least 150 files."
 
