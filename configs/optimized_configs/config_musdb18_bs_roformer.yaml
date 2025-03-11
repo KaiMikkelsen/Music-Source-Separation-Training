@@ -152,8 +152,8 @@ augmentations:
 
   vocals:
       pitch_shift: 0.1
-      pitch_shift_min_semitones: -1.7317985339012907
-      pitch_shift_max_semitones: 2.884815162647074
+      pitch_shift_min_semitones: -1
+      pitch_shift_max_semitones: 2
       seven_band_parametric_eq: 0.1
       seven_band_parametric_eq_min_gain_db: -9
       seven_band_parametric_eq_max_gain_db: 9
