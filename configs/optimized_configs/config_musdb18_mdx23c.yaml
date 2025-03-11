@@ -15,7 +15,7 @@ model:
   norm: InstanceNorm
   num_blocks_per_scale: 4
   num_channels: 48
-  num_scales: 5
+  num_scales: 4
   num_subbands: 4
   scale:
   - 2
