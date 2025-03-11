@@ -31,7 +31,7 @@ training:
   - drums
   - other
   lr: 9.895019867581646e-05
-  patience: 4
+  patience: 8
   reduce_factor: 0.3067220909070577
   target_instrument: null
   num_epochs: 1000
@@ -50,8 +50,8 @@ augmentations:
   loudness_max: 1.6273706114263216
   mixup: true # mix several stems of same type with some probability (only works for dataset types: 1, 2, 3)
   mixup_probs: !!python/tuple # 2 additional stems of the same type (1st with prob 0.2, 2nd with prob 0.02)
-    - 0.3
-    - 0.03
+    - 0.2
+    - 0.02
   mixup_loudness_min: 0.5
   mixup_loudness_max: 1.5
 
