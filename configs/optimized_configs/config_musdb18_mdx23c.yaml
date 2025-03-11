@@ -22,8 +22,8 @@ model:
   - 2
 
 training:
-  batch_size: 7
-  gradient_accumulation_steps: 7
+  batch_size: 1
+  gradient_accumulation_steps: 1
   grad_clip: 0
   instruments:
   - vocals
