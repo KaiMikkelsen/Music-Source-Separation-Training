@@ -18,33 +18,33 @@ model:
     - 32
     - 64
     - 128
-  nfft: 4096
-  hop_size: 1024
-  win_size: 4096
+  nfft: 8192
+  hop_size: 2048
+  win_size: 8192
   normalized: True
   band_SR:
-    - 0.175
-    - 0.392
-    - 0.433
+    - 0.1722469539442369
+    - 0.38012019741511666
+    - 0.4146114497808338
   band_stride:
     - 1
-    - 4
-    - 16
+    - 6
+    - 8
   band_kernel:
     - 3
-    - 4
-    - 16
+    - 8
+    - 11
   conv_depths:
     - 3
     - 2
     - 1
-  compress: 4
+  compress: 2
   conv_kernel: 3
-  num_dplayer: 6
-  expand: 1
+  num_dplayer: 5
+  expand: 3
 
 training:
-  batch_size: 8
+  batch_size: 10
   gradient_accumulation_steps: 1
   grad_clip: 0
   instruments:
@@ -52,34 +52,34 @@ training:
     - bass
     - other
     - vocals
-  lr: 0.00026841981212125316
+  lr: 0.000454631840479182
   patience: 3
-  reduce_factor: 0.219196951462339
+  reduce_factor: 0.8947747328566111
   target_instrument: null
   num_epochs: 1000
   num_steps: 1000
   q: 0.95
   coarse_loss_clip: true
-  ema_momentum: 0.9378100886286717
-  optimizer: adamw
+  ema_momentum: 0.9571411299007567
+  optimizer: adam
   other_fix: false # it's needed for checking on multisong dataset if other is actually instrumental
   use_amp: true # enable or disable usage of mixed precision (float16) - usually it must be true
 
 augmentations:
   enable: true # enable or disable all augmentations (to fast disable if needed)
   loudness: true # randomly change loudness of each stem on the range (loudness_min; loudness_max)
-  loudness_min: 0.473336506364996
-  loudness_max: 1.8222123462450366
+  loudness_min: 0.9898410952292338
+  loudness_max: 1.9868518799340549
   mixup: true # mix several stems of same type with some probability (only works for dataset types: 1, 2, 3)
   mixup_probs:
     !!python/tuple # 2 additional stems of the same type (1st with prob 0.2, 2nd with prob 0.02)
-    - 0.3
-    - 0.03
+    - 0.10005294184077765
+    - 0.0146956702231545
   mixup_loudness_min: 0.5
   mixup_loudness_max: 1.5
 
 inference:
   batch_size: 8
-  dim_t: 256
-  num_overlap: 4
+  dim_t: 128
+  num_overlap: 8
   normalize: true
