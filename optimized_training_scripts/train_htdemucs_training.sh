@@ -99,15 +99,22 @@ echo "Dataset path set to: $DATA_PATH"
 
 echo "Running training script for model: $MODEL_TYPE with dataset at $DATA_PATH"
 
+# do k folds??
+
 python train.py \
     --model_type "$MODEL_TYPE" \
     --config_path "$CONFIG_PATH" \
     --results_path "$CHECKPOINTS_PATH" \
     --data_path "$DATA_PATH/train" \
     --valid_path "$DATA_PATH/validation" \
-    --metrics sdr \
+    --metrics sdr si_sdr l1_freq log_wmse aura_stft aura_mrstft bleedless fullness \
     --num_workers 4 \
     --start_check_point "" \
     --device_ids 0 \
     --wandb_key 689bb384f0f7e0a9dbe275c4ba6458d13265990d
+
+
+# python run test set VALID.PY
+
+
 
