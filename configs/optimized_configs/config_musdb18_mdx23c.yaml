@@ -10,11 +10,11 @@ audio:
 
 model:
   act: gelu
-  bottleneck_factor: 4
-  growth: 128
+  bottleneck_factor: 5
+  growth: 224
   norm: InstanceNorm
-  num_blocks_per_scale: 2
-  num_channels: 32
+  num_blocks_per_scale: 4
+  num_channels: 48
   num_scales: 5
   num_subbands: 4
   scale:
@@ -22,23 +22,23 @@ model:
   - 2
 
 training:
-  batch_size: 4
-  gradient_accumulation_steps: 1
+  batch_size: 7
+  gradient_accumulation_steps: 7
   grad_clip: 0
   instruments:
   - vocals
   - bass
   - drums
   - other
-  lr: 0.0009770339803835022
+  lr: 9.895019867581646e-05
   patience: 4
-  reduce_factor: 0.10285472278822129
+  reduce_factor: 0.3067220909070577
   target_instrument: null
   num_epochs: 1000
   num_steps: 1000
   q: 0.95
   coarse_loss_clip: true
-  ema_momentum: 0.9980725275361351
+  ema_momentum: 0.9843434567317182
   optimizer: adamw
   other_fix: false # it's needed for checking on multisong dataset if other is actually instrumental
   use_amp: true # enable or disable usage of mixed precision (float16) - usually it must be true
@@ -46,8 +46,8 @@ training:
 augmentations:
   enable: true # enable or disable all augmentations (to fast disable if needed)
   loudness: true # randomly change loudness of each stem on the range (loudness_min; loudness_max)
-  loudness_min: 0.27387931810405863
-  loudness_max: 1.8965613782777757
+  loudness_min: 0.58042979886586
+  loudness_max: 1.6273706114263216
   mixup: true # mix several stems of same type with some probability (only works for dataset types: 1, 2, 3)
   mixup_probs: !!python/tuple # 2 additional stems of the same type (1st with prob 0.2, 2nd with prob 0.02)
     - 0.3
@@ -77,7 +77,7 @@ augmentations:
     pedalboard_reverb_damping_min: 0.1
     pedalboard_reverb_damping_max: 0.9
     pedalboard_reverb_wet_level_min: 0.1
-    pedalboard_reverb_wet_level_max: 0.9
+    pedalboard_reverb_wet_level_max: 0.5003004636187302
     pedalboard_reverb_dry_level_min: 0.1
     pedalboard_reverb_dry_level_max: 0.9
     pedalboard_reverb_width_min: 0.9
@@ -112,7 +112,7 @@ augmentations:
     # pedalboard distortion block
     pedalboard_distortion: 0.01
     pedalboard_distortion_drive_db_min: 1.0
-    pedalboard_distortion_drive_db_max: 25.0
+    pedalboard_distortion_drive_db_max: 8.352905675063163
 
     # pedalboard pitch shift block
     pedalboard_pitch_shift: 0.01
@@ -178,5 +178,5 @@ augmentations:
 
 inference:
   batch_size: 1
-  dim_t: 256
-  num_overlap: 4
+  dim_t: 128
+  num_overlap: 8
