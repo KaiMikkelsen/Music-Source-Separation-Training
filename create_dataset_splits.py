@@ -7,16 +7,16 @@ import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
 
 # Original dataset path (all songs)
-data_dir = "/home/kaim/projects/def-ichiro/kaim/data/MUSDB18HQ_ALL"
+data_dir = "/home/kaim/scratch/4_stem_moises"
 
 # Output splits path (where the new datasets will be created)
-output_dir = "/home/kaim/projects/def-ichiro/kaim/data/MUSDB18HQ_SPLITS"
+output_dir = "/home/kaim/scratch/MOISESDB_SPLITS"
 
 # List all folders in your dataset directory (ensure there are enough folders)
 all_folders = [f for f in os.listdir(data_dir) if os.path.isdir(os.path.join(data_dir, f))]
 
 # Ensure the dataset has at least 150 folders
-if len(all_folders) < 150:
+if len(all_folders) < 240:
     logging.error("Dataset should have at least 150 folders.")
     exit(1)
 else:
