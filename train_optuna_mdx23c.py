@@ -610,6 +610,11 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
     # do optuna here i think
    # do optuna here i think
 
+   # Model #
+
+    chunk_size = trial.suggest_int("chunk_size", 220500, 661500, step=110250)
+    n_fft = trial.suggest_categorical("n_fft", [512, 1024, 2048, 4096, 8192, 16384])
+
     # **Model Capacity**: 
     bottleneck_factor = trial.suggest_int("bottleneck_factor", 2, 8)
     num_channels = trial.suggest_int("num_channels", 32, 128, step=8)
@@ -630,16 +635,18 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
     # **Augmentation settings**:
     augmentation_loudness_min = trial.suggest_loguniform("augmentation_loudness_min", 0.1, 2.0)
     augmentation_loudness_max = trial.suggest_loguniform("augmentation_loudness_max", 0.5, 2.0)
-    pitch_shift_min_semitones = trial.suggest_uniform("pitch_shift_min_semitones", -4, 0)
-    pitch_shift_max_semitones = trial.suggest_uniform("pitch_shift_max_semitones", 0, 4)
-    pedalboard_reverb_wet_level_max = trial.suggest_uniform("pedalboard_reverb_wet_level_max", 0.5, 1.0)
-    pedalboard_distortion_drive_db_max = trial.suggest_uniform("pedalboard_distortion_drive_db_max", 5.0, 30.0)
+    mixup_loudness_min = trial.suggest_uniform("mixup_loudness_min", -4, 0)
+    mixup_loudness_max = trial.suggest_uniform("mixup_loudness_max", 0, 4)
+
 
     # **Inference settings**:
     dim_t = trial.suggest_categorical("dim_t", [128, 192, 256, 512])
     num_overlap = trial.suggest_categorical("num_overlap", [2, 4, 6, 8])
 
     # Initialize environment and model
+
+    config.audio.chunk_size = chunk_size
+    config.audio.n_fft = n_fft
 
     # Apply sampled values from Optuna to the configuration
     config.model.bottleneck_factor = bottleneck_factor
@@ -652,17 +659,15 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
     config.training.lr = lr
     config.training.reduce_factor = reduce_factor
     config.training.ema_momentum = ema_momentum
-    config.training.optimizer = optimizer
+    config.training.optimizer = optimizer 
     config.training.batch_size = batch_size
-    config.gradient_accumulation_steps = gradient_accumulation_steps
+    config.training.gradient_accumulation_steps = gradient_accumulation_steps
 
     # Augmentation settings
-    config.training.augmentation_loudness_min = augmentation_loudness_min
-    config.training.augmentation_loudness_max = augmentation_loudness_max
-    config.training.pitch_shift_min_semitones = pitch_shift_min_semitones
-    config.training.pitch_shift_max_semitones = pitch_shift_max_semitones
-    config.training.pedalboard_reverb_wet_level_max = pedalboard_reverb_wet_level_max
-    config.training.pedalboard_distortion_drive_db_max = pedalboard_distortion_drive_db_max
+    config.augmentations.loudness_min = augmentation_loudness_min
+    config.augmentations.loudness_max = augmentation_loudness_max
+    config.augmentations.mixup_loudness_min = mixup_loudness_min
+    config.augmentations.mixup_loudness_max = mixup_loudness_max
 
     # Inference settings
     config.inference.dim_t = dim_t
