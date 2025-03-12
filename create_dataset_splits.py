@@ -17,7 +17,8 @@ all_folders = [f for f in os.listdir(data_dir) if os.path.isdir(os.path.join(dat
 
 # Ensure the dataset has at least 150 folders
 if len(all_folders) < 240:
-    logging.error("Dataset should have at least 150 folders.")
+    print(len(all_folders))
+    logging.error("Dataset should have at least 240 folders.")
     exit(1)
 else:
     logging.info(f"Found {len(all_folders)} folders in the dataset.")
