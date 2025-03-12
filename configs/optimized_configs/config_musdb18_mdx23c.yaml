@@ -22,7 +22,7 @@ model:
   - 2
 
 training:
-  batch_size: 1
+  batch_size: 7
   gradient_accumulation_steps: 1
   grad_clip: 0
   instruments:
@@ -34,8 +34,8 @@ training:
   patience: 8
   reduce_factor: 0.3067220909070577
   target_instrument: null
-  num_epochs: 1000
-  num_steps: 1000
+  num_epochs: 8
+  num_steps: 150
   q: 0.95
   coarse_loss_clip: true
   ema_momentum: 0.9843434567317182
