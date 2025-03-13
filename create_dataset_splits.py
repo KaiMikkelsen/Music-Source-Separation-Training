@@ -7,7 +7,7 @@ import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
 
 # Original dataset path (all songs)
-data_dir = "/home/kaim/scratch/4_stem_moises"
+data_dir = "/home/kaim/scratch/moises_4_stem"
 
 # Output splits path (where the new datasets will be created)
 output_dir = "/home/kaim/scratch/MOISESDB_SPLITS"
