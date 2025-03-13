@@ -28,21 +28,21 @@ np.random.seed(42)
 shuffled_folders = np.random.permutation(all_folders)
 
 # Split into test, train, validation sets
-test_folders = shuffled_folders[:50]  # First 50 for testing
-train_folders = shuffled_folders[50:136]  # Next 86 for training
-valid_folders = shuffled_folders[136:150]  # Last 14 for validation
+test_folders = shuffled_folders[:80]  # First 50 for testing
+train_folders = shuffled_folders[80:218]  # Next 86 for training
+valid_folders = shuffled_folders[218:240]  # Last 14 for validation
 
 # Second split: Different combination for Dataset 2
 shuffled_folders_2 = np.random.permutation(all_folders)
-test_folders_2 = shuffled_folders_2[:50]
-train_folders_2 = shuffled_folders_2[50:136]
-valid_folders_2 = shuffled_folders_2[136:150]
+test_folders_2 = shuffled_folders_2[:80]
+train_folders_2 = shuffled_folders_2[80:218]
+valid_folders_2 = shuffled_folders_2[218:240]
 
 # Third split: Different combination for Dataset 3
 shuffled_folders_3 = np.random.permutation(all_folders)
-test_folders_3 = shuffled_folders_3[:50]
-train_folders_3 = shuffled_folders_3[50:136]
-valid_folders_3 = shuffled_folders_3[136:150]
+test_folders_3 = shuffled_folders_3[:80]
+train_folders_3 = shuffled_folders_3[80:218]
+valid_folders_3 = shuffled_folders_3[218:240]
 
 # Helper function to create directories and move folders
 def create_and_move_folders(dataset_name, train_folders, valid_folders, test_folders, source_dir, output_dir):
