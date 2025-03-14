@@ -11,4 +11,5 @@ export XLA_FLAGS=--xla_gpu_cuda_data_dir=$CUDA_HOME
 
 source separation_env/bin/activate
 
-python create_4_stem_moisesdb.py
+python scripts/moises_to_musdb.py --src_dir /home/kaim/scratch/moisesdb/moisesdb_v0.1 --dest_dir /home/kaim/scratch/moises_4_stem --stems bass drums vocals --num_workers 4 --max_folders 240 
+#python create_4_stem_moisesdb.py
