@@ -401,7 +401,10 @@ def train_one_epoch(model: torch.nn.Module, config: ConfigDict, args: argparse.N
             if 'roformer' in args.model_type:
                 # loss is computed in forward pass
                 print(f"Max memory used during forward: {torch.cuda.max_memory_allocated() / (1024 ** 3):.2f} GB")
-                loss = model(x, y)
+                with torch.autograd.profiler.profile(use_cuda=True) as prof:
+                    loss = model(x, y)
+                print(prof.key_averages().table(sort_by="cuda_time_total"))
+                #loss = model(x, y)
                 if isinstance(device_ids, (list, tuple)):
                     # If it's multiple GPUs sum partial loss
                     loss = loss.mean()
