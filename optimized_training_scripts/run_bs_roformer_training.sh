@@ -110,7 +110,7 @@ python train.py \
     --metrics sdr si_sdr l1_freq log_wmse aura_stft aura_mrstft bleedless fullness \
     --num_workers 4 \
     --start_check_point "" \
-    --device_ids 0 \
+    --device_ids 0 1 2 \
     --wandb_key 689bb384f0f7e0a9dbe275c4ba6458d13265990d
 
 
