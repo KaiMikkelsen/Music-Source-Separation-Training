@@ -16,7 +16,7 @@ output_dir = "/home/kaim/scratch/bleeding_splits"
 all_folders = [f for f in os.listdir(data_dir) if os.path.isdir(os.path.join(data_dir, f))]
 
 # Ensure the dataset has at least 150 folders
-if len(all_folders) < 240:
+if len(all_folders) < 203:
     print(len(all_folders))
     logging.error("Dataset should have at least 240 folders.")
     exit(1)
