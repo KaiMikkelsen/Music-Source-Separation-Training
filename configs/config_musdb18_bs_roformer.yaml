@@ -1,5 +1,3 @@
-# taken from https://github.com/ZFTurbo/Music-Source-Separation-Training/blob/main/docs/pretrained_models.md
-
 audio:
   chunk_size: 485100
   dim_f: 1024
@@ -106,15 +104,15 @@ model:
   skip_connection: False # Enable skip connection between transformer blocks - can solve problem with gradients and probably faster training
 
 training:
-  batch_size: 1
+  batch_size: 2
   gradient_accumulation_steps: 1
   grad_clip: 0
   instruments: ['drums', 'bass', 'other', 'vocals']
   patience: 3
   reduce_factor: 0.95
   target_instrument: null
-  num_epochs: 8
-  num_steps: 150
+  num_epochs: 1000
+  num_steps: 1000
   augmentation: false # enable augmentations by audiomentations and pedalboard
   augmentation_type: simple1
   use_mp3_compress: false # Deprecated
