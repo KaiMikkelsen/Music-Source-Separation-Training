@@ -16,7 +16,7 @@ git pull
 
 # Variables
 MODEL_TYPE="bs_roformer"
-CONFIG_PATH="configs/config_musdb18_bs_roformer.yaml"
+CONFIG_PATH="configs/config_musdb18_bs_roformer_with_lora.yaml"
 DATA_HOME_PATH="/home/kaim/projects/def-ichiro/kaim/data"
 DATASET_NAME="MUSDB18HQ"
 DATASET_ZIP="$DATA_HOME_PATH/$DATASET_NAME.zip" # Specify the dataset ZIP name
