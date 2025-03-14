@@ -400,6 +400,7 @@ def train_one_epoch(model: torch.nn.Module, config: ConfigDict, args: argparse.N
         with torch.cuda.amp.autocast(enabled=use_amp):
             if 'roformer' in args.model_type:
                 # loss is computed in forward pass
+                print(f"Max memory used during forward: {torch.cuda.max_memory_allocated() / (1024 ** 3):.2f} GB")
                 loss = model(x, y)
                 if isinstance(device_ids, (list, tuple)):
                     # If it's multiple GPUs sum partial loss
@@ -425,6 +426,7 @@ def train_one_epoch(model: torch.nn.Module, config: ConfigDict, args: argparse.N
         wandb.log({'loss': 100 * li, 'avg_loss': 100 * loss_val / (i + 1), 'i': i})
         loss.detach()
 
+    print(torch.cuda.memory_summary(device=device, abbreviated=False))
     print(f'Training loss: {loss_val / total}')
     wandb.log({'train_loss': loss_val / total, 'epoch': epoch, 'learning_rate': optimizer.param_groups[0]['lr']})
 
@@ -501,6 +503,7 @@ def train_model(args: argparse.Namespace) -> None:
         lora.mark_only_lora_as_trainable(model)
 
     device, model = initialize_model_and_device(model, args.device_ids)
+    print(torch.cuda.memory_summary(device=device, abbreviated=False))
 
     if args.pre_valid:
         if torch.cuda.is_available() and len(device_ids) > 1:
