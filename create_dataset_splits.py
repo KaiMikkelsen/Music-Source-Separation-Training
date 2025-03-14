@@ -7,10 +7,10 @@ import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
 
 # Original dataset path (all songs)
-data_dir = "/home/kaim/scratch/moises_4_stem"
+data_dir = "/home/kaim/scratch/moisesdb23_bleeding_v1.0"
 
 # Output splits path (where the new datasets will be created)
-output_dir = "/home/kaim/scratch/MOISESDB_SPLITS"
+output_dir = "/home/kaim/scratch/bleeding_splits"
 
 # List all folders in your dataset directory (ensure there are enough folders)
 all_folders = [f for f in os.listdir(data_dir) if os.path.isdir(os.path.join(data_dir, f))]
@@ -28,21 +28,21 @@ np.random.seed(42)
 shuffled_folders = np.random.permutation(all_folders)
 
 # Split into test, train, validation sets
-test_folders = shuffled_folders[:80]  # First 50 for testing
-train_folders = shuffled_folders[80:218]  # Next 86 for training
-valid_folders = shuffled_folders[218:240]  # Last 14 for validation
+test_folders = shuffled_folders[:68]  # First 50 for testing
+train_folders = shuffled_folders[68:184]  # Next 86 for training
+valid_folders = shuffled_folders[184:203]  # Last 14 for validation
 
 # Second split: Different combination for Dataset 2
 shuffled_folders_2 = np.random.permutation(all_folders)
-test_folders_2 = shuffled_folders_2[:80]
-train_folders_2 = shuffled_folders_2[80:218]
-valid_folders_2 = shuffled_folders_2[218:240]
+test_folders_2 = shuffled_folders_2[:68]
+train_folders_2 = shuffled_folders_2[68:184]
+valid_folders_2 = shuffled_folders_2[184:203]
 
 # Third split: Different combination for Dataset 3
 shuffled_folders_3 = np.random.permutation(all_folders)
-test_folders_3 = shuffled_folders_3[:80]
-train_folders_3 = shuffled_folders_3[80:218]
-valid_folders_3 = shuffled_folders_3[218:240]
+test_folders_3 = shuffled_folders_3[:68]
+train_folders_3 = shuffled_folders_3[68:184]
+valid_folders_3 = shuffled_folders_3[184:203]
 
 # Helper function to create directories and move folders
 def create_and_move_folders(dataset_name, train_folders, valid_folders, test_folders, source_dir, output_dir):
