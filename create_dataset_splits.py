@@ -7,10 +7,10 @@ import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
 
 # Original dataset path (all songs)
-data_dir = "/home/kaim/scratch/moisesdb23_bleeding_v1.0"
+data_dir = "/home/kaim/scratch/moisesdb23_labelnoise_v1.0"
 
 # Output splits path (where the new datasets will be created)
-output_dir = "/home/kaim/scratch/bleeding_splits"
+output_dir = "/home/kaim/scratch/labelnoise_splits"
 
 # List all folders in your dataset directory (ensure there are enough folders)
 all_folders = [f for f in os.listdir(data_dir) if os.path.isdir(os.path.join(data_dir, f))]
