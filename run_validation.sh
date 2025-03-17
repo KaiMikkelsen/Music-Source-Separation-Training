@@ -81,7 +81,7 @@ fi
 echo "Dataset path set to: $DATA_PATH"
 
 
-echo "Running validation script for model: $MODEL_TYPE with dataset at $DATA_PATH"
+echo "Running validation script for model: $MODEL_TYPE with dataset at $DATA_PATH and checkpoint at $CHECKPOINTS_PATH"
 
 
 
