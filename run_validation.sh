@@ -90,7 +90,6 @@ python valid.py \
     --model_type "$MODEL_TYPE" \
     --config_path "$CONFIG_PATH" \
     --start_check_point "$CHECKPOINTS_PATH" \
-    --results_path "$CHECKPOINTS_PATH" \
     --valid_path "$DATA_PATH/test" \
     --metrics sdr \
     --num_workers 4 \
