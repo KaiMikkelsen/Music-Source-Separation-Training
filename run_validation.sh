@@ -19,7 +19,6 @@ CHECKPOINTS_PATH="checkpoints/scnet_2025-03-15_05-36-13/model_scnet_ep_139_sdr_7
 DATASET_NAME="MUSDB18HQ"
 DATASET_ZIP="../data/$DATASET_NAME.zip" # Specify the dataset ZIP name
 SLURM_LOGS_PATH="slurm_logs/${MODEL_TYPE}_${CURRENT_DATE}"
-CHECKPOINTS_PATH="checkpoints/${MODEL_TYPE}_${CURRENT_DATE}"
 
 # Create necessary directories
 #mkdir -p "$SCRATCH_DIR"
