@@ -113,7 +113,7 @@ training:
   target_instrument: null
   num_epochs: 1000
   num_steps: 1000
-  augmentation: false # enable augmentations by audiomentations and pedalboard
+  augmentation: true # enable augmentations by audiomentations and pedalboard
   augmentation_type: simple1
   use_mp3_compress: false # Deprecated
   augmentation_mix: true # Mix several stems of the same type with some probability
