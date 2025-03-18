@@ -42,7 +42,7 @@ model:
   expand: 1
 
 training:
-  batch_size: 6
+  batch_size: 4
   gradient_accumulation_steps: 1
   grad_clip: 0
   instruments:
