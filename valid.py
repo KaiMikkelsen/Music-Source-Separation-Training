@@ -644,6 +644,7 @@ def parse_args(dict_args: Union[Dict, None]) -> argparse.Namespace:
 
 
 def check_validation(dict_args):
+    print("validation called")
     args = parse_args(dict_args)
     torch.backends.cudnn.benchmark = True
     try:
