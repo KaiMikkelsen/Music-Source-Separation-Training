@@ -14,7 +14,7 @@ SCRATCH_DIR=$SLURM_TMPDIR
 
 # Variables
 MODEL_TYPE="scnet"
-CONFIG_PATH="/home/kaim/projects/def-ichiro/kaim/Music-Source-Separation-Training/config_musdb18_scnet.yaml"
+CONFIG_PATH="configs/config_musdb18_scnet.yaml"
 CHECKPOINTS_PATH="/home/kaim/projects/def-ichiro/kaim/SCNet/result/checkpoint.th"
 
 DATASET_NAME="MUSDB18HQ"
