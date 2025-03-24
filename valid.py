@@ -593,4 +593,5 @@ def check_validation(dict_args):
 
 
 if __name__ == "__main__":
+    print("called")
     check_validation(None)
