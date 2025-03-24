@@ -565,27 +565,19 @@ def load_start_checkpoint(args: argparse.Namespace, model: torch.nn.Module, type
         else:
             model.load_state_dict(torch.load(args.start_check_point))
     else:
-        #modified this from original trying to get scnet weights to load properly
         device='cpu'
-        checkpoint = torch.load(args.start_check_point, map_location=device)
-        state_dict = None
-
-        if 'state' in checkpoint:
-            print("Loading model state from the 'state' key in the checkpoint.")
-            state_dict = checkpoint['state']
-        elif args.model_type in ['htdemucs', 'apollo']:
+        if args.model_type in ['htdemucs', 'apollo', 'scnet']:
+            state_dict = torch.load(args.start_check_point, map_location=device, weights_only=False)
             # Fix for htdemucs pretrained models
-            if 'state' in checkpoint:
-                state_dict = checkpoint['state']
+            if 'state' in state_dict:
+                state_dict = state_dict['state']
             # Fix for apollo pretrained models
-            elif 'state_dict' in checkpoint:
-                state_dict = checkpoint['state_dict']
-            elif 'model_state_dict' in checkpoint:
-                state_dict = checkpoint['model_state_dict'] # This was already here
-            else:
-                state_dict = checkpoint # Fallback to the entire checkpoint
+            if 'state_dict' in state_dict:
+                state_dict = state_dict['state_dict']
         else:
-            state_dict = checkpoint # Fallback to the entire checkpoint
+            state_dict = torch.load(args.start_check_point, map_location=device, weights_only=True)
+        model.load_state_dict(state_dict)
+
 
     if args.lora_checkpoint:
         print(f"Loading LoRA weights from: {args.lora_checkpoint}")
