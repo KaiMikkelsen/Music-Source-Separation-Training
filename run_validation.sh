@@ -15,7 +15,7 @@ SCRATCH_DIR=$SLURM_TMPDIR
 # Variables
 MODEL_TYPE="scnet"
 CONFIG_PATH="configs/config_musdb18_scnet.yaml"
-CHECKPOINTS_PATH="checkpoints/scnet_2025-03-15_05-36-13/model_scnet_ep_139_sdr_7.4511.ckpt"
+CHECKPOINTS_PATH="/home/kaim/projects/def-ichiro/kaim/SCNet/result/checkpoint.th"
 DATASET_NAME="MUSDB18HQ"
 DATASET_ZIP="../data/$DATASET_NAME.zip" # Specify the dataset ZIP name
 SLURM_LOGS_PATH="slurm_logs/${MODEL_TYPE}_${CURRENT_DATE}"
@@ -32,7 +32,7 @@ exec > >(tee -a "$SLURM_LOGS_PATH/slurm-${SLURM_JOB_ID}.out") 2>&1
 # Activate the environment
 source separation_env/bin/activate
 
-RUNNING_ON_MAC=False
+RUNNING_ON_MAC=True
 if [ "$RUNNING_ON_MAC" = False ]; then
 
     # Move and unzip dataset to scratch directory
@@ -78,7 +78,9 @@ else
     echo "Running on Mac. Skipping dataset unzipping."
 fi
 
+DATA_PATH="/home/kaim/scratch/MUSDB18HQ"
 echo "Dataset path set to: $DATA_PATH"
+
 
 
 echo "Running validation script for model: $MODEL_TYPE with dataset at $DATA_PATH and checkpoint at $CHECKPOINTS_PATH"
