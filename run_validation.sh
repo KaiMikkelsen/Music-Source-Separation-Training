@@ -14,7 +14,7 @@ SCRATCH_DIR=$SLURM_TMPDIR
 
 # Variables
 MODEL_TYPE="scnet"
-CONFIG_PATH="configs/config_musdb18_scnet.yaml"
+CONFIG_PATH="/home/kaim/projects/def-ichiro/kaim/SCNet/conf/config.yaml"
 CHECKPOINTS_PATH="/home/kaim/projects/def-ichiro/kaim/SCNet/result/checkpoint.th"
 DATASET_NAME="MUSDB18HQ"
 DATASET_ZIP="../data/$DATASET_NAME.zip" # Specify the dataset ZIP name
