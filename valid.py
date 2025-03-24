@@ -564,10 +564,13 @@ def check_validation(dict_args):
         torch.multiprocessing.set_start_method('spawn')
     except Exception as e:
         pass
+    print("loading model and config")
     model, config = get_model_from_config(args.model_type, args.config_path)
 
     if args.start_check_point:
+        print(f"Load checkpoint: {args.start_check_point}")
         load_start_checkpoint(args, model, type_='valid')
+        print(f"done checkpoint: {args.start_check_point}")
 
     print(f"Instruments: {config.training.instruments}")
 
