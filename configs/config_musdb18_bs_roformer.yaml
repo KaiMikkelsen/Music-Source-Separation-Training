@@ -100,11 +100,11 @@ model:
   multi_stft_hop_size: 147
   multi_stft_normalized: False
   mlp_expansion_factor: 2
-  use_torch_checkpoint: True # it allows to greatly reduce GPU memory consumption during training (not fully tested)
+  use_torch_checkpoint: False # it allows to greatly reduce GPU memory consumption during training (not fully tested)
   skip_connection: False # Enable skip connection between transformer blocks - can solve problem with gradients and probably faster training
 
 training:
-  batch_size: 2
+  batch_size: 1
   gradient_accumulation_steps: 1
   grad_clip: 0
   instruments: ['drums', 'bass', 'other', 'vocals']
