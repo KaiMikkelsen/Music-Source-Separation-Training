@@ -778,7 +778,7 @@ if __name__ == "__main__":
     #train_model(None)
     # Run the optimization
     #study.optimize(objective, n_trials=100)  # Adjust n_trials as needed
-    study.optimize(lambda trial: objective(trial, None), n_trials=150)
+    study.optimize(lambda trial: objective(trial, None), n_trials=200)
 
     pruned_trials = study.get_trials(deepcopy=False, states=[TrialState.PRUNED])
     complete_trials = study.get_trials(deepcopy=False, states=[TrialState.COMPLETE])
