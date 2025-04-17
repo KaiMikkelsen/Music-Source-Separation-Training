@@ -89,7 +89,7 @@ DATA_PATH="/home/kaim/scratch/MUSDB18HQ"
 
 echo "Running validation script for model: $MODEL_TYPE with dataset at $DATA_PATH"
 
-python ../valid.py \
+python valid.py \
     --model_type "$MODEL_TYPE" \
     --config_path "$CONFIG_PATH" \
     --start_check_point /home/kaim/projects/def-ichiro/kaim/SCNet/result/best_checkpoint.th \
