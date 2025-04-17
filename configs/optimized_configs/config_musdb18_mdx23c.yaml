@@ -23,22 +23,22 @@ model:
 
 training:
   batch_size: 7
-  gradient_accumulation_steps: 1
+  gradient_accumulation_steps: 7
   grad_clip: 0
   instruments:
   - vocals
   - bass
   - drums
   - other
-  lr: 9.895019867581646e-05
+  lr: 9.967668254431577e-05
   patience: 8
-  reduce_factor: 0.3067220909070577
+  reduce_factor: 0.304532157441101
   target_instrument: null
   num_epochs: 1000
   num_steps: 1000
   q: 0.95
   coarse_loss_clip: true
-  ema_momentum: 0.9843434567317182
+  ema_momentum: 0.9585150749190825
   optimizer: adamw
   other_fix: false # it's needed for checking on multisong dataset if other is actually instrumental
   use_amp: true # enable or disable usage of mixed precision (float16) - usually it must be true
