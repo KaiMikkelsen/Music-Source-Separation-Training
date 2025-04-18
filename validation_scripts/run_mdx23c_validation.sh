@@ -17,7 +17,7 @@ SCRATCH_DIR=$SLURM_TMPDIR
 
 # Variables
 BASE_DIR="/home/kaim/projects/def-ichiro/kaim/Music-Source-Separation-Training"
-MODEL_TYPE="md23c"
+MODEL_TYPE="mdx23c"
 #CONFIG_PATH="/home/kaim/projects/def-ichiro/kaim/SCNet/conf/config.yaml"
 CONFIG_PATH="/home/kaim/projects/def-ichiro/kaim/Music-Source-Separation-Training/configs/config_musdb18_mdx23c.yaml"
 
