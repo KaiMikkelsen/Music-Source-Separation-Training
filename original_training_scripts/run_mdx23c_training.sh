@@ -16,7 +16,7 @@ git pull
 
 # Variables
 MODEL_TYPE="mdx23c"
-CONFIG_PATH="configs/original_configs/config_musdb18_mdx23c.yaml"
+CONFIG_PATH="configs/original_configs/config_musdb18_mdx23c_copied.yaml"
 DATA_HOME_PATH="/home/kaim/projects/def-ichiro/kaim/data"
 DATASET_NAME="MUSDB18HQ"
 DATASET_ZIP="$DATA_HOME_PATH/$DATASET_NAME.zip" # Specify the dataset ZIP name
@@ -37,55 +37,56 @@ RUNNING_ON_MAC=False
 
 
 
-if [ "$RUNNING_ON_MAC" = False ]; then
+# if [ "$RUNNING_ON_MAC" = False ]; then
 
-    mkdir -p "$SLURM_LOGS_PATH"
+#     mkdir -p "$SLURM_LOGS_PATH"
 
-    mkdir -p "$CHECKPOINTS_PATH"
+#     mkdir -p "$CHECKPOINTS_PATH"
 
-    # Move and unzip dataset to scratch directory
-    if [ ! -f "$SCRATCH_DIR/$(basename "$DATASET_ZIP")" ]; then
-        echo "Moving $DATASET_ZIP to $SCRATCH_DIR for faster access"
-        cp "$DATASET_ZIP" "$SCRATCH_DIR"
-    else
-        echo "Dataset already exists in $SCRATCH_DIR, skipping copy."
-    fi
+#     # Move and unzip dataset to scratch directory
+#     if [ ! -f "$SCRATCH_DIR/$(basename "$DATASET_ZIP")" ]; then
+#         echo "Moving $DATASET_ZIP to $SCRATCH_DIR for faster access"
+#         cp "$DATASET_ZIP" "$SCRATCH_DIR"
+#     else
+#         echo "Dataset already exists in $SCRATCH_DIR, skipping copy."
+#     fi
 
-    DATASET_ZIP_BASENAME=$(basename "$DATASET_ZIP")
-    SCRATCH_ZIP="$SCRATCH_DIR/$DATASET_ZIP_BASENAME"
+#     DATASET_ZIP_BASENAME=$(basename "$DATASET_ZIP")
+#     SCRATCH_ZIP="$SCRATCH_DIR/$DATASET_ZIP_BASENAME"
 
-    # mkdir -p "$SCRATCH_DIR/$DATASET_NAME"
-    # echo "created directory $SCRATCH_DIR/$DATASET_NAME"
-    # echo "Unzipping dataset in $SCRATCH_DIR/$DATASET_NAME"
+#     # mkdir -p "$SCRATCH_DIR/$DATASET_NAME"
+#     # echo "created directory $SCRATCH_DIR/$DATASET_NAME"
+#     # echo "Unzipping dataset in $SCRATCH_DIR/$DATASET_NAME"
 
-    echo "unzipping $SCRATCH_DIR/$DATASET_NAME.zip"
-    unzip "$SCRATCH_DIR/$DATASET_NAME.zip" -d "$SCRATCH_DIR"
+#     echo "unzipping $SCRATCH_DIR/$DATASET_NAME.zip"
+#     unzip "$SCRATCH_DIR/$DATASET_NAME.zip" -d "$SCRATCH_DIR"
 
 
-    # if ! unzip -q "$SCRATCH_ZIP" -d "$SCRATCH_DIR/$DATASET_NAME"; then
-    #     echo "zip failed"
-    # fi
+#     # if ! unzip -q "$SCRATCH_ZIP" -d "$SCRATCH_DIR/$DATASET_NAME"; then
+#     #     echo "zip failed"
+#     # fi
 
-    echo "Dataset successfully unzipped."
+#     echo "Dataset successfully unzipped."
 
-    if [ "$DATASET_NAME" = "MOISESDB" ]; then
-        DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/moisesdb/moisesdb_v0.1"
-    elif [ "$DATASET_NAME" = "MUSDB18HQ" ]; then
-        DATA_PATH="$SCRATCH_DIR/$DATASET_NAME"
-    elif [ "$DATASET_NAME" = "SDXDB23_Bleeding" ]; then
-        DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/sdxdb12_bleeding"
-    elif [ "$DATASET_NAME" = "SDXDB23_LabelNoise" ]; then
-        DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/sdxdb23_labelnoise"
-    else
-        echo "Unknown dataset: $DATASET_NAME"
-        exit 1
-    fi
+#     if [ "$DATASET_NAME" = "MOISESDB" ]; then
+#         DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/moisesdb/moisesdb_v0.1"
+#     elif [ "$DATASET_NAME" = "MUSDB18HQ" ]; then
+#         DATA_PATH="$SCRATCH_DIR/$DATASET_NAME"
+#     elif [ "$DATASET_NAME" = "SDXDB23_Bleeding" ]; then
+#         DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/sdxdb12_bleeding"
+#     elif [ "$DATASET_NAME" = "SDXDB23_LabelNoise" ]; then
+#         DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/sdxdb23_labelnoise"
+#     else
+#         echo "Unknown dataset: $DATASET_NAME"
+#         exit 1
+#     fi
 
-else
-    DATA_PATH="/Users/kaimikkelsen/canada_compute/data/$DATASET_NAME"
-    echo "Running on Mac. Skipping dataset unzipping."
-fi
+# else
+#     DATA_PATH="/Users/kaimikkelsen/canada_compute/data/$DATASET_NAME"
+#     echo "Running on Mac. Skipping dataset unzipping."
+# fi
 
+DATA_PATH="/home/kaim/scratch/MUSDB18HQ"
 echo "Dataset path set to: $DATA_PATH"
 
 
