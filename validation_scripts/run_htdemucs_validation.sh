@@ -15,7 +15,7 @@ SCRATCH_DIR=$SLURM_TMPDIR
 # Variables
 BASE_DIR="/home/kaim/projects/def-ichiro/kaim/Music-Source-Separation-Training"
 MODEL_TYPE="htdemucs"
-CONFIG_PATH="/home/kaim/projects/def-ichiro/kaim/demucs/conf/config.yaml"
+CONFIG_PATH="/home/kaim/projects/def-ichiro/kaim/demucs/conf/kai_config.yaml"
 DATASET_NAME="MUSDB18HQ"
 DATASET_ZIP="/home/kaim/projects/def-ichiro/kaim/data/$DATASET_NAME.zip" # Specify the dataset ZIP name
 SLURM_LOGS_PATH="slurm_logs/${MODEL_TYPE}_${CURRENT_DATE}"
