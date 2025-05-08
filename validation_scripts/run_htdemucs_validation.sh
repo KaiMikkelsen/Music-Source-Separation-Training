@@ -15,7 +15,7 @@ SCRATCH_DIR=$SLURM_TMPDIR
 # Variables
 BASE_DIR="/home/kaim/projects/def-ichiro/kaim/Music-Source-Separation-Training"
 MODEL_TYPE="htdemucs"
-CONFIG_PATH="/home/kaim/projects/def-ichiro/kaim/Music-Source-Separation-Training/configs/config_musdb18_htdemucs.yaml"
+CONFIG_PATH="/home/kaim/projects/def-ichiro/kaim/demucs/conf/config.yaml"
 DATASET_NAME="MUSDB18HQ"
 DATASET_ZIP="/home/kaim/projects/def-ichiro/kaim/data/$DATASET_NAME.zip" # Specify the dataset ZIP name
 SLURM_LOGS_PATH="slurm_logs/${MODEL_TYPE}_${CURRENT_DATE}"
@@ -84,10 +84,10 @@ echo "Dataset path set to: $DATA_PATH"
 
 echo "Running validation script for model: $MODEL_TYPE with dataset at $DATA_PATH"
 
-python ../valid.py \
+python valid.py \
     --model_type "$MODEL_TYPE" \
     --config_path "$CONFIG_PATH" \
-    --start_check_point /home/kaim/projects/def-ichiro/kaim/Music-Source-Separation-Training/checkpoints/good_ckpts/htdemucs_2025-01-02_18-03-43/model_htdemucs_ep_435_sdr_6.0438.ckpt \
+    --start_check_point /home/kaim/projects/def-ichiro/kaim/demucs/outputs/xps/8ad9d354/best.th \
     --valid_path "$DATA_PATH/test" \
     --device_ids 0 \
     --metrics sdr
