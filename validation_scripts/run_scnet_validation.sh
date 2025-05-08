@@ -18,8 +18,8 @@ SCRATCH_DIR=$SLURM_TMPDIR
 # Variables
 BASE_DIR="/home/kaim/projects/def-ichiro/kaim/Music-Source-Separation-Training"
 MODEL_TYPE="scnet"
-#CONFIG_PATH="/home/kaim/projects/def-ichiro/kaim/SCNet/conf/config.yaml"
-CONFIG_PATH="/home/kaim/projects/def-ichiro/kaim/Music-Source-Separation-Training/configs/config_musdb18_scnet.yaml"
+CONFIG_PATH="/home/kaim/projects/def-ichiro/kaim/SCNet/conf/config.yaml"
+#CONFIG_PATH="/home/kaim/projects/def-ichiro/kaim/Music-Source-Separation-Training/configs/config_musdb18_scnet.yaml"
 
 DATASET_NAME="MUSDB18HQ"
 DATASET_ZIP="/home/kaim/projects/def-ichiro/kaim/data/$DATASET_NAME.zip" # Specify the dataset ZIP name
