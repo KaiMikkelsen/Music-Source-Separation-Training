@@ -17,6 +17,7 @@ git pull
 # Variables
 MODEL_TYPE="mdx23c"
 CONFIG_PATH="configs/config_musdb18_mdx23c_copied.yaml"
+/Users/kaimikkelsen/canada_compute/Music-Source-Separation-Training/configs/config_musdb18_mdx23c_copied.yml
 DATA_HOME_PATH="/home/kaim/projects/def-ichiro/kaim/data"
 DATASET_NAME="MUSDB18HQ"
 DATASET_ZIP="$DATA_HOME_PATH/$DATASET_NAME.zip" # Specify the dataset ZIP name
