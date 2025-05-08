@@ -87,7 +87,7 @@ echo "Running validation script for model: $MODEL_TYPE with dataset at $DATA_PAT
 python valid.py \
     --model_type "$MODEL_TYPE" \
     --config_path "$CONFIG_PATH" \
-    --start_check_point /home/kaim/projects/def-ichiro/kaim/demucs/outputs/xps/8ad9d354/best.th \
+    --start_check_point /home/kaim/projects/def-ichiro/kaim/demucs/old_checkpoint/best.th \
     --valid_path "$DATA_PATH/test" \
     --device_ids 0 \
     --metrics sdr
