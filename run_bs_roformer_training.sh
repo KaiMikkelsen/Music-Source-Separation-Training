@@ -78,7 +78,8 @@ source separation_env/bin/activate
 #     echo "Running on Mac. Skipping dataset unzipping."
 # fi
 
-DATA_PATH="/Users/kaimikkelsen/canada_compute/data/$DATASET_NAME"
+
+DATA_PATH="/home/kaim/scratch/MUSDB18HQ"
 
 echo "Dataset path set to: $DATA_PATH"
 
