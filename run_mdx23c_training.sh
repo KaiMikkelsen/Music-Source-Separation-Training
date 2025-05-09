@@ -90,6 +90,8 @@ echo "Dataset path set to: $DATA_PATH"
 
 echo "Running training script for model: $MODEL_TYPE with dataset at $DATA_PATH"
 
+echo config_path: $CONFIG_PATH
+
 python train.py \
     --model_type "$MODEL_TYPE" \
     --config_path "$CONFIG_PATH" \
