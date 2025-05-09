@@ -15,7 +15,7 @@ SCRATCH_DIR=$SLURM_TMPDIR
 # Variables
 BASE_DIR="/home/kaim/projects/def-ichiro/kaim/Music-Source-Separation-Training"
 MODEL_TYPE="htdemucs"
-CONFIG_PATH="/home/kaim/projects/def-ichiro/kaim/demucs/conf/kai_config.yaml"
+CONFIG_PATH="/home/kaim/projects/def-ichiro/kaim/Music-Source-Separation-Training/configs/config_musdb18_htdemucs.yaml"
 DATASET_NAME="MUSDB18HQ"
 DATASET_ZIP="/home/kaim/projects/def-ichiro/kaim/data/$DATASET_NAME.zip" # Specify the dataset ZIP name
 SLURM_LOGS_PATH="slurm_logs/${MODEL_TYPE}_${CURRENT_DATE}"
@@ -33,52 +33,53 @@ exec > >(tee -a "$SLURM_LOGS_PATH/slurm-${SLURM_JOB_ID}.out") 2>&1
 # Activate the environment
 source "$BASE_DIR/separation_env/bin/activate"
 
-RUNNING_ON_MAC=False
-if [ "$RUNNING_ON_MAC" = False ]; then
+# RUNNING_ON_MAC=False
+# if [ "$RUNNING_ON_MAC" = False ]; then
 
-    # Move and unzip dataset to scratch directory
-    if [ ! -f "$SCRATCH_DIR/$(basename "$DATASET_ZIP")" ]; then
-        echo "Moving $DATASET_ZIP to $SCRATCH_DIR for faster access"
-        cp "$DATASET_ZIP" "$SCRATCH_DIR"
-    else
-        echo "Dataset already exists in $SCRATCH_DIR, skipping copy."
-    fi
+#     # Move and unzip dataset to scratch directory
+#     if [ ! -f "$SCRATCH_DIR/$(basename "$DATASET_ZIP")" ]; then
+#         echo "Moving $DATASET_ZIP to $SCRATCH_DIR for faster access"
+#         cp "$DATASET_ZIP" "$SCRATCH_DIR"
+#     else
+#         echo "Dataset already exists in $SCRATCH_DIR, skipping copy."
+#     fi
 
-    DATASET_ZIP_BASENAME=$(basename "$DATASET_ZIP")
-    SCRATCH_ZIP="$SCRATCH_DIR/$DATASET_ZIP_BASENAME"
+#     DATASET_ZIP_BASENAME=$(basename "$DATASET_ZIP")
+#     SCRATCH_ZIP="$SCRATCH_DIR/$DATASET_ZIP_BASENAME"
 
-    # mkdir -p "$SCRATCH_DIR/$DATASET_NAME"
-    # echo "created directory $SCRATCH_DIR/$DATASET_NAME"
-    # echo "Unzipping dataset in $SCRATCH_DIR/$DATASET_NAME"
+#     # mkdir -p "$SCRATCH_DIR/$DATASET_NAME"
+#     # echo "created directory $SCRATCH_DIR/$DATASET_NAME"
+#     # echo "Unzipping dataset in $SCRATCH_DIR/$DATASET_NAME"
 
-    echo "unzipping $SCRATCH_DIR/$DATASET_NAME.zip"
-    unzip "$SCRATCH_DIR/$DATASET_NAME.zip" -d "$SCRATCH_DIR"
+#     echo "unzipping $SCRATCH_DIR/$DATASET_NAME.zip"
+#     unzip "$SCRATCH_DIR/$DATASET_NAME.zip" -d "$SCRATCH_DIR"
 
 
-    # if ! unzip -q "$SCRATCH_ZIP" -d "$SCRATCH_DIR/$DATASET_NAME"; then
-    #     echo "zip failed"
-    # fi
+#     # if ! unzip -q "$SCRATCH_ZIP" -d "$SCRATCH_DIR/$DATASET_NAME"; then
+#     #     echo "zip failed"
+#     # fi
 
-    echo "Dataset successfully unzipped."
+#     echo "Dataset successfully unzipped."
 
-    if [ "$DATASET_NAME" = "MOISESDB" ]; then
-        DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/moisesdb/moisesdb_v0.1"
-    elif [ "$DATASET_NAME" = "MUSDB18HQ" ]; then
-        DATA_PATH="$SCRATCH_DIR/$DATASET_NAME"
-    elif [ "$DATASET_NAME" = "SDXDB23_Bleeding" ]; then
-        DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/sdxdb12_bleeding"
-    elif [ "$DATASET_NAME" = "SDXDB23_LabelNoise" ]; then
-        DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/sdxdb23_labelnoise"
-    else
-        echo "Unknown dataset: $DATASET_NAME"
-        exit 1
-    fi
+#     if [ "$DATASET_NAME" = "MOISESDB" ]; then
+#         DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/moisesdb/moisesdb_v0.1"
+#     elif [ "$DATASET_NAME" = "MUSDB18HQ" ]; then
+#         DATA_PATH="$SCRATCH_DIR/$DATASET_NAME"
+#     elif [ "$DATASET_NAME" = "SDXDB23_Bleeding" ]; then
+#         DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/sdxdb12_bleeding"
+#     elif [ "$DATASET_NAME" = "SDXDB23_LabelNoise" ]; then
+#         DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/sdxdb23_labelnoise"
+#     else
+#         echo "Unknown dataset: $DATASET_NAME"
+#         exit 1
+#     fi
 
-else
-    DATA_PATH="../data/$DATASET_NAME"
-    echo "Running on Mac. Skipping dataset unzipping."
-fi
+# else
+#     DATA_PATH="../data/$DATASET_NAME"
+#     echo "Running on Mac. Skipping dataset unzipping."
+# fi
 
+DATA_PATH="/home/kaim/scratch/MUSDB18HQ"
 echo "Dataset path set to: $DATA_PATH"
 
 
@@ -87,7 +88,7 @@ echo "Running validation script for model: $MODEL_TYPE with dataset at $DATA_PAT
 python valid.py \
     --model_type "$MODEL_TYPE" \
     --config_path "$CONFIG_PATH" \
-    --start_check_point /home/kaim/projects/def-ichiro/kaim/demucs/old_checkpoint/best.th \
+    --start_check_point /home/kaim/projects/def-ichiro/kaim/Music-Source-Separation-Training/checkpoints/good_ckpts/htdemucs_2025-01-02_18-03-43/model_htdemucs_ep_240_sdr_6.0137.ckpt \
     --valid_path "$DATA_PATH/test" \
     --device_ids 0 \
     --metrics sdr
