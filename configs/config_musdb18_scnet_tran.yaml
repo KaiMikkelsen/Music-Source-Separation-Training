@@ -29,7 +29,7 @@ model:
   tran_flash_attn: False
 
 training:
-  batch_size: 5
+  batch_size: 3
   gradient_accumulation_steps: 1
   grad_clip: 0
   instruments: ['drums', 'bass', 'other', 'vocals']
