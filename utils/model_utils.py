@@ -5,292 +5,11 @@ import argparse
 import numpy as np
 import torch
 import torch.nn as nn
-import yaml
-import os
-import soundfile as sf
-import matplotlib.pyplot as plt
 from ml_collections import ConfigDict
-from omegaconf import OmegaConf
+from torch.optim import Adam, AdamW, SGD, RAdam, RMSprop
 from tqdm.auto import tqdm
 from typing import Dict, List, Tuple, Any, Union
 import loralib as lora
-
-
-def load_config(model_type: str, config_path: str) -> Union[ConfigDict, OmegaConf]:
-    """
-    Load the configuration from the specified path based on the model type.
-
-    Parameters:
-    ----------
-    model_type : str
-        The type of model to load (e.g., 'htdemucs', 'mdx23c', etc.).
-    config_path : str
-        The path to the YAML or OmegaConf configuration file.
-
-    Returns:
-    -------
-    config : Any
-        The loaded configuration, which can be in different formats (e.g., OmegaConf or ConfigDict).
-
-    Raises:
-    ------
-    FileNotFoundError:
-        If the configuration file at `config_path` is not found.
-    ValueError:
-        If there is an error loading the configuration file.
-    """
-    try:
-        with open(config_path, 'r') as f:
-            if model_type == 'htdemucs':
-                config = OmegaConf.load(config_path)
-            else:
-                config = ConfigDict(yaml.load(f, Loader=yaml.FullLoader))
-            return config
-    except FileNotFoundError:
-        raise FileNotFoundError(f"Configuration file not found at {config_path}")
-    except Exception as e:
-        raise ValueError(f"Error loading configuration: {e}")
-
-
-def get_model_from_config(model_type: str, config_path: str) -> Tuple:
-    """
-    Load the model specified by the model type and configuration file.
-
-    Parameters:
-    ----------
-    model_type : str
-        The type of model to load (e.g., 'mdx23c', 'htdemucs', 'scnet', etc.).
-    config_path : str
-        The path to the configuration file (YAML or OmegaConf format).
-
-    Returns:
-    -------
-    model : nn.Module or None
-        The initialized model based on the `model_type`, or None if the model type is not recognized.
-    config : Any
-        The configuration used to initialize the model. This could be in different formats
-        depending on the model type (e.g., OmegaConf, ConfigDict).
-
-    Raises:
-    ------
-    ValueError:
-        If the `model_type` is unknown or an error occurs during model initialization.
-    """
-
-    config = load_config(model_type, config_path)
-
-    if model_type == 'mdx23c':
-        from models.mdx23c_tfc_tdf_v3 import TFC_TDF_net
-        model = TFC_TDF_net(config)
-    elif model_type == 'htdemucs':
-        from models.demucs4ht import get_model
-        model = get_model(config)
-    elif model_type == 'segm_models':
-        from models.segm_models import Segm_Models_Net
-        model = Segm_Models_Net(config)
-    elif model_type == 'torchseg':
-        from models.torchseg_models import Torchseg_Net
-        model = Torchseg_Net(config)
-    elif model_type == 'mel_band_roformer':
-        from models.bs_roformer import MelBandRoformer
-        model = MelBandRoformer(**dict(config.model))
-    elif model_type == 'bs_roformer':
-        from models.bs_roformer import BSRoformer
-        model = BSRoformer(**dict(config.model))
-    elif model_type == 'swin_upernet':
-        from models.upernet_swin_transformers import Swin_UperNet_Model
-        model = Swin_UperNet_Model(config)
-    elif model_type == 'bandit':
-        from models.bandit.core.model import MultiMaskMultiSourceBandSplitRNNSimple
-        model = MultiMaskMultiSourceBandSplitRNNSimple(**config.model)
-    elif model_type == 'bandit_v2':
-        from models.bandit_v2.bandit import Bandit
-        model = Bandit(**config.kwargs)
-    elif model_type == 'scnet_unofficial':
-        from models.scnet_unofficial import SCNet
-        model = SCNet(**config.model)
-    elif model_type == 'scnet':
-        from models.scnet import SCNet
-        model = SCNet(**config.model)
-    elif model_type == 'apollo':
-        from models.look2hear.models import BaseModel
-        model = BaseModel.apollo(**config.model)
-    elif model_type == 'bs_mamba2':
-        from models.ts_bs_mamba2 import Separator
-        model = Separator(**config.model)
-    elif model_type == 'experimental_mdx23c_stht':
-        from models.mdx23c_tfc_tdf_v3_with_STHT import TFC_TDF_net
-        model = TFC_TDF_net(config)
-    else:
-        raise ValueError(f"Unknown model type: {model_type}")
-
-    return model, config
-
-
-def read_audio_transposed(path: str, instr: str = None, skip_err: bool = False) -> Tuple[np.ndarray, int]:
-    """
-    Reads an audio file, ensuring mono audio is converted to two-dimensional format,
-    and transposes the data to have channels as the first dimension.
-    Parameters
-    ----------
-    path : str
-        Path to the audio file.
-    skip_err: bool
-        If true, not raise errors
-    instr:
-        name of instument
-    Returns
-    -------
-    Tuple[np.ndarray, int]
-        A tuple containing:
-        - Transposed audio data as a NumPy array with shape (channels, length).
-          For mono audio, the shape will be (1, length).
-        - Sampling rate (int), e.g., 44100.
-    """
-
-    try:
-        mix, sr = sf.read(path)
-    except Exception as e:
-        if skip_err:
-            print(f"No stem {instr}: skip!")
-            return None, None
-        else:
-            raise RuntimeError(f"Error reading the file at {path}: {e}")
-    else:
-        if len(mix.shape) == 1:  # For mono audio
-            mix = np.expand_dims(mix, axis=-1)
-        return mix.T, sr
-
-
-def normalize_audio(audio: np.ndarray) -> tuple[np.ndarray, Dict[str, float]]:
-    """
-    Normalize an audio signal by subtracting the mean and dividing by the standard deviation.
-
-    Parameters:
-    ----------
-    audio : np.ndarray
-        Input audio array with shape (channels, time) or (time,).
-
-    Returns:
-    -------
-    tuple[np.ndarray, dict[str, float]]
-        - Normalized audio array with the same shape as the input.
-        - Dictionary containing the mean and standard deviation of the original audio.
-    """
-
-    mono = audio.mean(0)
-    mean, std = mono.mean(), mono.std()
-    return (audio - mean) / std, {"mean": mean, "std": std}
-
-
-def denormalize_audio(audio: np.ndarray, norm_params: Dict[str, float]) -> np.ndarray:
-    """
-    Denormalize an audio signal by reversing the normalization process (multiplying by the standard deviation
-    and adding the mean).
-
-    Parameters:
-    ----------
-    audio : np.ndarray
-        Normalized audio array to be denormalized.
-    norm_params : dict[str, float]
-        Dictionary containing the 'mean' and 'std' values used for normalization.
-
-    Returns:
-    -------
-    np.ndarray
-        Denormalized audio array with the same shape as the input.
-    """
-
-    return audio * norm_params["std"] + norm_params["mean"]
-
-
-def apply_tta(
-        config,
-        model: torch.nn.Module,
-        mix: torch.Tensor,
-        waveforms_orig: Dict[str, torch.Tensor],
-        device: torch.device,
-        model_type: str
-) -> Dict[str, torch.Tensor]:
-    """
-    Apply Test-Time Augmentation (TTA) for source separation.
-
-    This function processes the input mixture with test-time augmentations, including
-    channel inversion and polarity inversion, to enhance the separation results. The
-    results from all augmentations are averaged to produce the final output.
-
-    Parameters:
-    ----------
-    config : Any
-        Configuration object containing model and processing parameters.
-    model : torch.nn.Module
-        The trained model used for source separation.
-    mix : torch.Tensor
-        The mixed audio tensor with shape (channels, time).
-    waveforms_orig : Dict[str, torch.Tensor]
-        Dictionary of original separated waveforms (before TTA) for each instrument.
-    device : torch.device
-        Device (CPU or CUDA) on which the model will be executed.
-    model_type : str
-        Type of the model being used (e.g., "demucs", "custom_model").
-
-    Returns:
-    -------
-    Dict[str, torch.Tensor]
-        Updated dictionary of separated waveforms after applying TTA.
-    """
-    # Create augmentations: channel inversion and polarity inversion
-    track_proc_list = [mix[::-1].copy(), -1.0 * mix.copy()]
-
-    # Process each augmented mixture
-    for i, augmented_mix in enumerate(track_proc_list):
-        waveforms = demix(config, model, augmented_mix, device, model_type=model_type)
-        for el in waveforms:
-            if i == 0:
-                waveforms_orig[el] += waveforms[el][::-1].copy()
-            else:
-                waveforms_orig[el] -= waveforms[el]
-
-    # Average the results across augmentations
-    for el in waveforms_orig:
-        waveforms_orig[el] /= len(track_proc_list) + 1
-
-    return waveforms_orig
-
-
-def _getWindowingArray(window_size: int, fade_size: int) -> torch.Tensor:
-    """
-    Generate a windowing array with a linear fade-in at the beginning and a fade-out at the end.
-
-    This function creates a window of size `window_size` where the first `fade_size` elements
-    linearly increase from 0 to 1 (fade-in) and the last `fade_size` elements linearly decrease
-    from 1 to 0 (fade-out). The middle part of the window is filled with ones.
-
-    Parameters:
-    ----------
-    window_size : int
-        The total size of the window.
-    fade_size : int
-        The size of the fade-in and fade-out regions.
-
-    Returns:
-    -------
-    torch.Tensor
-        A tensor of shape (window_size,) containing the generated windowing array.
-
-    Example:
-    -------
-    If `window_size=10` and `fade_size=3`, the output will be:
-    tensor([0.0000, 0.5000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 0.5000, 0.0000])
-    """
-
-    fadein = torch.linspace(0, 1, fade_size)
-    fadeout = torch.linspace(1, 0, fade_size)
-
-    window = torch.ones(window_size)
-    window[-fade_size:] = fadeout
-    window[:fade_size] = fadein
-    return window
 
 
 def demix(
@@ -443,6 +162,188 @@ def demix(
         return ret_data
 
 
+
+def initialize_model_and_device(model: torch.nn.Module, device_ids: List[int]) -> Tuple[Union[torch.device, str], torch.nn.Module]:
+    """
+    Initialize the model and assign it to the appropriate device (GPU or CPU).
+
+    Args:
+        model: The PyTorch model to be initialized.
+        device_ids: List of GPU device IDs to use for parallel processing.
+
+    Returns:
+        A tuple containing the device and the model moved to that device.
+    """
+
+    if torch.cuda.is_available():
+        if len(device_ids) <= 1:
+            device = torch.device(f'cuda:{device_ids[0]}')
+            model = model.to(device)
+        else:
+            device = torch.device(f'cuda:{device_ids[0]}')
+            model = nn.DataParallel(model, device_ids=device_ids).to(device)
+    else:
+        device = 'cpu'
+        model = model.to(device)
+        print("CUDA is not available. Running on CPU.")
+
+    return device, model
+
+
+def get_optimizer(config: ConfigDict, model: torch.nn.Module) -> torch.optim.Optimizer:
+    """
+    Initializes an optimizer based on the configuration.
+
+    Args:
+        config: Configuration object containing training parameters.
+        model: PyTorch model whose parameters will be optimized.
+
+    Returns:
+        A PyTorch optimizer object configured based on the specified settings.
+    """
+
+    optim_params = dict()
+    if 'optimizer' in config:
+        optim_params = dict(config['optimizer'])
+        print(f'Optimizer params from config:\n{optim_params}')
+
+    name_optimizer = getattr(config.training, 'optimizer',
+                             'No optimizer in config')
+
+    if name_optimizer == 'adam':
+        optimizer = Adam(model.parameters(), lr=config.training.lr, **optim_params)
+    elif name_optimizer == 'adamw':
+        optimizer = AdamW(model.parameters(), lr=config.training.lr, **optim_params)
+    elif name_optimizer == 'radam':
+        optimizer = RAdam(model.parameters(), lr=config.training.lr, **optim_params)
+    elif name_optimizer == 'rmsprop':
+        optimizer = RMSprop(model.parameters(), lr=config.training.lr, **optim_params)
+    elif name_optimizer == 'prodigy':
+        from prodigyopt import Prodigy
+        # you can choose weight decay value based on your problem, 0 by default
+        # We recommend using lr=1.0 (default) for all networks.
+        optimizer = Prodigy(model.parameters(), lr=config.training.lr, **optim_params)
+    elif name_optimizer == 'adamw8bit':
+        import bitsandbytes as bnb
+        optimizer = bnb.optim.AdamW8bit(model.parameters(), lr=config.training.lr, **optim_params)
+    elif name_optimizer == 'sgd':
+        print('Use SGD optimizer')
+        optimizer = SGD(model.parameters(), lr=config.training.lr, **optim_params)
+    else:
+        print(f'Unknown optimizer: {name_optimizer}')
+        exit()
+    return optimizer
+
+
+def normalize_batch(x: torch.Tensor, y: torch.Tensor) -> Tuple[torch.Tensor, torch.Tensor]:
+    """
+    Normalize a batch of tensors (x and y) by subtracting the mean and dividing by the standard deviation.
+
+    Args:
+        x: Tensor to normalize.
+        y: Tensor to normalize (same as x, typically).
+
+    Returns:
+        A tuple of normalized tensors (x, y).
+    """
+
+    mean = x.mean()
+    std = x.std()
+    if std != 0:
+        x = (x - mean) / std
+        y = (y - mean) / std
+    return x, y
+
+
+def apply_tta(
+        config,
+        model: torch.nn.Module,
+        mix: torch.Tensor,
+        waveforms_orig: Dict[str, torch.Tensor],
+        device: torch.device,
+        model_type: str
+) -> Dict[str, torch.Tensor]:
+    """
+    Apply Test-Time Augmentation (TTA) for source separation.
+
+    This function processes the input mixture with test-time augmentations, including
+    channel inversion and polarity inversion, to enhance the separation results. The
+    results from all augmentations are averaged to produce the final output.
+
+    Parameters:
+    ----------
+    config : Any
+        Configuration object containing model and processing parameters.
+    model : torch.nn.Module
+        The trained model used for source separation.
+    mix : torch.Tensor
+        The mixed audio tensor with shape (channels, time).
+    waveforms_orig : Dict[str, torch.Tensor]
+        Dictionary of original separated waveforms (before TTA) for each instrument.
+    device : torch.device
+        Device (CPU or CUDA) on which the model will be executed.
+    model_type : str
+        Type of the model being used (e.g., "demucs", "custom_model").
+
+    Returns:
+    -------
+    Dict[str, torch.Tensor]
+        Updated dictionary of separated waveforms after applying TTA.
+    """
+    # Create augmentations: channel inversion and polarity inversion
+    track_proc_list = [mix[::-1].copy(), -1.0 * mix.copy()]
+
+    # Process each augmented mixture
+    for i, augmented_mix in enumerate(track_proc_list):
+        waveforms = demix(config, model, augmented_mix, device, model_type=model_type)
+        for el in waveforms:
+            if i == 0:
+                waveforms_orig[el] += waveforms[el][::-1].copy()
+            else:
+                waveforms_orig[el] -= waveforms[el]
+
+    # Average the results across augmentations
+    for el in waveforms_orig:
+        waveforms_orig[el] /= len(track_proc_list) + 1
+
+    return waveforms_orig
+
+
+def _getWindowingArray(window_size: int, fade_size: int) -> torch.Tensor:
+    """
+    Generate a windowing array with a linear fade-in at the beginning and a fade-out at the end.
+
+    This function creates a window of size `window_size` where the first `fade_size` elements
+    linearly increase from 0 to 1 (fade-in) and the last `fade_size` elements linearly decrease
+    from 1 to 0 (fade-out). The middle part of the window is filled with ones.
+
+    Parameters:
+    ----------
+    window_size : int
+        The total size of the window.
+    fade_size : int
+        The size of the fade-in and fade-out regions.
+
+    Returns:
+    -------
+    torch.Tensor
+        A tensor of shape (window_size,) containing the generated windowing array.
+
+    Example:
+    -------
+    If `window_size=10` and `fade_size=3`, the output will be:
+    tensor([0.0000, 0.5000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 0.5000, 0.0000])
+    """
+
+    fadein = torch.linspace(0, 1, fade_size)
+    fadeout = torch.linspace(1, 0, fade_size)
+
+    window = torch.ones(window_size)
+    window[-fade_size:] = fadeout
+    window[:fade_size] = fadein
+    return window
+
+
 def prefer_target_instrument(config: ConfigDict) -> List[str]:
     """
         Return the list of target instruments based on the configuration.
@@ -476,7 +377,7 @@ def load_not_compatible_weights(model: torch.nn.Module, weights: str, verbose: b
     """
 
     new_model = model.state_dict()
-    old_model = torch.load(weights)
+    old_model = torch.load(weights, weights_only=False)
     if 'state' in old_model:
         # Fix for htdemucs weights loading
         old_model = old_model['state']
@@ -566,7 +467,7 @@ def load_start_checkpoint(args: argparse.Namespace, model: torch.nn.Module, type
             model.load_state_dict(torch.load(args.start_check_point))
     else:
         device='cpu'
-        if args.model_type in ['htdemucs', 'apollo', 'scnet']:
+        if args.model_type in ['htdemucs', 'apollo']:
             state_dict = torch.load(args.start_check_point, map_location=device, weights_only=False)
             # Fix for htdemucs pretrained models
             if 'state' in state_dict:
@@ -577,7 +478,6 @@ def load_start_checkpoint(args: argparse.Namespace, model: torch.nn.Module, type
         else:
             state_dict = torch.load(args.start_check_point, map_location=device, weights_only=True)
         model.load_state_dict(state_dict)
-
 
     if args.lora_checkpoint:
         print(f"Loading LoRA weights from: {args.lora_checkpoint}")
@@ -642,24 +542,31 @@ def bind_lora_to_model(config: Dict[str, Any], model: nn.Module) -> nn.Module:
     return model
 
 
-def draw_spectrogram(waveform, sample_rate, length, output_file):
-    import librosa.display
+def save_weights(store_path, model, device_ids, train_lora):
 
-    # Cut only required part of spectorgram
-    x = waveform[:int(length * sample_rate), :]
-    X = librosa.stft(x.mean(axis=-1))  # perform short-term fourier transform on mono signal
-    Xdb = librosa.amplitude_to_db(np.abs(X), ref=np.max)  # convert an amplitude spectrogram to dB-scaled spectrogram.
-    fig, ax = plt.subplots()
-    # plt.figure(figsize=(30, 10))  # initialize the fig size
-    img = librosa.display.specshow(
-        Xdb,
-        cmap='plasma',
-        sr=sample_rate,
-        x_axis='time',
-        y_axis='linear',
-        ax=ax
-    )
-    ax.set(title='File: ' + os.path.basename(output_file))
-    fig.colorbar(img, ax=ax, format="%+2.f dB")
-    if output_file is not None:
-        plt.savefig(output_file)
+    if train_lora:
+        torch.save(lora.lora_state_dict(model), store_path)
+    else:
+        state_dict = model.state_dict() if len(device_ids) <= 1 else model.module.state_dict()
+        torch.save(
+            state_dict,
+            store_path
+        )
+
+
+def save_last_weights(args: argparse.Namespace, model: torch.nn.Module, device_ids: List[int]) -> None:
+    """
+    Save the model's state_dict to a file for later use.
+
+    Args:
+        args: Command-line arguments containing the results path and model type.
+        model: The model whose weights will be saved.
+        device_ids: List of GPU device IDs if using multiple GPUs.
+
+    Returns:
+        None
+    """
+
+    store_path = f'{args.results_path}/last_{args.model_type}.ckpt'
+    train_lora = args.train_lora
+    save_weights(store_path, model, device_ids, train_lora)
