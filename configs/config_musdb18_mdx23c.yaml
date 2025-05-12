@@ -1,7 +1,7 @@
 audio:
   chunk_size: 260096
   dim_f: 4096
-  dim_t: 160
+  dim_t: 256
   hop_length: 2048
   n_fft: 8192
   num_channels: 2
@@ -11,10 +11,10 @@ audio:
 model:
   act: gelu
   bottleneck_factor: 4
-  growth: 128
+  growth: 80
   norm: InstanceNorm
   num_blocks_per_scale: 2
-  num_channels: 128
+  num_channels: 160
   num_scales: 5
   num_subbands: 4
   scale:
