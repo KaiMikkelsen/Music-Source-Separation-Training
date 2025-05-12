@@ -22,7 +22,7 @@ model:
   - 2
 
 training:
-  batch_size: 2
+  batch_size: 8
   gradient_accumulation_steps: 4
   grad_clip: 0
   instruments:
