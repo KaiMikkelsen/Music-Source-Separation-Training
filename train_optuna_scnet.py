@@ -22,9 +22,10 @@ from typing import List, Tuple, Dict, Union, Callable
 from datetime import datetime
 import uuid
 
-from dataset import MSSDataset
+from utils.dataset import MSSDataset
 from utils import get_model_from_config
 from valid import valid_multi_gpu, valid
+from utils.audio_utils import prepare_data
 
 from utils import bind_lora_to_model, load_start_checkpoint
 import loralib as lora
