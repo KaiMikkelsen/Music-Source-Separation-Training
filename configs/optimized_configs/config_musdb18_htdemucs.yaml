@@ -16,8 +16,8 @@ training:
   normalize: true
   instruments: ['drums', 'bass', 'other', 'vocals']
   target_instrument: null
-  num_epochs: 8
-  num_steps: 150
+  num_epochs: 1000
+  num_steps: 10
   optimizer: adamw
   lr: 9.997704778146387e-05
   patience: 2
