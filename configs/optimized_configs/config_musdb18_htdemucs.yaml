@@ -17,7 +17,7 @@ training:
   instruments: ['drums', 'bass', 'other', 'vocals']
   target_instrument: null
   num_epochs: 1000
-  num_steps: 10
+  num_steps: 1000
   optimizer: adamw
   lr: 9.997704778146387e-05
   patience: 2
