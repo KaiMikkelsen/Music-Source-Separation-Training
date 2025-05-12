@@ -331,8 +331,10 @@ def initialize_environment(seed: int, results_path: str) -> None:
 
 def gen_wandb_name(args, config):
     instrum = '-'.join(config['training']['instruments'])
+    dataset_path = args.data_path
     time_str = time.strftime("%Y-%m-%d")
-    name = '{}_[{}]_{}'.format(args.model_type, instrum, time_str)
+    name = '{}_[{}]_{}'.format(args.model_type, dataset_path, instrum, time_str)
+
     return name
 
 
