@@ -94,8 +94,8 @@ echo "Running on Mac: $RUNNING_ON_MAC"
 #     echo "Running on Mac. Skipping dataset unzipping."
 # fi
 
-DATA_PATH="/home/kaim/scratch/MUSDB18HQ_SPLITS/dataset_1"
-#DATA_PATH="/home/kaim/scratch/MUSDB18HQ"
+#DATA_PATH="/home/kaim/scratch/MUSDB18HQ_SPLITS/dataset_1"
+DATA_PATH="/home/kaim/scratch/MUSDB18HQ"
 echo "Dataset path set to: $DATA_PATH"
 
 
