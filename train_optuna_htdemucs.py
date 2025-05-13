@@ -648,8 +648,8 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
     reduce_factor = trial.suggest_uniform("reduce_factor", 0.1, 0.5)
     ema_momentum = trial.suggest_uniform("ema_momentum", 0.95, 0.99)
     optimizer = trial.suggest_categorical("optimizer", ["rmsprop", "adam", "adamw", "sgd"])
-    batch_size = trial.suggest_int("batch_size", 1, 16, step=2)
-    gradient_accumulation_steps = trial.suggest_int("gradient_accumulation_steps", 1, 16, step=2)
+    batch_size = trial.suggest_int("batch_size", 1, 6, step=2)
+    gradient_accumulation_steps = trial.suggest_int("gradient_accumulation_steps", 1, 6, step=2)
 
     # **Audio Chunking**:
     chunk_size = trial.suggest_int("chunk_size", 220500, 661500, step=110250)
