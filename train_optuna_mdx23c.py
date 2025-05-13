@@ -667,9 +667,9 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
 
     # Initialize environment and model
 
-    # config.audio.chunk_size = chunk_size
-    # config.audio.n_fft = n_fft
-    # config.model.hop_length = hop_length
+    config.audio.chunk_size = chunk_size
+    config.audio.n_fft = n_fft
+    config.model.hop_length = hop_length
 
     # Apply sampled values from Optuna to the configuration
     config.model.bottleneck_factor = bottleneck_factor
