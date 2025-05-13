@@ -656,7 +656,7 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
     # Apply sampled values from Optuna to the configuration
     config.model.nfft = nfft
     config.model.hop_size = hop_size
-    comnfig.model.chunk_size = chunk_size
+    config.model.chunk_size = chunk_size
 
     config.model.win_size = win_size
     config.model.compress = compress
