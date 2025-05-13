@@ -611,30 +611,30 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
     # do optuna here i think
    # do optuna here i think
 
-#    # Model #
-    n_fft = trial.suggest_categorical("n_fft", [4096, 8192, 16384])
+#   Model #
+    n_fft = trial.suggest_categorical("n_fft", [4096, 8192])
     hop_length = trial.suggest_categorical("hop_length", [512, 1024, 2048])
 
     # Ensure hop_length is not greater than n_fft (a common requirement)
     if hop_length > n_fft:
         # Or handle this case appropriately, maybe by returning a very low score
         # if this combination is invalid for your processing.
-        hop_length = hop_length # Or some other sensible default or proportional value
+        hop_length = 2048 # Or some other sensible default or proportional value
 
     # Suggest a factor for chunk_size based on hop_length
     # This ensures chunk_size is always a multiple of hop_length
-    chunk_size_factor = trial.suggest_int("chunk_size_factor", 10, 60) # Adjust range as needed
+    chunk_size_factor = trial.suggest_int("chunk_size_factor", 10, 100) # Adjust range as needed
     chunk_size = chunk_size_factor * hop_length
 
     # Now chunk_size is guaranteed to be a multiple of hop_length
     # You can add checks to ensure chunk_size is within a reasonable overall range
-    min_total_chunk_size = 220500
-    max_total_chunk_size = 661500
+    # min_total_chunk_size = 220500
+    # max_total_chunk_size = 661500
 
-    if chunk_size < min_total_chunk_size:
-        chunk_size = ((min_total_chunk_size + hop_length - 1) // hop_length) * hop_length
-    elif chunk_size > max_total_chunk_size:
-         chunk_size = (max_total_chunk_size // hop_length) * hop_length
+    # if chunk_size < min_total_chunk_size:
+    #     chunk_size = ((min_total_chunk_size + hop_length - 1) // hop_length) * hop_length
+    # elif chunk_size > max_total_chunk_size:
+    #      chunk_size = (max_total_chunk_size // hop_length) * hop_length
 
 
     # **Model Capacity**: 
