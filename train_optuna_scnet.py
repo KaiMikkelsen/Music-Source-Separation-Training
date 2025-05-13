@@ -23,7 +23,7 @@ from datetime import datetime
 import uuid
 
 from utils.dataset import MSSDataset
-from utils import get_model_from_config
+from utils.settings import get_model_from_config, parse_args_inference
 from valid import valid_multi_gpu, valid
 from utils.audio_utils import prepare_data
 
