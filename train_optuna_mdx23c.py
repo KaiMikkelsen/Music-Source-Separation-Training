@@ -612,23 +612,23 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
    # do optuna here i think
 
 #    # Model #
-#     hop_length = trial.suggest_categorical("hop_length", [512, 1024, 2048])
-#     n_fft = trial.suggest_categorical("n_fft", [4096, 8192, 16384])
-#     chunk_size = trial.suggest_int("chunk_size", 220500, 661500, step=110250)
+    # hop_length = trial.suggest_categorical("hop_length", [512, 1024, 2048])
+    # n_fft = trial.suggest_categorical("n_fft", [4096, 8192, 16384])
+    # chunk_size = trial.suggest_int("chunk_size", 220500, 661500, step=110250)
 
-#     if(chunk_size % hop_length != 0):
-#         print(f"chunk_size {chunk_size} is not divisible by hop_length {hop_length}.")
-#         # Adjust chunk_size to be divisible by hop_length
-#         chunk_size = (chunk_size // hop_length) * hop_length
-#         print(f"Adjusted chunk_size to {chunk_size}.")
+    # if(chunk_size % hop_length != 0):
+    #     print(f"chunk_size {chunk_size} is not divisible by hop_length {hop_length}.")
+    #     # Adjust chunk_size to be divisible by hop_length
+    #     chunk_size = (chunk_size // hop_length) * hop_length
+    #     print(f"Adjusted chunk_size to {chunk_size}.")
 
 
-#     # **Model Capacity**: 
-#     bottleneck_factor = trial.suggest_int("bottleneck_factor", 2, 8)
-#     num_channels = trial.suggest_int("num_channels", 32, 128, step=8)
-#     num_blocks_per_scale = trial.suggest_int("num_blocks_per_scale", 1, 4)
-#     num_scales = trial.suggest_int("num_scales", 4, 6)
-#     growth = trial.suggest_categorical("growth", [64, 80, 96])
+    # **Model Capacity**: 
+    bottleneck_factor = trial.suggest_int("bottleneck_factor", 2, 8)
+    num_channels = trial.suggest_int("num_channels", 32, 128, step=8)
+    num_blocks_per_scale = trial.suggest_int("num_blocks_per_scale", 1, 4)
+    num_scales = trial.suggest_int("num_scales", 4, 6)
+    growth = trial.suggest_categorical("growth", [64, 80, 96])
 
     # **Learning-related**:
     lr = trial.suggest_loguniform("lr", 1e-6, 1e-4)
@@ -655,14 +655,15 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
 
     # config.audio.chunk_size = chunk_size
     # config.audio.n_fft = n_fft
-
-    # # Apply sampled values from Optuna to the configuration
-    # config.model.bottleneck_factor = bottleneck_factor
-    # config.model.num_channels = num_channels
-    # config.model.num_blocks_per_scale = num_blocks_per_scale
-    # config.model.num_scales = num_scales
-    # config.model.growth = growth
     # config.model.hop_length = hop_length
+
+    # Apply sampled values from Optuna to the configuration
+    config.model.bottleneck_factor = bottleneck_factor
+    config.model.num_channels = num_channels
+    config.model.num_blocks_per_scale = num_blocks_per_scale
+    config.model.num_scales = num_scales
+    config.model.growth = growth
+    
 
     # Learning-related parameters
     config.training.lr = lr
