@@ -704,6 +704,8 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
 
     # end optuna
 
+    print(f"OPTUNA parameters: {config}")
+
 
     # initialize_environment(args.seed, args.results_path)
     # model, config = get_model_from_config(args.model_type, args.config_path)
