@@ -22,7 +22,7 @@ from typing import List, Tuple, Dict, Union, Callable
 from datetime import datetime
 import uuid
 
-from dataset import MSSDataset
+from utils.dataset import MSSDataset
 from utils import get_model_from_config
 from valid import valid_multi_gpu, valid
 
@@ -662,6 +662,7 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
     config.training.optimizer = optimizer 
     config.training.batch_size = batch_size
     config.training.gradient_accumulation_steps = gradient_accumulation_steps
+    config.training.num_epochs = 50 
 
     # Augmentation settings
     config.augmentations.loudness_min = augmentation_loudness_min
