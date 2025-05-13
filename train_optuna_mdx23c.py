@@ -612,19 +612,19 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
    # do optuna here i think
 
 #   Model #
-    n_fft = trial.suggest_categorical("n_fft", [4096, 8192])
-    hop_length = trial.suggest_categorical("hop_length", [512, 1024, 2048])
+    # n_fft = trial.suggest_categorical("n_fft", [4096, 8192])
+    # hop_length = trial.suggest_categorical("hop_length", [512, 1024, 2048])
 
-    # Ensure hop_length is not greater than n_fft (a common requirement)
-    if hop_length > n_fft:
-        # Or handle this case appropriately, maybe by returning a very low score
-        # if this combination is invalid for your processing.
-        hop_length = 2048 # Or some other sensible default or proportional value
+    # # Ensure hop_length is not greater than n_fft (a common requirement)
+    # if hop_length > n_fft:
+    #     # Or handle this case appropriately, maybe by returning a very low score
+    #     # if this combination is invalid for your processing.
+    #     hop_length = 2048 # Or some other sensible default or proportional value
 
-    # Suggest a factor for chunk_size based on hop_length
-    # This ensures chunk_size is always a multiple of hop_length
-    chunk_size_factor = trial.suggest_int("chunk_size_factor", 10, 100) # Adjust range as needed
-    chunk_size = chunk_size_factor * hop_length
+    # # Suggest a factor for chunk_size based on hop_length
+    # # This ensures chunk_size is always a multiple of hop_length
+    # chunk_size_factor = trial.suggest_int("chunk_size_factor", 10, 100) # Adjust range as needed
+    # chunk_size = chunk_size_factor * hop_length
 
     # Now chunk_size is guaranteed to be a multiple of hop_length
     # You can add checks to ensure chunk_size is within a reasonable overall range
@@ -699,12 +699,12 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
     config.inference.num_overlap = num_overlap
 
 
-    config.training.gradient_accumulation_steps = 1
+    config.training.num_steps = 1
     config.training.num_epochs = 1
 
     # end optuna
 
-    print(f"OPTUNA parameters: {config}")
+    #print(f"OPTUNA parameters: {config}")
 
 
     # initialize_environment(args.seed, args.results_path)
