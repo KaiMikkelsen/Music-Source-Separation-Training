@@ -616,6 +616,9 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
     nfft = trial.suggest_categorical("nfft", [2048, 4096, 8192])
     hop_size = trial.suggest_categorical("hop_size", [512, 1024, 2048])
     win_size = trial.suggest_categorical("win_size", [2048, 4096, 8192])
+    chunk_size = trial.suggest_int("chunk_size", 308700, 661500, step=44100)
+
+
     compress = trial.suggest_int("compress", 2, 8, step=2)
     conv_kernel = trial.suggest_int("conv_kernel", 2, 5)
     num_dplayer = trial.suggest_int("num_dplayer", 4, 10)
@@ -653,6 +656,8 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
     # Apply sampled values from Optuna to the configuration
     config.model.nfft = nfft
     config.model.hop_size = hop_size
+    comnfig.model.chunk_size = chunk_size
+
     config.model.win_size = win_size
     config.model.compress = compress
     config.model.conv_kernel = conv_kernel
@@ -669,8 +674,8 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
     config.training.optimizer = optimizer
     config.training.batch_size = batch_size
     config.training.gradient_accumulation_steps = gradient_accumulation_steps
-    config.training.num_steps = 8
-    config.training.num_epochs = 50 
+    config.training.num_steps = 1
+    config.training.num_epochs = 1
 
     config.augmentations.loudness_min = loudness_min
     config.augmentations.loudness_max = loudness_max
@@ -678,6 +683,7 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
 
     config.inference.dim_t = dim_t
     config.inference.num_overlap = num_overlap
+
 
 
     # end optuna
