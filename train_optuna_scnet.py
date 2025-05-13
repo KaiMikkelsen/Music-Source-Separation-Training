@@ -27,7 +27,8 @@ from utils.settings import get_model_from_config, parse_args_inference
 from valid import valid_multi_gpu, valid
 from utils.audio_utils import prepare_data
 
-from utils import bind_lora_to_model, load_start_checkpoint
+from utils.model_utils import bind_lora_to_model, load_start_checkpoint, save_weights, normalize_batch, \
+    initialize_model_and_device, get_optimizer, save_last_weights
 import loralib as lora
 import optuna
 from optuna.trial import Trial
