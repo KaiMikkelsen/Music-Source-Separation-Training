@@ -637,6 +637,9 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
     #      chunk_size = (max_total_chunk_size // hop_length) * hop_length
 
 
+    n_fft = trial.suggest_categorical("n_fft", [4096, 8192, 16384])
+    hop_length = trial.suggest_categorical("hop_length", [512, 1024, 2048])
+
     # **Model Capacity**: 
     bottleneck_factor = trial.suggest_int("bottleneck_factor", 2, 8)
     num_channels = trial.suggest_int("num_channels", 32, 128, step=8)
@@ -668,8 +671,8 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
     # Initialize environment and model
 
     # config.audio.chunk_size = chunk_size
-    # config.audio.n_fft = n_fft
-    # config.model.hop_length = hop_length
+    config.audio.n_fft = n_fft
+    config.model.hop_length = hop_length
 
     # Apply sampled values from Optuna to the configuration
     config.model.bottleneck_factor = bottleneck_factor
