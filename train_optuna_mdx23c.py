@@ -653,16 +653,16 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
 
     # Initialize environment and model
 
-    config.audio.chunk_size = chunk_size
-    config.audio.n_fft = n_fft
+    # config.audio.chunk_size = chunk_size
+    # config.audio.n_fft = n_fft
 
-    # Apply sampled values from Optuna to the configuration
-    config.model.bottleneck_factor = bottleneck_factor
-    config.model.num_channels = num_channels
-    config.model.num_blocks_per_scale = num_blocks_per_scale
-    config.model.num_scales = num_scales
-    config.model.growth = growth
-    config.model.hop_length = hop_length
+    # # Apply sampled values from Optuna to the configuration
+    # config.model.bottleneck_factor = bottleneck_factor
+    # config.model.num_channels = num_channels
+    # config.model.num_blocks_per_scale = num_blocks_per_scale
+    # config.model.num_scales = num_scales
+    # config.model.growth = growth
+    # config.model.hop_length = hop_length
 
     # Learning-related parameters
     config.training.lr = lr
