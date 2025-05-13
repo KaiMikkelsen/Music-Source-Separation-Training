@@ -652,9 +652,10 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
     gradient_accumulation_steps = trial.suggest_int("gradient_accumulation_steps", 1, 6, step=2)
 
     # **Audio Chunking**:
-    chunk_size = trial.suggest_int("chunk_size", 220500, 661500, step=110250)
     hop_length = trial.suggest_categorical("hop_length", [512, 1024, 2048])
     segment = trial.suggest_int("segment", 5, 15)
+
+    chunk_size = 44100 * segment
 
     # **Augmentation settings**:
     augmentation_loudness_min = trial.suggest_loguniform("augmentation_loudness_min", 0.2, 0.8)
@@ -703,9 +704,9 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
 
 
     # # Audio Chunking
-    # config.training.chunk_size = chunk_size
-    # config.training.hop_length = hop_length
-    # config.training.segment = segment
+    config.training.chunk_size = chunk_size
+    config.training.hop_length = hop_length
+    config.training.segment = segment
 
     # Augmentation settings
     config.augmentations.loudness_min = augmentation_loudness_min
