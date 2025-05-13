@@ -2,7 +2,7 @@
 #SBATCH --gres=gpu:v100l:1       # Request GPU "generic resources"
 #SBATCH --cpus-per-task=6        # Adjust based on your cluster's CPU/GPU ratio
 #SBATCH --mem=125G               # Adjust memory as needed
-#SBATCH --time=7-00:00           # DD-HH:MM:SS
+#SBATCH --time=10-00:00           # DD-HH:MM:SS
 #SBATCH --account=def-ichiro
 #SBATCH --output=slurm_logs/slurm-%j.out  # Use Job ID for unique output files
 
@@ -35,66 +35,66 @@ source separation_env/bin/activate
 
 RUNNING_ON_MAC=false
 
+# if [[ "$(uname)" == "Darwin" ]]; then
+#     RUNNING_ON_MAC=true
+# else
+#     RUNNING_ON_MAC=false
+# fi
 
-if [[ "$(uname)" == "Darwin" ]]; then
-    RUNNING_ON_MAC=true
-else
-    RUNNING_ON_MAC=false
-fi
-
-echo "Running on Mac: $RUNNING_ON_MAC"
-
+# echo "Running on Mac: $RUNNING_ON_MAC"
 
 
-if [[ "$RUNNING_ON_MAC" == "false" ]]; then
 
-    mkdir -p "$SLURM_LOGS_PATH"
+# if [[ "$RUNNING_ON_MAC" == "false" ]]; then
 
-    mkdir -p "$CHECKPOINTS_PATH"
+#     mkdir -p "$SLURM_LOGS_PATH"
 
-    # Move and unzip dataset to scratch directory
-    if [ ! -f "$SCRATCH_DIR/$(basename "$DATASET_ZIP")" ]; then
-        echo "Moving $DATASET_ZIP to $SCRATCH_DIR for faster access"
-        cp "$DATASET_ZIP" "$SCRATCH_DIR"
-    else
-        echo "Dataset already exists in $SCRATCH_DIR, skipping copy."
-    fi
+#     mkdir -p "$CHECKPOINTS_PATH"
 
-    DATASET_ZIP_BASENAME=$(basename "$DATASET_ZIP")
-    SCRATCH_ZIP="$SCRATCH_DIR/$DATASET_ZIP_BASENAME"
+#     # Move and unzip dataset to scratch directory
+#     if [ ! -f "$SCRATCH_DIR/$(basename "$DATASET_ZIP")" ]; then
+#         echo "Moving $DATASET_ZIP to $SCRATCH_DIR for faster access"
+#         cp "$DATASET_ZIP" "$SCRATCH_DIR"
+#     else
+#         echo "Dataset already exists in $SCRATCH_DIR, skipping copy."
+#     fi
 
-    # mkdir -p "$SCRATCH_DIR/$DATASET_NAME"
-    # echo "created directory $SCRATCH_DIR/$DATASET_NAME"
-    # echo "Unzipping dataset in $SCRATCH_DIR/$DATASET_NAME"
+#     DATASET_ZIP_BASENAME=$(basename "$DATASET_ZIP")
+#     SCRATCH_ZIP="$SCRATCH_DIR/$DATASET_ZIP_BASENAME"
 
-    echo "unzipping $SCRATCH_DIR/$DATASET_NAME.zip"
-    unzip "$SCRATCH_DIR/$DATASET_NAME.zip" -d "$SCRATCH_DIR"
+#     # mkdir -p "$SCRATCH_DIR/$DATASET_NAME"
+#     # echo "created directory $SCRATCH_DIR/$DATASET_NAME"
+#     # echo "Unzipping dataset in $SCRATCH_DIR/$DATASET_NAME"
+
+#     echo "unzipping $SCRATCH_DIR/$DATASET_NAME.zip"
+#     unzip "$SCRATCH_DIR/$DATASET_NAME.zip" -d "$SCRATCH_DIR"
 
 
-    # if ! unzip -q "$SCRATCH_ZIP" -d "$SCRATCH_DIR/$DATASET_NAME"; then
-    #     echo "zip failed"
-    # fi
+#     # if ! unzip -q "$SCRATCH_ZIP" -d "$SCRATCH_DIR/$DATASET_NAME"; then
+#     #     echo "zip failed"
+#     # fi
 
-    echo "Dataset successfully unzipped."
+#     echo "Dataset successfully unzipped."
 
-    if [ "$DATASET_NAME" = "MOISESDB" ]; then
-        DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/moisesdb/moisesdb_v0.1"
-    elif [ "$DATASET_NAME" = "MUSDB18HQ" ]; then
-        DATA_PATH="$SCRATCH_DIR/$DATASET_NAME"
-    elif [ "$DATASET_NAME" = "SDXDB23_Bleeding" ]; then
-        DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/sdxdb12_bleeding"
-    elif [ "$DATASET_NAME" = "SDXDB23_LabelNoise" ]; then
-        DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/sdxdb23_labelnoise"
-    else
-        echo "Unknown dataset: $DATASET_NAME"
-        exit 1
-    fi
+#     if [ "$DATASET_NAME" = "MOISESDB" ]; then
+#         DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/moisesdb/moisesdb_v0.1"
+#     elif [ "$DATASET_NAME" = "MUSDB18HQ" ]; then
+#         DATA_PATH="$SCRATCH_DIR/$DATASET_NAME"
+#     elif [ "$DATASET_NAME" = "SDXDB23_Bleeding" ]; then
+#         DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/sdxdb12_bleeding"
+#     elif [ "$DATASET_NAME" = "SDXDB23_LabelNoise" ]; then
+#         DATA_PATH="$SCRATCH_DIR/$DATASET_NAME/sdxdb23_labelnoise"
+#     else
+#         echo "Unknown dataset: $DATASET_NAME"
+#         exit 1
+#     fi
 
-else
-    DATA_PATH="/Users/kaimikkelsen/canada_compute/data/$DATASET_NAME"
-    echo "Running on Mac. Skipping dataset unzipping."
-fi
+# else
+#     DATA_PATH="/Users/kaimikkelsen/canada_compute/data/$DATASET_NAME"
+#     echo "Running on Mac. Skipping dataset unzipping."
+# fi
 
+DATA_PATH="/home/kaim/scratch/MUSDB18HQ"
 echo "Dataset path set to: $DATA_PATH"
 
 
