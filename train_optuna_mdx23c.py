@@ -702,9 +702,6 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
     config.inference.num_overlap = num_overlap
 
 
-    config.training.num_steps = 1
-    config.training.num_epochs = 1
-
     # end optuna
 
     #print(f"OPTUNA parameters: {config}")
