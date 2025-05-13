@@ -689,7 +689,8 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
     config.training.optimizer = optimizer 
     config.training.batch_size = batch_size
     config.training.gradient_accumulation_steps = gradient_accumulation_steps
-    config.training.num_epochs = 50 
+    config.training.num_steps = 1000
+    config.training.num_epochs = 50
 
     # Augmentation settings
     config.augmentations.loudness_min = augmentation_loudness_min
