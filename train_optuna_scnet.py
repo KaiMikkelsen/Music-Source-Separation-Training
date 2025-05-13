@@ -669,6 +669,7 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
     config.training.batch_size = batch_size
     config.training.gradient_accumulation_steps = gradient_accumulation_steps
     config.training.num_steps = 8
+    config.training.num_epochs = 50 
 
     config.augmentations.loudness_min = loudness_min
     config.augmentations.loudness_max = loudness_max
@@ -766,14 +767,14 @@ if __name__ == "__main__":
 
     unique_id = uuid.uuid4().hex[:8]  # Generate a short unique ID
     # Generate a unique filename for each study
-    db_path = os.path.join(db_folder, f"scnet_tran_optimization_{datetime.now().strftime('%Y-%m-%d')}_{unique_id}.sqlite3")
+    db_path = os.path.join(db_folder, f"scnet_optimization_{datetime.now().strftime('%Y-%m-%d')}_{unique_id}.sqlite3")
 
     # Create the study with the new database path
     study = optuna.create_study(
         direction="maximize",  # Change to "minimize" if optimizing a loss
         sampler=TPESampler(),  # TPE sampler for efficient search
         storage=f"sqlite:///{db_path}",  # Save in "optunadb" folder
-        study_name=f"scnet_tran_optimization_{datetime.now().strftime('%Y-%m-%d')}_{unique_id}"
+        study_name=f"scnet_optimization_{datetime.now().strftime('%Y-%m-%d')}_{unique_id}"
     )
     
 
