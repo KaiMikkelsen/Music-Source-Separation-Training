@@ -14,8 +14,8 @@ def split_and_copy_folders(source_base_path, train_dest, validation_dest, train_
         train_count (int): The number of folders to copy to the training directory.
         validation_count (int): The number of folders to copy to the validation directory.
     """
-    source_fold_2 = os.path.join(source_base_path, "fold_1")
-    source_fold_3 = os.path.join(source_base_path, "fold_3")
+    source_fold_2 = os.path.join(source_base_path, "fold_2")
+    source_fold_3 = os.path.join(source_base_path, "fold_1")
 
     # Ensure destination directories exist
     os.makedirs(train_dest, exist_ok=True)
@@ -92,8 +92,8 @@ def split_and_copy_folders(source_base_path, train_dest, validation_dest, train_
 
 # --- Configuration ---
 SOURCE_BASE_PATH = "/home/kaim/scratch/MUSDB18_ALL/"
-TRAIN_DESTINATION = os.path.join(SOURCE_BASE_PATH, "MUSDB18_HQ_2/train")
-VALIDATION_DESTINATION = os.path.join(SOURCE_BASE_PATH, "MUSDB18_HQ_2/validation")
+TRAIN_DESTINATION = os.path.join(SOURCE_BASE_PATH, "MUSDB18_HQ_3/train")
+VALIDATION_DESTINATION = os.path.join(SOURCE_BASE_PATH, "MUSDB18_HQ_3/validation")
 TRAIN_COUNT = 86
 VALIDATION_COUNT = 14 # The remaining 14 folders
 
