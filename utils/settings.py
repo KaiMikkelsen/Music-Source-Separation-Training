@@ -354,7 +354,7 @@ def wandb_init(args: argparse.Namespace, config: Dict, device_ids: List[int], ba
     else:
         wandb.login(key=args.wandb_key)
         wandb.init(
-            project='msst',
+            project='msst_optimized',
             name=gen_wandb_name(args, config),
             config={'config': config, 'args': args, 'device_ids': device_ids, 'batch_size': batch_size }
         )
