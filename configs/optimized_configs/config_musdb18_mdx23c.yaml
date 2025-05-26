@@ -3,10 +3,10 @@ audio:
   dim_f: 4096
   dim_t: 256
   hop_length: 2048
-  min_mean_abs: 0.001
-  n_fft: 4096
+  n_fft: 8192
   num_channels: 2
   sample_rate: 44100
+  min_mean_abs: 0.001
 
 model:
   act: gelu
