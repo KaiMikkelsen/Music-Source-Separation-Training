@@ -570,3 +570,4 @@ def save_last_weights(args: argparse.Namespace, model: torch.nn.Module, device_i
     store_path = f'{args.results_path}/last_{args.model_type}.ckpt'
     train_lora = args.train_lora
     save_weights(store_path, model, device_ids, train_lora)
+    

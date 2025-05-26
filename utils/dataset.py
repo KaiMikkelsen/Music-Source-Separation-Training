@@ -152,7 +152,6 @@ class MSSDataset(torch.utils.data.Dataset):
 
         if self.dataset_type in [1, 4]:
             track_paths = []
-            print("data path is ", self.data_path)
             if type(self.data_path) == list:
                 for tp in self.data_path:
                     tracks_for_folder = sorted(glob(tp + '/*'))
