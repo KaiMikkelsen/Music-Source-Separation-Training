@@ -21,6 +21,7 @@ model:
   - 2
   - 2
 
+
 training:
   batch_size: 7
   gradient_accumulation_steps: 1
