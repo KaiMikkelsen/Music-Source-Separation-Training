@@ -97,7 +97,6 @@ RUNNING_ON_MAC=False
 # fi
 
 
-DATA_PATH="/home/kaim/scratch/MUSDB18HQ"
 echo "Dataset path set to: $DATA_PATH"
 
 
