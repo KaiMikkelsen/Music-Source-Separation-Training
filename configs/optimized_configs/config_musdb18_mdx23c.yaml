@@ -2,21 +2,21 @@ audio:
   chunk_size: 260096
   dim_f: 4096
   dim_t: 256
-  hop_length: 2048
-  n_fft: 8192
+  hop_length: 512
+  n_fft: 16384
   num_channels: 2
   sample_rate: 44100
   min_mean_abs: 0.001
 
 model:
   act: gelu
-  bottleneck_factor: 6
+  bottleneck_factor: 5
   growth: 64
   hop_length: 512
   norm: InstanceNorm
-  num_blocks_per_scale: 3
+  num_blocks_per_scale: 1
   num_channels: 72
-  num_scales: 4
+  num_scales: 5
   num_subbands: 4
   scale:
   - 2
@@ -24,24 +24,24 @@ model:
 
 
 training:
-  batch_size: 2
+  batch_size: 7
   coarse_loss_clip: true
-  ema_momentum: 0.9778544949120372
+  ema_momentum: 0.9848564314429578
   grad_clip: 0
-  gradient_accumulation_steps: 3
+  gradient_accumulation_steps: 1
   instruments:
   - vocals
   - bass
   - drums
   - other
-  lr: 8.877627495663567e-05
+  lr: 9.011422290584402e-05
   num_epochs: 1000
   num_steps: 1000
-  optimizer: adam
+  optimizer: rmsprop
   other_fix: false
   patience: 2
   q: 0.95
-  reduce_factor: 0.3594197125030181
+  reduce_factor: 0.18240242373362703
   target_instrument: null
   use_amp: true
 
@@ -180,5 +180,5 @@ augmentations:
 
 inference:
   batch_size: 1
-  dim_t: 256
-  num_overlap: 2
+  dim_t: 512
+  num_overlap: 6
