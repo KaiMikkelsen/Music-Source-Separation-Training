@@ -1,59 +1,59 @@
 audio:
-  chunk_size: 261120
+  chunk_size: 260096
   dim_f: 4096
   dim_t: 256
   hop_length: 512
-  n_fft: 4096
+  n_fft: 16384
   num_channels: 2
   sample_rate: 44100
   min_mean_abs: 0.001
 
 model:
   act: gelu
-  bottleneck_factor: 6
+  bottleneck_factor: 5
   growth: 64
   norm: InstanceNorm
-  num_blocks_per_scale: 3
-  num_channels: 72
-  num_scales: 4
+  num_blocks_per_scale: 1
+  num_channels: 7
+  num_scales: 5
   num_subbands: 4
   scale:
   - 2
   - 2
 
 training:
-  batch_size: 2
-  gradient_accumulation_steps: 3
+  batch_size: 7
+  gradient_accumulation_steps: 1
   grad_clip: 0
   instruments:
   - vocals
   - bass
   - drums
   - other
-  lr: 8.877627495663567e-05
-  patience: 8
-  reduce_factor: 0.3594197125030181
+  lr: 9.011422290584402e-05
+  patience: 2
+  reduce_factor: 0.18240242373362703
   target_instrument: null
   num_epochs: 1000
   num_steps: 1000
   q: 0.95
   coarse_loss_clip: true
-  ema_momentum: 0.9778544949120372
-  optimizer: adam
+  ema_momentum: 0.9848564314429578
+  optimizer: rmsprop
   other_fix: false # it's needed for checking on multisong dataset if other is actually instrumental
   use_amp: true # enable or disable usage of mixed precision (float16) - usually it must be true
 
 augmentations:
   enable: true # enable or disable all augmentations (to fast disable if needed)
   loudness: true # randomly change loudness of each stem on the range (loudness_min; loudness_max)
-  loudness_min: 1.196039293549172
-  loudness_max: 0.6789975307515341
+  loudness_min: 0.4619239663923285
+  loudness_max: 0.7112774013057418
   mixup: true # mix several stems of same type with some probability (only works for dataset types: 1, 2, 3)
   mixup_probs: !!python/tuple # 2 additional stems of the same type (1st with prob 0.2, 2nd with prob 0.02)
     - 0.2
     - 0.02
-  mixup_loudness_min: -0.8114760240444912
-  mixup_loudness_max: 0.1544552700842896
+  mixup_loudness_min: -2.669516914344618
+  mixup_loudness_max: 0.9926244732673539
 
   # apply mp3 compression to mixture only (emulate downloading mp3 from internet)
   mp3_compression_on_mixture: 0.01
@@ -66,7 +66,7 @@ augmentations:
     random_inverse: 0.1 # inverse track (better lower probability)
     random_polarity: 0.5 # polarity change (multiply waveform to -1)
     mp3_compression: 0.01
-    mp3_compression_min_bitrate: 61
+    mp3_compression_min_bitrate: 32
     mp3_compression_max_bitrate: 320
     mp3_compression_backend: "lameenc"
 
@@ -178,5 +178,5 @@ augmentations:
 
 inference:
   batch_size: 1
-  dim_t: 256
-  num_overlap: 2
+  dim_t: 512
+  num_overlap: 6
