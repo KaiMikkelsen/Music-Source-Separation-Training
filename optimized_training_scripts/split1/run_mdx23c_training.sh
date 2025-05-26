@@ -16,7 +16,7 @@ git pull
 
 # Variables
 MODEL_TYPE="mdx23c"
-CONFIG_PATH="configs/optimized_configs/config_musdb18_mdx23c.yaml"
+CONFIG_PATH="configs/config_musdb18_mdx23c.yaml"
 #DATA_HOME_PATH="/home/kaim/projects/def-ichiro/kaim/data"
 DATASET_NAME="MUSDB18HQ"
 #DATASET_ZIP="$DATA_HOME_PATH/$DATASET_NAME.zip" # Specify the dataset ZIP name
@@ -97,6 +97,7 @@ RUNNING_ON_MAC=False
 # fi
 
 
+DATA_PATH="/home/kaim/scratch/MUSDB18HQ"
 echo "Dataset path set to: $DATA_PATH"
 
 
