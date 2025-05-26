@@ -11,10 +11,12 @@ import soundfile as sf
 from tqdm.auto import tqdm
 from ml_collections import ConfigDict
 from typing import Tuple, Dict, List, Union
-import torch.nn as nn
-from utils import demix, get_model_from_config, prefer_target_instrument, draw_spectrogram
-from utils import normalize_audio, denormalize_audio, apply_tta, read_audio_transposed, load_start_checkpoint
-from metrics import get_metrics
+
+from utils.settings import get_model_from_config, logging, write_results_in_file, parse_args_valid
+from utils.audio_utils import draw_spectrogram, normalize_audio, denormalize_audio, read_audio_transposed
+from utils.model_utils import demix, prefer_target_instrument, apply_tta, load_start_checkpoint
+from utils.metrics import get_metrics
+
 import warnings
 
 warnings.filterwarnings("ignore")
@@ -564,24 +566,16 @@ def check_validation(dict_args):
         torch.multiprocessing.set_start_method('spawn')
     except Exception as e:
         pass
-    print("loading model and config")
     model, config = get_model_from_config(args.model_type, args.config_path)
 
     if args.start_check_point:
-        print(f"Load checkpoint: {args.start_check_point}")
         load_start_checkpoint(args, model, type_='valid')
-        print(f"done checkpoint: {args.start_check_point}")
 
     print(f"Instruments: {config.training.instruments}")
 
     device_ids = args.device_ids
     if torch.cuda.is_available():
-        if len(device_ids) <= 1:
-            device = torch.device(f'cuda:{device_ids[0]}')
-            model = model.to(device)
-        else:
-            device = torch.device(f'cuda:{device_ids[0]}')
-            model = nn.DataParallel(model, device_ids=device_ids).to(device)
+        device = torch.device(f'cuda:{device_ids[0]}')
     else:
         device = 'cpu'
         print('CUDA is not available. Run validation on CPU. It will be very slow...')
@@ -593,5 +587,4 @@ def check_validation(dict_args):
 
 
 if __name__ == "__main__":
-    print("called")
     check_validation(None)
