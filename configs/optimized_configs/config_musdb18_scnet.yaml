@@ -18,31 +18,31 @@ model:
     - 128
   nfft: 4096
   hop_size: 1024
-  win_size: 4096
+  win_size: 2048
   normalized: True
   band_SR:
-    - 0.175
-    - 0.392
-    - 0.433
+    - 0.19013175747332464
+    - 0.3629376118427377
+    - 0.5397970761846854
   band_stride:
-    - 1
-    - 4
-    - 16
+    - 2
+    - 2
+    - 8
   band_kernel:
     - 3
-    - 4
-    - 16
+    - 3
+    - 11
   conv_depths:
     - 3
     - 2
     - 1
-  compress: 4
-  conv_kernel: 3
-  num_dplayer: 6
-  expand: 1
+  compress: 2
+  conv_kernel: 4
+  num_dplayer: 7
+  expand: 4
 
 training:
-  batch_size: 10
+  batch_size: 9
   gradient_accumulation_steps: 1
   grad_clip: 0
   instruments:
@@ -50,34 +50,34 @@ training:
     - bass
     - other
     - vocals
-  lr: 5.0e-04
+  lr: 0.0004595695931905895
   patience: 2
-  reduce_factor: 0.95
+  reduce_factor: 0.8959688194600346
   target_instrument: null
   num_epochs: 1000
   num_steps: 1000
   q: 0.95
   coarse_loss_clip: true
-  ema_momentum: 0.999
-  optimizer: adam
+  ema_momentum: 0.9707069996265402
+  optimizer: adamw
   other_fix: false # it's needed for checking on multisong dataset if other is actually instrumental
   use_amp: true # enable or disable usage of mixed precision (float16) - usually it must be true
 
 augmentations:
   enable: true # enable or disable all augmentations (to fast disable if needed)
   loudness: true # randomly change loudness of each stem on the range (loudness_min; loudness_max)
-  loudness_min: 0.5
-  loudness_max: 1.5
+  loudness_min: 0.96395947987773
+  loudness_max: 1.7864084910560143
   mixup: true # mix several stems of same type with some probability (only works for dataset types: 1, 2, 3)
   mixup_probs:
     !!python/tuple # 2 additional stems of the same type (1st with prob 0.2, 2nd with prob 0.02)
-    - 0.2
-    - 0.02
+    - 0.1792918702537118
+    - 0.02238830261506526
   mixup_loudness_min: 0.5
   mixup_loudness_max: 1.5
 
 inference:
   batch_size: 8
-  dim_t: 256
+  dim_t: 192
   num_overlap: 4
   normalize: true
