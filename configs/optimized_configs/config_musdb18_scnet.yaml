@@ -33,7 +33,7 @@ model:
   - 2
   - 2
   - 8
-  chunk_size: 573300
+  # chunk_size: 573300
   compress: 2
   conv_depths:
   - 3
