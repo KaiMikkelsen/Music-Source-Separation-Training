@@ -39,7 +39,7 @@ model:
   - 3
   - 2
   - 1
-  conv_kernel: 4
+  conv_kernel: 3
   dims:
   - 4
   - 32
