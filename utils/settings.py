@@ -318,7 +318,7 @@ def get_model_from_config(model_type: str, config_path: str, trial: Trial) -> Tu
         # Apply sampled values from Optuna to the configuration
         config.model.nfft = nfft
         config.model.hop_size = hop_size
-        config.model.chunk_size = chunk_size
+        # config.model.chunk_size = chunk_size
 
         config.model.win_size = win_size
         config.model.compress = compress
