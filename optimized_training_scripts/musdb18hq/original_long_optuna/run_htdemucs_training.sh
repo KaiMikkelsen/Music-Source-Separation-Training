@@ -15,9 +15,8 @@ SCRATCH_DIR=$SLURM_TMPDIR
 git pull
 
 # Variables
-
 MODEL_TYPE="htdemucs"
-CONFIG_PATH="configs/optimized_configs/short_optuna/config_musdb18_htdemucs.yaml"
+CONFIG_PATH="configs/optimized_configs/long_optuna/config_musdb18_htdemucs.yaml"
 DATA_HOME_PATH="/home/kaim/projects/def-ichiro/kaim/data"
 DATASET_NAME="MUSDB18HQ"
 DATASET_ZIP="$DATA_HOME_PATH/$DATASET_NAME.zip" # Specify the dataset ZIP name
