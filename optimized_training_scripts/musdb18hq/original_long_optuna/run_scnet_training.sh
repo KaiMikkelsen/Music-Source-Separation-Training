@@ -14,6 +14,7 @@ SCRATCH_DIR=$SLURM_TMPDIR
 
 git pull
 
+
 # Variables
 MODEL_TYPE="scnet"
 CONFIG_PATH="configs/optimized_configs/long_optuna/config_musdb18_scnet.yaml"
