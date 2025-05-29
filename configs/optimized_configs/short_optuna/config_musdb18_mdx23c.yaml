@@ -22,7 +22,7 @@ model:
   - 2
 
 training:
-  batch_size: 2
+  batch_size: 4
   coarse_loss_clip: true
   ema_momentum: 0.9843434567317182
   grad_clip: 0
@@ -33,8 +33,8 @@ training:
   - drums
   - other
   lr: 9.895019867581646e-05
-  num_epochs: 8
-  num_steps: 150
+  num_epochs: 1000
+  num_steps: 1000
   optimizer: adamw
   other_fix: false
   patience: 8
