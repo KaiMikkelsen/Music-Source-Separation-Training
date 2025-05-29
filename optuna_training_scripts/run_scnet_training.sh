@@ -99,7 +99,7 @@ echo "Dataset path set to: $DATA_PATH"
 
 echo "Running training script for model: $MODEL_TYPE with dataset at $DATA_PATH"
 
-python train_optuna_scnet_test.py \
+python train_optuna_scnet.py \
     --model_type "$MODEL_TYPE" \
     --config_path "$CONFIG_PATH" \
     --results_path "$CHECKPOINTS_PATH" \
