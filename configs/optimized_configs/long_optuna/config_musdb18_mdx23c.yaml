@@ -3,47 +3,45 @@ audio:
   dim_f: 4096
   dim_t: 256
   hop_length: 2048
-  n_fft: 16384
+  n_fft: 8192
   num_channels: 2
   sample_rate: 44100
   min_mean_abs: 0.001
 
 model:
   act: gelu
-  bottleneck_factor: 5
-  growth: 64
-  hop_length: 512
+  bottleneck_factor: 4
+  growth: 80
   norm: InstanceNorm
-  num_blocks_per_scale: 1
-  num_channels: 72
+  num_blocks_per_scale: 2
+  num_channels: 160
   num_scales: 5
   num_subbands: 4
   scale:
   - 2
   - 2
 
-
 training:
   batch_size: 7
-  coarse_loss_clip: true
-  ema_momentum: 0.9848564314429578
-  grad_clip: 0
   gradient_accumulation_steps: 1
+  grad_clip: 0
   instruments:
   - vocals
   - bass
   - drums
   - other
   lr: 9.011422290584402e-05
-  num_epochs: 1000
-  num_steps: 1000
-  optimizer: rmsprop
-  other_fix: false
   patience: 2
-  q: 0.95
   reduce_factor: 0.18240242373362703
   target_instrument: null
-  use_amp: true
+  num_epochs: 1000
+  num_steps: 1000
+  q: 0.95
+  coarse_loss_clip: true
+  ema_momentum: 0.9848564314429578
+  optimizer: rmsprop
+  other_fix: false # it's needed for checking on multisong dataset if other is actually instrumental
+  use_amp: true # enable or disable usage of mixed precision (float16) - usually it must be true
 
 augmentations:
   enable: true # enable or disable all augmentations (to fast disable if needed)
