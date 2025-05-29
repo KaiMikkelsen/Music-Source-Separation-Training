@@ -6,10 +6,10 @@ audio:
   hop_length: 1024
 
 training:
-  batch_size: 2
-  gradient_accumulation_steps: 1
+  batch_size: 5
+  gradient_accumulation_steps: 9
   grad_clip: 0
-  segment: 11
+  segment: 6
   shift: 1
   samplerate: 44100
   channels: 2
@@ -18,21 +18,21 @@ training:
   target_instrument: null
   num_epochs: 1000
   num_steps: 1000
-  optimizer: adam
-  lr: 9.0e-05
+  optimizer: adamw
+  lr: 9.997704778146387e-05
   patience: 2
-  reduce_factor: 0.95
+  reduce_factor: 0.12771400635044658
   q: 0.95
   coarse_loss_clip: true
-  ema_momentum: 0.999
+  ema_momentum: 0.9859561370357239
   other_fix: false # it's needed for checking on multisong dataset if other is actually instrumental
   use_amp: true # enable or disable usage of mixed precision (float16) - usually it must be true
 
 augmentations:
   enable: true # enable or disable all augmentations (to fast disable if needed)
   loudness: true # randomly change loudness of each stem on the range (loudness_min; loudness_max)
-  loudness_min: 0.5
-  loudness_max: 1.5
+  loudness_min: 0.4952750840196941
+  loudness_max: 1.3801264202163712
 
 inference:
   num_overlap: 4
