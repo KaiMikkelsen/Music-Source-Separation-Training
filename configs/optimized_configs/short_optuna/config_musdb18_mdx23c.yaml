@@ -1,58 +1,53 @@
 audio:
-  chunk_size: 261120
+  chunk_size: 260096
   dim_f: 4096
   dim_t: 256
-  hop_length: 1024
-  min_mean_abs: 0.001
+  hop_length: 2048
   n_fft: 8192
   num_channels: 2
   sample_rate: 44100
+  min_mean_abs: 0.001
 
 model:
   act: gelu
-  bottleneck_factor: 5
-  growth: 224
+  bottleneck_factor: 4
+  growth: 80
   norm: InstanceNorm
-  num_blocks_per_scale: 4
-  num_channels: 48
-  num_scales: 4
+  num_blocks_per_scale: 2
+  num_channels: 160
+  num_scales: 5
   num_subbands: 4
   scale:
   - 2
   - 2
 
 training:
-  batch_size: 2
-  coarse_loss_clip: true
-  ema_momentum: 0.9843434567317182
+  batch_size: 7
+  gradient_accumulation_steps: 7
   grad_clip: 0
-  gradient_accumulation_steps: 1
   instruments:
   - vocals
   - bass
   - drums
   - other
   lr: 9.895019867581646e-05
-  num_epochs: 1000
-  num_steps: 1000
-  optimizer: adamw
-  other_fix: false
-  patience: 8
-  q: 0.95
+  patience: 2
   reduce_factor: 0.3067220909070577
   target_instrument: null
-  use_amp: true
-
-inference:
-  batch_size: 1
-  dim_t: 128
-  num_overlap: 8
+  num_epochs: 1000
+  num_steps: 1000
+  q: 0.95
+  coarse_loss_clip: true
+  ema_momentum: 0.9843434567317182
+  optimizer: adamw
+  other_fix: false # it's needed for checking on multisong dataset if other is actually instrumental
+  use_amp: true # enable or disable usage of mixed precision (float16) - usually it must be true
 
 augmentations:
   enable: true # enable or disable all augmentations (to fast disable if needed)
   loudness: true # randomly change loudness of each stem on the range (loudness_min; loudness_max)
-  loudness_min: 0.5
-  loudness_max: 1.5
+  loudness_min: 0.58042979886586
+  loudness_max: 1.6273706114263216
   mixup: true # mix several stems of same type with some probability (only works for dataset types: 1, 2, 3)
   mixup_probs: !!python/tuple # 2 additional stems of the same type (1st with prob 0.2, 2nd with prob 0.02)
     - 0.2
@@ -179,3 +174,9 @@ augmentations:
     time_stretch: 0.01
     time_stretch_min_rate: 0.8
     time_stretch_max_rate: 1.25
+
+
+inference:
+  batch_size: 1
+  dim_t: 256
+  num_overlap: 4
