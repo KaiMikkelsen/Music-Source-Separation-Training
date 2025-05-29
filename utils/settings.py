@@ -279,7 +279,7 @@ def get_model_from_config(model_type: str, config_path: str, trial: Trial) -> Tu
         nfft = trial.suggest_categorical("nfft", [2048, 4096, 8192])
         hop_size = trial.suggest_categorical("hop_size", [512, 1024, 2048])
         win_size = trial.suggest_categorical("win_size", [2048, 4096, 8192])
-        chunk_size = trial.suggest_int("chunk_size", 308700, 661500, step=44100)
+        #chunk_size = trial.suggest_int("chunk_size", 308700, 661500, step=44100)
 
         compress = trial.suggest_int("compress", 2, 8, step=2)
         conv_kernel = trial.suggest_int("conv_kernel", 1, 9, step=2)
@@ -302,8 +302,8 @@ def get_model_from_config(model_type: str, config_path: str, trial: Trial) -> Tu
         reduce_factor = trial.suggest_uniform("reduce_factor", 0.8, 1.0)
         ema_momentum = trial.suggest_uniform("ema_momentum", 0.95, 0.999)
         optimizer = trial.suggest_categorical("optimizer", ["adam", "adamw", "sgd"])
-        batch_size = trial.suggest_int("batch_size", 1, 10, step=2)
-        gradient_accumulation_steps = trial.suggest_int("gradient_accumulation_steps", 1, 10, step=1)
+        batch_size = trial.suggest_int("batch_size", 1, 8, step=1)
+        gradient_accumulation_steps = trial.suggest_int("gradient_accumulation_steps", 1, 8, step=1)
 
         # **Augmentation settings**:
         loudness_min = trial.suggest_uniform("loudness_min", 0.2, 1.0)
@@ -334,8 +334,8 @@ def get_model_from_config(model_type: str, config_path: str, trial: Trial) -> Tu
         config.training.reduce_factor = reduce_factor
         config.training.ema_momentum = ema_momentum
         config.training.optimizer = optimizer
-        # config.training.batch_size = batch_size
-        # config.training.gradient_accumulation_steps = gradient_accumulation_steps
+        config.training.batch_size = batch_size
+        config.training.gradient_accumulation_steps = gradient_accumulation_steps
         config.training.num_steps = 1
         config.training.num_epochs = 1
 
