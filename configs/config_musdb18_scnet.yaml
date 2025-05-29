@@ -37,7 +37,7 @@ model:
     - 2
     - 1
   compress: 4
-  conv_kernel: 3
+  conv_kernel: 4 #3
   num_dplayer: 6
   expand: 1
 
