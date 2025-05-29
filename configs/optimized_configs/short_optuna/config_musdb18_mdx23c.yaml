@@ -29,7 +29,7 @@ augmentations:
     pedalboard_chorus_rate_hz_max: 7.0
     pedalboard_chorus_rate_hz_min: 1.0
     pedalboard_distortion: 0.01
-    pedalboard_distortion_drive_db_max: 25.0
+    pedalboard_distortion_drive_db_max: 8.352905675063163
     pedalboard_distortion_drive_db_min: 1.0
     pedalboard_mp3_compressor: 0.01
     pedalboard_mp3_compressor_pedalboard_mp3_compressor_max: 9.999
@@ -58,7 +58,7 @@ augmentations:
     pedalboard_reverb_dry_level_min: 0.1
     pedalboard_reverb_room_size_max: 0.9
     pedalboard_reverb_room_size_min: 0.1
-    pedalboard_reverb_wet_level_max: 0.9
+    pedalboard_reverb_wet_level_max: 0.5003004636187302
     pedalboard_reverb_wet_level_min: 0.1
     pedalboard_reverb_width_max: 1.0
     pedalboard_reverb_width_min: 0.9
