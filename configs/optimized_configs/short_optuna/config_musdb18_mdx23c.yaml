@@ -118,7 +118,6 @@ augmentations:
     tanh_distortion: 0.1
     tanh_distortion_max: 0.7
     tanh_distortion_min: 0.1
-gradient_accumulation_steps: 3
 inference:
   batch_size: 1
   dim_t: 128
