@@ -10,36 +10,36 @@ audio:
 
 model:
   act: gelu
-  bottleneck_factor: 5
-  growth: 224
+  bottleneck_factor: 4
+  growth: 80
   norm: InstanceNorm
-  num_blocks_per_scale: 4
-  num_channels: 48
-  num_scales: 4
+  num_blocks_per_scale: 2
+  num_channels: 160
+  num_scales: 5
   num_subbands: 4
   scale:
   - 2
   - 2
 
 training:
-  batch_size: 7
-  gradient_accumulation_steps: 7
+  batch_size: 8
+  gradient_accumulation_steps: 1
   grad_clip: 0
   instruments:
   - vocals
   - bass
   - drums
   - other
-  lr: 9.895019867581646e-05
+  lr: 5.0e-05
   patience: 2
-  reduce_factor: 0.3067220909070577
+  reduce_factor: 0.95
   target_instrument: null
   num_epochs: 1000
   num_steps: 1000
   q: 0.95
   coarse_loss_clip: true
-  ema_momentum: 0.9843434567317182
-  optimizer: adamw
+  ema_momentum: 0.999
+  optimizer: adam
   other_fix: false # it's needed for checking on multisong dataset if other is actually instrumental
   use_amp: true # enable or disable usage of mixed precision (float16) - usually it must be true
 
@@ -178,5 +178,5 @@ augmentations:
 
 inference:
   batch_size: 1
-  dim_t: 128
-  num_overlap: 8
+  dim_t: 256
+  num_overlap: 4
