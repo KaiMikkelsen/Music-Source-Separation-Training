@@ -26,6 +26,7 @@ from utils.dataset import MSSDataset
 from utils.settings import get_model_from_config, parse_args_inference
 from valid import valid_multi_gpu, valid
 from utils.audio_utils import prepare_data
+from utils.settings import load_config
 
 from utils.model_utils import bind_lora_to_model, load_start_checkpoint, save_weights, normalize_batch, \
     initialize_model_and_device, get_optimizer, save_last_weights
@@ -149,7 +150,7 @@ def wandb_init(args: argparse.Namespace, config: Dict, device_ids: List[int], ba
         wandb.init(mode='disabled')
     else:
         wandb.login(key=args.wandb_key)
-        wandb.init(project='msst', 
+        wandb.init(project='msst_scnet', 
                    config={'config': config, 'args': args, 'device_ids': device_ids, 'batch_size': batch_size },
                    name=run_name,
                    group="Optuna")
@@ -607,82 +608,82 @@ def objective(trial: Trial, args: argparse.Namespace) -> float:
 
     args = parse_args(args)
     initialize_environment(args.seed, args.results_path)
-    model, config = get_model_from_config(args.model_type, args.config_path)
+    model, config = get_model_from_config(args.model_type, args.config_path, trial)
 
     # do optuna here i think
    # do optuna here i think
 
     # **Model Capacity**: 
-    nfft = trial.suggest_categorical("nfft", [2048, 4096, 8192])
-    hop_size = trial.suggest_categorical("hop_size", [512, 1024, 2048])
-    win_size = trial.suggest_categorical("win_size", [2048, 4096, 8192])
-    chunk_size = trial.suggest_int("chunk_size", 308700, 661500, step=44100)
+    # nfft = trial.suggest_categorical("nfft", [2048, 4096, 8192])
+    # hop_size = trial.suggest_categorical("hop_size", [512, 1024, 2048])
+    # win_size = trial.suggest_categorical("win_size", [2048, 4096, 8192])
+    # chunk_size = trial.suggest_int("chunk_size", 308700, 661500, step=44100)
 
 
-    compress = trial.suggest_int("compress", 2, 8, step=2)
-    conv_kernel = trial.suggest_int("conv_kernel", 2, 5)
-    num_dplayer = trial.suggest_int("num_dplayer", 4, 10)
-    expand = trial.suggest_int("expand", 1, 4)
+    # compress = trial.suggest_int("compress", 2, 8, step=2)
+    # conv_kernel = trial.suggest_int("conv_kernel", 1, 9, step=2)
+    # num_dplayer = trial.suggest_int("num_dplayer", 4, 10)
+    # expand = trial.suggest_int("expand", 1, 4)
 
-    # **Band Configuration**:
-    band_SR_0 = trial.suggest_uniform("band_SR_0", 0.1, 0.3)
-    band_SR_1 = trial.suggest_uniform("band_SR_1", 0.3, 0.5)
-    band_SR_2 = trial.suggest_uniform("band_SR_2", 0.4, 0.6)
-    band_stride_0 = trial.suggest_int("band_stride_0", 1, 2)
-    band_stride_1 = trial.suggest_int("band_stride_1", 2, 8, step=2)
-    band_stride_2 = trial.suggest_int("band_stride_2", 8, 16, step=4)
-    band_kernel_0 = trial.suggest_int("band_kernel_0", 2, 4)
-    band_kernel_1 = trial.suggest_int("band_kernel_1", 3, 6)
-    band_kernel_2 = trial.suggest_int("band_kernel_2", 8, 16)
+    # # **Band Configuration**:
+    # band_SR_0 = trial.suggest_uniform("band_SR_0", 0.1, 0.3)
+    # band_SR_1 = trial.suggest_uniform("band_SR_1", 0.3, 0.5)
+    # band_SR_2 = trial.suggest_uniform("band_SR_2", 0.4, 0.6)
+    # band_stride_0 = trial.suggest_int("band_stride_0", 1, 2)
+    # band_stride_1 = trial.suggest_int("band_stride_1", 2, 8, step=2)
+    # band_stride_2 = trial.suggest_int("band_stride_2", 8, 16, step=4)
+    # band_kernel_0 = trial.suggest_int("band_kernel_0", 2, 4)
+    # band_kernel_1 = trial.suggest_int("band_kernel_1", 3, 6)
+    # band_kernel_2 = trial.suggest_int("band_kernel_2", 8, 16)
 
-    # **Learning-related**:
-    lr = trial.suggest_loguniform("lr", 1e-5, 5e-4)
-    reduce_factor = trial.suggest_uniform("reduce_factor", 0.8, 1.0)
-    ema_momentum = trial.suggest_uniform("ema_momentum", 0.95, 0.999)
-    optimizer = trial.suggest_categorical("optimizer", ["adam", "adamw", "sgd"])
-    batch_size = trial.suggest_int("batch_size", 1, 10, step=2)
-    gradient_accumulation_steps = trial.suggest_int("gradient_accumulation_steps", 1, 10, step=1)
+    # # **Learning-related**:
+    # lr = trial.suggest_loguniform("lr", 1e-5, 5e-4)
+    # reduce_factor = trial.suggest_uniform("reduce_factor", 0.8, 1.0)
+    # ema_momentum = trial.suggest_uniform("ema_momentum", 0.95, 0.999)
+    # optimizer = trial.suggest_categorical("optimizer", ["adam", "adamw", "sgd"])
+    # batch_size = trial.suggest_int("batch_size", 1, 10, step=2)
+    # gradient_accumulation_steps = trial.suggest_int("gradient_accumulation_steps", 1, 10, step=1)
 
-    # **Augmentation settings**:
-    loudness_min = trial.suggest_uniform("loudness_min", 0.2, 1.0)
-    loudness_max = trial.suggest_uniform("loudness_max", 1.0, 2.0)
-    mixup_probs_0 = trial.suggest_uniform("mixup_probs_0", 0.1, 0.3)
-    mixup_probs_1 = trial.suggest_uniform("mixup_probs_1", 0.01, 0.05)
+    # # **Augmentation settings**:
+    # loudness_min = trial.suggest_uniform("loudness_min", 0.2, 1.0)
+    # loudness_max = trial.suggest_uniform("loudness_max", 1.0, 2.0)
+    # mixup_probs_0 = trial.suggest_uniform("mixup_probs_0", 0.1, 0.3)
+    # mixup_probs_1 = trial.suggest_uniform("mixup_probs_1", 0.01, 0.05)
 
-    # **Inference settings**:
-    dim_t = trial.suggest_categorical("dim_t", [128, 192, 256, 512])
-    num_overlap = trial.suggest_categorical("num_overlap", [2, 4, 6, 8])
+    # # **Inference settings**:
+    # dim_t = trial.suggest_categorical("dim_t", [128, 192, 256, 512])
+    # num_overlap = trial.suggest_categorical("num_overlap", [2, 4, 6, 8])
 
-    # Apply sampled values from Optuna to the configuration
-    config.model.nfft = nfft
-    config.model.hop_size = hop_size
-    config.model.chunk_size = chunk_size
+    # # Apply sampled values from Optuna to the configuration
+    # config.model.nfft = nfft
+    # config.model.hop_size = hop_size
+    # config.model.chunk_size = chunk_size
 
-    config.model.win_size = win_size
-    config.model.compress = compress
-    config.model.conv_kernel = conv_kernel
-    config.model.num_dplayer = num_dplayer
-    config.model.expand = expand
+    # config.model.win_size = win_size
+    # config.model.compress = compress
+    # config.model.conv_kernel = conv_kernel
+    # config.model.num_dplayer = num_dplayer
+    # config.model.expand = expand
 
-    config.model.band_SR = [band_SR_0, band_SR_1, band_SR_2]
-    config.model.band_stride = [band_stride_0, band_stride_1, band_stride_2]
-    config.model.band_kernel = [band_kernel_0, band_kernel_1, band_kernel_2]
+    # config.model.band_SR = [band_SR_0, band_SR_1, band_SR_2]
+    # config.model.band_stride = [band_stride_0, band_stride_1, band_stride_2]
+    # config.model.band_kernel = [band_kernel_0, band_kernel_1, band_kernel_2]
 
-    config.training.lr = lr
-    config.training.reduce_factor = reduce_factor
-    config.training.ema_momentum = ema_momentum
-    config.training.optimizer = optimizer
-    config.training.batch_size = batch_size
-    config.training.gradient_accumulation_steps = gradient_accumulation_steps
-    config.training.num_steps = 1000
-    config.training.num_epochs = 50
+    # config.training.lr = lr
+    # config.training.reduce_factor = reduce_factor
+    # config.training.ema_momentum = ema_momentum
+    # config.training.optimizer = optimizer
+    # config.training.batch_size = batch_size
+    # config.training.gradient_accumulation_steps = gradient_accumulation_steps
+    # config.training.num_steps = 1000
+    # config.training.num_epochs = 35
 
-    config.augmentations.loudness_min = loudness_min
-    config.augmentations.loudness_max = loudness_max
-    config.augmentations.mixup_probs = (mixup_probs_0, mixup_probs_1)
+    # config.augmentations.loudness_min = loudness_min
+    # config.augmentations.loudness_max = loudness_max
+    # config.augmentations.mixup_probs = (mixup_probs_0, mixup_probs_1)
 
-    config.inference.dim_t = dim_t
-    config.inference.num_overlap = num_overlap
+    # config.inference.dim_t = dim_t
+    # config.inference.num_overlap = num_overlap
 
 
 
