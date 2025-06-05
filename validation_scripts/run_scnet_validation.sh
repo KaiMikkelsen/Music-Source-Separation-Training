@@ -19,7 +19,7 @@ SCRATCH_DIR=$SLURM_TMPDIR
 BASE_DIR="/home/kaim/projects/def-ichiro/kaim/Music-Source-Separation-Training"
 MODEL_TYPE="scnet"
 #CONFIG_PATH="/home/kaim/projects/def-ichiro/kaim/SCNet/conf/config.yaml"
-CONFIG_PATH="/home/kaim/projects/def-ichiro/kaim/Music-Source-Separation-Training/configs/optimized_configs/short_optuna/config_musdb18_scnet.yaml"
+CONFIG_PATH="/home/kaim/projects/def-ichiro/kaim/Music-Source-Separation-Training/configs/config_musdb18_scnet.yaml"
 
 DATASET_NAME="MUSDB18HQ"
 DATASET_ZIP="/home/kaim/projects/def-ichiro/kaim/data/$DATASET_NAME.zip" # Specify the dataset ZIP name
@@ -94,7 +94,7 @@ echo "Running validation script for model: $MODEL_TYPE with dataset at $DATA_PAT
 python valid.py \
     --model_type "$MODEL_TYPE" \
     --config_path "$CONFIG_PATH" \
-    --start_check_point /home/kaim/scratch/checkpoints/scnet_2025-05-29_15-39-28/model_scnet_ep_164_sdr_8.6355.ckpt \
+    --start_check_point /home/kaim/projects/def-ichiro/kaim/Music-Source-Separation-Training/checkpoints/good_ckpts/scnet_2025-01-02_15-08-34/model_scnet_ep_239_sdr_7.5322.ckpt \
     --valid_path "$DATA_PATH/test" \
     --device_ids 0 \
     --metrics sdr si_sdr aura_mrstft
