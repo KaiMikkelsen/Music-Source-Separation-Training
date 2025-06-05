@@ -20,7 +20,7 @@ from utils.model_utils import bind_lora_to_model, load_start_checkpoint, save_we
     initialize_model_and_device, get_optimizer, save_last_weights
 
 from utils.losses import choice_loss
-from valid import valid_multi_gpu, valid
+from valid import valid_multi_gpu, valid, check_validation
 
 
 import warnings
@@ -209,6 +209,95 @@ def train_model(args: argparse.Namespace) -> None:
                         use_amp, scaler, gradient_accumulation_steps, train_loader, multi_loss)
         save_last_weights(args, model, device_ids)
         best_metric = compute_epoch_metrics(model, args, config, device, device_ids, best_metric, epoch, scheduler)
+
+
+    import os
+    import re
+    import glob
+# --- Final validation step: Find the best checkpoint from results_path and call check_validation ---
+    print("\n--- Running final validation after training ---")
+
+    # Ensure args has 'valid_path' and 'metrics' attributes set for validation
+    if not hasattr(args, 'valid_path') or not args.valid_path:
+        print("Error: args.valid_path is not set for final validation. Please provide it via command line or defaults.")
+        return # Exit or handle error
+
+    if not hasattr(args, 'metrics') or not args.metrics:
+        print("Error: args.metrics is not set for final validation. Please provide it via command line or defaults.")
+        return # Exit or handle error
+
+    final_validation_checkpoint = None
+    if os.path.exists(args.results_path):
+        pattern = re.compile(rf'model_{args.model_type}_ep_\d+_{args.metric_for_scheduler}_([0-9.]+)\.ckpt')
+
+        all_checkpoints = glob.glob(os.path.join(args.results_path, f'model_{args.model_type}_ep_*.ckpt'))
+
+        best_score = float('-inf')
+
+        for ckpt_path in all_checkpoints:
+            match = pattern.search(os.path.basename(ckpt_path))
+            if match:
+                try:
+                    score = float(match.group(1))
+                    if score > best_score:
+                        best_score = score
+                        final_validation_checkpoint = ckpt_path
+                except ValueError:
+                    print(f"Warning: Could not parse metric from filename: {os.path.basename(ckpt_path)}")
+
+        if final_validation_checkpoint:
+            print(f"Found best checkpoint for final validation: {final_validation_checkpoint} (Score: {best_score:.4f})")
+        else:
+            last_ckpt_path = os.path.join(args.results_path, 'last.ckpt')
+            if os.path.exists(last_ckpt_path):
+                final_validation_checkpoint = last_ckpt_path
+                print(f"No metric-specific checkpoints found, using last saved checkpoint for final validation: {final_validation_checkpoint}")
+            else:
+                print("Warning: No suitable checkpoint found in results directory. Final validation will run on the current model state (after all epochs).")
+    else:
+        print(f"Warning: Results path '{args.results_path}' does not exist. Cannot find best checkpoint. Final validation will run on the current model state.")
+
+    # Prepare a dictionary of arguments to pass to check_validation
+    # check_validation expects a dictionary that it will parse with parse_args_valid
+    dict_args_for_final_valid = vars(args).copy() # Convert Namespace to dict and copy it
+
+    # --- Modify start_check_point ---
+    dict_args_for_final_valid['start_check_point'] = final_validation_checkpoint
+
+    # --- Modify valid_path to point to the 'test' split ---
+    # Assuming args.valid_path is a list, and contains something like '/path/to/dataset/validation'
+    # We want to change 'validation' to 'test'. This handles multiple paths in the list.
+    modified_valid_paths = []
+    for path in args.valid_path:
+        # Using os.path.normpath to handle varying path separators and redundancies
+        normalized_path = os.path.normpath(path)
+        if normalized_path.endswith('validation'):
+            # Replace the last component
+            modified_path = os.path.join(os.path.dirname(normalized_path), 'test')
+            modified_valid_paths.append(modified_path)
+        elif normalized_path.endswith('valid'): # Also handle just 'valid' as a common split name
+            modified_path = os.path.join(os.path.dirname(normalized_path), 'test')
+            modified_valid_paths.append(modified_path)
+        else:
+            # If the path doesn't end with 'validation' or 'valid', print a warning or handle as needed
+            print(f"Warning: The validation path '{path}' does not end with 'validation' or 'valid'. Attempting to append 'test' if it's a directory, or you may need to adjust this logic.")
+            # A more robust solution might be to check if 'test' subdirectory exists
+            # For now, we'll just append it assuming the base path is correct.
+            modified_path = os.path.join(normalized_path, 'test') # Simple append if no specific 'validation' suffix
+            if not os.path.isdir(modified_path):
+                 print(f"Warning: Derived test path '{modified_path}' does not seem to be a directory. Please check your valid_path configuration.")
+            modified_valid_paths.append(modified_path)
+
+    dict_args_for_final_valid['valid_path'] = modified_valid_paths
+    print(f"Original valid_path for training: {args.valid_path}")
+    print(f"Modified valid_path for final validation: {dict_args_for_final_valid['valid_path']}")
+
+    # Call check_validation directly with the dictionary of arguments
+    # check_validation will handle all model loading and validation execution.
+    print(f"Calling check_validation for final validation with start_check_point: {dict_args_for_final_valid['start_check_point']}")
+    check_validation(dict_args_for_final_valid)
+
+    print("\n--- Final Validation Completed ---")
 
 
 if __name__ == "__main__":
