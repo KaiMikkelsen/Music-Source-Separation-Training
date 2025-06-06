@@ -2,7 +2,7 @@
 #SBATCH --gres=gpu:v100l:1       # Request GPU "generic resources"
 #SBATCH --cpus-per-task=6        # Adjust based on your cluster's CPU/GPU ratio
 #SBATCH --mem=125G               # Adjust memory as needed
-#SBATCH --time=5-00:00           # DD-HH:MM:SS
+#SBATCH --time=6-00:00           # DD-HH:MM:SS
 #SBATCH --account=def-ichiro
 #SBATCH --output=slurm_logs/slurm-%j.out  # Use Job ID for unique output files
 
@@ -23,7 +23,7 @@ DATASET_NAME="MUSDB18HQ"
 #DATASET_ZIP="$DATA_HOME_PATH/$DATASET_NAME.zip" # Specify the dataset ZIP name
 SLURM_LOGS_PATH="slurm_logs/${MODEL_TYPE}_${CURRENT_DATE}"
 CHECKPOINTS_PATH="/home/kaim/scratch/checkpoints/${MODEL_TYPE}_${CURRENT_DATE}"
-DATA_PATH="/home/kaim/scratch/MUSDB18_ALL/MUSDB18_HQ_1"
+DATA_PATH="/home/kaim/scratch/MUSDB18_K_FOLD/MUSDB18_HQ_1"
 
 # Create necessary directories
 #mkdir -p "$SCRATCH_DIR"
