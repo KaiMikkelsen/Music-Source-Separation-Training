@@ -146,7 +146,7 @@ training:
   - drums
   - other
   lr: 9.0e-05
-  num_epochs: 1000
+  num_epochs: 420
   num_steps: 1000
   optimizer: adam
   other_fix: false
