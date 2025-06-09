@@ -17,7 +17,7 @@ git pull
 
 # Variables
 MODEL_TYPE="scnet"
-CONFIG_PATH="configs/optimized_configs/config_musdb18_scnet.yaml"
+CONFIG_PATH="configs/final_configs/config_musdb18_scnet.yaml"
 #DATA_HOME_PATH="/home/kaim/projects/def-ichiro/kaim/data"
 DATASET_NAME="MUSDB18HQ"
 #DATASET_ZIP="$DATA_HOME_PATH/$DATASET_NAME.zip" # Specify the dataset ZIP name
